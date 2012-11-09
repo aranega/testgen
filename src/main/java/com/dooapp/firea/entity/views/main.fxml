@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+<?import javafx.paint.*?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.Button?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" fx:id="domainMainPane" fx:controller="com.dooapp.firea.entity.fxcontroller.MainFxController" prefHeight="572.0" prefWidth="862.0" minHeight="-Infinity" maxHeight="-Infinity" minWidth="-Infinity" maxWidth="-Infinity">
+	<top>
+		<MenuBar>
+			<menus>
+				<Menu text="File">
+					<items>
+						<MenuItem text="Save" />
+						<MenuItem text="Close" />
+						
+					</items>
+				</Menu><Menu text="Edit">
+					<items>
+						<MenuItem text="Delete" />
+						
+					</items>
+				</Menu><Menu text="Entities">
+					<items>
+						<MenuItem fx:id="AbstractEntitySwitcher" text="AbstractEntity" onAction="#AbstractEntitySwitchAction" />
+						<MenuItem fx:id="ContactSwitcher" text="Contact" onAction="#ContactSwitchAction" />
+						<MenuItem fx:id="PersistentImageSwitcher" text="PersistentImage" onAction="#PersistentImageSwitchAction" />
+						<MenuItem fx:id="FolderSwitcher" text="Folder" onAction="#FolderSwitchAction" />
+						<MenuItem fx:id="PersistentImageDataSwitcher" text="PersistentImageData" onAction="#PersistentImageDataSwitchAction" />
+						<MenuItem fx:id="ProjectSwitcher" text="Project" onAction="#ProjectSwitchAction" />
+						<MenuItem fx:id="RisqueSwitcher" text="Risque" onAction="#RisqueSwitchAction" />
+						
+					</items>
+				</Menu><Menu text="Help">
+					<items>
+						<MenuItem text="About" />
+						
+					</items>
+				</Menu>
+			</menus>
+		</MenuBar>
+	</top><center>
+		<VBox fx:id="thecontent">
+			<children>
+				<Label text="Welcome Folks" />
+				
+			</children><padding>
+				<Insets right="10" left="10" top="10" bottom="10" />
+				
+			</padding>
+		</VBox>
+	</center>
+</BorderPane>

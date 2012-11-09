@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:emf4java="http://com.axellience/dooapp/emf4java" xsi:schemaLocation="http://com.axellience/dooapp/emf4java ../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/bin/com/axellience/generator/dooapp/standalone/metamodels/emf4java.ecore" name="com.dooapp.firea.entity">
+  <eAnnotations source="generation-parameters">
+    <details key="jdbc.properties.path" value="/src/main/resources"/>
+    <details key="log4j.properties.path" value="/src/main/resources"/>
+    <details key="web.xml.spring.path" value="/src/main/webapp/WEB-INF"/>
+    <details key="persistence.xml.path" value="/src/main/webapp/resources"/>
+    <details key="spring.context.root.path" value="/src/main/webapp/resources/spring"/>
+    <details key="spring.context.servlet.path" value="/src/main/webapp/resources/spring/appServlet"/>
+    <details key="mockup.path" value="/mockup"/>
+    <details key="spring.mvc.java.code.path" value="/src/main/java"/>
+    <details key="pom.xml.path" value="/"/>
+    <details key="jsp.path" value="/src/main/webapp/WEB-INF/views"/>
+  </eAnnotations>
+  <eSubpackages name="domain">
+    <eClassifiers xsi:type="emf4java:Entity" name="AbstractEntity" PK="//domain/AbstractEntity/id" repository="//repositories/AbstractEntityRepository">
+      <eAnnotations source="@javax.persistence.Entity"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="creationDate">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="updateDate">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="version">
+        <eAnnotations source="@javax.persistence.Column">
+          <details key="name" value="&quot;VERSIONCOLUMN&quot;"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
+        <eAnnotations source="@javax.persistence.Id"/>
+        <eAnnotations source="@javax.persistence.GeneratedValue">
+          <details key="strategy" value="javax.persistence.GenerationType.AUTO"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Entity" name="Contact" eSuperTypes="//domain/AbstractEntity" PK="//domain/AbstractEntity/id" repository="//repositories/ContactRepository">
+      <eAnnotations source="@javax.persistence.Entity"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name">
+        <eAnnotations source="@javax.persistence.Column">
+          <details key="name" value="&quot;NAMECOLUMN&quot;"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="person">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="adress1">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="address2">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="zipCode">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="city">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="email">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="phone">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="siret">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="kind" eType="//domain/ContactKind"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="image" lowerBound="1" eType="//domain/PersistentImage">
+        <eAnnotations source="@javax.persistence.ManyToOne"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EEnum" name="ContactKind">
+      <eLiterals name="TECHNICIAN"/>
+      <eLiterals name="FIRM"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Entity" name="PersistentImage" eSuperTypes="//domain/AbstractEntity" PK="//domain/AbstractEntity/id" repository="//repositories/PersistentImageRepository">
+      <eAnnotations source="@javax.persistence.Entity"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="title">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="sourceFile">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="preview">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="error">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="dataId">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Entity" name="Folder" eSuperTypes="//domain/AbstractEntity" PK="//domain/AbstractEntity/id" repository="//repositories/FolderRepository">
+      <eAnnotations source="@javax.persistence.Entity"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name">
+        <eAnnotations source="@javax.persistence.Column">
+          <details key="name" value="&quot;NAMECOLUMN&quot;"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="displayOrder">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Entity" name="PersistentImageData" eSuperTypes="//domain/AbstractEntity" PK="//domain/AbstractEntity/id" repository="//repositories/PersistentImageDataRepository">
+      <eAnnotations source="@javax.persistence.Entity"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="data">
+        <eAnnotations source="@javax.persistence.Column">
+          <details key="name" value="&quot;DATACOLUMN&quot;"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EEnum" name="ProjectKind"/>
+    <eClassifiers xsi:type="emf4java:Entity" name="Project" eSuperTypes="//domain/AbstractEntity" PK="//domain/AbstractEntity/id" repository="//repositories/ProjectRepository">
+      <eAnnotations source="@javax.persistence.Entity"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name">
+        <eAnnotations source="@javax.persistence.Column">
+          <details key="name" value="&quot;NAMECOLUMN&quot;"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="description">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="kind" eType="//domain/ProjectKind"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="risque" lowerBound="1" eType="//domain/Risque">
+        <eAnnotations source="@javax.persistence.ManyToOne"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="image" lowerBound="1" eType="//domain/PersistentImage">
+        <eAnnotations source="@javax.persistence.ManyToOne"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="contacts" lowerBound="1" upperBound="-1" eType="//domain/Contact">
+        <eAnnotations source="@javax.persistence.ManyToMany">
+          <details key="fetch" value="javax.persistence.FetchType.EAGER"/>
+        </eAnnotations>
+        <eAnnotations source="@javax.persistence.JoinTable">
+          <details key="name" value="&quot;PROJECT_CONTACTS&quot;"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Entity" name="Risque" eSuperTypes="//domain/AbstractEntity" PK="//domain/AbstractEntity/id" repository="//repositories/RisqueRepository">
+      <eAnnotations source="@javax.persistence.Entity"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="key">
+        <eAnnotations source="@javax.persistence.Column">
+          <details key="name" value="&quot;KEYCOLUMN&quot;"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+  </eSubpackages>
+  <eSubpackages name="repositories">
+    <eClassifiers xsi:type="emf4java:Repository" name="ProjectRepository" interface="true" entity="//domain/Project" criteria="//repositories/criteria/ProjectCriteria">
+      <eOperations xsi:type="emf4java:RepositoryFindByIdOperation" name="findById" eType="//domain/Project" repository="//repositories/ProjectRepository">
+        <eParameters name="id">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositoryFindAllOperation" name="findAll" unique="false" upperBound="-1" eType="//domain/Project" repository="//repositories/ProjectRepository"/>
+      <eOperations xsi:type="emf4java:RepositoryFindByCriteriaOperation" name="findByCriteria" unique="false" upperBound="-1" eType="//domain/Project" repository="//repositories/ProjectRepository">
+        <eParameters name="projectCriteria" eType="//repositories/criteria/ProjectCriteria"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositorySaveOperation" name="save" eType="//domain/Project" repository="//repositories/ProjectRepository">
+        <eParameters name="project" eType="//domain/Project"/>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Repository" name="PersistentImageRepository" interface="true" entity="//domain/PersistentImage" criteria="//repositories/criteria/PersistentImageCriteria">
+      <eOperations xsi:type="emf4java:RepositoryFindByIdOperation" name="findById" eType="//domain/PersistentImage" repository="//repositories/PersistentImageRepository">
+        <eParameters name="id">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositoryFindAllOperation" name="findAll" unique="false" upperBound="-1" eType="//domain/PersistentImage" repository="//repositories/PersistentImageRepository"/>
+      <eOperations xsi:type="emf4java:RepositoryFindByCriteriaOperation" name="findByCriteria" unique="false" upperBound="-1" eType="//domain/PersistentImage" repository="//repositories/PersistentImageRepository">
+        <eParameters name="persistentImageCriteria" eType="//repositories/criteria/PersistentImageCriteria"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositorySaveOperation" name="save" eType="//domain/PersistentImage" repository="//repositories/PersistentImageRepository">
+        <eParameters name="persistentimage" eType="//domain/PersistentImage"/>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Repository" name="AbstractEntityRepository" interface="true" entity="//domain/AbstractEntity" criteria="//repositories/criteria/AbstractEntityCriteria">
+      <eOperations xsi:type="emf4java:RepositoryFindByIdOperation" name="findById" eType="//domain/AbstractEntity" repository="//repositories/AbstractEntityRepository">
+        <eParameters name="id">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositoryFindAllOperation" name="findAll" unique="false" upperBound="-1" eType="//domain/AbstractEntity" repository="//repositories/AbstractEntityRepository"/>
+      <eOperations xsi:type="emf4java:RepositoryFindByCriteriaOperation" name="findByCriteria" unique="false" upperBound="-1" eType="//domain/AbstractEntity" repository="//repositories/AbstractEntityRepository">
+        <eParameters name="abstractEntityCriteria" eType="//repositories/criteria/AbstractEntityCriteria"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositorySaveOperation" name="save" eType="//domain/AbstractEntity" repository="//repositories/AbstractEntityRepository">
+        <eParameters name="abstractentity" eType="//domain/AbstractEntity"/>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Repository" name="PersistentImageDataRepository" interface="true" entity="//domain/PersistentImageData" criteria="//repositories/criteria/PersistentImageDataCriteria">
+      <eOperations xsi:type="emf4java:RepositoryFindByIdOperation" name="findById" eType="//domain/PersistentImageData" repository="//repositories/PersistentImageDataRepository">
+        <eParameters name="id">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositoryFindAllOperation" name="findAll" unique="false" upperBound="-1" eType="//domain/PersistentImageData" repository="//repositories/PersistentImageDataRepository"/>
+      <eOperations xsi:type="emf4java:RepositoryFindByCriteriaOperation" name="findByCriteria" unique="false" upperBound="-1" eType="//domain/PersistentImageData" repository="//repositories/PersistentImageDataRepository">
+        <eParameters name="persistentImageDataCriteria" eType="//repositories/criteria/PersistentImageDataCriteria"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositorySaveOperation" name="save" eType="//domain/PersistentImageData" repository="//repositories/PersistentImageDataRepository">
+        <eParameters name="persistentimagedata" eType="//domain/PersistentImageData"/>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Repository" name="FolderRepository" interface="true" entity="//domain/Folder" criteria="//repositories/criteria/FolderCriteria">
+      <eOperations xsi:type="emf4java:RepositoryFindByIdOperation" name="findById" eType="//domain/Folder" repository="//repositories/FolderRepository">
+        <eParameters name="id">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositoryFindAllOperation" name="findAll" unique="false" upperBound="-1" eType="//domain/Folder" repository="//repositories/FolderRepository"/>
+      <eOperations xsi:type="emf4java:RepositoryFindByCriteriaOperation" name="findByCriteria" unique="false" upperBound="-1" eType="//domain/Folder" repository="//repositories/FolderRepository">
+        <eParameters name="folderCriteria" eType="//repositories/criteria/FolderCriteria"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositorySaveOperation" name="save" eType="//domain/Folder" repository="//repositories/FolderRepository">
+        <eParameters name="folder" eType="//domain/Folder"/>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Repository" name="RisqueRepository" interface="true" entity="//domain/Risque" criteria="//repositories/criteria/RisqueCriteria">
+      <eOperations xsi:type="emf4java:RepositoryFindByIdOperation" name="findById" eType="//domain/Risque" repository="//repositories/RisqueRepository">
+        <eParameters name="id">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositoryFindAllOperation" name="findAll" unique="false" upperBound="-1" eType="//domain/Risque" repository="//repositories/RisqueRepository"/>
+      <eOperations xsi:type="emf4java:RepositoryFindByCriteriaOperation" name="findByCriteria" unique="false" upperBound="-1" eType="//domain/Risque" repository="//repositories/RisqueRepository">
+        <eParameters name="risqueCriteria" eType="//repositories/criteria/RisqueCriteria"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositorySaveOperation" name="save" eType="//domain/Risque" repository="//repositories/RisqueRepository">
+        <eParameters name="risque" eType="//domain/Risque"/>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Repository" name="ContactRepository" interface="true" entity="//domain/Contact" criteria="//repositories/criteria/ContactCriteria">
+      <eOperations xsi:type="emf4java:RepositoryFindByIdOperation" name="findById" eType="//domain/Contact" repository="//repositories/ContactRepository">
+        <eParameters name="id">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositoryFindAllOperation" name="findAll" unique="false" upperBound="-1" eType="//domain/Contact" repository="//repositories/ContactRepository"/>
+      <eOperations xsi:type="emf4java:RepositoryFindByCriteriaOperation" name="findByCriteria" unique="false" upperBound="-1" eType="//domain/Contact" repository="//repositories/ContactRepository">
+        <eParameters name="contactCriteria" eType="//repositories/criteria/ContactCriteria"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositorySaveOperation" name="save" eType="//domain/Contact" repository="//repositories/ContactRepository">
+        <eParameters name="contact" eType="//domain/Contact"/>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:EJClass" name="JPARisqueRepository" eSuperTypes="//repositories/RisqueRepository">
+      <eAnnotations source="@org.springframework.stereotype.Repository">
+        <details key="value" value="&quot;risqueRepository&quot;"/>
+      </eAnnotations>
+      <eOperations xsi:type="emf4java:RepositoryFindByIdOperation" name="findById" eType="//domain/Risque" repository="//repositories/RisqueRepository">
+        <eParameters name="id">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositoryFindAllOperation" name="findAll" unique="false" upperBound="-1" eType="//domain/Risque" repository="//repositories/RisqueRepository"/>
+      <eOperations xsi:type="emf4java:RepositoryFindByCriteriaOperation" name="findByCriteria" unique="false" upperBound="-1" eType="//domain/Risque" repository="//repositories/RisqueRepository">
+        <eParameters name="risqueCriteria" eType="//repositories/criteria/RisqueCriteria"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositorySaveOperation" name="save" eType="//domain/Risque" repository="//repositories/RisqueRepository">
+        <eParameters name="risque" eType="//domain/Risque"/>
+      </eOperations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="entityManager">
+        <eAnnotations source="@javax.persistence.PersistenceContext"/>
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/Javax.library.ecore#//persistence/EntityManager"/>
+      </eStructuralFeatures>
+      <imports value="javax.persistence.TypedQuery"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:EJClass" name="JPAPersistentImageDataRepository" eSuperTypes="//repositories/PersistentImageDataRepository">
+      <eAnnotations source="@org.springframework.stereotype.Repository">
+        <details key="value" value="&quot;persistentimagedataRepository&quot;"/>
+      </eAnnotations>
+      <eOperations xsi:type="emf4java:RepositoryFindByIdOperation" name="findById" eType="//domain/PersistentImageData" repository="//repositories/PersistentImageDataRepository">
+        <eParameters name="id">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositoryFindAllOperation" name="findAll" unique="false" upperBound="-1" eType="//domain/PersistentImageData" repository="//repositories/PersistentImageDataRepository"/>
+      <eOperations xsi:type="emf4java:RepositoryFindByCriteriaOperation" name="findByCriteria" unique="false" upperBound="-1" eType="//domain/PersistentImageData" repository="//repositories/PersistentImageDataRepository">
+        <eParameters name="persistentImageDataCriteria" eType="//repositories/criteria/PersistentImageDataCriteria"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositorySaveOperation" name="save" eType="//domain/PersistentImageData" repository="//repositories/PersistentImageDataRepository">
+        <eParameters name="persistentimagedata" eType="//domain/PersistentImageData"/>
+      </eOperations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="entityManager">
+        <eAnnotations source="@javax.persistence.PersistenceContext"/>
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/Javax.library.ecore#//persistence/EntityManager"/>
+      </eStructuralFeatures>
+      <imports value="javax.persistence.TypedQuery"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:EJClass" name="JPAContactRepository" eSuperTypes="//repositories/ContactRepository">
+      <eAnnotations source="@org.springframework.stereotype.Repository">
+        <details key="value" value="&quot;contactRepository&quot;"/>
+      </eAnnotations>
+      <eOperations xsi:type="emf4java:RepositoryFindByIdOperation" name="findById" eType="//domain/Contact" repository="//repositories/ContactRepository">
+        <eParameters name="id">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositoryFindAllOperation" name="findAll" unique="false" upperBound="-1" eType="//domain/Contact" repository="//repositories/ContactRepository"/>
+      <eOperations xsi:type="emf4java:RepositoryFindByCriteriaOperation" name="findByCriteria" unique="false" upperBound="-1" eType="//domain/Contact" repository="//repositories/ContactRepository">
+        <eParameters name="contactCriteria" eType="//repositories/criteria/ContactCriteria"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositorySaveOperation" name="save" eType="//domain/Contact" repository="//repositories/ContactRepository">
+        <eParameters name="contact" eType="//domain/Contact"/>
+      </eOperations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="entityManager">
+        <eAnnotations source="@javax.persistence.PersistenceContext"/>
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/Javax.library.ecore#//persistence/EntityManager"/>
+      </eStructuralFeatures>
+      <imports value="javax.persistence.TypedQuery"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:EJClass" name="JPAProjectRepository" eSuperTypes="//repositories/ProjectRepository">
+      <eAnnotations source="@org.springframework.stereotype.Repository">
+        <details key="value" value="&quot;projectRepository&quot;"/>
+      </eAnnotations>
+      <eOperations xsi:type="emf4java:RepositoryFindByIdOperation" name="findById" eType="//domain/Project" repository="//repositories/ProjectRepository">
+        <eParameters name="id">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositoryFindAllOperation" name="findAll" unique="false" upperBound="-1" eType="//domain/Project" repository="//repositories/ProjectRepository"/>
+      <eOperations xsi:type="emf4java:RepositoryFindByCriteriaOperation" name="findByCriteria" unique="false" upperBound="-1" eType="//domain/Project" repository="//repositories/ProjectRepository">
+        <eParameters name="projectCriteria" eType="//repositories/criteria/ProjectCriteria"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositorySaveOperation" name="save" eType="//domain/Project" repository="//repositories/ProjectRepository">
+        <eParameters name="project" eType="//domain/Project"/>
+      </eOperations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="entityManager">
+        <eAnnotations source="@javax.persistence.PersistenceContext"/>
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/Javax.library.ecore#//persistence/EntityManager"/>
+      </eStructuralFeatures>
+      <imports value="javax.persistence.TypedQuery"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:EJClass" name="JPAFolderRepository" eSuperTypes="//repositories/FolderRepository">
+      <eAnnotations source="@org.springframework.stereotype.Repository">
+        <details key="value" value="&quot;folderRepository&quot;"/>
+      </eAnnotations>
+      <eOperations xsi:type="emf4java:RepositoryFindByIdOperation" name="findById" eType="//domain/Folder" repository="//repositories/FolderRepository">
+        <eParameters name="id">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositoryFindAllOperation" name="findAll" unique="false" upperBound="-1" eType="//domain/Folder" repository="//repositories/FolderRepository"/>
+      <eOperations xsi:type="emf4java:RepositoryFindByCriteriaOperation" name="findByCriteria" unique="false" upperBound="-1" eType="//domain/Folder" repository="//repositories/FolderRepository">
+        <eParameters name="folderCriteria" eType="//repositories/criteria/FolderCriteria"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositorySaveOperation" name="save" eType="//domain/Folder" repository="//repositories/FolderRepository">
+        <eParameters name="folder" eType="//domain/Folder"/>
+      </eOperations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="entityManager">
+        <eAnnotations source="@javax.persistence.PersistenceContext"/>
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/Javax.library.ecore#//persistence/EntityManager"/>
+      </eStructuralFeatures>
+      <imports value="javax.persistence.TypedQuery"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:EJClass" name="JPAAbstractEntityRepository" eSuperTypes="//repositories/AbstractEntityRepository">
+      <eAnnotations source="@org.springframework.stereotype.Repository">
+        <details key="value" value="&quot;abstractentityRepository&quot;"/>
+      </eAnnotations>
+      <eOperations xsi:type="emf4java:RepositoryFindByIdOperation" name="findById" eType="//domain/AbstractEntity" repository="//repositories/AbstractEntityRepository">
+        <eParameters name="id">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositoryFindAllOperation" name="findAll" unique="false" upperBound="-1" eType="//domain/AbstractEntity" repository="//repositories/AbstractEntityRepository"/>
+      <eOperations xsi:type="emf4java:RepositoryFindByCriteriaOperation" name="findByCriteria" unique="false" upperBound="-1" eType="//domain/AbstractEntity" repository="//repositories/AbstractEntityRepository">
+        <eParameters name="abstractEntityCriteria" eType="//repositories/criteria/AbstractEntityCriteria"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositorySaveOperation" name="save" eType="//domain/AbstractEntity" repository="//repositories/AbstractEntityRepository">
+        <eParameters name="abstractentity" eType="//domain/AbstractEntity"/>
+      </eOperations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="entityManager">
+        <eAnnotations source="@javax.persistence.PersistenceContext"/>
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/Javax.library.ecore#//persistence/EntityManager"/>
+      </eStructuralFeatures>
+      <imports value="javax.persistence.TypedQuery"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:EJClass" name="JPAPersistentImageRepository" eSuperTypes="//repositories/PersistentImageRepository">
+      <eAnnotations source="@org.springframework.stereotype.Repository">
+        <details key="value" value="&quot;persistentimageRepository&quot;"/>
+      </eAnnotations>
+      <eOperations xsi:type="emf4java:RepositoryFindByIdOperation" name="findById" eType="//domain/PersistentImage" repository="//repositories/PersistentImageRepository">
+        <eParameters name="id">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositoryFindAllOperation" name="findAll" unique="false" upperBound="-1" eType="//domain/PersistentImage" repository="//repositories/PersistentImageRepository"/>
+      <eOperations xsi:type="emf4java:RepositoryFindByCriteriaOperation" name="findByCriteria" unique="false" upperBound="-1" eType="//domain/PersistentImage" repository="//repositories/PersistentImageRepository">
+        <eParameters name="persistentImageCriteria" eType="//repositories/criteria/PersistentImageCriteria"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositorySaveOperation" name="save" eType="//domain/PersistentImage" repository="//repositories/PersistentImageRepository">
+        <eParameters name="persistentimage" eType="//domain/PersistentImage"/>
+      </eOperations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="entityManager">
+        <eAnnotations source="@javax.persistence.PersistenceContext"/>
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/Javax.library.ecore#//persistence/EntityManager"/>
+      </eStructuralFeatures>
+      <imports value="javax.persistence.TypedQuery"/>
+    </eClassifiers>
+    <eSubpackages name="criteria">
+      <eClassifiers xsi:type="emf4java:Criteria" name="ContactCriteria" eSuperTypes="//repositories/criteria/AbstractEntityCriteria" mainEntity="//domain/Contact">
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="name" originFeature="//domain/Contact/name">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="person" originFeature="//domain/Contact/person">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="adress1" originFeature="//domain/Contact/adress1">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="address2" originFeature="//domain/Contact/address2">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="zipCode" originFeature="//domain/Contact/zipCode">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="city" originFeature="//domain/Contact/city">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="email" originFeature="//domain/Contact/email">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="phone" originFeature="//domain/Contact/phone">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="siret" originFeature="//domain/Contact/siret">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="kind" eType="//domain/ContactKind" originFeature="//domain/Contact/kind"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="emf4java:Criteria" name="ProjectCriteria" eSuperTypes="//repositories/criteria/AbstractEntityCriteria" mainEntity="//domain/Project">
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="name" originFeature="//domain/Project/name">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="description" originFeature="//domain/Project/description">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="kind" eType="//domain/ProjectKind" originFeature="//domain/Project/kind"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="emf4java:Criteria" name="PersistentImageCriteria" eSuperTypes="//repositories/criteria/AbstractEntityCriteria" mainEntity="//domain/PersistentImage">
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="title" originFeature="//domain/PersistentImage/title">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="sourceFile" originFeature="//domain/PersistentImage/sourceFile">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="preview" originFeature="//domain/PersistentImage/preview">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="error" originFeature="//domain/PersistentImage/error">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="dataId" originFeature="//domain/PersistentImage/dataId">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="emf4java:Criteria" name="AbstractEntityCriteria" mainEntity="//domain/AbstractEntity">
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="creationDateMin" originFeature="//domain/AbstractEntity/creationDate" isMin="true">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="creationDateMax" originFeature="//domain/AbstractEntity/creationDate" isMax="true">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="updateDateMin" originFeature="//domain/AbstractEntity/updateDate" isMin="true">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="updateDateMax" originFeature="//domain/AbstractEntity/updateDate" isMax="true">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="versionMin" originFeature="//domain/AbstractEntity/version" isMin="true">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="versionMax" originFeature="//domain/AbstractEntity/version" isMax="true">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="id" iD="true" originFeature="//domain/AbstractEntity/id">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="emf4java:Criteria" name="RisqueCriteria" eSuperTypes="//repositories/criteria/AbstractEntityCriteria" mainEntity="//domain/Risque">
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="key" originFeature="//domain/Risque/key">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="emf4java:Criteria" name="FolderCriteria" eSuperTypes="//repositories/criteria/AbstractEntityCriteria" mainEntity="//domain/Folder">
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="name" originFeature="//domain/Folder/name">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="displayOrderMin" originFeature="//domain/Folder/displayOrder" isMin="true">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="displayOrderMax" originFeature="//domain/Folder/displayOrder" isMax="true">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="emf4java:Criteria" name="PersistentImageDataCriteria" eSuperTypes="//repositories/criteria/AbstractEntityCriteria" mainEntity="//domain/PersistentImageData">
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="data" originFeature="//domain/PersistentImageData/data">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </eSubpackages>
+  </eSubpackages>
+</ecore:EPackage>
