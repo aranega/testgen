@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+<?import javafx.paint.*?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.Button?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" fx:controller="com.dooapp.firea.entity.fxcontroller.AbstractEntitySearchFxController">
+	<children>
+		<VBox>
+			<children>
+				<Button text="Add AbstractEntity" onAction="#handleAdd" cancelButton="false" />
+				<Accordion>
+					<panes>
+						<TitledPane text="Search" expanded="true">
+							<content>
+								<BorderPane>
+									<top>
+										<Label style="-fx-font: NORMAL 20 Tahoma;" text="Search for AbstractEntityCriteria Instance Properties" />
+										
+									</top><center>
+										<VBox>
+											<children>
+												<HBox fx:id="_content" />
+												<HBox fx:id="_stack" visible="false">
+													<children>
+														<GridPane>
+															<children>
+																<Label fx:id="abstractEntityCriteriaCreationDateMinLabel" GridPane.rowIndex="0" GridPane.columnIndex="0" text="creationDateMin" />
+																<TextField fx:id="abstractEntityCriteriaCreationDateMin" GridPane.rowIndex="0" GridPane.columnIndex="1" editable="true" />
+																<Label fx:id="abstractEntityCriteriaCreationDateMaxLabel" GridPane.rowIndex="1" GridPane.columnIndex="0" text="creationDateMax" />
+																<TextField fx:id="abstractEntityCriteriaCreationDateMax" GridPane.rowIndex="1" GridPane.columnIndex="1" editable="true" />
+																<Label fx:id="abstractEntityCriteriaUpdateDateMinLabel" GridPane.rowIndex="2" GridPane.columnIndex="0" text="updateDateMin" />
+																<TextField fx:id="abstractEntityCriteriaUpdateDateMin" GridPane.rowIndex="2" GridPane.columnIndex="1" editable="true" />
+																<Label fx:id="abstractEntityCriteriaUpdateDateMaxLabel" GridPane.rowIndex="3" GridPane.columnIndex="0" text="updateDateMax" />
+																<TextField fx:id="abstractEntityCriteriaUpdateDateMax" GridPane.rowIndex="3" GridPane.columnIndex="1" editable="true" />
+																<Label fx:id="abstractEntityCriteriaVersionMinLabel" GridPane.rowIndex="4" GridPane.columnIndex="0" text="versionMin" />
+																<TextField fx:id="abstractEntityCriteriaVersionMin" GridPane.rowIndex="4" GridPane.columnIndex="1" editable="true" />
+																<Label fx:id="abstractEntityCriteriaVersionMaxLabel" GridPane.rowIndex="5" GridPane.columnIndex="0" text="versionMax" />
+																<TextField fx:id="abstractEntityCriteriaVersionMax" GridPane.rowIndex="5" GridPane.columnIndex="1" editable="true" />
+																<Label fx:id="abstractEntityCriteriaIdLabel" GridPane.rowIndex="6" GridPane.columnIndex="0" text="id" />
+																<TextField fx:id="abstractEntityCriteriaId" GridPane.rowIndex="6" GridPane.columnIndex="1" editable="true" />
+																
+															</children>
+														</GridPane>
+													</children>
+												</HBox><HBox fx:id="_trash" visible="false" />
+												
+											</children>
+										</VBox>
+									</center><right>
+										<HBox>
+											<children>
+												<Button text="Search" onAction="#handleSearchButtonAction" cancelButton="false" />
+												
+											</children>
+										</HBox>
+									</right>
+								</BorderPane>
+							</content>
+						</TitledPane>
+					</panes>
+				</Accordion><TableView fx:id="abstractEntityTable">
+					<columns>
+						<TableColumn text="creationDate">
+							<cellValueFactory>
+								<PropertyValueFactory property="creationDate" />
+								
+							</cellValueFactory>
+						</TableColumn><TableColumn text="updateDate">
+							<cellValueFactory>
+								<PropertyValueFactory property="updateDate" />
+								
+							</cellValueFactory>
+						</TableColumn><TableColumn text="version">
+							<cellValueFactory>
+								<PropertyValueFactory property="version" />
+								
+							</cellValueFactory>
+						</TableColumn><TableColumn text="id">
+							<cellValueFactory>
+								<PropertyValueFactory property="id" />
+								
+							</cellValueFactory>
+						</TableColumn>
+					</columns>
+				</TableView>
+			</children>
+		</VBox>
+	</children>
+</VBox>
