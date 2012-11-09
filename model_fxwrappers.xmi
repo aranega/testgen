@@ -1,0 +1,1553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:emf4java="http://com.axellience/dooapp/emf4java" xsi:schemaLocation="http://com.axellience/dooapp/emf4java ../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/bin/com/axellience/generator/dooapp/standalone/metamodels/emf4java.ecore" name="com.dooapp.firea.entity">
+  <eAnnotations source="generation-parameters">
+    <details key="jdbc.properties.path" value="/src/main/resources"/>
+    <details key="log4j.properties.path" value="/src/main/resources"/>
+    <details key="web.xml.spring.path" value="/src/main/webapp/WEB-INF"/>
+    <details key="persistence.xml.path" value="/src/main/webapp/resources"/>
+    <details key="spring.context.root.path" value="/src/main/webapp/resources/spring"/>
+    <details key="spring.context.servlet.path" value="/src/main/webapp/resources/spring/appServlet"/>
+    <details key="mockup.path" value="/mockup"/>
+    <details key="spring.mvc.java.code.path" value="/src/main/java"/>
+    <details key="pom.xml.path" value="/"/>
+    <details key="jsp.path" value="/src/main/webapp/WEB-INF/views"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="ObjectProperty&lt;Risque>">
+    <eTypeParameters name="Risque"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ObjectProperty&lt;PersistentImage>">
+    <eTypeParameters name="PersistentImage"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ObjectProperty&lt;PersistentImage>">
+    <eTypeParameters name="PersistentImage"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ObservableList&lt;ContactWrapper>">
+    <eTypeParameters name="ContactWrapper"/>
+  </eClassifiers>
+  <eSubpackages name="domain">
+    <eClassifiers xsi:type="emf4java:Entity" name="AbstractEntity" PK="//domain/AbstractEntity/id" repository="//repositories/AbstractEntityRepository" fxwrapper="//fxwrapper/AbstractEntityWrapper">
+      <eAnnotations source="@javax.persistence.Entity"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="creationDate">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="updateDate">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="version">
+        <eAnnotations source="@javax.persistence.Column">
+          <details key="name" value="&quot;VERSIONCOLUMN&quot;"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
+        <eAnnotations source="@javax.persistence.Id"/>
+        <eAnnotations source="@javax.persistence.GeneratedValue">
+          <details key="strategy" value="javax.persistence.GenerationType.AUTO"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Entity" name="Contact" eSuperTypes="//domain/AbstractEntity" PK="//domain/AbstractEntity/id" repository="//repositories/ContactRepository" fxwrapper="//fxwrapper/ContactWrapper">
+      <eAnnotations source="@javax.persistence.Entity"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name">
+        <eAnnotations source="@javax.persistence.Column">
+          <details key="name" value="&quot;NAMECOLUMN&quot;"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="person">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="adress1">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="address2">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="zipCode">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="city">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="email">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="phone">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="siret">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="kind" eType="//domain/ContactKind"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="image" lowerBound="1" eType="//domain/PersistentImage">
+        <eAnnotations source="@javax.persistence.ManyToOne"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EEnum" name="ContactKind">
+      <eLiterals name="TECHNICIAN"/>
+      <eLiterals name="FIRM"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Entity" name="PersistentImage" eSuperTypes="//domain/AbstractEntity" PK="//domain/AbstractEntity/id" repository="//repositories/PersistentImageRepository" fxwrapper="//fxwrapper/PersistentImageWrapper">
+      <eAnnotations source="@javax.persistence.Entity"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="title">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="sourceFile">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="preview">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="error">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="dataId">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Entity" name="Folder" eSuperTypes="//domain/AbstractEntity" PK="//domain/AbstractEntity/id" repository="//repositories/FolderRepository" fxwrapper="//fxwrapper/FolderWrapper">
+      <eAnnotations source="@javax.persistence.Entity"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name">
+        <eAnnotations source="@javax.persistence.Column">
+          <details key="name" value="&quot;NAMECOLUMN&quot;"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="displayOrder">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Entity" name="PersistentImageData" eSuperTypes="//domain/AbstractEntity" PK="//domain/AbstractEntity/id" repository="//repositories/PersistentImageDataRepository" fxwrapper="//fxwrapper/PersistentImageDataWrapper">
+      <eAnnotations source="@javax.persistence.Entity"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="data">
+        <eAnnotations source="@javax.persistence.Column">
+          <details key="name" value="&quot;DATACOLUMN&quot;"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EEnum" name="ProjectKind"/>
+    <eClassifiers xsi:type="emf4java:Entity" name="Project" eSuperTypes="//domain/AbstractEntity" PK="//domain/AbstractEntity/id" repository="//repositories/ProjectRepository" fxwrapper="//fxwrapper/ProjectWrapper">
+      <eAnnotations source="@javax.persistence.Entity"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name">
+        <eAnnotations source="@javax.persistence.Column">
+          <details key="name" value="&quot;NAMECOLUMN&quot;"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="description">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="kind" eType="//domain/ProjectKind"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="risque" lowerBound="1" eType="//domain/Risque">
+        <eAnnotations source="@javax.persistence.ManyToOne"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="image" lowerBound="1" eType="//domain/PersistentImage">
+        <eAnnotations source="@javax.persistence.ManyToOne"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="contacts" lowerBound="1" upperBound="-1" eType="//domain/Contact">
+        <eAnnotations source="@javax.persistence.ManyToMany">
+          <details key="fetch" value="javax.persistence.FetchType.EAGER"/>
+        </eAnnotations>
+        <eAnnotations source="@javax.persistence.JoinTable">
+          <details key="name" value="&quot;PROJECT_CONTACTS&quot;"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Entity" name="Risque" eSuperTypes="//domain/AbstractEntity" PK="//domain/AbstractEntity/id" repository="//repositories/RisqueRepository" fxwrapper="//fxwrapper/RisqueWrapper">
+      <eAnnotations source="@javax.persistence.Entity"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="key">
+        <eAnnotations source="@javax.persistence.Column">
+          <details key="name" value="&quot;KEYCOLUMN&quot;"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+  </eSubpackages>
+  <eSubpackages name="repositories">
+    <eClassifiers xsi:type="emf4java:Repository" name="FolderRepository" interface="true" entity="//domain/Folder" criteria="//repositories/criteria/FolderCriteria">
+      <eOperations xsi:type="emf4java:RepositoryFindByIdOperation" name="findById" eType="//domain/Folder" repository="//repositories/FolderRepository">
+        <eParameters name="id">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositoryFindAllOperation" name="findAll" unique="false" upperBound="-1" eType="//domain/Folder" repository="//repositories/FolderRepository"/>
+      <eOperations xsi:type="emf4java:RepositoryFindByCriteriaOperation" name="findByCriteria" unique="false" upperBound="-1" eType="//domain/Folder" repository="//repositories/FolderRepository">
+        <eParameters name="folderCriteria" eType="//repositories/criteria/FolderCriteria"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositorySaveOperation" name="save" eType="//domain/Folder" repository="//repositories/FolderRepository">
+        <eParameters name="folder" eType="//domain/Folder"/>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Repository" name="AbstractEntityRepository" interface="true" entity="//domain/AbstractEntity" criteria="//repositories/criteria/AbstractEntityCriteria">
+      <eOperations xsi:type="emf4java:RepositoryFindByIdOperation" name="findById" eType="//domain/AbstractEntity" repository="//repositories/AbstractEntityRepository">
+        <eParameters name="id">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositoryFindAllOperation" name="findAll" unique="false" upperBound="-1" eType="//domain/AbstractEntity" repository="//repositories/AbstractEntityRepository"/>
+      <eOperations xsi:type="emf4java:RepositoryFindByCriteriaOperation" name="findByCriteria" unique="false" upperBound="-1" eType="//domain/AbstractEntity" repository="//repositories/AbstractEntityRepository">
+        <eParameters name="abstractEntityCriteria" eType="//repositories/criteria/AbstractEntityCriteria"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositorySaveOperation" name="save" eType="//domain/AbstractEntity" repository="//repositories/AbstractEntityRepository">
+        <eParameters name="abstractentity" eType="//domain/AbstractEntity"/>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Repository" name="RisqueRepository" interface="true" entity="//domain/Risque" criteria="//repositories/criteria/RisqueCriteria">
+      <eOperations xsi:type="emf4java:RepositoryFindByIdOperation" name="findById" eType="//domain/Risque" repository="//repositories/RisqueRepository">
+        <eParameters name="id">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositoryFindAllOperation" name="findAll" unique="false" upperBound="-1" eType="//domain/Risque" repository="//repositories/RisqueRepository"/>
+      <eOperations xsi:type="emf4java:RepositoryFindByCriteriaOperation" name="findByCriteria" unique="false" upperBound="-1" eType="//domain/Risque" repository="//repositories/RisqueRepository">
+        <eParameters name="risqueCriteria" eType="//repositories/criteria/RisqueCriteria"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositorySaveOperation" name="save" eType="//domain/Risque" repository="//repositories/RisqueRepository">
+        <eParameters name="risque" eType="//domain/Risque"/>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Repository" name="ProjectRepository" interface="true" entity="//domain/Project" criteria="//repositories/criteria/ProjectCriteria">
+      <eOperations xsi:type="emf4java:RepositoryFindByIdOperation" name="findById" eType="//domain/Project" repository="//repositories/ProjectRepository">
+        <eParameters name="id">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositoryFindAllOperation" name="findAll" unique="false" upperBound="-1" eType="//domain/Project" repository="//repositories/ProjectRepository"/>
+      <eOperations xsi:type="emf4java:RepositoryFindByCriteriaOperation" name="findByCriteria" unique="false" upperBound="-1" eType="//domain/Project" repository="//repositories/ProjectRepository">
+        <eParameters name="projectCriteria" eType="//repositories/criteria/ProjectCriteria"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositorySaveOperation" name="save" eType="//domain/Project" repository="//repositories/ProjectRepository">
+        <eParameters name="project" eType="//domain/Project"/>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Repository" name="PersistentImageRepository" interface="true" entity="//domain/PersistentImage" criteria="//repositories/criteria/PersistentImageCriteria">
+      <eOperations xsi:type="emf4java:RepositoryFindByIdOperation" name="findById" eType="//domain/PersistentImage" repository="//repositories/PersistentImageRepository">
+        <eParameters name="id">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositoryFindAllOperation" name="findAll" unique="false" upperBound="-1" eType="//domain/PersistentImage" repository="//repositories/PersistentImageRepository"/>
+      <eOperations xsi:type="emf4java:RepositoryFindByCriteriaOperation" name="findByCriteria" unique="false" upperBound="-1" eType="//domain/PersistentImage" repository="//repositories/PersistentImageRepository">
+        <eParameters name="persistentImageCriteria" eType="//repositories/criteria/PersistentImageCriteria"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositorySaveOperation" name="save" eType="//domain/PersistentImage" repository="//repositories/PersistentImageRepository">
+        <eParameters name="persistentimage" eType="//domain/PersistentImage"/>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Repository" name="PersistentImageDataRepository" interface="true" entity="//domain/PersistentImageData" criteria="//repositories/criteria/PersistentImageDataCriteria">
+      <eOperations xsi:type="emf4java:RepositoryFindByIdOperation" name="findById" eType="//domain/PersistentImageData" repository="//repositories/PersistentImageDataRepository">
+        <eParameters name="id">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositoryFindAllOperation" name="findAll" unique="false" upperBound="-1" eType="//domain/PersistentImageData" repository="//repositories/PersistentImageDataRepository"/>
+      <eOperations xsi:type="emf4java:RepositoryFindByCriteriaOperation" name="findByCriteria" unique="false" upperBound="-1" eType="//domain/PersistentImageData" repository="//repositories/PersistentImageDataRepository">
+        <eParameters name="persistentImageDataCriteria" eType="//repositories/criteria/PersistentImageDataCriteria"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositorySaveOperation" name="save" eType="//domain/PersistentImageData" repository="//repositories/PersistentImageDataRepository">
+        <eParameters name="persistentimagedata" eType="//domain/PersistentImageData"/>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Repository" name="ContactRepository" interface="true" entity="//domain/Contact" criteria="//repositories/criteria/ContactCriteria">
+      <eOperations xsi:type="emf4java:RepositoryFindByIdOperation" name="findById" eType="//domain/Contact" repository="//repositories/ContactRepository">
+        <eParameters name="id">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositoryFindAllOperation" name="findAll" unique="false" upperBound="-1" eType="//domain/Contact" repository="//repositories/ContactRepository"/>
+      <eOperations xsi:type="emf4java:RepositoryFindByCriteriaOperation" name="findByCriteria" unique="false" upperBound="-1" eType="//domain/Contact" repository="//repositories/ContactRepository">
+        <eParameters name="contactCriteria" eType="//repositories/criteria/ContactCriteria"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositorySaveOperation" name="save" eType="//domain/Contact" repository="//repositories/ContactRepository">
+        <eParameters name="contact" eType="//domain/Contact"/>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:EJClass" name="JPAPersistentImageRepository" eSuperTypes="//repositories/PersistentImageRepository">
+      <eAnnotations source="@org.springframework.stereotype.Repository">
+        <details key="value" value="&quot;persistentimageRepository&quot;"/>
+      </eAnnotations>
+      <eOperations xsi:type="emf4java:RepositoryFindByIdOperation" name="findById" eType="//domain/PersistentImage" repository="//repositories/PersistentImageRepository">
+        <eParameters name="id">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositoryFindAllOperation" name="findAll" unique="false" upperBound="-1" eType="//domain/PersistentImage" repository="//repositories/PersistentImageRepository"/>
+      <eOperations xsi:type="emf4java:RepositoryFindByCriteriaOperation" name="findByCriteria" unique="false" upperBound="-1" eType="//domain/PersistentImage" repository="//repositories/PersistentImageRepository">
+        <eParameters name="persistentImageCriteria" eType="//repositories/criteria/PersistentImageCriteria"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositorySaveOperation" name="save" eType="//domain/PersistentImage" repository="//repositories/PersistentImageRepository">
+        <eParameters name="persistentimage" eType="//domain/PersistentImage"/>
+      </eOperations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="entityManager">
+        <eAnnotations source="@javax.persistence.PersistenceContext"/>
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/Javax.library.ecore#//persistence/EntityManager"/>
+      </eStructuralFeatures>
+      <imports value="javax.persistence.TypedQuery"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:EJClass" name="JPAContactRepository" eSuperTypes="//repositories/ContactRepository">
+      <eAnnotations source="@org.springframework.stereotype.Repository">
+        <details key="value" value="&quot;contactRepository&quot;"/>
+      </eAnnotations>
+      <eOperations xsi:type="emf4java:RepositoryFindByIdOperation" name="findById" eType="//domain/Contact" repository="//repositories/ContactRepository">
+        <eParameters name="id">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositoryFindAllOperation" name="findAll" unique="false" upperBound="-1" eType="//domain/Contact" repository="//repositories/ContactRepository"/>
+      <eOperations xsi:type="emf4java:RepositoryFindByCriteriaOperation" name="findByCriteria" unique="false" upperBound="-1" eType="//domain/Contact" repository="//repositories/ContactRepository">
+        <eParameters name="contactCriteria" eType="//repositories/criteria/ContactCriteria"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositorySaveOperation" name="save" eType="//domain/Contact" repository="//repositories/ContactRepository">
+        <eParameters name="contact" eType="//domain/Contact"/>
+      </eOperations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="entityManager">
+        <eAnnotations source="@javax.persistence.PersistenceContext"/>
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/Javax.library.ecore#//persistence/EntityManager"/>
+      </eStructuralFeatures>
+      <imports value="javax.persistence.TypedQuery"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:EJClass" name="JPAAbstractEntityRepository" eSuperTypes="//repositories/AbstractEntityRepository">
+      <eAnnotations source="@org.springframework.stereotype.Repository">
+        <details key="value" value="&quot;abstractentityRepository&quot;"/>
+      </eAnnotations>
+      <eOperations xsi:type="emf4java:RepositoryFindByIdOperation" name="findById" eType="//domain/AbstractEntity" repository="//repositories/AbstractEntityRepository">
+        <eParameters name="id">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositoryFindAllOperation" name="findAll" unique="false" upperBound="-1" eType="//domain/AbstractEntity" repository="//repositories/AbstractEntityRepository"/>
+      <eOperations xsi:type="emf4java:RepositoryFindByCriteriaOperation" name="findByCriteria" unique="false" upperBound="-1" eType="//domain/AbstractEntity" repository="//repositories/AbstractEntityRepository">
+        <eParameters name="abstractEntityCriteria" eType="//repositories/criteria/AbstractEntityCriteria"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositorySaveOperation" name="save" eType="//domain/AbstractEntity" repository="//repositories/AbstractEntityRepository">
+        <eParameters name="abstractentity" eType="//domain/AbstractEntity"/>
+      </eOperations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="entityManager">
+        <eAnnotations source="@javax.persistence.PersistenceContext"/>
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/Javax.library.ecore#//persistence/EntityManager"/>
+      </eStructuralFeatures>
+      <imports value="javax.persistence.TypedQuery"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:EJClass" name="JPAFolderRepository" eSuperTypes="//repositories/FolderRepository">
+      <eAnnotations source="@org.springframework.stereotype.Repository">
+        <details key="value" value="&quot;folderRepository&quot;"/>
+      </eAnnotations>
+      <eOperations xsi:type="emf4java:RepositoryFindByIdOperation" name="findById" eType="//domain/Folder" repository="//repositories/FolderRepository">
+        <eParameters name="id">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositoryFindAllOperation" name="findAll" unique="false" upperBound="-1" eType="//domain/Folder" repository="//repositories/FolderRepository"/>
+      <eOperations xsi:type="emf4java:RepositoryFindByCriteriaOperation" name="findByCriteria" unique="false" upperBound="-1" eType="//domain/Folder" repository="//repositories/FolderRepository">
+        <eParameters name="folderCriteria" eType="//repositories/criteria/FolderCriteria"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositorySaveOperation" name="save" eType="//domain/Folder" repository="//repositories/FolderRepository">
+        <eParameters name="folder" eType="//domain/Folder"/>
+      </eOperations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="entityManager">
+        <eAnnotations source="@javax.persistence.PersistenceContext"/>
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/Javax.library.ecore#//persistence/EntityManager"/>
+      </eStructuralFeatures>
+      <imports value="javax.persistence.TypedQuery"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:EJClass" name="JPARisqueRepository" eSuperTypes="//repositories/RisqueRepository">
+      <eAnnotations source="@org.springframework.stereotype.Repository">
+        <details key="value" value="&quot;risqueRepository&quot;"/>
+      </eAnnotations>
+      <eOperations xsi:type="emf4java:RepositoryFindByIdOperation" name="findById" eType="//domain/Risque" repository="//repositories/RisqueRepository">
+        <eParameters name="id">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositoryFindAllOperation" name="findAll" unique="false" upperBound="-1" eType="//domain/Risque" repository="//repositories/RisqueRepository"/>
+      <eOperations xsi:type="emf4java:RepositoryFindByCriteriaOperation" name="findByCriteria" unique="false" upperBound="-1" eType="//domain/Risque" repository="//repositories/RisqueRepository">
+        <eParameters name="risqueCriteria" eType="//repositories/criteria/RisqueCriteria"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositorySaveOperation" name="save" eType="//domain/Risque" repository="//repositories/RisqueRepository">
+        <eParameters name="risque" eType="//domain/Risque"/>
+      </eOperations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="entityManager">
+        <eAnnotations source="@javax.persistence.PersistenceContext"/>
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/Javax.library.ecore#//persistence/EntityManager"/>
+      </eStructuralFeatures>
+      <imports value="javax.persistence.TypedQuery"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:EJClass" name="JPAPersistentImageDataRepository" eSuperTypes="//repositories/PersistentImageDataRepository">
+      <eAnnotations source="@org.springframework.stereotype.Repository">
+        <details key="value" value="&quot;persistentimagedataRepository&quot;"/>
+      </eAnnotations>
+      <eOperations xsi:type="emf4java:RepositoryFindByIdOperation" name="findById" eType="//domain/PersistentImageData" repository="//repositories/PersistentImageDataRepository">
+        <eParameters name="id">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositoryFindAllOperation" name="findAll" unique="false" upperBound="-1" eType="//domain/PersistentImageData" repository="//repositories/PersistentImageDataRepository"/>
+      <eOperations xsi:type="emf4java:RepositoryFindByCriteriaOperation" name="findByCriteria" unique="false" upperBound="-1" eType="//domain/PersistentImageData" repository="//repositories/PersistentImageDataRepository">
+        <eParameters name="persistentImageDataCriteria" eType="//repositories/criteria/PersistentImageDataCriteria"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositorySaveOperation" name="save" eType="//domain/PersistentImageData" repository="//repositories/PersistentImageDataRepository">
+        <eParameters name="persistentimagedata" eType="//domain/PersistentImageData"/>
+      </eOperations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="entityManager">
+        <eAnnotations source="@javax.persistence.PersistenceContext"/>
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/Javax.library.ecore#//persistence/EntityManager"/>
+      </eStructuralFeatures>
+      <imports value="javax.persistence.TypedQuery"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:EJClass" name="JPAProjectRepository" eSuperTypes="//repositories/ProjectRepository">
+      <eAnnotations source="@org.springframework.stereotype.Repository">
+        <details key="value" value="&quot;projectRepository&quot;"/>
+      </eAnnotations>
+      <eOperations xsi:type="emf4java:RepositoryFindByIdOperation" name="findById" eType="//domain/Project" repository="//repositories/ProjectRepository">
+        <eParameters name="id">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositoryFindAllOperation" name="findAll" unique="false" upperBound="-1" eType="//domain/Project" repository="//repositories/ProjectRepository"/>
+      <eOperations xsi:type="emf4java:RepositoryFindByCriteriaOperation" name="findByCriteria" unique="false" upperBound="-1" eType="//domain/Project" repository="//repositories/ProjectRepository">
+        <eParameters name="projectCriteria" eType="//repositories/criteria/ProjectCriteria"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:RepositorySaveOperation" name="save" eType="//domain/Project" repository="//repositories/ProjectRepository">
+        <eParameters name="project" eType="//domain/Project"/>
+      </eOperations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="entityManager">
+        <eAnnotations source="@javax.persistence.PersistenceContext"/>
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/Javax.library.ecore#//persistence/EntityManager"/>
+      </eStructuralFeatures>
+      <imports value="javax.persistence.TypedQuery"/>
+    </eClassifiers>
+    <eSubpackages name="criteria">
+      <eClassifiers xsi:type="emf4java:Criteria" name="RisqueCriteria" eSuperTypes="//repositories/criteria/AbstractEntityCriteria" mainEntity="//domain/Risque" fxcriteriawrapper="//fxwrapper/RisqueCriteriaWrapper">
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="key" originFeature="//domain/Risque/key">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="emf4java:Criteria" name="PersistentImageDataCriteria" eSuperTypes="//repositories/criteria/AbstractEntityCriteria" mainEntity="//domain/PersistentImageData" fxcriteriawrapper="//fxwrapper/PersistentImageDataCriteriaWrapper">
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="data" originFeature="//domain/PersistentImageData/data">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="emf4java:Criteria" name="ContactCriteria" eSuperTypes="//repositories/criteria/AbstractEntityCriteria" mainEntity="//domain/Contact" fxcriteriawrapper="//fxwrapper/ContactCriteriaWrapper">
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="name" originFeature="//domain/Contact/name">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="person" originFeature="//domain/Contact/person">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="adress1" originFeature="//domain/Contact/adress1">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="address2" originFeature="//domain/Contact/address2">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="zipCode" originFeature="//domain/Contact/zipCode">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="city" originFeature="//domain/Contact/city">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="email" originFeature="//domain/Contact/email">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="phone" originFeature="//domain/Contact/phone">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="siret" originFeature="//domain/Contact/siret">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="kind" eType="//domain/ContactKind" originFeature="//domain/Contact/kind"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="emf4java:Criteria" name="PersistentImageCriteria" eSuperTypes="//repositories/criteria/AbstractEntityCriteria" mainEntity="//domain/PersistentImage" fxcriteriawrapper="//fxwrapper/PersistentImageCriteriaWrapper">
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="title" originFeature="//domain/PersistentImage/title">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="sourceFile" originFeature="//domain/PersistentImage/sourceFile">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="preview" originFeature="//domain/PersistentImage/preview">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="error" originFeature="//domain/PersistentImage/error">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="dataId" originFeature="//domain/PersistentImage/dataId">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="emf4java:Criteria" name="ProjectCriteria" eSuperTypes="//repositories/criteria/AbstractEntityCriteria" mainEntity="//domain/Project" fxcriteriawrapper="//fxwrapper/ProjectCriteriaWrapper">
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="name" originFeature="//domain/Project/name">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="description" originFeature="//domain/Project/description">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="kind" eType="//domain/ProjectKind" originFeature="//domain/Project/kind"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="emf4java:Criteria" name="FolderCriteria" eSuperTypes="//repositories/criteria/AbstractEntityCriteria" mainEntity="//domain/Folder" fxcriteriawrapper="//fxwrapper/FolderCriteriaWrapper">
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="name" originFeature="//domain/Folder/name">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="displayOrderMin" originFeature="//domain/Folder/displayOrder" isMin="true">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="displayOrderMax" originFeature="//domain/Folder/displayOrder" isMax="true">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="emf4java:Criteria" name="AbstractEntityCriteria" mainEntity="//domain/AbstractEntity" fxcriteriawrapper="//fxwrapper/AbstractEntityCriteriaWrapper">
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="creationDateMin" originFeature="//domain/AbstractEntity/creationDate" isMin="true">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="creationDateMax" originFeature="//domain/AbstractEntity/creationDate" isMax="true">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="updateDateMin" originFeature="//domain/AbstractEntity/updateDate" isMin="true">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="updateDateMax" originFeature="//domain/AbstractEntity/updateDate" isMax="true">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="versionMin" originFeature="//domain/AbstractEntity/version" isMin="true">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="versionMax" originFeature="//domain/AbstractEntity/version" isMax="true">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="emf4java:CriteriaAttribute" name="id" iD="true" originFeature="//domain/AbstractEntity/id">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </eSubpackages>
+  </eSubpackages>
+  <eSubpackages name="fxwrapper">
+    <eClassifiers xsi:type="emf4java:FxEditWrapper" name="RisqueWrapper" entity="//domain/Risque">
+      <eOperations xsi:type="emf4java:FxWrapperConstructor" name="RisqueWrapper" businessObject="//fxwrapper/RisqueWrapper/risque" businessProperties="//fxwrapper/RisqueWrapper/versionProperty //fxwrapper/RisqueWrapper/idProperty //fxwrapper/RisqueWrapper/keyProperty">
+        <eParameters name="entity" eType="//domain/Risque"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxWrapperConstructor" name="RisqueWrapper" businessObject="//fxwrapper/RisqueWrapper/risque" businessProperties="//fxwrapper/RisqueWrapper/versionProperty //fxwrapper/RisqueWrapper/idProperty //fxwrapper/RisqueWrapper/keyProperty"/>
+      <eOperations xsi:type="emf4java:FxGetter" name="getVersion" fxAttribute="//fxwrapper/RisqueWrapper/versionProperty" setter="//fxwrapper/RisqueWrapper/setVersion">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getId" fxAttribute="//fxwrapper/RisqueWrapper/idProperty" setter="//fxwrapper/RisqueWrapper/setId">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getKey" fxAttribute="//fxwrapper/RisqueWrapper/keyProperty" setter="//fxwrapper/RisqueWrapper/setKey">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setVersion" fxAttribute="//fxwrapper/RisqueWrapper/versionProperty" getter="//fxwrapper/RisqueWrapper/getVersion">
+        <eParameters name="myVersion">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setId" fxAttribute="//fxwrapper/RisqueWrapper/idProperty" getter="//fxwrapper/RisqueWrapper/getId">
+        <eParameters name="myId">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setKey" fxAttribute="//fxwrapper/RisqueWrapper/keyProperty" getter="//fxwrapper/RisqueWrapper/getKey">
+        <eParameters name="myKey">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eParameters>
+      </eOperations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="risque" eType="//domain/Risque"/>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="versionProperty" domainAttribute="//domain/AbstractEntity/version">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/IntegerProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="idProperty" domainAttribute="//domain/AbstractEntity/id">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/LongProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="keyProperty" domainAttribute="//domain/Risque/key">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/StringProperty"/>
+      </eStructuralFeatures>
+      <imports value="javafx.beans.property.SimpleIntegerProperty"/>
+      <imports value="javafx.beans.property.SimpleLongProperty"/>
+      <imports value="javafx.beans.property.SimpleStringProperty"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:FxEditWrapper" name="AbstractEntityWrapper" entity="//domain/AbstractEntity">
+      <eOperations xsi:type="emf4java:FxWrapperConstructor" name="AbstractEntityWrapper" businessObject="//fxwrapper/AbstractEntityWrapper/abstractEntity" businessProperties="//fxwrapper/AbstractEntityWrapper/versionProperty //fxwrapper/AbstractEntityWrapper/idProperty">
+        <eParameters name="entity" eType="//domain/AbstractEntity"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxWrapperConstructor" name="AbstractEntityWrapper" businessObject="//fxwrapper/AbstractEntityWrapper/abstractEntity" businessProperties="//fxwrapper/AbstractEntityWrapper/versionProperty //fxwrapper/AbstractEntityWrapper/idProperty"/>
+      <eOperations xsi:type="emf4java:FxGetter" name="getVersion" fxAttribute="//fxwrapper/AbstractEntityWrapper/versionProperty" setter="//fxwrapper/AbstractEntityWrapper/setVersion">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getId" fxAttribute="//fxwrapper/AbstractEntityWrapper/idProperty" setter="//fxwrapper/AbstractEntityWrapper/setId">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setVersion" fxAttribute="//fxwrapper/AbstractEntityWrapper/versionProperty" getter="//fxwrapper/AbstractEntityWrapper/getVersion">
+        <eParameters name="myVersion">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setId" fxAttribute="//fxwrapper/AbstractEntityWrapper/idProperty" getter="//fxwrapper/AbstractEntityWrapper/getId">
+        <eParameters name="myId">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+        </eParameters>
+      </eOperations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="abstractEntity" eType="//domain/AbstractEntity"/>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="versionProperty" domainAttribute="//domain/AbstractEntity/version">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/IntegerProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="idProperty" domainAttribute="//domain/AbstractEntity/id">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/LongProperty"/>
+      </eStructuralFeatures>
+      <imports value="javafx.beans.property.SimpleIntegerProperty"/>
+      <imports value="javafx.beans.property.SimpleLongProperty"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:FxEditWrapper" name="FolderWrapper" entity="//domain/Folder">
+      <eOperations xsi:type="emf4java:FxWrapperConstructor" name="FolderWrapper" businessObject="//fxwrapper/FolderWrapper/folder" businessProperties="//fxwrapper/FolderWrapper/versionProperty //fxwrapper/FolderWrapper/idProperty //fxwrapper/FolderWrapper/nameProperty //fxwrapper/FolderWrapper/displayOrderProperty">
+        <eParameters name="entity" eType="//domain/Folder"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxWrapperConstructor" name="FolderWrapper" businessObject="//fxwrapper/FolderWrapper/folder" businessProperties="//fxwrapper/FolderWrapper/versionProperty //fxwrapper/FolderWrapper/idProperty //fxwrapper/FolderWrapper/nameProperty //fxwrapper/FolderWrapper/displayOrderProperty"/>
+      <eOperations xsi:type="emf4java:FxGetter" name="getVersion" fxAttribute="//fxwrapper/FolderWrapper/versionProperty" setter="//fxwrapper/FolderWrapper/setVersion">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getId" fxAttribute="//fxwrapper/FolderWrapper/idProperty" setter="//fxwrapper/FolderWrapper/setId">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getName" fxAttribute="//fxwrapper/FolderWrapper/nameProperty" setter="//fxwrapper/FolderWrapper/setName">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getDisplayOrder" fxAttribute="//fxwrapper/FolderWrapper/displayOrderProperty" setter="//fxwrapper/FolderWrapper/setDisplayOrder">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setVersion" fxAttribute="//fxwrapper/FolderWrapper/versionProperty" getter="//fxwrapper/FolderWrapper/getVersion">
+        <eParameters name="myVersion">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setId" fxAttribute="//fxwrapper/FolderWrapper/idProperty" getter="//fxwrapper/FolderWrapper/getId">
+        <eParameters name="myId">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setName" fxAttribute="//fxwrapper/FolderWrapper/nameProperty" getter="//fxwrapper/FolderWrapper/getName">
+        <eParameters name="myName">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setDisplayOrder" fxAttribute="//fxwrapper/FolderWrapper/displayOrderProperty" getter="//fxwrapper/FolderWrapper/getDisplayOrder">
+        <eParameters name="myDisplayOrder">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eParameters>
+      </eOperations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="folder" eType="//domain/Folder"/>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="versionProperty" domainAttribute="//domain/AbstractEntity/version">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/IntegerProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="idProperty" domainAttribute="//domain/AbstractEntity/id">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/LongProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="nameProperty" domainAttribute="//domain/Folder/name">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/StringProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="displayOrderProperty" domainAttribute="//domain/Folder/displayOrder">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/IntegerProperty"/>
+      </eStructuralFeatures>
+      <imports value="javafx.beans.property.SimpleIntegerProperty"/>
+      <imports value="javafx.beans.property.SimpleLongProperty"/>
+      <imports value="javafx.beans.property.SimpleStringProperty"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:FxEditWrapper" name="PersistentImageWrapper" entity="//domain/PersistentImage">
+      <eOperations xsi:type="emf4java:FxWrapperConstructor" name="PersistentImageWrapper" businessObject="//fxwrapper/PersistentImageWrapper/persistentImage" businessProperties="//fxwrapper/PersistentImageWrapper/versionProperty //fxwrapper/PersistentImageWrapper/idProperty //fxwrapper/PersistentImageWrapper/titleProperty //fxwrapper/PersistentImageWrapper/sourceFileProperty //fxwrapper/PersistentImageWrapper/previewProperty //fxwrapper/PersistentImageWrapper/errorProperty //fxwrapper/PersistentImageWrapper/dataIdProperty">
+        <eParameters name="entity" eType="//domain/PersistentImage"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxWrapperConstructor" name="PersistentImageWrapper" businessObject="//fxwrapper/PersistentImageWrapper/persistentImage" businessProperties="//fxwrapper/PersistentImageWrapper/versionProperty //fxwrapper/PersistentImageWrapper/idProperty //fxwrapper/PersistentImageWrapper/titleProperty //fxwrapper/PersistentImageWrapper/sourceFileProperty //fxwrapper/PersistentImageWrapper/previewProperty //fxwrapper/PersistentImageWrapper/errorProperty //fxwrapper/PersistentImageWrapper/dataIdProperty"/>
+      <eOperations xsi:type="emf4java:FxGetter" name="getVersion" fxAttribute="//fxwrapper/PersistentImageWrapper/versionProperty" setter="//fxwrapper/PersistentImageWrapper/setVersion">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getId" fxAttribute="//fxwrapper/PersistentImageWrapper/idProperty" setter="//fxwrapper/PersistentImageWrapper/setId">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getTitle" fxAttribute="//fxwrapper/PersistentImageWrapper/titleProperty" setter="//fxwrapper/PersistentImageWrapper/setTitle">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getSourceFile" fxAttribute="//fxwrapper/PersistentImageWrapper/sourceFileProperty" setter="//fxwrapper/PersistentImageWrapper/setSourceFile">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getPreview" fxAttribute="//fxwrapper/PersistentImageWrapper/previewProperty" setter="//fxwrapper/PersistentImageWrapper/setPreview">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getError" fxAttribute="//fxwrapper/PersistentImageWrapper/errorProperty" setter="//fxwrapper/PersistentImageWrapper/setError">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getDataId" fxAttribute="//fxwrapper/PersistentImageWrapper/dataIdProperty" setter="//fxwrapper/PersistentImageWrapper/setDataId">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setVersion" fxAttribute="//fxwrapper/PersistentImageWrapper/versionProperty" getter="//fxwrapper/PersistentImageWrapper/getVersion">
+        <eParameters name="myVersion">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setId" fxAttribute="//fxwrapper/PersistentImageWrapper/idProperty" getter="//fxwrapper/PersistentImageWrapper/getId">
+        <eParameters name="myId">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setTitle" fxAttribute="//fxwrapper/PersistentImageWrapper/titleProperty" getter="//fxwrapper/PersistentImageWrapper/getTitle">
+        <eParameters name="myTitle">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setSourceFile" fxAttribute="//fxwrapper/PersistentImageWrapper/sourceFileProperty" getter="//fxwrapper/PersistentImageWrapper/getSourceFile">
+        <eParameters name="mySourceFile">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setPreview" fxAttribute="//fxwrapper/PersistentImageWrapper/previewProperty" getter="//fxwrapper/PersistentImageWrapper/getPreview">
+        <eParameters name="myPreview">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setError" fxAttribute="//fxwrapper/PersistentImageWrapper/errorProperty" getter="//fxwrapper/PersistentImageWrapper/getError">
+        <eParameters name="myError">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setDataId" fxAttribute="//fxwrapper/PersistentImageWrapper/dataIdProperty" getter="//fxwrapper/PersistentImageWrapper/getDataId">
+        <eParameters name="myDataId">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eParameters>
+      </eOperations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="persistentImage" eType="//domain/PersistentImage"/>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="versionProperty" domainAttribute="//domain/AbstractEntity/version">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/IntegerProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="idProperty" domainAttribute="//domain/AbstractEntity/id">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/LongProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="titleProperty" domainAttribute="//domain/PersistentImage/title">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/StringProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="sourceFileProperty" domainAttribute="//domain/PersistentImage/sourceFile">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/StringProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="previewProperty" domainAttribute="//domain/PersistentImage/preview">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/StringProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="errorProperty" domainAttribute="//domain/PersistentImage/error">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/BooleanProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="dataIdProperty" domainAttribute="//domain/PersistentImage/dataId">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/StringProperty"/>
+      </eStructuralFeatures>
+      <imports value="javafx.beans.property.SimpleIntegerProperty"/>
+      <imports value="javafx.beans.property.SimpleLongProperty"/>
+      <imports value="javafx.beans.property.SimpleStringProperty"/>
+      <imports value="javafx.beans.property.SimpleStringProperty"/>
+      <imports value="javafx.beans.property.SimpleStringProperty"/>
+      <imports value="javafx.beans.property.SimpleBooleanProperty"/>
+      <imports value="javafx.beans.property.SimpleStringProperty"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:FxEditWrapper" name="ContactWrapper" entity="//domain/Contact">
+      <eOperations xsi:type="emf4java:FxWrapperConstructor" name="ContactWrapper" businessObject="//fxwrapper/ContactWrapper/contact" businessProperties="//fxwrapper/ContactWrapper/versionProperty //fxwrapper/ContactWrapper/idProperty //fxwrapper/ContactWrapper/nameProperty //fxwrapper/ContactWrapper/personProperty //fxwrapper/ContactWrapper/adress1Property //fxwrapper/ContactWrapper/address2Property //fxwrapper/ContactWrapper/zipCodeProperty //fxwrapper/ContactWrapper/cityProperty //fxwrapper/ContactWrapper/emailProperty //fxwrapper/ContactWrapper/phoneProperty //fxwrapper/ContactWrapper/siretProperty" businessReferences="//fxwrapper/ContactWrapper/imageProperty">
+        <eParameters name="entity" eType="//domain/Contact"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxWrapperConstructor" name="ContactWrapper" businessObject="//fxwrapper/ContactWrapper/contact" businessProperties="//fxwrapper/ContactWrapper/versionProperty //fxwrapper/ContactWrapper/idProperty //fxwrapper/ContactWrapper/nameProperty //fxwrapper/ContactWrapper/personProperty //fxwrapper/ContactWrapper/adress1Property //fxwrapper/ContactWrapper/address2Property //fxwrapper/ContactWrapper/zipCodeProperty //fxwrapper/ContactWrapper/cityProperty //fxwrapper/ContactWrapper/emailProperty //fxwrapper/ContactWrapper/phoneProperty //fxwrapper/ContactWrapper/siretProperty" businessReferences="//fxwrapper/ContactWrapper/imageProperty"/>
+      <eOperations xsi:type="emf4java:FxGetter" name="getVersion" fxAttribute="//fxwrapper/ContactWrapper/versionProperty" setter="//fxwrapper/ContactWrapper/setVersion">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getId" fxAttribute="//fxwrapper/ContactWrapper/idProperty" setter="//fxwrapper/ContactWrapper/setId">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getName" fxAttribute="//fxwrapper/ContactWrapper/nameProperty" setter="//fxwrapper/ContactWrapper/setName">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getPerson" fxAttribute="//fxwrapper/ContactWrapper/personProperty" setter="//fxwrapper/ContactWrapper/setPerson">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getAdress1" fxAttribute="//fxwrapper/ContactWrapper/adress1Property" setter="//fxwrapper/ContactWrapper/setAdress1">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getAddress2" fxAttribute="//fxwrapper/ContactWrapper/address2Property" setter="//fxwrapper/ContactWrapper/setAddress2">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getZipCode" fxAttribute="//fxwrapper/ContactWrapper/zipCodeProperty" setter="//fxwrapper/ContactWrapper/setZipCode">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getCity" fxAttribute="//fxwrapper/ContactWrapper/cityProperty" setter="//fxwrapper/ContactWrapper/setCity">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getEmail" fxAttribute="//fxwrapper/ContactWrapper/emailProperty" setter="//fxwrapper/ContactWrapper/setEmail">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getPhone" fxAttribute="//fxwrapper/ContactWrapper/phoneProperty" setter="//fxwrapper/ContactWrapper/setPhone">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getSiret" fxAttribute="//fxwrapper/ContactWrapper/siretProperty" setter="//fxwrapper/ContactWrapper/setSiret">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setVersion" fxAttribute="//fxwrapper/ContactWrapper/versionProperty" getter="//fxwrapper/ContactWrapper/getVersion">
+        <eParameters name="myVersion">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setId" fxAttribute="//fxwrapper/ContactWrapper/idProperty" getter="//fxwrapper/ContactWrapper/getId">
+        <eParameters name="myId">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setName" fxAttribute="//fxwrapper/ContactWrapper/nameProperty" getter="//fxwrapper/ContactWrapper/getName">
+        <eParameters name="myName">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setPerson" fxAttribute="//fxwrapper/ContactWrapper/personProperty" getter="//fxwrapper/ContactWrapper/getPerson">
+        <eParameters name="myPerson">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setAdress1" fxAttribute="//fxwrapper/ContactWrapper/adress1Property" getter="//fxwrapper/ContactWrapper/getAdress1">
+        <eParameters name="myAdress1">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setAddress2" fxAttribute="//fxwrapper/ContactWrapper/address2Property" getter="//fxwrapper/ContactWrapper/getAddress2">
+        <eParameters name="myAddress2">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setZipCode" fxAttribute="//fxwrapper/ContactWrapper/zipCodeProperty" getter="//fxwrapper/ContactWrapper/getZipCode">
+        <eParameters name="myZipCode">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setCity" fxAttribute="//fxwrapper/ContactWrapper/cityProperty" getter="//fxwrapper/ContactWrapper/getCity">
+        <eParameters name="myCity">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setEmail" fxAttribute="//fxwrapper/ContactWrapper/emailProperty" getter="//fxwrapper/ContactWrapper/getEmail">
+        <eParameters name="myEmail">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setPhone" fxAttribute="//fxwrapper/ContactWrapper/phoneProperty" getter="//fxwrapper/ContactWrapper/getPhone">
+        <eParameters name="myPhone">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setSiret" fxAttribute="//fxwrapper/ContactWrapper/siretProperty" getter="//fxwrapper/ContactWrapper/getSiret">
+        <eParameters name="mySiret">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getImage" lowerBound="1" eType="//ObjectProperty%3CPersistentImage%3E.1" fxReference="//fxwrapper/ContactWrapper/imageProperty" setter="//fxwrapper/ContactWrapper/setImage"/>
+      <eOperations xsi:type="emf4java:FxSetter" name="setImage" lowerBound="1" fxReference="//fxwrapper/ContactWrapper/imageProperty" getter="//fxwrapper/ContactWrapper/getImage">
+        <eParameters name="myImage" eType="//ObjectProperty%3CPersistentImage%3E.1"/>
+      </eOperations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="contact" eType="//domain/Contact"/>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="versionProperty" domainAttribute="//domain/AbstractEntity/version">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/IntegerProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="idProperty" domainAttribute="//domain/AbstractEntity/id">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/LongProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="nameProperty" domainAttribute="//domain/Contact/name">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/StringProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="personProperty" domainAttribute="//domain/Contact/person">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/StringProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="adress1Property" domainAttribute="//domain/Contact/adress1">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/StringProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="address2Property" domainAttribute="//domain/Contact/address2">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/StringProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="zipCodeProperty" domainAttribute="//domain/Contact/zipCode">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/StringProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="cityProperty" domainAttribute="//domain/Contact/city">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/StringProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="emailProperty" domainAttribute="//domain/Contact/email">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/StringProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="phoneProperty" domainAttribute="//domain/Contact/phone">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/StringProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="siretProperty" domainAttribute="//domain/Contact/siret">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/StringProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperReference" name="imageProperty" eType="//ObjectProperty%3CPersistentImage%3E.1" changeable="false" domainReference="//domain/Contact/image"/>
+      <imports value="javafx.beans.property.SimpleIntegerProperty"/>
+      <imports value="javafx.beans.property.SimpleLongProperty"/>
+      <imports value="javafx.beans.property.SimpleStringProperty"/>
+      <imports value="javafx.beans.property.SimpleStringProperty"/>
+      <imports value="javafx.beans.property.SimpleStringProperty"/>
+      <imports value="javafx.beans.property.SimpleStringProperty"/>
+      <imports value="javafx.beans.property.SimpleStringProperty"/>
+      <imports value="javafx.beans.property.SimpleStringProperty"/>
+      <imports value="javafx.beans.property.SimpleStringProperty"/>
+      <imports value="javafx.beans.property.SimpleStringProperty"/>
+      <imports value="javafx.beans.property.SimpleStringProperty"/>
+      <imports/>
+      <imports value="javafx.beans.property.ObjectProperty"/>
+      <imports value="javafx.beans.property.SimpleObjectProperty"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:FxEditWrapper" name="PersistentImageDataWrapper" entity="//domain/PersistentImageData">
+      <eOperations xsi:type="emf4java:FxWrapperConstructor" name="PersistentImageDataWrapper" businessObject="//fxwrapper/PersistentImageDataWrapper/persistentImageData" businessProperties="//fxwrapper/PersistentImageDataWrapper/versionProperty //fxwrapper/PersistentImageDataWrapper/idProperty //fxwrapper/PersistentImageDataWrapper/dataProperty">
+        <eParameters name="entity" eType="//domain/PersistentImageData"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxWrapperConstructor" name="PersistentImageDataWrapper" businessObject="//fxwrapper/PersistentImageDataWrapper/persistentImageData" businessProperties="//fxwrapper/PersistentImageDataWrapper/versionProperty //fxwrapper/PersistentImageDataWrapper/idProperty //fxwrapper/PersistentImageDataWrapper/dataProperty"/>
+      <eOperations xsi:type="emf4java:FxGetter" name="getVersion" fxAttribute="//fxwrapper/PersistentImageDataWrapper/versionProperty" setter="//fxwrapper/PersistentImageDataWrapper/setVersion">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getId" fxAttribute="//fxwrapper/PersistentImageDataWrapper/idProperty" setter="//fxwrapper/PersistentImageDataWrapper/setId">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getData" fxAttribute="//fxwrapper/PersistentImageDataWrapper/dataProperty" setter="//fxwrapper/PersistentImageDataWrapper/setData">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setVersion" fxAttribute="//fxwrapper/PersistentImageDataWrapper/versionProperty" getter="//fxwrapper/PersistentImageDataWrapper/getVersion">
+        <eParameters name="myVersion">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setId" fxAttribute="//fxwrapper/PersistentImageDataWrapper/idProperty" getter="//fxwrapper/PersistentImageDataWrapper/getId">
+        <eParameters name="myId">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setData" fxAttribute="//fxwrapper/PersistentImageDataWrapper/dataProperty" getter="//fxwrapper/PersistentImageDataWrapper/getData">
+        <eParameters name="myData">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eParameters>
+      </eOperations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="persistentImageData" eType="//domain/PersistentImageData"/>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="versionProperty" domainAttribute="//domain/AbstractEntity/version">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/IntegerProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="idProperty" domainAttribute="//domain/AbstractEntity/id">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/LongProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="dataProperty" domainAttribute="//domain/PersistentImageData/data">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/StringProperty"/>
+      </eStructuralFeatures>
+      <imports value="javafx.beans.property.SimpleIntegerProperty"/>
+      <imports value="javafx.beans.property.SimpleLongProperty"/>
+      <imports value="javafx.beans.property.SimpleStringProperty"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:FxEditWrapper" name="ProjectWrapper" entity="//domain/Project">
+      <eOperations xsi:type="emf4java:FxWrapperConstructor" name="ProjectWrapper" businessObject="//fxwrapper/ProjectWrapper/project" businessProperties="//fxwrapper/ProjectWrapper/versionProperty //fxwrapper/ProjectWrapper/idProperty //fxwrapper/ProjectWrapper/nameProperty //fxwrapper/ProjectWrapper/descriptionProperty" businessReferences="//fxwrapper/ProjectWrapper/risqueProperty //fxwrapper/ProjectWrapper/imageProperty //fxwrapper/ProjectWrapper/contactsProperty">
+        <eParameters name="entity" eType="//domain/Project"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxWrapperConstructor" name="ProjectWrapper" businessObject="//fxwrapper/ProjectWrapper/project" businessProperties="//fxwrapper/ProjectWrapper/versionProperty //fxwrapper/ProjectWrapper/idProperty //fxwrapper/ProjectWrapper/nameProperty //fxwrapper/ProjectWrapper/descriptionProperty" businessReferences="//fxwrapper/ProjectWrapper/risqueProperty //fxwrapper/ProjectWrapper/imageProperty //fxwrapper/ProjectWrapper/contactsProperty"/>
+      <eOperations xsi:type="emf4java:FxGetter" name="getVersion" fxAttribute="//fxwrapper/ProjectWrapper/versionProperty" setter="//fxwrapper/ProjectWrapper/setVersion">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getId" fxAttribute="//fxwrapper/ProjectWrapper/idProperty" setter="//fxwrapper/ProjectWrapper/setId">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getName" fxAttribute="//fxwrapper/ProjectWrapper/nameProperty" setter="//fxwrapper/ProjectWrapper/setName">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getDescription" fxAttribute="//fxwrapper/ProjectWrapper/descriptionProperty" setter="//fxwrapper/ProjectWrapper/setDescription">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setVersion" fxAttribute="//fxwrapper/ProjectWrapper/versionProperty" getter="//fxwrapper/ProjectWrapper/getVersion">
+        <eParameters name="myVersion">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setId" fxAttribute="//fxwrapper/ProjectWrapper/idProperty" getter="//fxwrapper/ProjectWrapper/getId">
+        <eParameters name="myId">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setName" fxAttribute="//fxwrapper/ProjectWrapper/nameProperty" getter="//fxwrapper/ProjectWrapper/getName">
+        <eParameters name="myName">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setDescription" fxAttribute="//fxwrapper/ProjectWrapper/descriptionProperty" getter="//fxwrapper/ProjectWrapper/getDescription">
+        <eParameters name="myDescription">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getRisque" lowerBound="1" eType="//ObjectProperty%3CRisque%3E" fxReference="//fxwrapper/ProjectWrapper/risqueProperty" setter="//fxwrapper/ProjectWrapper/setRisque"/>
+      <eOperations xsi:type="emf4java:FxGetter" name="getImage" lowerBound="1" eType="//ObjectProperty%3CPersistentImage%3E" fxReference="//fxwrapper/ProjectWrapper/imageProperty" setter="//fxwrapper/ProjectWrapper/setImage"/>
+      <eOperations xsi:type="emf4java:FxSetter" name="setRisque" lowerBound="1" fxReference="//fxwrapper/ProjectWrapper/risqueProperty" getter="//fxwrapper/ProjectWrapper/getRisque">
+        <eParameters name="myRisque" eType="//ObjectProperty%3CRisque%3E"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setImage" lowerBound="1" fxReference="//fxwrapper/ProjectWrapper/imageProperty" getter="//fxwrapper/ProjectWrapper/getImage">
+        <eParameters name="myImage" eType="//ObjectProperty%3CPersistentImage%3E"/>
+      </eOperations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="project" eType="//domain/Project"/>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="versionProperty" domainAttribute="//domain/AbstractEntity/version">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/IntegerProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="idProperty" domainAttribute="//domain/AbstractEntity/id">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/LongProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="nameProperty" domainAttribute="//domain/Project/name">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/StringProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="descriptionProperty" domainAttribute="//domain/Project/description">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/StringProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperReference" name="risqueProperty" eType="//ObjectProperty%3CRisque%3E" changeable="false" domainReference="//domain/Project/risque"/>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperReference" name="imageProperty" eType="//ObjectProperty%3CPersistentImage%3E" changeable="false" domainReference="//domain/Project/image"/>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperReference" name="contactsProperty" eType="//ObservableList%3CContactWrapper%3E" changeable="false" domainReference="//domain/Project/contacts" isList="true"/>
+      <imports value="javafx.beans.property.SimpleIntegerProperty"/>
+      <imports value="javafx.beans.property.SimpleLongProperty"/>
+      <imports value="javafx.beans.property.SimpleStringProperty"/>
+      <imports value="javafx.beans.property.SimpleStringProperty"/>
+      <imports/>
+      <imports/>
+      <imports/>
+      <imports value="javafx.beans.property.ObjectProperty"/>
+      <imports value="javafx.beans.property.SimpleObjectProperty"/>
+      <imports value="javafx.collections.ObservableList"/>
+      <imports value="javafx.collections.FXCollections"/>
+      <imports value="java.util.ArrayList"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:FxCriteriaWrapper" name="ContactCriteriaWrapper" criteria="//repositories/criteria/ContactCriteria">
+      <eOperations xsi:type="emf4java:FxWrapperConstructor" name="ContactCriteriaWrapper" businessObject="//fxwrapper/ContactCriteriaWrapper/contactCriteria" businessProperties="//fxwrapper/ContactCriteriaWrapper/versionMinProperty //fxwrapper/ContactCriteriaWrapper/versionMaxProperty //fxwrapper/ContactCriteriaWrapper/idProperty //fxwrapper/ContactCriteriaWrapper/nameProperty //fxwrapper/ContactCriteriaWrapper/personProperty //fxwrapper/ContactCriteriaWrapper/adress1Property //fxwrapper/ContactCriteriaWrapper/address2Property //fxwrapper/ContactCriteriaWrapper/zipCodeProperty //fxwrapper/ContactCriteriaWrapper/cityProperty //fxwrapper/ContactCriteriaWrapper/emailProperty //fxwrapper/ContactCriteriaWrapper/phoneProperty //fxwrapper/ContactCriteriaWrapper/siretProperty">
+        <eParameters name="entity" eType="//repositories/criteria/ContactCriteria"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxWrapperConstructor" name="ContactCriteriaWrapper" businessObject="//fxwrapper/ContactCriteriaWrapper/contactCriteria" businessProperties="//fxwrapper/ContactCriteriaWrapper/versionMinProperty //fxwrapper/ContactCriteriaWrapper/versionMaxProperty //fxwrapper/ContactCriteriaWrapper/idProperty //fxwrapper/ContactCriteriaWrapper/nameProperty //fxwrapper/ContactCriteriaWrapper/personProperty //fxwrapper/ContactCriteriaWrapper/adress1Property //fxwrapper/ContactCriteriaWrapper/address2Property //fxwrapper/ContactCriteriaWrapper/zipCodeProperty //fxwrapper/ContactCriteriaWrapper/cityProperty //fxwrapper/ContactCriteriaWrapper/emailProperty //fxwrapper/ContactCriteriaWrapper/phoneProperty //fxwrapper/ContactCriteriaWrapper/siretProperty"/>
+      <eOperations xsi:type="emf4java:FxGetter" name="getVersionMin" fxAttribute="//fxwrapper/ContactCriteriaWrapper/versionMinProperty" setter="//fxwrapper/ContactCriteriaWrapper/setVersionMin">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getVersionMax" fxAttribute="//fxwrapper/ContactCriteriaWrapper/versionMaxProperty" setter="//fxwrapper/ContactCriteriaWrapper/setVersionMax">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getId" fxAttribute="//fxwrapper/ContactCriteriaWrapper/idProperty" setter="//fxwrapper/ContactCriteriaWrapper/setId">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getName" fxAttribute="//fxwrapper/ContactCriteriaWrapper/nameProperty" setter="//fxwrapper/ContactCriteriaWrapper/setName">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getPerson" fxAttribute="//fxwrapper/ContactCriteriaWrapper/personProperty" setter="//fxwrapper/ContactCriteriaWrapper/setPerson">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getAdress1" fxAttribute="//fxwrapper/ContactCriteriaWrapper/adress1Property" setter="//fxwrapper/ContactCriteriaWrapper/setAdress1">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getAddress2" fxAttribute="//fxwrapper/ContactCriteriaWrapper/address2Property" setter="//fxwrapper/ContactCriteriaWrapper/setAddress2">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getZipCode" fxAttribute="//fxwrapper/ContactCriteriaWrapper/zipCodeProperty" setter="//fxwrapper/ContactCriteriaWrapper/setZipCode">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getCity" fxAttribute="//fxwrapper/ContactCriteriaWrapper/cityProperty" setter="//fxwrapper/ContactCriteriaWrapper/setCity">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getEmail" fxAttribute="//fxwrapper/ContactCriteriaWrapper/emailProperty" setter="//fxwrapper/ContactCriteriaWrapper/setEmail">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getPhone" fxAttribute="//fxwrapper/ContactCriteriaWrapper/phoneProperty" setter="//fxwrapper/ContactCriteriaWrapper/setPhone">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getSiret" fxAttribute="//fxwrapper/ContactCriteriaWrapper/siretProperty" setter="//fxwrapper/ContactCriteriaWrapper/setSiret">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setVersionMin" fxAttribute="//fxwrapper/ContactCriteriaWrapper/versionMinProperty" getter="//fxwrapper/ContactCriteriaWrapper/getVersionMin">
+        <eParameters name="myVersionMin">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setVersionMax" fxAttribute="//fxwrapper/ContactCriteriaWrapper/versionMaxProperty" getter="//fxwrapper/ContactCriteriaWrapper/getVersionMax">
+        <eParameters name="myVersionMax">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setId" fxAttribute="//fxwrapper/ContactCriteriaWrapper/idProperty" getter="//fxwrapper/ContactCriteriaWrapper/getId">
+        <eParameters name="myId">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setName" fxAttribute="//fxwrapper/ContactCriteriaWrapper/nameProperty" getter="//fxwrapper/ContactCriteriaWrapper/getName">
+        <eParameters name="myName">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setPerson" fxAttribute="//fxwrapper/ContactCriteriaWrapper/personProperty" getter="//fxwrapper/ContactCriteriaWrapper/getPerson">
+        <eParameters name="myPerson">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setAdress1" fxAttribute="//fxwrapper/ContactCriteriaWrapper/adress1Property" getter="//fxwrapper/ContactCriteriaWrapper/getAdress1">
+        <eParameters name="myAdress1">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setAddress2" fxAttribute="//fxwrapper/ContactCriteriaWrapper/address2Property" getter="//fxwrapper/ContactCriteriaWrapper/getAddress2">
+        <eParameters name="myAddress2">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setZipCode" fxAttribute="//fxwrapper/ContactCriteriaWrapper/zipCodeProperty" getter="//fxwrapper/ContactCriteriaWrapper/getZipCode">
+        <eParameters name="myZipCode">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setCity" fxAttribute="//fxwrapper/ContactCriteriaWrapper/cityProperty" getter="//fxwrapper/ContactCriteriaWrapper/getCity">
+        <eParameters name="myCity">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setEmail" fxAttribute="//fxwrapper/ContactCriteriaWrapper/emailProperty" getter="//fxwrapper/ContactCriteriaWrapper/getEmail">
+        <eParameters name="myEmail">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setPhone" fxAttribute="//fxwrapper/ContactCriteriaWrapper/phoneProperty" getter="//fxwrapper/ContactCriteriaWrapper/getPhone">
+        <eParameters name="myPhone">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setSiret" fxAttribute="//fxwrapper/ContactCriteriaWrapper/siretProperty" getter="//fxwrapper/ContactCriteriaWrapper/getSiret">
+        <eParameters name="mySiret">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eParameters>
+      </eOperations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="contactCriteria" eType="//repositories/criteria/ContactCriteria"/>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="versionMinProperty" domainAttribute="//repositories/criteria/AbstractEntityCriteria/versionMin">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/IntegerProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="versionMaxProperty" domainAttribute="//repositories/criteria/AbstractEntityCriteria/versionMax">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/IntegerProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="idProperty" domainAttribute="//repositories/criteria/AbstractEntityCriteria/id">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/LongProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="nameProperty" domainAttribute="//repositories/criteria/ContactCriteria/name">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/StringProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="personProperty" domainAttribute="//repositories/criteria/ContactCriteria/person">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/StringProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="adress1Property" domainAttribute="//repositories/criteria/ContactCriteria/adress1">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/StringProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="address2Property" domainAttribute="//repositories/criteria/ContactCriteria/address2">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/StringProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="zipCodeProperty" domainAttribute="//repositories/criteria/ContactCriteria/zipCode">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/StringProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="cityProperty" domainAttribute="//repositories/criteria/ContactCriteria/city">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/StringProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="emailProperty" domainAttribute="//repositories/criteria/ContactCriteria/email">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/StringProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="phoneProperty" domainAttribute="//repositories/criteria/ContactCriteria/phone">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/StringProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="siretProperty" domainAttribute="//repositories/criteria/ContactCriteria/siret">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/StringProperty"/>
+      </eStructuralFeatures>
+      <imports value="javafx.beans.property.SimpleIntegerProperty"/>
+      <imports value="javafx.beans.property.SimpleLongProperty"/>
+      <imports value="javafx.beans.property.SimpleStringProperty"/>
+      <imports value="javafx.beans.property.SimpleStringProperty"/>
+      <imports value="javafx.beans.property.SimpleStringProperty"/>
+      <imports value="javafx.beans.property.SimpleStringProperty"/>
+      <imports value="javafx.beans.property.SimpleStringProperty"/>
+      <imports value="javafx.beans.property.SimpleStringProperty"/>
+      <imports value="javafx.beans.property.SimpleStringProperty"/>
+      <imports value="javafx.beans.property.SimpleStringProperty"/>
+      <imports value="javafx.beans.property.SimpleStringProperty"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:FxCriteriaWrapper" name="AbstractEntityCriteriaWrapper" criteria="//repositories/criteria/AbstractEntityCriteria">
+      <eOperations xsi:type="emf4java:FxWrapperConstructor" name="AbstractEntityCriteriaWrapper" businessObject="//fxwrapper/AbstractEntityCriteriaWrapper/abstractEntityCriteria" businessProperties="//fxwrapper/AbstractEntityCriteriaWrapper/versionMinProperty //fxwrapper/AbstractEntityCriteriaWrapper/versionMaxProperty //fxwrapper/AbstractEntityCriteriaWrapper/idProperty">
+        <eParameters name="entity" eType="//repositories/criteria/AbstractEntityCriteria"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxWrapperConstructor" name="AbstractEntityCriteriaWrapper" businessObject="//fxwrapper/AbstractEntityCriteriaWrapper/abstractEntityCriteria" businessProperties="//fxwrapper/AbstractEntityCriteriaWrapper/versionMinProperty //fxwrapper/AbstractEntityCriteriaWrapper/versionMaxProperty //fxwrapper/AbstractEntityCriteriaWrapper/idProperty"/>
+      <eOperations xsi:type="emf4java:FxGetter" name="getVersionMin" fxAttribute="//fxwrapper/AbstractEntityCriteriaWrapper/versionMinProperty" setter="//fxwrapper/AbstractEntityCriteriaWrapper/setVersionMin">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getVersionMax" fxAttribute="//fxwrapper/AbstractEntityCriteriaWrapper/versionMaxProperty" setter="//fxwrapper/AbstractEntityCriteriaWrapper/setVersionMax">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getId" fxAttribute="//fxwrapper/AbstractEntityCriteriaWrapper/idProperty" setter="//fxwrapper/AbstractEntityCriteriaWrapper/setId">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setVersionMin" fxAttribute="//fxwrapper/AbstractEntityCriteriaWrapper/versionMinProperty" getter="//fxwrapper/AbstractEntityCriteriaWrapper/getVersionMin">
+        <eParameters name="myVersionMin">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setVersionMax" fxAttribute="//fxwrapper/AbstractEntityCriteriaWrapper/versionMaxProperty" getter="//fxwrapper/AbstractEntityCriteriaWrapper/getVersionMax">
+        <eParameters name="myVersionMax">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setId" fxAttribute="//fxwrapper/AbstractEntityCriteriaWrapper/idProperty" getter="//fxwrapper/AbstractEntityCriteriaWrapper/getId">
+        <eParameters name="myId">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+        </eParameters>
+      </eOperations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="abstractEntityCriteria" eType="//repositories/criteria/AbstractEntityCriteria"/>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="versionMinProperty" domainAttribute="//repositories/criteria/AbstractEntityCriteria/versionMin">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/IntegerProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="versionMaxProperty" domainAttribute="//repositories/criteria/AbstractEntityCriteria/versionMax">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/IntegerProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="idProperty" domainAttribute="//repositories/criteria/AbstractEntityCriteria/id">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/LongProperty"/>
+      </eStructuralFeatures>
+      <imports value="javafx.beans.property.SimpleIntegerProperty"/>
+      <imports value="javafx.beans.property.SimpleLongProperty"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:FxCriteriaWrapper" name="PersistentImageCriteriaWrapper" criteria="//repositories/criteria/PersistentImageCriteria">
+      <eOperations xsi:type="emf4java:FxWrapperConstructor" name="PersistentImageCriteriaWrapper" businessObject="//fxwrapper/PersistentImageCriteriaWrapper/persistentImageCriteria" businessProperties="//fxwrapper/PersistentImageCriteriaWrapper/versionMinProperty //fxwrapper/PersistentImageCriteriaWrapper/versionMaxProperty //fxwrapper/PersistentImageCriteriaWrapper/idProperty //fxwrapper/PersistentImageCriteriaWrapper/titleProperty //fxwrapper/PersistentImageCriteriaWrapper/sourceFileProperty //fxwrapper/PersistentImageCriteriaWrapper/previewProperty //fxwrapper/PersistentImageCriteriaWrapper/errorProperty //fxwrapper/PersistentImageCriteriaWrapper/dataIdProperty">
+        <eParameters name="entity" eType="//repositories/criteria/PersistentImageCriteria"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxWrapperConstructor" name="PersistentImageCriteriaWrapper" businessObject="//fxwrapper/PersistentImageCriteriaWrapper/persistentImageCriteria" businessProperties="//fxwrapper/PersistentImageCriteriaWrapper/versionMinProperty //fxwrapper/PersistentImageCriteriaWrapper/versionMaxProperty //fxwrapper/PersistentImageCriteriaWrapper/idProperty //fxwrapper/PersistentImageCriteriaWrapper/titleProperty //fxwrapper/PersistentImageCriteriaWrapper/sourceFileProperty //fxwrapper/PersistentImageCriteriaWrapper/previewProperty //fxwrapper/PersistentImageCriteriaWrapper/errorProperty //fxwrapper/PersistentImageCriteriaWrapper/dataIdProperty"/>
+      <eOperations xsi:type="emf4java:FxGetter" name="getVersionMin" fxAttribute="//fxwrapper/PersistentImageCriteriaWrapper/versionMinProperty" setter="//fxwrapper/PersistentImageCriteriaWrapper/setVersionMin">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getVersionMax" fxAttribute="//fxwrapper/PersistentImageCriteriaWrapper/versionMaxProperty" setter="//fxwrapper/PersistentImageCriteriaWrapper/setVersionMax">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getId" fxAttribute="//fxwrapper/PersistentImageCriteriaWrapper/idProperty" setter="//fxwrapper/PersistentImageCriteriaWrapper/setId">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getTitle" fxAttribute="//fxwrapper/PersistentImageCriteriaWrapper/titleProperty" setter="//fxwrapper/PersistentImageCriteriaWrapper/setTitle">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getSourceFile" fxAttribute="//fxwrapper/PersistentImageCriteriaWrapper/sourceFileProperty" setter="//fxwrapper/PersistentImageCriteriaWrapper/setSourceFile">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getPreview" fxAttribute="//fxwrapper/PersistentImageCriteriaWrapper/previewProperty" setter="//fxwrapper/PersistentImageCriteriaWrapper/setPreview">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getError" fxAttribute="//fxwrapper/PersistentImageCriteriaWrapper/errorProperty" setter="//fxwrapper/PersistentImageCriteriaWrapper/setError">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getDataId" fxAttribute="//fxwrapper/PersistentImageCriteriaWrapper/dataIdProperty" setter="//fxwrapper/PersistentImageCriteriaWrapper/setDataId">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setVersionMin" fxAttribute="//fxwrapper/PersistentImageCriteriaWrapper/versionMinProperty" getter="//fxwrapper/PersistentImageCriteriaWrapper/getVersionMin">
+        <eParameters name="myVersionMin">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setVersionMax" fxAttribute="//fxwrapper/PersistentImageCriteriaWrapper/versionMaxProperty" getter="//fxwrapper/PersistentImageCriteriaWrapper/getVersionMax">
+        <eParameters name="myVersionMax">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setId" fxAttribute="//fxwrapper/PersistentImageCriteriaWrapper/idProperty" getter="//fxwrapper/PersistentImageCriteriaWrapper/getId">
+        <eParameters name="myId">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setTitle" fxAttribute="//fxwrapper/PersistentImageCriteriaWrapper/titleProperty" getter="//fxwrapper/PersistentImageCriteriaWrapper/getTitle">
+        <eParameters name="myTitle">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setSourceFile" fxAttribute="//fxwrapper/PersistentImageCriteriaWrapper/sourceFileProperty" getter="//fxwrapper/PersistentImageCriteriaWrapper/getSourceFile">
+        <eParameters name="mySourceFile">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setPreview" fxAttribute="//fxwrapper/PersistentImageCriteriaWrapper/previewProperty" getter="//fxwrapper/PersistentImageCriteriaWrapper/getPreview">
+        <eParameters name="myPreview">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setError" fxAttribute="//fxwrapper/PersistentImageCriteriaWrapper/errorProperty" getter="//fxwrapper/PersistentImageCriteriaWrapper/getError">
+        <eParameters name="myError">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setDataId" fxAttribute="//fxwrapper/PersistentImageCriteriaWrapper/dataIdProperty" getter="//fxwrapper/PersistentImageCriteriaWrapper/getDataId">
+        <eParameters name="myDataId">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eParameters>
+      </eOperations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="persistentImageCriteria" eType="//repositories/criteria/PersistentImageCriteria"/>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="versionMinProperty" domainAttribute="//repositories/criteria/AbstractEntityCriteria/versionMin">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/IntegerProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="versionMaxProperty" domainAttribute="//repositories/criteria/AbstractEntityCriteria/versionMax">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/IntegerProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="idProperty" domainAttribute="//repositories/criteria/AbstractEntityCriteria/id">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/LongProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="titleProperty" domainAttribute="//repositories/criteria/PersistentImageCriteria/title">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/StringProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="sourceFileProperty" domainAttribute="//repositories/criteria/PersistentImageCriteria/sourceFile">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/StringProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="previewProperty" domainAttribute="//repositories/criteria/PersistentImageCriteria/preview">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/StringProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="errorProperty" domainAttribute="//repositories/criteria/PersistentImageCriteria/error">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/BooleanProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="dataIdProperty" domainAttribute="//repositories/criteria/PersistentImageCriteria/dataId">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/StringProperty"/>
+      </eStructuralFeatures>
+      <imports value="javafx.beans.property.SimpleIntegerProperty"/>
+      <imports value="javafx.beans.property.SimpleLongProperty"/>
+      <imports value="javafx.beans.property.SimpleStringProperty"/>
+      <imports value="javafx.beans.property.SimpleStringProperty"/>
+      <imports value="javafx.beans.property.SimpleStringProperty"/>
+      <imports value="javafx.beans.property.SimpleBooleanProperty"/>
+      <imports value="javafx.beans.property.SimpleStringProperty"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:FxCriteriaWrapper" name="PersistentImageDataCriteriaWrapper" criteria="//repositories/criteria/PersistentImageDataCriteria">
+      <eOperations xsi:type="emf4java:FxWrapperConstructor" name="PersistentImageDataCriteriaWrapper" businessObject="//fxwrapper/PersistentImageDataCriteriaWrapper/persistentImageDataCriteria" businessProperties="//fxwrapper/PersistentImageDataCriteriaWrapper/versionMinProperty //fxwrapper/PersistentImageDataCriteriaWrapper/versionMaxProperty //fxwrapper/PersistentImageDataCriteriaWrapper/idProperty //fxwrapper/PersistentImageDataCriteriaWrapper/dataProperty">
+        <eParameters name="entity" eType="//repositories/criteria/PersistentImageDataCriteria"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxWrapperConstructor" name="PersistentImageDataCriteriaWrapper" businessObject="//fxwrapper/PersistentImageDataCriteriaWrapper/persistentImageDataCriteria" businessProperties="//fxwrapper/PersistentImageDataCriteriaWrapper/versionMinProperty //fxwrapper/PersistentImageDataCriteriaWrapper/versionMaxProperty //fxwrapper/PersistentImageDataCriteriaWrapper/idProperty //fxwrapper/PersistentImageDataCriteriaWrapper/dataProperty"/>
+      <eOperations xsi:type="emf4java:FxGetter" name="getVersionMin" fxAttribute="//fxwrapper/PersistentImageDataCriteriaWrapper/versionMinProperty" setter="//fxwrapper/PersistentImageDataCriteriaWrapper/setVersionMin">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getVersionMax" fxAttribute="//fxwrapper/PersistentImageDataCriteriaWrapper/versionMaxProperty" setter="//fxwrapper/PersistentImageDataCriteriaWrapper/setVersionMax">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getId" fxAttribute="//fxwrapper/PersistentImageDataCriteriaWrapper/idProperty" setter="//fxwrapper/PersistentImageDataCriteriaWrapper/setId">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getData" fxAttribute="//fxwrapper/PersistentImageDataCriteriaWrapper/dataProperty" setter="//fxwrapper/PersistentImageDataCriteriaWrapper/setData">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setVersionMin" fxAttribute="//fxwrapper/PersistentImageDataCriteriaWrapper/versionMinProperty" getter="//fxwrapper/PersistentImageDataCriteriaWrapper/getVersionMin">
+        <eParameters name="myVersionMin">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setVersionMax" fxAttribute="//fxwrapper/PersistentImageDataCriteriaWrapper/versionMaxProperty" getter="//fxwrapper/PersistentImageDataCriteriaWrapper/getVersionMax">
+        <eParameters name="myVersionMax">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setId" fxAttribute="//fxwrapper/PersistentImageDataCriteriaWrapper/idProperty" getter="//fxwrapper/PersistentImageDataCriteriaWrapper/getId">
+        <eParameters name="myId">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setData" fxAttribute="//fxwrapper/PersistentImageDataCriteriaWrapper/dataProperty" getter="//fxwrapper/PersistentImageDataCriteriaWrapper/getData">
+        <eParameters name="myData">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eParameters>
+      </eOperations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="persistentImageDataCriteria" eType="//repositories/criteria/PersistentImageDataCriteria"/>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="versionMinProperty" domainAttribute="//repositories/criteria/AbstractEntityCriteria/versionMin">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/IntegerProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="versionMaxProperty" domainAttribute="//repositories/criteria/AbstractEntityCriteria/versionMax">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/IntegerProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="idProperty" domainAttribute="//repositories/criteria/AbstractEntityCriteria/id">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/LongProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="dataProperty" domainAttribute="//repositories/criteria/PersistentImageDataCriteria/data">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/StringProperty"/>
+      </eStructuralFeatures>
+      <imports value="javafx.beans.property.SimpleIntegerProperty"/>
+      <imports value="javafx.beans.property.SimpleLongProperty"/>
+      <imports value="javafx.beans.property.SimpleStringProperty"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:FxCriteriaWrapper" name="ProjectCriteriaWrapper" criteria="//repositories/criteria/ProjectCriteria">
+      <eOperations xsi:type="emf4java:FxWrapperConstructor" name="ProjectCriteriaWrapper" businessObject="//fxwrapper/ProjectCriteriaWrapper/projectCriteria" businessProperties="//fxwrapper/ProjectCriteriaWrapper/versionMinProperty //fxwrapper/ProjectCriteriaWrapper/versionMaxProperty //fxwrapper/ProjectCriteriaWrapper/idProperty //fxwrapper/ProjectCriteriaWrapper/nameProperty //fxwrapper/ProjectCriteriaWrapper/descriptionProperty">
+        <eParameters name="entity" eType="//repositories/criteria/ProjectCriteria"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxWrapperConstructor" name="ProjectCriteriaWrapper" businessObject="//fxwrapper/ProjectCriteriaWrapper/projectCriteria" businessProperties="//fxwrapper/ProjectCriteriaWrapper/versionMinProperty //fxwrapper/ProjectCriteriaWrapper/versionMaxProperty //fxwrapper/ProjectCriteriaWrapper/idProperty //fxwrapper/ProjectCriteriaWrapper/nameProperty //fxwrapper/ProjectCriteriaWrapper/descriptionProperty"/>
+      <eOperations xsi:type="emf4java:FxGetter" name="getVersionMin" fxAttribute="//fxwrapper/ProjectCriteriaWrapper/versionMinProperty" setter="//fxwrapper/ProjectCriteriaWrapper/setVersionMin">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getVersionMax" fxAttribute="//fxwrapper/ProjectCriteriaWrapper/versionMaxProperty" setter="//fxwrapper/ProjectCriteriaWrapper/setVersionMax">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getId" fxAttribute="//fxwrapper/ProjectCriteriaWrapper/idProperty" setter="//fxwrapper/ProjectCriteriaWrapper/setId">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getName" fxAttribute="//fxwrapper/ProjectCriteriaWrapper/nameProperty" setter="//fxwrapper/ProjectCriteriaWrapper/setName">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getDescription" fxAttribute="//fxwrapper/ProjectCriteriaWrapper/descriptionProperty" setter="//fxwrapper/ProjectCriteriaWrapper/setDescription">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setVersionMin" fxAttribute="//fxwrapper/ProjectCriteriaWrapper/versionMinProperty" getter="//fxwrapper/ProjectCriteriaWrapper/getVersionMin">
+        <eParameters name="myVersionMin">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setVersionMax" fxAttribute="//fxwrapper/ProjectCriteriaWrapper/versionMaxProperty" getter="//fxwrapper/ProjectCriteriaWrapper/getVersionMax">
+        <eParameters name="myVersionMax">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setId" fxAttribute="//fxwrapper/ProjectCriteriaWrapper/idProperty" getter="//fxwrapper/ProjectCriteriaWrapper/getId">
+        <eParameters name="myId">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setName" fxAttribute="//fxwrapper/ProjectCriteriaWrapper/nameProperty" getter="//fxwrapper/ProjectCriteriaWrapper/getName">
+        <eParameters name="myName">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setDescription" fxAttribute="//fxwrapper/ProjectCriteriaWrapper/descriptionProperty" getter="//fxwrapper/ProjectCriteriaWrapper/getDescription">
+        <eParameters name="myDescription">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eParameters>
+      </eOperations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="projectCriteria" eType="//repositories/criteria/ProjectCriteria"/>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="versionMinProperty" domainAttribute="//repositories/criteria/AbstractEntityCriteria/versionMin">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/IntegerProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="versionMaxProperty" domainAttribute="//repositories/criteria/AbstractEntityCriteria/versionMax">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/IntegerProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="idProperty" domainAttribute="//repositories/criteria/AbstractEntityCriteria/id">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/LongProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="nameProperty" domainAttribute="//repositories/criteria/ProjectCriteria/name">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/StringProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="descriptionProperty" domainAttribute="//repositories/criteria/ProjectCriteria/description">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/StringProperty"/>
+      </eStructuralFeatures>
+      <imports value="javafx.beans.property.SimpleIntegerProperty"/>
+      <imports value="javafx.beans.property.SimpleLongProperty"/>
+      <imports value="javafx.beans.property.SimpleStringProperty"/>
+      <imports value="javafx.beans.property.SimpleStringProperty"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:FxCriteriaWrapper" name="FolderCriteriaWrapper" criteria="//repositories/criteria/FolderCriteria">
+      <eOperations xsi:type="emf4java:FxWrapperConstructor" name="FolderCriteriaWrapper" businessObject="//fxwrapper/FolderCriteriaWrapper/folderCriteria" businessProperties="//fxwrapper/FolderCriteriaWrapper/versionMinProperty //fxwrapper/FolderCriteriaWrapper/versionMaxProperty //fxwrapper/FolderCriteriaWrapper/idProperty //fxwrapper/FolderCriteriaWrapper/nameProperty //fxwrapper/FolderCriteriaWrapper/displayOrderMinProperty //fxwrapper/FolderCriteriaWrapper/displayOrderMaxProperty">
+        <eParameters name="entity" eType="//repositories/criteria/FolderCriteria"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxWrapperConstructor" name="FolderCriteriaWrapper" businessObject="//fxwrapper/FolderCriteriaWrapper/folderCriteria" businessProperties="//fxwrapper/FolderCriteriaWrapper/versionMinProperty //fxwrapper/FolderCriteriaWrapper/versionMaxProperty //fxwrapper/FolderCriteriaWrapper/idProperty //fxwrapper/FolderCriteriaWrapper/nameProperty //fxwrapper/FolderCriteriaWrapper/displayOrderMinProperty //fxwrapper/FolderCriteriaWrapper/displayOrderMaxProperty"/>
+      <eOperations xsi:type="emf4java:FxGetter" name="getVersionMin" fxAttribute="//fxwrapper/FolderCriteriaWrapper/versionMinProperty" setter="//fxwrapper/FolderCriteriaWrapper/setVersionMin">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getVersionMax" fxAttribute="//fxwrapper/FolderCriteriaWrapper/versionMaxProperty" setter="//fxwrapper/FolderCriteriaWrapper/setVersionMax">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getId" fxAttribute="//fxwrapper/FolderCriteriaWrapper/idProperty" setter="//fxwrapper/FolderCriteriaWrapper/setId">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getName" fxAttribute="//fxwrapper/FolderCriteriaWrapper/nameProperty" setter="//fxwrapper/FolderCriteriaWrapper/setName">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getDisplayOrderMin" fxAttribute="//fxwrapper/FolderCriteriaWrapper/displayOrderMinProperty" setter="//fxwrapper/FolderCriteriaWrapper/setDisplayOrderMin">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getDisplayOrderMax" fxAttribute="//fxwrapper/FolderCriteriaWrapper/displayOrderMaxProperty" setter="//fxwrapper/FolderCriteriaWrapper/setDisplayOrderMax">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setVersionMin" fxAttribute="//fxwrapper/FolderCriteriaWrapper/versionMinProperty" getter="//fxwrapper/FolderCriteriaWrapper/getVersionMin">
+        <eParameters name="myVersionMin">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setVersionMax" fxAttribute="//fxwrapper/FolderCriteriaWrapper/versionMaxProperty" getter="//fxwrapper/FolderCriteriaWrapper/getVersionMax">
+        <eParameters name="myVersionMax">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setId" fxAttribute="//fxwrapper/FolderCriteriaWrapper/idProperty" getter="//fxwrapper/FolderCriteriaWrapper/getId">
+        <eParameters name="myId">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setName" fxAttribute="//fxwrapper/FolderCriteriaWrapper/nameProperty" getter="//fxwrapper/FolderCriteriaWrapper/getName">
+        <eParameters name="myName">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setDisplayOrderMin" fxAttribute="//fxwrapper/FolderCriteriaWrapper/displayOrderMinProperty" getter="//fxwrapper/FolderCriteriaWrapper/getDisplayOrderMin">
+        <eParameters name="myDisplayOrderMin">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setDisplayOrderMax" fxAttribute="//fxwrapper/FolderCriteriaWrapper/displayOrderMaxProperty" getter="//fxwrapper/FolderCriteriaWrapper/getDisplayOrderMax">
+        <eParameters name="myDisplayOrderMax">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eParameters>
+      </eOperations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="folderCriteria" eType="//repositories/criteria/FolderCriteria"/>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="versionMinProperty" domainAttribute="//repositories/criteria/AbstractEntityCriteria/versionMin">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/IntegerProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="versionMaxProperty" domainAttribute="//repositories/criteria/AbstractEntityCriteria/versionMax">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/IntegerProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="idProperty" domainAttribute="//repositories/criteria/AbstractEntityCriteria/id">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/LongProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="nameProperty" domainAttribute="//repositories/criteria/FolderCriteria/name">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/StringProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="displayOrderMinProperty" domainAttribute="//repositories/criteria/FolderCriteria/displayOrderMin">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/IntegerProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="displayOrderMaxProperty" domainAttribute="//repositories/criteria/FolderCriteria/displayOrderMax">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/IntegerProperty"/>
+      </eStructuralFeatures>
+      <imports value="javafx.beans.property.SimpleIntegerProperty"/>
+      <imports value="javafx.beans.property.SimpleLongProperty"/>
+      <imports value="javafx.beans.property.SimpleStringProperty"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:FxCriteriaWrapper" name="RisqueCriteriaWrapper" criteria="//repositories/criteria/RisqueCriteria">
+      <eOperations xsi:type="emf4java:FxWrapperConstructor" name="RisqueCriteriaWrapper" businessObject="//fxwrapper/RisqueCriteriaWrapper/risqueCriteria" businessProperties="//fxwrapper/RisqueCriteriaWrapper/versionMinProperty //fxwrapper/RisqueCriteriaWrapper/versionMaxProperty //fxwrapper/RisqueCriteriaWrapper/idProperty //fxwrapper/RisqueCriteriaWrapper/keyProperty">
+        <eParameters name="entity" eType="//repositories/criteria/RisqueCriteria"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxWrapperConstructor" name="RisqueCriteriaWrapper" businessObject="//fxwrapper/RisqueCriteriaWrapper/risqueCriteria" businessProperties="//fxwrapper/RisqueCriteriaWrapper/versionMinProperty //fxwrapper/RisqueCriteriaWrapper/versionMaxProperty //fxwrapper/RisqueCriteriaWrapper/idProperty //fxwrapper/RisqueCriteriaWrapper/keyProperty"/>
+      <eOperations xsi:type="emf4java:FxGetter" name="getVersionMin" fxAttribute="//fxwrapper/RisqueCriteriaWrapper/versionMinProperty" setter="//fxwrapper/RisqueCriteriaWrapper/setVersionMin">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getVersionMax" fxAttribute="//fxwrapper/RisqueCriteriaWrapper/versionMaxProperty" setter="//fxwrapper/RisqueCriteriaWrapper/setVersionMax">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getId" fxAttribute="//fxwrapper/RisqueCriteriaWrapper/idProperty" setter="//fxwrapper/RisqueCriteriaWrapper/setId">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxGetter" name="getKey" fxAttribute="//fxwrapper/RisqueCriteriaWrapper/keyProperty" setter="//fxwrapper/RisqueCriteriaWrapper/setKey">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setVersionMin" fxAttribute="//fxwrapper/RisqueCriteriaWrapper/versionMinProperty" getter="//fxwrapper/RisqueCriteriaWrapper/getVersionMin">
+        <eParameters name="myVersionMin">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setVersionMax" fxAttribute="//fxwrapper/RisqueCriteriaWrapper/versionMaxProperty" getter="//fxwrapper/RisqueCriteriaWrapper/getVersionMax">
+        <eParameters name="myVersionMax">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setId" fxAttribute="//fxwrapper/RisqueCriteriaWrapper/idProperty" getter="//fxwrapper/RisqueCriteriaWrapper/getId">
+        <eParameters name="myId">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+        </eParameters>
+      </eOperations>
+      <eOperations xsi:type="emf4java:FxSetter" name="setKey" fxAttribute="//fxwrapper/RisqueCriteriaWrapper/keyProperty" getter="//fxwrapper/RisqueCriteriaWrapper/getKey">
+        <eParameters name="myKey">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eParameters>
+      </eOperations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="risqueCriteria" eType="//repositories/criteria/RisqueCriteria"/>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="versionMinProperty" domainAttribute="//repositories/criteria/AbstractEntityCriteria/versionMin">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/IntegerProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="versionMaxProperty" domainAttribute="//repositories/criteria/AbstractEntityCriteria/versionMax">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/IntegerProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="idProperty" domainAttribute="//repositories/criteria/AbstractEntityCriteria/id">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/LongProperty"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="keyProperty" domainAttribute="//repositories/criteria/RisqueCriteria/key">
+        <eType xsi:type="ecore:EClass" href="../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/data/JavaFX.library.ecore#//beans/property/StringProperty"/>
+      </eStructuralFeatures>
+      <imports value="javafx.beans.property.SimpleIntegerProperty"/>
+      <imports value="javafx.beans.property.SimpleLongProperty"/>
+      <imports value="javafx.beans.property.SimpleStringProperty"/>
+    </eClassifiers>
+  </eSubpackages>
+</ecore:EPackage>
