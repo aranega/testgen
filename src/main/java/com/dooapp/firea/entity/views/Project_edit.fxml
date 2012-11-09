@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+<?import javafx.paint.*?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.Button?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" fx:controller="com.dooapp.firea.entity.fxcontroller.ProjectEditFxController">
+	<top>
+		<Label style="-fx-font: NORMAL 20 Tahoma;" text="Enter values for Project  Properties" />
+		
+	</top><center>
+		<VBox>
+			<children>
+				<HBox fx:id="_content" />
+				<HBox fx:id="_stack" visible="false">
+					<children>
+						<GridPane>
+							<children>
+								<Label fx:id="abstractEntityCreationDateLabel" GridPane.rowIndex="0" GridPane.columnIndex="0" text="creationDate" />
+								<TextField fx:id="abstractEntityCreationDate" GridPane.rowIndex="0" GridPane.columnIndex="1" editable="true" />
+								<Label fx:id="abstractEntityUpdateDateLabel" GridPane.rowIndex="1" GridPane.columnIndex="0" text="updateDate" />
+								<TextField fx:id="abstractEntityUpdateDate" GridPane.rowIndex="1" GridPane.columnIndex="1" editable="true" />
+								<Label fx:id="abstractEntityVersionLabel" GridPane.rowIndex="2" GridPane.columnIndex="0" text="version" />
+								<TextField fx:id="abstractEntityVersion" GridPane.rowIndex="2" GridPane.columnIndex="1" editable="true" />
+								<Label fx:id="abstractEntityIdLabel" GridPane.rowIndex="3" GridPane.columnIndex="0" text="id" />
+								<TextField fx:id="abstractEntityId" GridPane.rowIndex="3" GridPane.columnIndex="1" editable="false" />
+								<Label fx:id="projectNameLabel" GridPane.rowIndex="4" GridPane.columnIndex="0" text="name" />
+								<TextField fx:id="projectName" GridPane.rowIndex="4" GridPane.columnIndex="1" editable="true" />
+								<Label fx:id="projectDescriptionLabel" GridPane.rowIndex="5" GridPane.columnIndex="0" text="description" />
+								<TextField fx:id="projectDescription" GridPane.rowIndex="5" GridPane.columnIndex="1" editable="true" />
+								<Label fx:id="projectKindLabel" GridPane.rowIndex="6" GridPane.columnIndex="0" text="kind" />
+								<ComboBox fx:id="projectKind" GridPane.rowIndex="6" GridPane.columnIndex="1">
+									<items>
+										<FXCollections fx:factory="observableArrayList" />
+										
+									</items>
+								</ComboBox><Label fx:id="projectRisqueLabel" GridPane.rowIndex="7" GridPane.columnIndex="0" text="risque" />
+								<ComboBox fx:id="projectRisque" GridPane.rowIndex="7" GridPane.columnIndex="1" onAction="#selectRisque" />
+								<Label fx:id="projectImageLabel" GridPane.rowIndex="0" GridPane.columnIndex="2" text="image" />
+								<ComboBox fx:id="projectImage" GridPane.rowIndex="0" GridPane.columnIndex="3" onAction="#selectImage" />
+								<Label fx:id="projectContactsLabel" GridPane.rowIndex="1" GridPane.columnIndex="2" text="contacts" />
+								<VBox GridPane.rowIndex="1" GridPane.columnIndex="3">
+									<children>
+										<TableView fx:id="projectContacts" prefHeight="50.0" editable="true">
+											<columns>
+												<TableColumn text="creationDate">
+													<cellValueFactory>
+														<PropertyValueFactory property="creationDate" />
+														
+													</cellValueFactory>
+												</TableColumn><TableColumn text="updateDate">
+													<cellValueFactory>
+														<PropertyValueFactory property="updateDate" />
+														
+													</cellValueFactory>
+												</TableColumn><TableColumn text="version">
+													<cellValueFactory>
+														<PropertyValueFactory property="version" />
+														
+													</cellValueFactory>
+												</TableColumn><TableColumn text="id">
+													<cellValueFactory>
+														<PropertyValueFactory property="id" />
+														
+													</cellValueFactory>
+												</TableColumn><TableColumn text="name">
+													<cellValueFactory>
+														<PropertyValueFactory property="name" />
+														
+													</cellValueFactory>
+												</TableColumn><TableColumn text="person">
+													<cellValueFactory>
+														<PropertyValueFactory property="person" />
+														
+													</cellValueFactory>
+												</TableColumn><TableColumn text="adress1">
+													<cellValueFactory>
+														<PropertyValueFactory property="adress1" />
+														
+													</cellValueFactory>
+												</TableColumn><TableColumn text="address2">
+													<cellValueFactory>
+														<PropertyValueFactory property="address2" />
+														
+													</cellValueFactory>
+												</TableColumn><TableColumn text="zipCode">
+													<cellValueFactory>
+														<PropertyValueFactory property="zipCode" />
+														
+													</cellValueFactory>
+												</TableColumn><TableColumn text="city">
+													<cellValueFactory>
+														<PropertyValueFactory property="city" />
+														
+													</cellValueFactory>
+												</TableColumn><TableColumn text="email">
+													<cellValueFactory>
+														<PropertyValueFactory property="email" />
+														
+													</cellValueFactory>
+												</TableColumn><TableColumn text="phone">
+													<cellValueFactory>
+														<PropertyValueFactory property="phone" />
+														
+													</cellValueFactory>
+												</TableColumn><TableColumn text="siret">
+													<cellValueFactory>
+														<PropertyValueFactory property="siret" />
+														
+													</cellValueFactory>
+												</TableColumn><TableColumn text="kind">
+													<cellValueFactory>
+														<PropertyValueFactory property="kind" />
+														
+													</cellValueFactory>
+												</TableColumn><TableColumn text="image">
+													<cellValueFactory>
+														<PropertyValueFactory property="image" />
+														
+													</cellValueFactory>
+												</TableColumn>
+											</columns>
+										</TableView><ComboBox fx:id="projectContactsSelect" onAction="#selectContacts" />
+										
+									</children>
+								</VBox>
+							</children>
+						</GridPane>
+					</children>
+				</HBox><HBox fx:id="_trash" visible="false" />
+				
+			</children>
+		</VBox>
+	</center><bottom>
+		<HBox>
+			<children>
+				<Button text="OK" onAction="#handleSubmitButtonAction" cancelButton="false" />
+				<Button text="Cancel" onAction="#handleCancelButtonAction" cancelButton="false" />
+				
+			</children>
+		</HBox>
+	</bottom>
+</BorderPane>

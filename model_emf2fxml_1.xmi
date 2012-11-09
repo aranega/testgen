@@ -1,0 +1,925 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fx="http://com.axellience/dooapp/fxml" xsi:schemaLocation="http://com.axellience/dooapp/fxml ../../../../../../../../opt/genengine/com.axellience.generator.dooapp.standalone/bin/com/axellience/generator/dooapp/standalone/metamodels/javafx.ecore">
+  <fx:BorderPane id="domainMainPane" controller="com.dooapp.firea.entity.fxcontroller.MainFxController" prefHeight="572.0" prefWidth="862.0" minHeight="-Infinity" maxHeight="-Infinity" minWidth="-Infinity" maxWidth="-Infinity" name="com/dooapp/firea/entity/views/main">
+    <top xsi:type="fx:MenuBar">
+      <menus text="File">
+        <items text="Save"/>
+        <items text="Close"/>
+      </menus>
+      <menus text="Edit">
+        <items text="Delete"/>
+      </menus>
+      <menus text="Entities">
+        <items id="AbstractEntitySwitcher" text="AbstractEntity" onAction="#AbstractEntitySwitchAction"/>
+        <items id="ContactSwitcher" text="Contact" onAction="#ContactSwitchAction"/>
+        <items id="PersistentImageSwitcher" text="PersistentImage" onAction="#PersistentImageSwitchAction"/>
+        <items id="FolderSwitcher" text="Folder" onAction="#FolderSwitchAction"/>
+        <items id="PersistentImageDataSwitcher" text="PersistentImageData" onAction="#PersistentImageDataSwitchAction"/>
+        <items id="ProjectSwitcher" text="Project" onAction="#ProjectSwitchAction"/>
+        <items id="RisqueSwitcher" text="Risque" onAction="#RisqueSwitchAction"/>
+      </menus>
+      <menus text="Help">
+        <items text="About"/>
+      </menus>
+    </top>
+    <center xsi:type="fx:VBox" id="thecontent">
+      <children xsi:type="fx:Label" text="Welcome Folks"/>
+      <padding right="10" left="10" top="10" bottom="10"/>
+    </center>
+  </fx:BorderPane>
+  <fx:VBox controller="com.dooapp.firea.entity.fxcontroller.ContactSearchFxController" name="com/dooapp/firea/entity/views/Contact_search">
+    <children xsi:type="fx:VBox">
+      <children xsi:type="fx:Button" text="Add Contact" onAction="#handleAdd" cancelButton="false"/>
+      <children xsi:type="fx:Accordion">
+        <panes text="Search" expanded="true">
+          <content xsi:type="fx:BorderPane" name="ContactCriteria_search">
+            <top xsi:type="fx:Label" style="-fx-font: NORMAL 20 Tahoma;" text="Search for ContactCriteria Instance Properties"/>
+            <center xsi:type="fx:VBox">
+              <children xsi:type="fx:HBox" id="_content"/>
+              <children xsi:type="fx:HBox" id="_stack" visible="false">
+                <children xsi:type="fx:GridPane">
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaCreationDateMinLabel" row="0" col="0" text="creationDateMin"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaCreationDateMin" row="0" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaCreationDateMaxLabel" row="1" col="0" text="creationDateMax"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaCreationDateMax" row="1" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaUpdateDateMinLabel" row="2" col="0" text="updateDateMin"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaUpdateDateMin" row="2" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaUpdateDateMaxLabel" row="3" col="0" text="updateDateMax"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaUpdateDateMax" row="3" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaVersionMinLabel" row="4" col="0" text="versionMin"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaVersionMin" row="4" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaVersionMaxLabel" row="5" col="0" text="versionMax"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaVersionMax" row="5" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaIdLabel" row="6" col="0" text="id"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaId" row="6" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="contactCriteriaNameLabel" row="7" col="0" text="name"/>
+                  <children xsi:type="fx:TextField" id="contactCriteriaName" row="7" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="contactCriteriaPersonLabel" row="0" col="2" text="person"/>
+                  <children xsi:type="fx:TextField" id="contactCriteriaPerson" row="0" col="3" editable="true"/>
+                  <children xsi:type="fx:Label" id="contactCriteriaAdress1Label" row="1" col="2" text="adress1"/>
+                  <children xsi:type="fx:TextField" id="contactCriteriaAdress1" row="1" col="3" editable="true"/>
+                  <children xsi:type="fx:Label" id="contactCriteriaAddress2Label" row="2" col="2" text="address2"/>
+                  <children xsi:type="fx:TextField" id="contactCriteriaAddress2" row="2" col="3" editable="true"/>
+                  <children xsi:type="fx:Label" id="contactCriteriaZipCodeLabel" row="3" col="2" text="zipCode"/>
+                  <children xsi:type="fx:TextField" id="contactCriteriaZipCode" row="3" col="3" editable="true"/>
+                  <children xsi:type="fx:Label" id="contactCriteriaCityLabel" row="4" col="2" text="city"/>
+                  <children xsi:type="fx:TextField" id="contactCriteriaCity" row="4" col="3" editable="true"/>
+                  <children xsi:type="fx:Label" id="contactCriteriaEmailLabel" row="5" col="2" text="email"/>
+                  <children xsi:type="fx:TextField" id="contactCriteriaEmail" row="5" col="3" editable="true"/>
+                  <children xsi:type="fx:Label" id="contactCriteriaPhoneLabel" row="6" col="2" text="phone"/>
+                  <children xsi:type="fx:TextField" id="contactCriteriaPhone" row="6" col="3" editable="true"/>
+                  <children xsi:type="fx:Label" id="contactCriteriaSiretLabel" row="7" col="2" text="siret"/>
+                  <children xsi:type="fx:TextField" id="contactCriteriaSiret" row="7" col="3" editable="true"/>
+                  <children xsi:type="fx:Label" id="contactCriteriaKindLabel" row="0" col="4" text="kind"/>
+                  <children xsi:type="fx:ComboBox" id="contactCriteriaKind" row="0" col="5">
+                    <items xsi:type="fx:FXCollections" factory="observableArrayList">
+                      <elems xsi:type="fx:StringType" value="TECHNICIAN"/>
+                      <elems xsi:type="fx:StringType" value="FIRM"/>
+                    </items>
+                  </children>
+                </children>
+              </children>
+              <children xsi:type="fx:HBox" id="_trash" visible="false"/>
+            </center>
+            <right xsi:type="fx:HBox">
+              <children xsi:type="fx:Button" text="Search" onAction="#handleSearchButtonAction" cancelButton="false"/>
+            </right>
+          </content>
+        </panes>
+      </children>
+      <children xsi:type="fx:TableView" id="contactTable">
+        <columns text="creationDate">
+          <cellValue>
+            <elem property="creationDate"/>
+          </cellValue>
+        </columns>
+        <columns text="updateDate">
+          <cellValue>
+            <elem property="updateDate"/>
+          </cellValue>
+        </columns>
+        <columns text="version">
+          <cellValue>
+            <elem property="version"/>
+          </cellValue>
+        </columns>
+        <columns text="id">
+          <cellValue>
+            <elem property="id"/>
+          </cellValue>
+        </columns>
+        <columns text="name">
+          <cellValue>
+            <elem property="name"/>
+          </cellValue>
+        </columns>
+        <columns text="person">
+          <cellValue>
+            <elem property="person"/>
+          </cellValue>
+        </columns>
+        <columns text="adress1">
+          <cellValue>
+            <elem property="adress1"/>
+          </cellValue>
+        </columns>
+        <columns text="address2">
+          <cellValue>
+            <elem property="address2"/>
+          </cellValue>
+        </columns>
+        <columns text="zipCode">
+          <cellValue>
+            <elem property="zipCode"/>
+          </cellValue>
+        </columns>
+        <columns text="city">
+          <cellValue>
+            <elem property="city"/>
+          </cellValue>
+        </columns>
+        <columns text="email">
+          <cellValue>
+            <elem property="email"/>
+          </cellValue>
+        </columns>
+        <columns text="phone">
+          <cellValue>
+            <elem property="phone"/>
+          </cellValue>
+        </columns>
+        <columns text="siret">
+          <cellValue>
+            <elem property="siret"/>
+          </cellValue>
+        </columns>
+        <columns text="kind">
+          <cellValue>
+            <elem property="kind"/>
+          </cellValue>
+        </columns>
+        <columns text="image">
+          <cellValue>
+            <elem property="image"/>
+          </cellValue>
+        </columns>
+      </children>
+    </children>
+  </fx:VBox>
+  <fx:VBox controller="com.dooapp.firea.entity.fxcontroller.ProjectSearchFxController" name="com/dooapp/firea/entity/views/Project_search">
+    <children xsi:type="fx:VBox">
+      <children xsi:type="fx:Button" text="Add Project" onAction="#handleAdd" cancelButton="false"/>
+      <children xsi:type="fx:Accordion">
+        <panes text="Search" expanded="true">
+          <content xsi:type="fx:BorderPane" name="ProjectCriteria_search">
+            <top xsi:type="fx:Label" style="-fx-font: NORMAL 20 Tahoma;" text="Search for ProjectCriteria Instance Properties"/>
+            <center xsi:type="fx:VBox">
+              <children xsi:type="fx:HBox" id="_content"/>
+              <children xsi:type="fx:HBox" id="_stack" visible="false">
+                <children xsi:type="fx:GridPane">
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaCreationDateMinLabel" row="0" col="0" text="creationDateMin"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaCreationDateMin" row="0" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaCreationDateMaxLabel" row="1" col="0" text="creationDateMax"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaCreationDateMax" row="1" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaUpdateDateMinLabel" row="2" col="0" text="updateDateMin"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaUpdateDateMin" row="2" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaUpdateDateMaxLabel" row="3" col="0" text="updateDateMax"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaUpdateDateMax" row="3" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaVersionMinLabel" row="4" col="0" text="versionMin"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaVersionMin" row="4" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaVersionMaxLabel" row="5" col="0" text="versionMax"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaVersionMax" row="5" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaIdLabel" row="6" col="0" text="id"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaId" row="6" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="projectCriteriaNameLabel" row="7" col="0" text="name"/>
+                  <children xsi:type="fx:TextField" id="projectCriteriaName" row="7" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="projectCriteriaDescriptionLabel" row="0" col="2" text="description"/>
+                  <children xsi:type="fx:TextField" id="projectCriteriaDescription" row="0" col="3" editable="true"/>
+                  <children xsi:type="fx:Label" id="projectCriteriaKindLabel" row="1" col="2" text="kind"/>
+                  <children xsi:type="fx:ComboBox" id="projectCriteriaKind" row="1" col="3">
+                    <items xsi:type="fx:FXCollections" factory="observableArrayList"/>
+                  </children>
+                </children>
+              </children>
+              <children xsi:type="fx:HBox" id="_trash" visible="false"/>
+            </center>
+            <right xsi:type="fx:HBox">
+              <children xsi:type="fx:Button" text="Search" onAction="#handleSearchButtonAction" cancelButton="false"/>
+            </right>
+          </content>
+        </panes>
+      </children>
+      <children xsi:type="fx:TableView" id="projectTable">
+        <columns text="creationDate">
+          <cellValue>
+            <elem property="creationDate"/>
+          </cellValue>
+        </columns>
+        <columns text="updateDate">
+          <cellValue>
+            <elem property="updateDate"/>
+          </cellValue>
+        </columns>
+        <columns text="version">
+          <cellValue>
+            <elem property="version"/>
+          </cellValue>
+        </columns>
+        <columns text="id">
+          <cellValue>
+            <elem property="id"/>
+          </cellValue>
+        </columns>
+        <columns text="name">
+          <cellValue>
+            <elem property="name"/>
+          </cellValue>
+        </columns>
+        <columns text="description">
+          <cellValue>
+            <elem property="description"/>
+          </cellValue>
+        </columns>
+        <columns text="kind">
+          <cellValue>
+            <elem property="kind"/>
+          </cellValue>
+        </columns>
+        <columns text="risque">
+          <cellValue>
+            <elem property="risque"/>
+          </cellValue>
+        </columns>
+        <columns text="image">
+          <cellValue>
+            <elem property="image"/>
+          </cellValue>
+        </columns>
+        <columns text="contacts">
+          <cellValue>
+            <elem property="contacts"/>
+          </cellValue>
+        </columns>
+      </children>
+    </children>
+  </fx:VBox>
+  <fx:VBox controller="com.dooapp.firea.entity.fxcontroller.FolderSearchFxController" name="com/dooapp/firea/entity/views/Folder_search">
+    <children xsi:type="fx:VBox">
+      <children xsi:type="fx:Button" text="Add Folder" onAction="#handleAdd" cancelButton="false"/>
+      <children xsi:type="fx:Accordion">
+        <panes text="Search" expanded="true">
+          <content xsi:type="fx:BorderPane" name="FolderCriteria_search">
+            <top xsi:type="fx:Label" style="-fx-font: NORMAL 20 Tahoma;" text="Search for FolderCriteria Instance Properties"/>
+            <center xsi:type="fx:VBox">
+              <children xsi:type="fx:HBox" id="_content"/>
+              <children xsi:type="fx:HBox" id="_stack" visible="false">
+                <children xsi:type="fx:GridPane">
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaCreationDateMinLabel" row="0" col="0" text="creationDateMin"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaCreationDateMin" row="0" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaCreationDateMaxLabel" row="1" col="0" text="creationDateMax"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaCreationDateMax" row="1" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaUpdateDateMinLabel" row="2" col="0" text="updateDateMin"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaUpdateDateMin" row="2" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaUpdateDateMaxLabel" row="3" col="0" text="updateDateMax"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaUpdateDateMax" row="3" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaVersionMinLabel" row="4" col="0" text="versionMin"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaVersionMin" row="4" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaVersionMaxLabel" row="5" col="0" text="versionMax"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaVersionMax" row="5" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaIdLabel" row="6" col="0" text="id"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaId" row="6" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="folderCriteriaNameLabel" row="7" col="0" text="name"/>
+                  <children xsi:type="fx:TextField" id="folderCriteriaName" row="7" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="folderCriteriaDisplayOrderMinLabel" row="0" col="2" text="displayOrderMin"/>
+                  <children xsi:type="fx:TextField" id="folderCriteriaDisplayOrderMin" row="0" col="3" editable="true"/>
+                  <children xsi:type="fx:Label" id="folderCriteriaDisplayOrderMaxLabel" row="1" col="2" text="displayOrderMax"/>
+                  <children xsi:type="fx:TextField" id="folderCriteriaDisplayOrderMax" row="1" col="3" editable="true"/>
+                </children>
+              </children>
+              <children xsi:type="fx:HBox" id="_trash" visible="false"/>
+            </center>
+            <right xsi:type="fx:HBox">
+              <children xsi:type="fx:Button" text="Search" onAction="#handleSearchButtonAction" cancelButton="false"/>
+            </right>
+          </content>
+        </panes>
+      </children>
+      <children xsi:type="fx:TableView" id="folderTable">
+        <columns text="creationDate">
+          <cellValue>
+            <elem property="creationDate"/>
+          </cellValue>
+        </columns>
+        <columns text="updateDate">
+          <cellValue>
+            <elem property="updateDate"/>
+          </cellValue>
+        </columns>
+        <columns text="version">
+          <cellValue>
+            <elem property="version"/>
+          </cellValue>
+        </columns>
+        <columns text="id">
+          <cellValue>
+            <elem property="id"/>
+          </cellValue>
+        </columns>
+        <columns text="name">
+          <cellValue>
+            <elem property="name"/>
+          </cellValue>
+        </columns>
+        <columns text="displayOrder">
+          <cellValue>
+            <elem property="displayOrder"/>
+          </cellValue>
+        </columns>
+      </children>
+    </children>
+  </fx:VBox>
+  <fx:VBox controller="com.dooapp.firea.entity.fxcontroller.AbstractEntitySearchFxController" name="com/dooapp/firea/entity/views/AbstractEntity_search">
+    <children xsi:type="fx:VBox">
+      <children xsi:type="fx:Button" text="Add AbstractEntity" onAction="#handleAdd" cancelButton="false"/>
+      <children xsi:type="fx:Accordion">
+        <panes text="Search" expanded="true">
+          <content xsi:type="fx:BorderPane" name="AbstractEntityCriteria_search">
+            <top xsi:type="fx:Label" style="-fx-font: NORMAL 20 Tahoma;" text="Search for AbstractEntityCriteria Instance Properties"/>
+            <center xsi:type="fx:VBox">
+              <children xsi:type="fx:HBox" id="_content"/>
+              <children xsi:type="fx:HBox" id="_stack" visible="false">
+                <children xsi:type="fx:GridPane">
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaCreationDateMinLabel" row="0" col="0" text="creationDateMin"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaCreationDateMin" row="0" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaCreationDateMaxLabel" row="1" col="0" text="creationDateMax"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaCreationDateMax" row="1" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaUpdateDateMinLabel" row="2" col="0" text="updateDateMin"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaUpdateDateMin" row="2" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaUpdateDateMaxLabel" row="3" col="0" text="updateDateMax"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaUpdateDateMax" row="3" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaVersionMinLabel" row="4" col="0" text="versionMin"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaVersionMin" row="4" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaVersionMaxLabel" row="5" col="0" text="versionMax"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaVersionMax" row="5" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaIdLabel" row="6" col="0" text="id"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaId" row="6" col="1" editable="true"/>
+                </children>
+              </children>
+              <children xsi:type="fx:HBox" id="_trash" visible="false"/>
+            </center>
+            <right xsi:type="fx:HBox">
+              <children xsi:type="fx:Button" text="Search" onAction="#handleSearchButtonAction" cancelButton="false"/>
+            </right>
+          </content>
+        </panes>
+      </children>
+      <children xsi:type="fx:TableView" id="abstractEntityTable">
+        <columns text="creationDate">
+          <cellValue>
+            <elem property="creationDate"/>
+          </cellValue>
+        </columns>
+        <columns text="updateDate">
+          <cellValue>
+            <elem property="updateDate"/>
+          </cellValue>
+        </columns>
+        <columns text="version">
+          <cellValue>
+            <elem property="version"/>
+          </cellValue>
+        </columns>
+        <columns text="id">
+          <cellValue>
+            <elem property="id"/>
+          </cellValue>
+        </columns>
+      </children>
+    </children>
+  </fx:VBox>
+  <fx:VBox controller="com.dooapp.firea.entity.fxcontroller.PersistentImageDataSearchFxController" name="com/dooapp/firea/entity/views/PersistentImageData_search">
+    <children xsi:type="fx:VBox">
+      <children xsi:type="fx:Button" text="Add PersistentImageData" onAction="#handleAdd" cancelButton="false"/>
+      <children xsi:type="fx:Accordion">
+        <panes text="Search" expanded="true">
+          <content xsi:type="fx:BorderPane" name="PersistentImageDataCriteria_search">
+            <top xsi:type="fx:Label" style="-fx-font: NORMAL 20 Tahoma;" text="Search for PersistentImageDataCriteria Instance Properties"/>
+            <center xsi:type="fx:VBox">
+              <children xsi:type="fx:HBox" id="_content"/>
+              <children xsi:type="fx:HBox" id="_stack" visible="false">
+                <children xsi:type="fx:GridPane">
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaCreationDateMinLabel" row="0" col="0" text="creationDateMin"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaCreationDateMin" row="0" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaCreationDateMaxLabel" row="1" col="0" text="creationDateMax"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaCreationDateMax" row="1" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaUpdateDateMinLabel" row="2" col="0" text="updateDateMin"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaUpdateDateMin" row="2" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaUpdateDateMaxLabel" row="3" col="0" text="updateDateMax"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaUpdateDateMax" row="3" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaVersionMinLabel" row="4" col="0" text="versionMin"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaVersionMin" row="4" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaVersionMaxLabel" row="5" col="0" text="versionMax"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaVersionMax" row="5" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaIdLabel" row="6" col="0" text="id"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaId" row="6" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="persistentImageDataCriteriaDataLabel" row="7" col="0" text="data"/>
+                  <children xsi:type="fx:TextField" id="persistentImageDataCriteriaData" row="7" col="1" editable="true"/>
+                </children>
+              </children>
+              <children xsi:type="fx:HBox" id="_trash" visible="false"/>
+            </center>
+            <right xsi:type="fx:HBox">
+              <children xsi:type="fx:Button" text="Search" onAction="#handleSearchButtonAction" cancelButton="false"/>
+            </right>
+          </content>
+        </panes>
+      </children>
+      <children xsi:type="fx:TableView" id="persistentImageDataTable">
+        <columns text="creationDate">
+          <cellValue>
+            <elem property="creationDate"/>
+          </cellValue>
+        </columns>
+        <columns text="updateDate">
+          <cellValue>
+            <elem property="updateDate"/>
+          </cellValue>
+        </columns>
+        <columns text="version">
+          <cellValue>
+            <elem property="version"/>
+          </cellValue>
+        </columns>
+        <columns text="id">
+          <cellValue>
+            <elem property="id"/>
+          </cellValue>
+        </columns>
+        <columns text="data">
+          <cellValue>
+            <elem property="data"/>
+          </cellValue>
+        </columns>
+      </children>
+    </children>
+  </fx:VBox>
+  <fx:VBox controller="com.dooapp.firea.entity.fxcontroller.PersistentImageSearchFxController" name="com/dooapp/firea/entity/views/PersistentImage_search">
+    <children xsi:type="fx:VBox">
+      <children xsi:type="fx:Button" text="Add PersistentImage" onAction="#handleAdd" cancelButton="false"/>
+      <children xsi:type="fx:Accordion">
+        <panes text="Search" expanded="true">
+          <content xsi:type="fx:BorderPane" name="PersistentImageCriteria_search">
+            <top xsi:type="fx:Label" style="-fx-font: NORMAL 20 Tahoma;" text="Search for PersistentImageCriteria Instance Properties"/>
+            <center xsi:type="fx:VBox">
+              <children xsi:type="fx:HBox" id="_content"/>
+              <children xsi:type="fx:HBox" id="_stack" visible="false">
+                <children xsi:type="fx:GridPane">
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaCreationDateMinLabel" row="0" col="0" text="creationDateMin"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaCreationDateMin" row="0" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaCreationDateMaxLabel" row="1" col="0" text="creationDateMax"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaCreationDateMax" row="1" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaUpdateDateMinLabel" row="2" col="0" text="updateDateMin"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaUpdateDateMin" row="2" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaUpdateDateMaxLabel" row="3" col="0" text="updateDateMax"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaUpdateDateMax" row="3" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaVersionMinLabel" row="4" col="0" text="versionMin"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaVersionMin" row="4" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaVersionMaxLabel" row="5" col="0" text="versionMax"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaVersionMax" row="5" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaIdLabel" row="6" col="0" text="id"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaId" row="6" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="persistentImageCriteriaTitleLabel" row="7" col="0" text="title"/>
+                  <children xsi:type="fx:TextField" id="persistentImageCriteriaTitle" row="7" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="persistentImageCriteriaSourceFileLabel" row="0" col="2" text="sourceFile"/>
+                  <children xsi:type="fx:TextField" id="persistentImageCriteriaSourceFile" row="0" col="3" editable="true"/>
+                  <children xsi:type="fx:Label" id="persistentImageCriteriaPreviewLabel" row="1" col="2" text="preview"/>
+                  <children xsi:type="fx:TextField" id="persistentImageCriteriaPreview" row="1" col="3" editable="true"/>
+                  <children xsi:type="fx:Label" id="persistentImageCriteriaErrorLabel" row="2" col="2" text="error"/>
+                  <children xsi:type="fx:TextField" id="persistentImageCriteriaError" row="2" col="3" editable="true"/>
+                  <children xsi:type="fx:Label" id="persistentImageCriteriaDataIdLabel" row="3" col="2" text="dataId"/>
+                  <children xsi:type="fx:TextField" id="persistentImageCriteriaDataId" row="3" col="3" editable="true"/>
+                </children>
+              </children>
+              <children xsi:type="fx:HBox" id="_trash" visible="false"/>
+            </center>
+            <right xsi:type="fx:HBox">
+              <children xsi:type="fx:Button" text="Search" onAction="#handleSearchButtonAction" cancelButton="false"/>
+            </right>
+          </content>
+        </panes>
+      </children>
+      <children xsi:type="fx:TableView" id="persistentImageTable">
+        <columns text="creationDate">
+          <cellValue>
+            <elem property="creationDate"/>
+          </cellValue>
+        </columns>
+        <columns text="updateDate">
+          <cellValue>
+            <elem property="updateDate"/>
+          </cellValue>
+        </columns>
+        <columns text="version">
+          <cellValue>
+            <elem property="version"/>
+          </cellValue>
+        </columns>
+        <columns text="id">
+          <cellValue>
+            <elem property="id"/>
+          </cellValue>
+        </columns>
+        <columns text="title">
+          <cellValue>
+            <elem property="title"/>
+          </cellValue>
+        </columns>
+        <columns text="sourceFile">
+          <cellValue>
+            <elem property="sourceFile"/>
+          </cellValue>
+        </columns>
+        <columns text="preview">
+          <cellValue>
+            <elem property="preview"/>
+          </cellValue>
+        </columns>
+        <columns text="error">
+          <cellValue>
+            <elem property="error"/>
+          </cellValue>
+        </columns>
+        <columns text="dataId">
+          <cellValue>
+            <elem property="dataId"/>
+          </cellValue>
+        </columns>
+      </children>
+    </children>
+  </fx:VBox>
+  <fx:VBox controller="com.dooapp.firea.entity.fxcontroller.RisqueSearchFxController" name="com/dooapp/firea/entity/views/Risque_search">
+    <children xsi:type="fx:VBox">
+      <children xsi:type="fx:Button" text="Add Risque" onAction="#handleAdd" cancelButton="false"/>
+      <children xsi:type="fx:Accordion">
+        <panes text="Search" expanded="true">
+          <content xsi:type="fx:BorderPane" name="RisqueCriteria_search">
+            <top xsi:type="fx:Label" style="-fx-font: NORMAL 20 Tahoma;" text="Search for RisqueCriteria Instance Properties"/>
+            <center xsi:type="fx:VBox">
+              <children xsi:type="fx:HBox" id="_content"/>
+              <children xsi:type="fx:HBox" id="_stack" visible="false">
+                <children xsi:type="fx:GridPane">
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaCreationDateMinLabel" row="0" col="0" text="creationDateMin"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaCreationDateMin" row="0" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaCreationDateMaxLabel" row="1" col="0" text="creationDateMax"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaCreationDateMax" row="1" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaUpdateDateMinLabel" row="2" col="0" text="updateDateMin"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaUpdateDateMin" row="2" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaUpdateDateMaxLabel" row="3" col="0" text="updateDateMax"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaUpdateDateMax" row="3" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaVersionMinLabel" row="4" col="0" text="versionMin"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaVersionMin" row="4" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaVersionMaxLabel" row="5" col="0" text="versionMax"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaVersionMax" row="5" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="abstractEntityCriteriaIdLabel" row="6" col="0" text="id"/>
+                  <children xsi:type="fx:TextField" id="abstractEntityCriteriaId" row="6" col="1" editable="true"/>
+                  <children xsi:type="fx:Label" id="risqueCriteriaKeyLabel" row="7" col="0" text="key"/>
+                  <children xsi:type="fx:TextField" id="risqueCriteriaKey" row="7" col="1" editable="true"/>
+                </children>
+              </children>
+              <children xsi:type="fx:HBox" id="_trash" visible="false"/>
+            </center>
+            <right xsi:type="fx:HBox">
+              <children xsi:type="fx:Button" text="Search" onAction="#handleSearchButtonAction" cancelButton="false"/>
+            </right>
+          </content>
+        </panes>
+      </children>
+      <children xsi:type="fx:TableView" id="risqueTable">
+        <columns text="creationDate">
+          <cellValue>
+            <elem property="creationDate"/>
+          </cellValue>
+        </columns>
+        <columns text="updateDate">
+          <cellValue>
+            <elem property="updateDate"/>
+          </cellValue>
+        </columns>
+        <columns text="version">
+          <cellValue>
+            <elem property="version"/>
+          </cellValue>
+        </columns>
+        <columns text="id">
+          <cellValue>
+            <elem property="id"/>
+          </cellValue>
+        </columns>
+        <columns text="key">
+          <cellValue>
+            <elem property="key"/>
+          </cellValue>
+        </columns>
+      </children>
+    </children>
+  </fx:VBox>
+  <fx:BorderPane controller="com.dooapp.firea.entity.fxcontroller.FolderEditFxController" name="com/dooapp/firea/entity/views/Folder_edit">
+    <top xsi:type="fx:Label" style="-fx-font: NORMAL 20 Tahoma;" text="Enter values for Folder  Properties"/>
+    <center xsi:type="fx:VBox">
+      <children xsi:type="fx:HBox" id="_content"/>
+      <children xsi:type="fx:HBox" id="_stack" visible="false">
+        <children xsi:type="fx:GridPane">
+          <children xsi:type="fx:Label" id="abstractEntityCreationDateLabel" row="0" col="0" text="creationDate"/>
+          <children xsi:type="fx:TextField" id="abstractEntityCreationDate" row="0" col="1" editable="true"/>
+          <children xsi:type="fx:Label" id="abstractEntityUpdateDateLabel" row="1" col="0" text="updateDate"/>
+          <children xsi:type="fx:TextField" id="abstractEntityUpdateDate" row="1" col="1" editable="true"/>
+          <children xsi:type="fx:Label" id="abstractEntityVersionLabel" row="2" col="0" text="version"/>
+          <children xsi:type="fx:TextField" id="abstractEntityVersion" row="2" col="1" editable="true"/>
+          <children xsi:type="fx:Label" id="abstractEntityIdLabel" row="3" col="0" text="id"/>
+          <children xsi:type="fx:TextField" id="abstractEntityId" row="3" col="1" editable="false"/>
+          <children xsi:type="fx:Label" id="folderNameLabel" row="4" col="0" text="name"/>
+          <children xsi:type="fx:TextField" id="folderName" row="4" col="1" editable="true"/>
+          <children xsi:type="fx:Label" id="folderDisplayOrderLabel" row="5" col="0" text="displayOrder"/>
+          <children xsi:type="fx:TextField" id="folderDisplayOrder" row="5" col="1" editable="true"/>
+        </children>
+      </children>
+      <children xsi:type="fx:HBox" id="_trash" visible="false"/>
+    </center>
+    <bottom xsi:type="fx:HBox">
+      <children xsi:type="fx:Button" text="OK" onAction="#handleSubmitButtonAction" cancelButton="false"/>
+      <children xsi:type="fx:Button" text="Cancel" onAction="#handleCancelButtonAction" cancelButton="false"/>
+    </bottom>
+  </fx:BorderPane>
+  <fx:BorderPane controller="com.dooapp.firea.entity.fxcontroller.RisqueEditFxController" name="com/dooapp/firea/entity/views/Risque_edit">
+    <top xsi:type="fx:Label" style="-fx-font: NORMAL 20 Tahoma;" text="Enter values for Risque  Properties"/>
+    <center xsi:type="fx:VBox">
+      <children xsi:type="fx:HBox" id="_content"/>
+      <children xsi:type="fx:HBox" id="_stack" visible="false">
+        <children xsi:type="fx:GridPane">
+          <children xsi:type="fx:Label" id="abstractEntityCreationDateLabel" row="0" col="0" text="creationDate"/>
+          <children xsi:type="fx:TextField" id="abstractEntityCreationDate" row="0" col="1" editable="true"/>
+          <children xsi:type="fx:Label" id="abstractEntityUpdateDateLabel" row="1" col="0" text="updateDate"/>
+          <children xsi:type="fx:TextField" id="abstractEntityUpdateDate" row="1" col="1" editable="true"/>
+          <children xsi:type="fx:Label" id="abstractEntityVersionLabel" row="2" col="0" text="version"/>
+          <children xsi:type="fx:TextField" id="abstractEntityVersion" row="2" col="1" editable="true"/>
+          <children xsi:type="fx:Label" id="abstractEntityIdLabel" row="3" col="0" text="id"/>
+          <children xsi:type="fx:TextField" id="abstractEntityId" row="3" col="1" editable="false"/>
+          <children xsi:type="fx:Label" id="risqueKeyLabel" row="4" col="0" text="key"/>
+          <children xsi:type="fx:TextField" id="risqueKey" row="4" col="1" editable="true"/>
+        </children>
+      </children>
+      <children xsi:type="fx:HBox" id="_trash" visible="false"/>
+    </center>
+    <bottom xsi:type="fx:HBox">
+      <children xsi:type="fx:Button" text="OK" onAction="#handleSubmitButtonAction" cancelButton="false"/>
+      <children xsi:type="fx:Button" text="Cancel" onAction="#handleCancelButtonAction" cancelButton="false"/>
+    </bottom>
+  </fx:BorderPane>
+  <fx:BorderPane controller="com.dooapp.firea.entity.fxcontroller.PersistentImageDataEditFxController" name="com/dooapp/firea/entity/views/PersistentImageData_edit">
+    <top xsi:type="fx:Label" style="-fx-font: NORMAL 20 Tahoma;" text="Enter values for PersistentImageData  Properties"/>
+    <center xsi:type="fx:VBox">
+      <children xsi:type="fx:HBox" id="_content"/>
+      <children xsi:type="fx:HBox" id="_stack" visible="false">
+        <children xsi:type="fx:GridPane">
+          <children xsi:type="fx:Label" id="abstractEntityCreationDateLabel" row="0" col="0" text="creationDate"/>
+          <children xsi:type="fx:TextField" id="abstractEntityCreationDate" row="0" col="1" editable="true"/>
+          <children xsi:type="fx:Label" id="abstractEntityUpdateDateLabel" row="1" col="0" text="updateDate"/>
+          <children xsi:type="fx:TextField" id="abstractEntityUpdateDate" row="1" col="1" editable="true"/>
+          <children xsi:type="fx:Label" id="abstractEntityVersionLabel" row="2" col="0" text="version"/>
+          <children xsi:type="fx:TextField" id="abstractEntityVersion" row="2" col="1" editable="true"/>
+          <children xsi:type="fx:Label" id="abstractEntityIdLabel" row="3" col="0" text="id"/>
+          <children xsi:type="fx:TextField" id="abstractEntityId" row="3" col="1" editable="false"/>
+          <children xsi:type="fx:Label" id="persistentImageDataDataLabel" row="4" col="0" text="data"/>
+          <children xsi:type="fx:TextField" id="persistentImageDataData" row="4" col="1" editable="true"/>
+        </children>
+      </children>
+      <children xsi:type="fx:HBox" id="_trash" visible="false"/>
+    </center>
+    <bottom xsi:type="fx:HBox">
+      <children xsi:type="fx:Button" text="OK" onAction="#handleSubmitButtonAction" cancelButton="false"/>
+      <children xsi:type="fx:Button" text="Cancel" onAction="#handleCancelButtonAction" cancelButton="false"/>
+    </bottom>
+  </fx:BorderPane>
+  <fx:BorderPane controller="com.dooapp.firea.entity.fxcontroller.ContactEditFxController" name="com/dooapp/firea/entity/views/Contact_edit">
+    <top xsi:type="fx:Label" style="-fx-font: NORMAL 20 Tahoma;" text="Enter values for Contact  Properties"/>
+    <center xsi:type="fx:VBox">
+      <children xsi:type="fx:HBox" id="_content"/>
+      <children xsi:type="fx:HBox" id="_stack" visible="false">
+        <children xsi:type="fx:GridPane">
+          <children xsi:type="fx:Label" id="abstractEntityCreationDateLabel" row="0" col="0" text="creationDate"/>
+          <children xsi:type="fx:TextField" id="abstractEntityCreationDate" row="0" col="1" editable="true"/>
+          <children xsi:type="fx:Label" id="abstractEntityUpdateDateLabel" row="1" col="0" text="updateDate"/>
+          <children xsi:type="fx:TextField" id="abstractEntityUpdateDate" row="1" col="1" editable="true"/>
+          <children xsi:type="fx:Label" id="abstractEntityVersionLabel" row="2" col="0" text="version"/>
+          <children xsi:type="fx:TextField" id="abstractEntityVersion" row="2" col="1" editable="true"/>
+          <children xsi:type="fx:Label" id="abstractEntityIdLabel" row="3" col="0" text="id"/>
+          <children xsi:type="fx:TextField" id="abstractEntityId" row="3" col="1" editable="false"/>
+          <children xsi:type="fx:Label" id="contactNameLabel" row="4" col="0" text="name"/>
+          <children xsi:type="fx:TextField" id="contactName" row="4" col="1" editable="true"/>
+          <children xsi:type="fx:Label" id="contactPersonLabel" row="5" col="0" text="person"/>
+          <children xsi:type="fx:TextField" id="contactPerson" row="5" col="1" editable="true"/>
+          <children xsi:type="fx:Label" id="contactAdress1Label" row="6" col="0" text="adress1"/>
+          <children xsi:type="fx:TextField" id="contactAdress1" row="6" col="1" editable="true"/>
+          <children xsi:type="fx:Label" id="contactAddress2Label" row="7" col="0" text="address2"/>
+          <children xsi:type="fx:TextField" id="contactAddress2" row="7" col="1" editable="true"/>
+          <children xsi:type="fx:Label" id="contactZipCodeLabel" row="0" col="2" text="zipCode"/>
+          <children xsi:type="fx:TextField" id="contactZipCode" row="0" col="3" editable="true"/>
+          <children xsi:type="fx:Label" id="contactCityLabel" row="1" col="2" text="city"/>
+          <children xsi:type="fx:TextField" id="contactCity" row="1" col="3" editable="true"/>
+          <children xsi:type="fx:Label" id="contactEmailLabel" row="2" col="2" text="email"/>
+          <children xsi:type="fx:TextField" id="contactEmail" row="2" col="3" editable="true"/>
+          <children xsi:type="fx:Label" id="contactPhoneLabel" row="3" col="2" text="phone"/>
+          <children xsi:type="fx:TextField" id="contactPhone" row="3" col="3" editable="true"/>
+          <children xsi:type="fx:Label" id="contactSiretLabel" row="4" col="2" text="siret"/>
+          <children xsi:type="fx:TextField" id="contactSiret" row="4" col="3" editable="true"/>
+          <children xsi:type="fx:Label" id="contactKindLabel" row="5" col="2" text="kind"/>
+          <children xsi:type="fx:ComboBox" id="contactKind" row="5" col="3">
+            <items xsi:type="fx:FXCollections" factory="observableArrayList">
+              <elems xsi:type="fx:StringType" value="TECHNICIAN"/>
+              <elems xsi:type="fx:StringType" value="FIRM"/>
+            </items>
+          </children>
+          <children xsi:type="fx:Label" id="contactImageLabel" row="6" col="2" text="image"/>
+          <children xsi:type="fx:ComboBox" id="contactImage" row="6" col="3" onAction="#selectImage"/>
+        </children>
+      </children>
+      <children xsi:type="fx:HBox" id="_trash" visible="false"/>
+    </center>
+    <bottom xsi:type="fx:HBox">
+      <children xsi:type="fx:Button" text="OK" onAction="#handleSubmitButtonAction" cancelButton="false"/>
+      <children xsi:type="fx:Button" text="Cancel" onAction="#handleCancelButtonAction" cancelButton="false"/>
+    </bottom>
+  </fx:BorderPane>
+  <fx:BorderPane controller="com.dooapp.firea.entity.fxcontroller.AbstractEntityEditFxController" name="com/dooapp/firea/entity/views/AbstractEntity_edit">
+    <top xsi:type="fx:Label" style="-fx-font: NORMAL 20 Tahoma;" text="Enter values for AbstractEntity  Properties"/>
+    <center xsi:type="fx:VBox">
+      <children xsi:type="fx:HBox" id="_content"/>
+      <children xsi:type="fx:HBox" id="_stack" visible="false">
+        <children xsi:type="fx:GridPane">
+          <children xsi:type="fx:Label" id="abstractEntityCreationDateLabel" row="0" col="0" text="creationDate"/>
+          <children xsi:type="fx:TextField" id="abstractEntityCreationDate" row="0" col="1" editable="true"/>
+          <children xsi:type="fx:Label" id="abstractEntityUpdateDateLabel" row="1" col="0" text="updateDate"/>
+          <children xsi:type="fx:TextField" id="abstractEntityUpdateDate" row="1" col="1" editable="true"/>
+          <children xsi:type="fx:Label" id="abstractEntityVersionLabel" row="2" col="0" text="version"/>
+          <children xsi:type="fx:TextField" id="abstractEntityVersion" row="2" col="1" editable="true"/>
+          <children xsi:type="fx:Label" id="abstractEntityIdLabel" row="3" col="0" text="id"/>
+          <children xsi:type="fx:TextField" id="abstractEntityId" row="3" col="1" editable="false"/>
+        </children>
+      </children>
+      <children xsi:type="fx:HBox" id="_trash" visible="false"/>
+    </center>
+    <bottom xsi:type="fx:HBox">
+      <children xsi:type="fx:Button" text="OK" onAction="#handleSubmitButtonAction" cancelButton="false"/>
+      <children xsi:type="fx:Button" text="Cancel" onAction="#handleCancelButtonAction" cancelButton="false"/>
+    </bottom>
+  </fx:BorderPane>
+  <fx:BorderPane controller="com.dooapp.firea.entity.fxcontroller.ProjectEditFxController" name="com/dooapp/firea/entity/views/Project_edit">
+    <top xsi:type="fx:Label" style="-fx-font: NORMAL 20 Tahoma;" text="Enter values for Project  Properties"/>
+    <center xsi:type="fx:VBox">
+      <children xsi:type="fx:HBox" id="_content"/>
+      <children xsi:type="fx:HBox" id="_stack" visible="false">
+        <children xsi:type="fx:GridPane">
+          <children xsi:type="fx:Label" id="abstractEntityCreationDateLabel" row="0" col="0" text="creationDate"/>
+          <children xsi:type="fx:TextField" id="abstractEntityCreationDate" row="0" col="1" editable="true"/>
+          <children xsi:type="fx:Label" id="abstractEntityUpdateDateLabel" row="1" col="0" text="updateDate"/>
+          <children xsi:type="fx:TextField" id="abstractEntityUpdateDate" row="1" col="1" editable="true"/>
+          <children xsi:type="fx:Label" id="abstractEntityVersionLabel" row="2" col="0" text="version"/>
+          <children xsi:type="fx:TextField" id="abstractEntityVersion" row="2" col="1" editable="true"/>
+          <children xsi:type="fx:Label" id="abstractEntityIdLabel" row="3" col="0" text="id"/>
+          <children xsi:type="fx:TextField" id="abstractEntityId" row="3" col="1" editable="false"/>
+          <children xsi:type="fx:Label" id="projectNameLabel" row="4" col="0" text="name"/>
+          <children xsi:type="fx:TextField" id="projectName" row="4" col="1" editable="true"/>
+          <children xsi:type="fx:Label" id="projectDescriptionLabel" row="5" col="0" text="description"/>
+          <children xsi:type="fx:TextField" id="projectDescription" row="5" col="1" editable="true"/>
+          <children xsi:type="fx:Label" id="projectKindLabel" row="6" col="0" text="kind"/>
+          <children xsi:type="fx:ComboBox" id="projectKind" row="6" col="1">
+            <items xsi:type="fx:FXCollections" factory="observableArrayList"/>
+          </children>
+          <children xsi:type="fx:Label" id="projectRisqueLabel" row="7" col="0" text="risque"/>
+          <children xsi:type="fx:ComboBox" id="projectRisque" row="7" col="1" onAction="#selectRisque"/>
+          <children xsi:type="fx:Label" id="projectImageLabel" row="0" col="2" text="image"/>
+          <children xsi:type="fx:ComboBox" id="projectImage" row="0" col="3" onAction="#selectImage"/>
+          <children xsi:type="fx:Label" id="projectContactsLabel" row="1" col="2" text="contacts"/>
+          <children xsi:type="fx:VBox" row="1" col="3">
+            <children xsi:type="fx:TableView" id="projectContacts" prefHeight="50.0" editable="true">
+              <columns text="creationDate">
+                <cellValue>
+                  <elem property="creationDate"/>
+                </cellValue>
+              </columns>
+              <columns text="updateDate">
+                <cellValue>
+                  <elem property="updateDate"/>
+                </cellValue>
+              </columns>
+              <columns text="version">
+                <cellValue>
+                  <elem property="version"/>
+                </cellValue>
+              </columns>
+              <columns text="id">
+                <cellValue>
+                  <elem property="id"/>
+                </cellValue>
+              </columns>
+              <columns text="name">
+                <cellValue>
+                  <elem property="name"/>
+                </cellValue>
+              </columns>
+              <columns text="person">
+                <cellValue>
+                  <elem property="person"/>
+                </cellValue>
+              </columns>
+              <columns text="adress1">
+                <cellValue>
+                  <elem property="adress1"/>
+                </cellValue>
+              </columns>
+              <columns text="address2">
+                <cellValue>
+                  <elem property="address2"/>
+                </cellValue>
+              </columns>
+              <columns text="zipCode">
+                <cellValue>
+                  <elem property="zipCode"/>
+                </cellValue>
+              </columns>
+              <columns text="city">
+                <cellValue>
+                  <elem property="city"/>
+                </cellValue>
+              </columns>
+              <columns text="email">
+                <cellValue>
+                  <elem property="email"/>
+                </cellValue>
+              </columns>
+              <columns text="phone">
+                <cellValue>
+                  <elem property="phone"/>
+                </cellValue>
+              </columns>
+              <columns text="siret">
+                <cellValue>
+                  <elem property="siret"/>
+                </cellValue>
+              </columns>
+              <columns text="kind">
+                <cellValue>
+                  <elem property="kind"/>
+                </cellValue>
+              </columns>
+              <columns text="image">
+                <cellValue>
+                  <elem property="image"/>
+                </cellValue>
+              </columns>
+            </children>
+            <children xsi:type="fx:ComboBox" id="projectContactsSelect" onAction="#selectContacts"/>
+          </children>
+        </children>
+      </children>
+      <children xsi:type="fx:HBox" id="_trash" visible="false"/>
+    </center>
+    <bottom xsi:type="fx:HBox">
+      <children xsi:type="fx:Button" text="OK" onAction="#handleSubmitButtonAction" cancelButton="false"/>
+      <children xsi:type="fx:Button" text="Cancel" onAction="#handleCancelButtonAction" cancelButton="false"/>
+    </bottom>
+  </fx:BorderPane>
+  <fx:BorderPane controller="com.dooapp.firea.entity.fxcontroller.PersistentImageEditFxController" name="com/dooapp/firea/entity/views/PersistentImage_edit">
+    <top xsi:type="fx:Label" style="-fx-font: NORMAL 20 Tahoma;" text="Enter values for PersistentImage  Properties"/>
+    <center xsi:type="fx:VBox">
+      <children xsi:type="fx:HBox" id="_content"/>
+      <children xsi:type="fx:HBox" id="_stack" visible="false">
+        <children xsi:type="fx:GridPane">
+          <children xsi:type="fx:Label" id="abstractEntityCreationDateLabel" row="0" col="0" text="creationDate"/>
+          <children xsi:type="fx:TextField" id="abstractEntityCreationDate" row="0" col="1" editable="true"/>
+          <children xsi:type="fx:Label" id="abstractEntityUpdateDateLabel" row="1" col="0" text="updateDate"/>
+          <children xsi:type="fx:TextField" id="abstractEntityUpdateDate" row="1" col="1" editable="true"/>
+          <children xsi:type="fx:Label" id="abstractEntityVersionLabel" row="2" col="0" text="version"/>
+          <children xsi:type="fx:TextField" id="abstractEntityVersion" row="2" col="1" editable="true"/>
+          <children xsi:type="fx:Label" id="abstractEntityIdLabel" row="3" col="0" text="id"/>
+          <children xsi:type="fx:TextField" id="abstractEntityId" row="3" col="1" editable="false"/>
+          <children xsi:type="fx:Label" id="persistentImageTitleLabel" row="4" col="0" text="title"/>
+          <children xsi:type="fx:TextField" id="persistentImageTitle" row="4" col="1" editable="true"/>
+          <children xsi:type="fx:Label" id="persistentImageSourceFileLabel" row="5" col="0" text="sourceFile"/>
+          <children xsi:type="fx:TextField" id="persistentImageSourceFile" row="5" col="1" editable="true"/>
+          <children xsi:type="fx:Label" id="persistentImagePreviewLabel" row="6" col="0" text="preview"/>
+          <children xsi:type="fx:TextField" id="persistentImagePreview" row="6" col="1" editable="true"/>
+          <children xsi:type="fx:Label" id="persistentImageErrorLabel" row="7" col="0" text="error"/>
+          <children xsi:type="fx:TextField" id="persistentImageError" row="7" col="1" editable="true"/>
+          <children xsi:type="fx:Label" id="persistentImageDataIdLabel" row="0" col="2" text="dataId"/>
+          <children xsi:type="fx:TextField" id="persistentImageDataId" row="0" col="3" editable="true"/>
+        </children>
+      </children>
+      <children xsi:type="fx:HBox" id="_trash" visible="false"/>
+    </center>
+    <bottom xsi:type="fx:HBox">
+      <children xsi:type="fx:Button" text="OK" onAction="#handleSubmitButtonAction" cancelButton="false"/>
+      <children xsi:type="fx:Button" text="Cancel" onAction="#handleCancelButtonAction" cancelButton="false"/>
+    </bottom>
+  </fx:BorderPane>
+</xmi:XMI>
