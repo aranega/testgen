@@ -41,9 +41,9 @@
             <eType xsi:type="ecore:EClass" href="file:/home/vince/dev/workspaces/nov2012/main//com.axellience.generator.dooapp/data/JavaPrimitiveTypes.library.ecore#//util/UUID"/>
           </eStructuralFeatures>
           <imports value="java.util.UUID"/>
-          <imports value="javax.persistence.Id"/>
           <imports value="javax.persistence.Entity"/>
           <imports value="javax.persistence.GeneratedValue"/>
+          <imports value="javax.persistence.Id"/>
         </eClassifiers>
         <eSubpackages name="factories">
           <eClassifiers xsi:type="emf4java:Factory" name="SimpleClassBuilder" outfolder="test/test-core-parent/test-entity/src/main/java/" entity="//dooapp/test/entity/SimpleClass" product="//dooapp/test/entity/factories/SimpleClassBuilder/simpleclass">
@@ -136,12 +136,12 @@
           <eAnnotations xsi:type="emf4java:ECodeAnnotation" source="@FXML"/>
           <eType xsi:type="ecore:EClass" href="file:/home/vince/dev/workspaces/nov2012/main//com.axellience.generator.dooapp/data/JavaFX.library.ecore#//scene/control/TextField"/>
         </eStructuralFeatures>
-        <imports value="javafx.scene.control.TextField"/>
-        <imports value="javafx.fxml.Initializable"/>
-        <imports value="com.dooapp.test.wrapper.SimpleClassWrapper"/>
         <imports value="javafx.event.ActionEvent"/>
         <imports value="java.net.URL"/>
         <imports value="java.util.ResourceBundle"/>
+        <imports value="com.dooapp.test.wrapper.SimpleClassWrapper"/>
+        <imports value="javafx.scene.control.TextField"/>
+        <imports value="javafx.fxml.Initializable"/>
         <imports value="com.google.inject.Singleton"/>
         <imports value="javafx.fxml.FXML"/>
       </eClassifiers>
