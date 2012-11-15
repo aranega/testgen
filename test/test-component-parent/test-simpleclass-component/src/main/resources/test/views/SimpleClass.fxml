@@ -21,17 +21,12 @@
 		<VBox>
 			<children>
 				<HBox fx:id="_content">
-				  <children>
-				    <Label fx:id="simpleClassIdLabel" GridPane.rowIndex="0" GridPane.columnIndex="0" text="id" />
-				    <TextField fx:id="simpleClassId" GridPane.rowIndex="0" GridPane.columnIndex="1" editable="false" />
-				  </children>
-				</HBox>
-				<StackPane fx:id="_stack" visible="false">
 					<children>
-						<GridPane />
+						<Label fx:id="simpleClassIdLabel" GridPane.rowIndex="0" GridPane.columnIndex="0" text="id" />
+						<TextField fx:id="simpleClassId" GridPane.rowIndex="0" GridPane.columnIndex="1" editable="false" />
+						
 					</children>
-				</StackPane><StackPane fx:id="_trash" visible="false" />
-				
+				</HBox>
 			</children>
 		</VBox>
 	</center><bottom>

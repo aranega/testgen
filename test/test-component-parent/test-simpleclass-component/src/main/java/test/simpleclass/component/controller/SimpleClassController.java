@@ -2,10 +2,10 @@ package test.simpleclass.component.controller;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.TextField;
-import java.util.ResourceBundle;
 import javafx.fxml.Initializable;
 import test.wrapper.SimpleClassWrapper;
 import java.net.URL;
+import java.util.ResourceBundle;
 import com.google.inject.Singleton;
 import javafx.fxml.FXML;
 

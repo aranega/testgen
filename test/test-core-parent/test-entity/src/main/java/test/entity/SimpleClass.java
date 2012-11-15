@@ -1,8 +1,8 @@
 package test.entity;
 
 import java.util.UUID;
-import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 
 //Start of user code for imports

@@ -39,8 +39,8 @@
         <eType xsi:type="ecore:EClass" href="file:/home/vince/dev/workspaces/nov2012/main//com.axellience.generator.dooapp/data/JavaPrimitiveTypes.library.ecore#//util/UUID"/>
       </eStructuralFeatures>
       <imports value="java.util.UUID"/>
-      <imports value="javax.persistence.Entity"/>
       <imports value="javax.persistence.Id"/>
+      <imports value="javax.persistence.Entity"/>
       <imports value="javax.persistence.GeneratedValue"/>
     </eClassifiers>
     <eSubpackages name="factories">
@@ -93,8 +93,8 @@
         <eType xsi:type="ecore:EClass" href="file:/home/vince/dev/workspaces/nov2012/main//com.axellience.generator.dooapp/data/JavaFX.library.ecore#//beans/property/LongProperty"/>
       </eStructuralFeatures>
       <imports value="javafx.beans.property.SimpleLongProperty"/>
-      <imports value="javafx.beans.property.LongProperty"/>
       <imports value="test.entity.SimpleClass"/>
+      <imports value="javafx.beans.property.LongProperty"/>
     </eClassifiers>
   </eSubpackages>
   <eSubpackages name="simpleclass">
@@ -137,10 +137,10 @@
           </eStructuralFeatures>
           <imports value="javafx.event.ActionEvent"/>
           <imports value="javafx.scene.control.TextField"/>
-          <imports value="java.util.ResourceBundle"/>
           <imports value="javafx.fxml.Initializable"/>
           <imports value="test.wrapper.SimpleClassWrapper"/>
           <imports value="java.net.URL"/>
+          <imports value="java.util.ResourceBundle"/>
           <imports value="com.google.inject.Singleton"/>
           <imports value="javafx.fxml.FXML"/>
         </eClassifiers>
