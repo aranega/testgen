@@ -1,8 +1,8 @@
 package com.dooapp.test.wrapper;
 
 import javafx.beans.property.SimpleLongProperty;
-import javafx.beans.property.LongProperty;
 import com.dooapp.test.entity.SimpleClass;
+import javafx.beans.property.LongProperty;
 
 //Start of user code for imports
 // TODO: import me!

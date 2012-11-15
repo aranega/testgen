@@ -1,11 +1,11 @@
 package com.dooapp.controller;
 
-import java.util.ResourceBundle;
+import com.dooapp.test.wrapper.SimpleClassWrapper;
+import javafx.event.ActionEvent;
+import javafx.scene.control.TextField;
 import javafx.fxml.Initializable;
 import java.net.URL;
-import com.dooapp.test.wrapper.SimpleClassWrapper;
-import javafx.scene.control.TextField;
-import javafx.event.ActionEvent;
+import java.util.ResourceBundle;
 import com.google.inject.Singleton;
 import javafx.fxml.FXML;
 
