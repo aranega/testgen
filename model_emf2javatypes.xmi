@@ -39,9 +39,9 @@
         <eType xsi:type="ecore:EClass" href="file:/home/vince/dev/workspaces/nov2012/main//com.axellience.generator.dooapp/data/JavaPrimitiveTypes.library.ecore#//util/UUID"/>
       </eStructuralFeatures>
       <imports value="java.util.UUID"/>
+      <imports value="javax.persistence.Id"/>
       <imports value="javax.persistence.GeneratedValue"/>
       <imports value="javax.persistence.Entity"/>
-      <imports value="javax.persistence.Id"/>
     </eClassifiers>
     <eSubpackages name="factories">
       <eClassifiers xsi:type="emf4java:Factory" name="SimpleClassBuilder" entity="//entity/SimpleClass" product="//entity/factories/SimpleClassBuilder/simpleclass">
@@ -93,8 +93,8 @@
         <eType xsi:type="ecore:EClass" href="file:/home/vince/dev/workspaces/nov2012/main//com.axellience.generator.dooapp/data/JavaFX.library.ecore#//beans/property/LongProperty"/>
       </eStructuralFeatures>
       <imports value="javafx.beans.property.SimpleLongProperty"/>
-      <imports value="javafx.beans.property.LongProperty"/>
       <imports value="test.entity.SimpleClass"/>
+      <imports value="javafx.beans.property.LongProperty"/>
     </eClassifiers>
   </eSubpackages>
   <eSubpackages name="simpleclass">
@@ -135,12 +135,12 @@
             <eAnnotations xsi:type="emf4java:ECodeAnnotation" source="@FXML"/>
             <eType xsi:type="ecore:EClass" href="file:/home/vince/dev/workspaces/nov2012/main//com.axellience.generator.dooapp/data/JavaFX.library.ecore#//scene/control/TextField"/>
           </eStructuralFeatures>
-          <imports value="javafx.fxml.Initializable"/>
-          <imports value="javafx.scene.control.TextField"/>
-          <imports value="java.util.ResourceBundle"/>
           <imports value="test.wrapper.SimpleClassWrapper"/>
+          <imports value="javafx.scene.control.TextField"/>
+          <imports value="javafx.fxml.Initializable"/>
           <imports value="javafx.event.ActionEvent"/>
           <imports value="java.net.URL"/>
+          <imports value="java.util.ResourceBundle"/>
           <imports value="javafx.fxml.FXML"/>
           <imports value="com.google.inject.Singleton"/>
         </eClassifiers>
