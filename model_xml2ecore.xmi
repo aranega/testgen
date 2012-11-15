@@ -11,26 +11,25 @@
       <children name="VBox">
         <children name="children">
           <children name="HBox">
+            <children name="children">
+              <children name="Label">
+                <attributes xsi:type="metaxml:ValueAttribute" name="id" value="simpleClassIdLabel"/>
+                <attributes xsi:type="metaxml:ValueAttribute" name="GridPane.rowIndex" value="0"/>
+                <attributes xsi:type="metaxml:ValueAttribute" name="GridPane.columnIndex" value="0"/>
+                <attributes xsi:type="metaxml:ValueAttribute" name="text" value="id"/>
+              </children>
+              <children name="TextField">
+                <attributes xsi:type="metaxml:ValueAttribute" name="id" value="simpleClassId"/>
+                <attributes xsi:type="metaxml:ValueAttribute" name="GridPane.rowIndex" value="0"/>
+                <attributes xsi:type="metaxml:ValueAttribute" name="GridPane.columnIndex" value="1"/>
+                <attributes xsi:type="metaxml:ValueAttribute" name="editable" value="false"/>
+              </children>
+            </children>
             <attributes xsi:type="metaxml:ValueAttribute" name="id" value="_content"/>
           </children>
           <children name="StackPane">
             <children name="children">
-              <children name="GridPane">
-                <children name="children">
-                  <children name="Label">
-                    <attributes xsi:type="metaxml:ValueAttribute" name="id" value="simpleClassIdLabel"/>
-                    <attributes xsi:type="metaxml:ValueAttribute" name="GridPane.rowIndex" value="0"/>
-                    <attributes xsi:type="metaxml:ValueAttribute" name="GridPane.columnIndex" value="0"/>
-                    <attributes xsi:type="metaxml:ValueAttribute" name="text" value="id"/>
-                  </children>
-                  <children name="TextField">
-                    <attributes xsi:type="metaxml:ValueAttribute" name="id" value="simpleClassId"/>
-                    <attributes xsi:type="metaxml:ValueAttribute" name="GridPane.rowIndex" value="0"/>
-                    <attributes xsi:type="metaxml:ValueAttribute" name="GridPane.columnIndex" value="1"/>
-                    <attributes xsi:type="metaxml:ValueAttribute" name="editable" value="false"/>
-                  </children>
-                </children>
-              </children>
+              <children name="GridPane"/>
             </children>
             <attributes xsi:type="metaxml:ValueAttribute" name="id" value="_stack"/>
             <attributes xsi:type="metaxml:ValueAttribute" name="visible" value="false"/>

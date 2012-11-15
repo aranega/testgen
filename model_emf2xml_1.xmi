@@ -25,6 +25,43 @@
       <children name="VBox">
         <children name="children">
           <children name="HBox">
+            <children name="children">
+              <children name="Label">
+                <attributes xsi:type="metaxml:ValueAttribute" name="fx:id" value="simpleClassIdLabel"/>
+                <attributes xsi:type="metaxml:ValueAttribute" name="fx:controller"/>
+                <attributes xsi:type="metaxml:ValueAttribute" name="GridPane.rowIndex" value="0"/>
+                <attributes xsi:type="metaxml:ValueAttribute" name="prefHeight"/>
+                <attributes xsi:type="metaxml:ValueAttribute" name="prefWidth"/>
+                <attributes xsi:type="metaxml:ValueAttribute" name="minHeight"/>
+                <attributes xsi:type="metaxml:ValueAttribute" name="maxHeight"/>
+                <attributes xsi:type="metaxml:ValueAttribute" name="minWidth"/>
+                <attributes xsi:type="metaxml:ValueAttribute" name="maxWidth"/>
+                <attributes xsi:type="metaxml:ValueAttribute" name="GridPane.columnIndex" value="0"/>
+                <attributes xsi:type="metaxml:ValueAttribute" name="visible"/>
+                <attributes xsi:type="metaxml:ValueAttribute" name="style"/>
+                <attributes xsi:type="metaxml:ValueAttribute" name="editable"/>
+                <attributes xsi:type="metaxml:ValueAttribute" name="onAction"/>
+                <attributes xsi:type="metaxml:ValueAttribute" name="text" value="id"/>
+                <attributes xsi:type="metaxml:ValueAttribute" name="onAction"/>
+              </children>
+              <children name="TextField">
+                <attributes xsi:type="metaxml:ValueAttribute" name="fx:id" value="simpleClassId"/>
+                <attributes xsi:type="metaxml:ValueAttribute" name="fx:controller"/>
+                <attributes xsi:type="metaxml:ValueAttribute" name="GridPane.rowIndex" value="0"/>
+                <attributes xsi:type="metaxml:ValueAttribute" name="prefHeight"/>
+                <attributes xsi:type="metaxml:ValueAttribute" name="prefWidth"/>
+                <attributes xsi:type="metaxml:ValueAttribute" name="minHeight"/>
+                <attributes xsi:type="metaxml:ValueAttribute" name="maxHeight"/>
+                <attributes xsi:type="metaxml:ValueAttribute" name="minWidth"/>
+                <attributes xsi:type="metaxml:ValueAttribute" name="maxWidth"/>
+                <attributes xsi:type="metaxml:ValueAttribute" name="GridPane.columnIndex" value="1"/>
+                <attributes xsi:type="metaxml:ValueAttribute" name="visible"/>
+                <attributes xsi:type="metaxml:ValueAttribute" name="style"/>
+                <attributes xsi:type="metaxml:ValueAttribute" name="editable" value="false"/>
+                <attributes xsi:type="metaxml:ValueAttribute" name="onAction"/>
+                <attributes xsi:type="metaxml:ValueAttribute" name="text"/>
+              </children>
+            </children>
             <attributes xsi:type="metaxml:ValueAttribute" name="fx:id" value="_content"/>
             <attributes xsi:type="metaxml:ValueAttribute" name="fx:controller"/>
             <attributes xsi:type="metaxml:ValueAttribute" name="GridPane.rowIndex"/>
@@ -41,43 +78,6 @@
           <children name="StackPane">
             <children name="children">
               <children name="GridPane">
-                <children name="children">
-                  <children name="Label">
-                    <attributes xsi:type="metaxml:ValueAttribute" name="fx:id" value="simpleClassIdLabel"/>
-                    <attributes xsi:type="metaxml:ValueAttribute" name="fx:controller"/>
-                    <attributes xsi:type="metaxml:ValueAttribute" name="GridPane.rowIndex" value="0"/>
-                    <attributes xsi:type="metaxml:ValueAttribute" name="prefHeight"/>
-                    <attributes xsi:type="metaxml:ValueAttribute" name="prefWidth"/>
-                    <attributes xsi:type="metaxml:ValueAttribute" name="minHeight"/>
-                    <attributes xsi:type="metaxml:ValueAttribute" name="maxHeight"/>
-                    <attributes xsi:type="metaxml:ValueAttribute" name="minWidth"/>
-                    <attributes xsi:type="metaxml:ValueAttribute" name="maxWidth"/>
-                    <attributes xsi:type="metaxml:ValueAttribute" name="GridPane.columnIndex" value="0"/>
-                    <attributes xsi:type="metaxml:ValueAttribute" name="visible"/>
-                    <attributes xsi:type="metaxml:ValueAttribute" name="style"/>
-                    <attributes xsi:type="metaxml:ValueAttribute" name="editable"/>
-                    <attributes xsi:type="metaxml:ValueAttribute" name="onAction"/>
-                    <attributes xsi:type="metaxml:ValueAttribute" name="text" value="id"/>
-                    <attributes xsi:type="metaxml:ValueAttribute" name="onAction"/>
-                  </children>
-                  <children name="TextField">
-                    <attributes xsi:type="metaxml:ValueAttribute" name="fx:id" value="simpleClassId"/>
-                    <attributes xsi:type="metaxml:ValueAttribute" name="fx:controller"/>
-                    <attributes xsi:type="metaxml:ValueAttribute" name="GridPane.rowIndex" value="0"/>
-                    <attributes xsi:type="metaxml:ValueAttribute" name="prefHeight"/>
-                    <attributes xsi:type="metaxml:ValueAttribute" name="prefWidth"/>
-                    <attributes xsi:type="metaxml:ValueAttribute" name="minHeight"/>
-                    <attributes xsi:type="metaxml:ValueAttribute" name="maxHeight"/>
-                    <attributes xsi:type="metaxml:ValueAttribute" name="minWidth"/>
-                    <attributes xsi:type="metaxml:ValueAttribute" name="maxWidth"/>
-                    <attributes xsi:type="metaxml:ValueAttribute" name="GridPane.columnIndex" value="1"/>
-                    <attributes xsi:type="metaxml:ValueAttribute" name="visible"/>
-                    <attributes xsi:type="metaxml:ValueAttribute" name="style"/>
-                    <attributes xsi:type="metaxml:ValueAttribute" name="editable" value="false"/>
-                    <attributes xsi:type="metaxml:ValueAttribute" name="onAction"/>
-                    <attributes xsi:type="metaxml:ValueAttribute" name="text"/>
-                  </children>
-                </children>
                 <attributes xsi:type="metaxml:ValueAttribute" name="fx:id"/>
                 <attributes xsi:type="metaxml:ValueAttribute" name="fx:controller"/>
                 <attributes xsi:type="metaxml:ValueAttribute" name="GridPane.rowIndex"/>
