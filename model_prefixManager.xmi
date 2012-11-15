@@ -135,14 +135,14 @@
             <eAnnotations xsi:type="emf4java:ECodeAnnotation" source="@FXML"/>
             <eType xsi:type="ecore:EClass" href="file:/home/vince/dev/workspaces/nov2012/main//com.axellience.generator.dooapp/data/JavaFX.library.ecore#//scene/control/TextField"/>
           </eStructuralFeatures>
-          <imports value="javafx.event.ActionEvent"/>
-          <imports value="java.net.URL"/>
-          <imports value="test.wrapper.SimpleClassWrapper"/>
-          <imports value="java.util.ResourceBundle"/>
           <imports value="javafx.fxml.Initializable"/>
           <imports value="javafx.scene.control.TextField"/>
-          <imports value="com.google.inject.Singleton"/>
+          <imports value="java.util.ResourceBundle"/>
+          <imports value="test.wrapper.SimpleClassWrapper"/>
+          <imports value="javafx.event.ActionEvent"/>
+          <imports value="java.net.URL"/>
           <imports value="javafx.fxml.FXML"/>
+          <imports value="com.google.inject.Singleton"/>
         </eClassifiers>
       </eSubpackages>
     </eSubpackages>

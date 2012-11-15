@@ -1,13 +1,13 @@
 package test.simpleclass.component.controller;
 
-import javafx.event.ActionEvent;
-import java.net.URL;
-import test.wrapper.SimpleClassWrapper;
-import java.util.ResourceBundle;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TextField;
-import com.google.inject.Singleton;
+import java.util.ResourceBundle;
+import test.wrapper.SimpleClassWrapper;
+import javafx.event.ActionEvent;
+import java.net.URL;
 import javafx.fxml.FXML;
+import com.google.inject.Singleton;
 
 //Start of user code for imports
 // TODO: import me!
