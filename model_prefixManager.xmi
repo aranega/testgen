@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:accessors="http://com.axellience/dooapp/emfaccessors" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:emf4java="http://com.axellience/dooapp/emf4java" xsi:schemaLocation="http://com.axellience/dooapp/emfaccessors file:/home/vince/dev/workspaces/nov2012/main//com.axellience.generator.dooapp//bin/com/axellience/generator/dooapp/metamodels/accessors.ecore http://com.axellience/dooapp/emf4java file:/home/vince/dev/workspaces/nov2012/main//com.axellience.generator.dooapp//bin/com/axellience/generator/dooapp/metamodels/emf4java.ecore" name="com" nsURI="http://test" nsPrefix="com.dooapp">
+  <eAnnotations source="generation-parameters">
+    <details key="jdbc.properties.path" value="/src/main/resources"/>
+    <details key="log4j.properties.path" value="/src/main/resources"/>
+    <details key="web.xml.spring.path" value="/src/main/webapp/WEB-INF"/>
+    <details key="persistence.xml.path" value="/src/main/webapp/resources"/>
+    <details key="spring.context.root.path" value="/src/main/webapp/resources/spring"/>
+    <details key="spring.context.servlet.path" value="/src/main/webapp/resources/spring/appServlet"/>
+    <details key="mockup.path" value="/mockup"/>
+    <details key="spring.mvc.java.code.path" value="/src/main/java"/>
+    <details key="pom.xml.path" value="/"/>
+    <details key="jsp.path" value="/src/main/webapp/WEB-INF/views"/>
+  </eAnnotations>
+  <eSubpackages name="dooapp">
+    <eSubpackages name="test">
+      <eSubpackages name="entity">
+        <eClassifiers xsi:type="emf4java:Entity" name="SimpleClass" outfolder="test/test-core-parent/test-entity/src/main/java/" PK="//dooapp/test/entity/SimpleClass/id" fxwrapper="//dooapp/test/wrapper/SimpleClassWrapper">
+          <eAnnotations xsi:type="emf4java:ECodeAnnotation" source="@Entity"/>
+          <eOperations xsi:type="accessors:Getter" name="getId" property="//dooapp/test/entity/SimpleClass/id" setter="//dooapp/test/entity/SimpleClass/setId">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+          </eOperations>
+          <eOperations xsi:type="accessors:Setter" name="setId" property="//dooapp/test/entity/SimpleClass/id" reverse="//dooapp/test/entity/SimpleClass/unsetId" getter="//dooapp/test/entity/SimpleClass/getId">
+            <eParameters name="myId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+            </eParameters>
+          </eOperations>
+          <eOperations xsi:type="accessors:Unsetter" name="unsetId" property="//dooapp/test/entity/SimpleClass/id" reverse="//dooapp/test/entity/SimpleClass/setId"/>
+          <eOperations name="getUuid">
+            <eType xsi:type="ecore:EClass" href="file:/home/vince/dev/workspaces/nov2012/main//com.axellience.generator.dooapp/data/JavaPrimitiveTypes.library.ecore#//util/UUID"/>
+          </eOperations>
+          <eOperations xsi:type="emf4java:EConstructor" name="SimpleClass" eType="//dooapp/test/entity/SimpleClass"/>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
+            <eAnnotations xsi:type="emf4java:ECodeAnnotation" source="@Id"/>
+            <eAnnotations xsi:type="emf4java:ECodeAnnotation" source="@GeneratedValue">
+              <details key="strategy" value="javax.persistence.GenerationType.AUTO"/>
+            </eAnnotations>
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="uuid">
+            <eType xsi:type="ecore:EClass" href="file:/home/vince/dev/workspaces/nov2012/main//com.axellience.generator.dooapp/data/JavaPrimitiveTypes.library.ecore#//util/UUID"/>
+          </eStructuralFeatures>
+          <imports value="java.util.UUID"/>
+          <imports value="javax.persistence.GeneratedValue"/>
+          <imports value="javax.persistence.Entity"/>
+          <imports value="javax.persistence.Id"/>
+        </eClassifiers>
+        <eSubpackages name="factories">
+          <eClassifiers xsi:type="emf4java:Factory" name="SimpleClassBuilder" outfolder="test/test-core-parent/test-entity/src/main/java/" entity="//dooapp/test/entity/SimpleClass" product="//dooapp/test/entity/factories/SimpleClassBuilder/simpleclass">
+            <eOperations xsi:type="emf4java:FactoryInit" name="initSimpleClass" eType="//dooapp/test/entity/factories/SimpleClassBuilder" factory="//dooapp/test/entity/factories/SimpleClassBuilder"/>
+            <eOperations xsi:type="emf4java:FactorySetOperation" name="id" eType="//dooapp/test/entity/factories/SimpleClassBuilder" factory="//dooapp/test/entity/factories/SimpleClassBuilder" attribute="//dooapp/test/entity/SimpleClass/id">
+              <eParameters name="id">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+              </eParameters>
+            </eOperations>
+            <eOperations xsi:type="emf4java:FactoryBuild" name="build" eType="//dooapp/test/entity/SimpleClass" factory="//dooapp/test/entity/factories/SimpleClassBuilder"/>
+            <eOperations xsi:type="emf4java:FactoryStaticBuilder" name="create" eType="//dooapp/test/entity/factories/SimpleClassBuilder">
+              <eAnnotations xsi:type="emf4java:ECodeAnnotation" source="@static"/>
+            </eOperations>
+            <eStructuralFeatures xsi:type="ecore:EAttribute" name="simpleclass" eType="//dooapp/test/entity/SimpleClass"/>
+            <imports value="com.dooapp.test.entity.SimpleClass"/>
+          </eClassifiers>
+        </eSubpackages>
+      </eSubpackages>
+      <eSubpackages name="wrapper">
+        <eClassifiers xsi:type="emf4java:FxEditWrapper" name="SimpleClassWrapper" outfolder="test/test-core-parent/test-entity/src/main/java/" entity="//dooapp/test/entity/SimpleClass">
+          <eOperations xsi:type="emf4java:FxWrapperConstructor" name="SimpleClassWrapper" businessObject="//dooapp/test/wrapper/SimpleClassWrapper/simpleClass" businessProperties="//dooapp/test/wrapper/SimpleClassWrapper/idProperty.1">
+            <eParameters name="entity" eType="//dooapp/test/entity/SimpleClass"/>
+          </eOperations>
+          <eOperations xsi:type="emf4java:FxWrapperConstructor" name="SimpleClassWrapper" businessObject="//dooapp/test/wrapper/SimpleClassWrapper/simpleClass" businessProperties="//dooapp/test/wrapper/SimpleClassWrapper/idProperty.1"/>
+          <eOperations xsi:type="emf4java:FxGetter" name="getId" fxAttribute="//dooapp/test/wrapper/SimpleClassWrapper/idProperty.1" setter="//dooapp/test/wrapper/SimpleClassWrapper/setId">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+          </eOperations>
+          <eOperations xsi:type="emf4java:FxSetter" name="setId" fxAttribute="//dooapp/test/wrapper/SimpleClassWrapper/idProperty.1" getter="//dooapp/test/wrapper/SimpleClassWrapper/getId">
+            <eParameters name="myId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+            </eParameters>
+          </eOperations>
+          <eOperations xsi:type="accessors:Getter" name="getSimpleClass" eType="//dooapp/test/entity/SimpleClass" property="//dooapp/test/wrapper/SimpleClassWrapper/simpleClass" setter="//dooapp/test/wrapper/SimpleClassWrapper/setSimpleClass"/>
+          <eOperations xsi:type="accessors:Getter" name="idProperty" property="//dooapp/test/wrapper/SimpleClassWrapper/idProperty.1" setter="//dooapp/test/wrapper/SimpleClassWrapper/setIdProperty">
+            <eType xsi:type="ecore:EClass" href="file:/home/vince/dev/workspaces/nov2012/main//com.axellience.generator.dooapp/data/JavaFX.library.ecore#//beans/property/LongProperty"/>
+          </eOperations>
+          <eOperations xsi:type="accessors:Setter" name="setSimpleClass" property="//dooapp/test/wrapper/SimpleClassWrapper/simpleClass" reverse="//dooapp/test/wrapper/SimpleClassWrapper/unsetSimpleClass" getter="//dooapp/test/wrapper/SimpleClassWrapper/getSimpleClass">
+            <eParameters name="mySimpleClass" eType="//dooapp/test/entity/SimpleClass"/>
+          </eOperations>
+          <eOperations xsi:type="accessors:Setter" name="setIdProperty" property="//dooapp/test/wrapper/SimpleClassWrapper/idProperty.1" reverse="//dooapp/test/wrapper/SimpleClassWrapper/unsetIdProperty" getter="//dooapp/test/wrapper/SimpleClassWrapper/idProperty">
+            <eParameters name="myIdProperty">
+              <eType xsi:type="ecore:EClass" href="file:/home/vince/dev/workspaces/nov2012/main//com.axellience.generator.dooapp/data/JavaFX.library.ecore#//beans/property/LongProperty"/>
+            </eParameters>
+          </eOperations>
+          <eOperations xsi:type="accessors:Unsetter" name="unsetSimpleClass" property="//dooapp/test/wrapper/SimpleClassWrapper/simpleClass" reverse="//dooapp/test/wrapper/SimpleClassWrapper/setSimpleClass"/>
+          <eOperations xsi:type="accessors:Unsetter" name="unsetIdProperty" property="//dooapp/test/wrapper/SimpleClassWrapper/idProperty.1" reverse="//dooapp/test/wrapper/SimpleClassWrapper/setIdProperty"/>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="simpleClass" eType="//dooapp/test/entity/SimpleClass"/>
+          <eStructuralFeatures xsi:type="emf4java:FxWrapperAttribute" name="idProperty" domainAttribute="//dooapp/test/entity/SimpleClass/id">
+            <eType xsi:type="ecore:EClass" href="file:/home/vince/dev/workspaces/nov2012/main//com.axellience.generator.dooapp/data/JavaFX.library.ecore#//beans/property/LongProperty"/>
+          </eStructuralFeatures>
+          <imports value="javafx.beans.property.SimpleLongProperty"/>
+          <imports value="javafx.beans.property.LongProperty"/>
+          <imports value="com.dooapp.test.entity.SimpleClass"/>
+        </eClassifiers>
+      </eSubpackages>
+    </eSubpackages>
+    <eSubpackages name="controller">
+      <eClassifiers xsi:type="emf4java:FxEditController" name="SimpleClassController" outfolder="test/test-component-parent/test-simpleclass-component/src/main/java/" entity="//dooapp/test/entity/SimpleClass" editwrapper="//dooapp/test/wrapper/SimpleClassWrapper">
+        <eAnnotations xsi:type="emf4java:ECodeAnnotation" source="@Singleton"/>
+        <eSuperTypes href="file:/home/vince/dev/workspaces/nov2012/main//com.axellience.generator.dooapp/data/JavaFX.library.ecore#//fxml/Initializable"/>
+        <eOperations xsi:type="emf4java:HandleSubmitButtonActionOperation" name="handleSubmitButtonAction" fxcontroller="//dooapp/controller/SimpleClassController">
+          <eAnnotations xsi:type="emf4java:ECodeAnnotation" source="@FXML"/>
+          <eParameters name="event">
+            <eType xsi:type="ecore:EClass" href="file:/home/vince/dev/workspaces/nov2012/main//com.axellience.generator.dooapp/data/JavaFX.library.ecore#//event/ActionEvent"/>
+          </eParameters>
+        </eOperations>
+        <eOperations xsi:type="emf4java:HandleCancelButtonActionOperation" name="handleCancelButtonAction" fxcontroller="//dooapp/controller/SimpleClassController">
+          <eAnnotations xsi:type="emf4java:ECodeAnnotation" source="@FXML"/>
+          <eParameters name="event">
+            <eType xsi:type="ecore:EClass" href="file:/home/vince/dev/workspaces/nov2012/main//com.axellience.generator.dooapp/data/JavaFX.library.ecore#//event/ActionEvent"/>
+          </eParameters>
+        </eOperations>
+        <eOperations xsi:type="emf4java:InitializeFxControllerOperation" name="initialize" fxcontroller="//dooapp/controller/SimpleClassController">
+          <eParameters name="args0">
+            <eType xsi:type="ecore:EClass" href="file:/home/vince/dev/workspaces/nov2012/main//com.axellience.generator.dooapp/data/JavaPrimitiveTypes.library.ecore#//net/URL"/>
+          </eParameters>
+          <eParameters name="args1">
+            <eType xsi:type="ecore:EClass" href="file:/home/vince/dev/workspaces/nov2012/main//com.axellience.generator.dooapp/data/JavaPrimitiveTypes.library.ecore#//util/ResourceBundle"/>
+          </eParameters>
+          <inits name="id" fxWrapperAttribute="//dooapp/test/wrapper/SimpleClassWrapper/idProperty.1" fxViewAttribute="//dooapp/controller/SimpleClassController/simpleClassId" controllerContainer="//dooapp/controller/SimpleClassController">
+            <converter href="file:/home/vince/dev/workspaces/nov2012/main//com.axellience.generator.dooapp/data/JavaFX.library.ecore#//util/converter/NumberStringConverter"/>
+          </inits>
+          <settings domainAttribute="//dooapp/test/entity/SimpleClass/id" controller="//dooapp/controller/SimpleClassController" fxmlAttributeName="simpleClassId"/>
+        </eOperations>
+        <eOperations xsi:type="emf4java:FxControllerSetWrapperOperation" name="setSimpleClassWrapper" fxcontroller="//dooapp/controller/SimpleClassController">
+          <eParameters name="w" eType="//dooapp/test/wrapper/SimpleClassWrapper"/>
+        </eOperations>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="simpleClassWrapper" eType="//dooapp/test/wrapper/SimpleClassWrapper"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="simpleClassId">
+          <eAnnotations xsi:type="emf4java:ECodeAnnotation" source="@FXML"/>
+          <eType xsi:type="ecore:EClass" href="file:/home/vince/dev/workspaces/nov2012/main//com.axellience.generator.dooapp/data/JavaFX.library.ecore#//scene/control/TextField"/>
+        </eStructuralFeatures>
+        <imports value="java.util.ResourceBundle"/>
+        <imports value="javafx.fxml.Initializable"/>
+        <imports value="java.net.URL"/>
+        <imports value="com.dooapp.test.wrapper.SimpleClassWrapper"/>
+        <imports value="javafx.scene.control.TextField"/>
+        <imports value="javafx.event.ActionEvent"/>
+        <imports value="com.google.inject.Singleton"/>
+        <imports value="javafx.fxml.FXML"/>
+      </eClassifiers>
+    </eSubpackages>
+  </eSubpackages>
+</ecore:EPackage>
