@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fx:BorderPane xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fx="http://com.axellience/dooapp/fxml" xsi:schemaLocation="http://com.axellience/dooapp/fxml file:/home/vince/dev/workspaces/nov2012/main//com.axellience.generator.dooapp//bin/com/axellience/generator/dooapp/metamodels/javafx.ecore" controller="test.simpleclass.component.controller.SimpleClassController" name="test/test-component-parent/test-simpleclass-component/src/main/resources/test/views/SimpleClass">
+  <top xsi:type="fx:Label" style="-fx-font: NORMAL 20 Tahoma;" text="Enter values for SimpleClass  Properties"/>
+  <center xsi:type="fx:VBox">
+    <children xsi:type="fx:HBox" id="_content"/>
+    <children xsi:type="fx:StackPane" id="_stack" visible="false">
+      <children xsi:type="fx:GridPane">
+        <children xsi:type="fx:Label" id="simpleClassIdLabel" row="0" col="0" text="id"/>
+        <children xsi:type="fx:TextField" id="simpleClassId" row="0" col="1" editable="false"/>
+      </children>
+    </children>
+    <children xsi:type="fx:StackPane" id="_trash" visible="false"/>
+  </center>
+  <bottom xsi:type="fx:HBox">
+    <children xsi:type="fx:Button" text="OK" onAction="#handleSubmitButtonAction" cancelButton="false"/>
+    <children xsi:type="fx:Button" text="Cancel" onAction="#handleCancelButtonAction" cancelButton="false"/>
+  </bottom>
+</fx:BorderPane>
