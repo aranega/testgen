@@ -2,8 +2,8 @@ package com.dooapp.test.entity;
 
 import java.util.UUID;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.GeneratedValue;
 
 //Start of user code for imports
 // TODO: import me!

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metaxml:Root xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:metaxml="http://com.axellience/dooapp/xml" xsi:schemaLocation="http://com.axellience/dooapp/xml file:/home/vince/dev/workspaces/nov2012/main//com.axellience.generator.dooapp//bin/com/axellience/generator/dooapp/metamodels/XML.ecore#/0">
-  <documents name="BorderPane" docName="test/test-component-parent/test-simpleclass-component/src/main/resources/test/views/SimpleClass">
+  <documents name="BorderPane" docName="test/test-component-parent/test-simpleclass-component/src/main/resources/com.dooapp/views/SimpleClass">
     <children name="top">
       <children name="Label">
         <attributes xsi:type="metaxml:ValueAttribute" name="fx:id"/>

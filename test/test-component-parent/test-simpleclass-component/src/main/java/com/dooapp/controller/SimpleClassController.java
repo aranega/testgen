@@ -1,13 +1,13 @@
 package com.dooapp.controller;
 
-import javafx.event.ActionEvent;
-import java.net.URL;
-import java.util.ResourceBundle;
-import com.dooapp.test.wrapper.SimpleClassWrapper;
-import javafx.scene.control.TextField;
 import javafx.fxml.Initializable;
-import com.google.inject.Singleton;
+import java.net.URL;
+import javafx.scene.control.TextField;
+import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import com.dooapp.test.wrapper.SimpleClassWrapper;
 import javafx.fxml.FXML;
+import com.google.inject.Singleton;
 
 //Start of user code for imports
 // TODO: import me!
