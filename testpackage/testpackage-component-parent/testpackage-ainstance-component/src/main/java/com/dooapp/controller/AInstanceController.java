@@ -1,15 +1,15 @@
 package com.dooapp.controller;
 
-import javafx.scene.control.ComboBox;
-import com.dooapp.testpackage.entity.BInstanceBean;
 import javafx.event.ActionEvent;
+import com.dooapp.testpackage.wrapper.BInstance;
 import javafx.scene.control.TableView;
-import java.net.URL;
+import java.util.ResourceBundle;
+import com.dooapp.testpackage.entity.BInstanceBean;
+import javafx.scene.control.ComboBox;
 import com.dooapp.testpackage.wrapper.AInstance;
 import javafx.scene.control.TextField;
 import javafx.fxml.Initializable;
-import com.dooapp.testpackage.wrapper.BInstance;
-import java.util.ResourceBundle;
+import java.net.URL;
 import javafx.fxml.FXML;
 import com.google.inject.Singleton;
 

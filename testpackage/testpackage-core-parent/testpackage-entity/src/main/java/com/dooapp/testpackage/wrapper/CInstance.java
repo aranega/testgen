@@ -4,8 +4,8 @@ import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleLongProperty;
-import com.dooapp.testpackage.entity.CInstanceBean;
 import javafx.beans.property.LongProperty;
+import com.dooapp.testpackage.entity.CInstanceBean;
 import javafx.beans.property.StringProperty;
 
 //Start of user code for imports

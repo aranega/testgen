@@ -1,10 +1,10 @@
 package com.dooapp.testpackage.entity;
 
-import java.util.Date;
 import java.util.UUID;
-import javax.persistence.Id;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 //Start of user code for imports
 // TODO: import me!
@@ -18,8 +18,12 @@ public class MyClassBean {
 	//Start of user code for attributes
     private String myAtt;
 	//End of user code
-	
-	private Date dateMe;
+	@Column(name = "ATTRIBUTECOLUMN")
+	private String attribute;
+	/**
+	 * My att qui tue 
+	 */
+	private short dateMe;
 	@Id
 	@GeneratedValue(strategy = javax.persistence.GenerationType.AUTO)
 	private Long id;
@@ -33,7 +37,12 @@ public class MyClassBean {
 	}
 
 	
-	public Date getDateMe ()  {
+	public String getAttribute ()  {
+		return this.attribute;	
+	}
+
+	
+	public short getDateMe ()  {
 		return this.dateMe;	
 	}
 
@@ -48,13 +57,23 @@ public class MyClassBean {
 	}
 
 	
-	public void setDateMe (Date myDateMe)  {
+	public void setAttribute (String myAttribute)  {
+		this.attribute = myAttribute;	
+	}
+
+	
+	public void setDateMe (short myDateMe)  {
 		this.dateMe = myDateMe;	
 	}
 
 	
 	public void setId (Long myId)  {
 		this.id = myId;	
+	}
+
+	
+	public void unsetAttribute ()  {
+		this.attribute = null;	
 	}
 
 	

@@ -28,7 +28,13 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="MyClass">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="dateMe">
-      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+      <eAnnotations source="javadoc">
+        <details key="data" value="My att qui tue"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EShort"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
   </eClassifiers>
 </ecore:EPackage>

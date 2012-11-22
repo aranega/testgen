@@ -38,22 +38,10 @@
 									<children>
 										<TableView fx:id="aInstanceBinstance" prefHeight="50.0" editable="true">
 											<columns>
-												<TableColumn text="attribute">
-													<cellValueFactory>
-														<PropertyValueFactory property="attribute" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="id">
-													<cellValueFactory>
-														<PropertyValueFactory property="id" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="cinstance">
-													<cellValueFactory>
-														<PropertyValueFactory property="cinstance" />
-														
-													</cellValueFactory>
-												</TableColumn>
+												<TableColumn text="attribute" />
+												<TableColumn text="id" />
+												<TableColumn text="cinstance" />
+												
 											</columns>
 										</TableView><ComboBox fx:id="aInstanceBinstanceSelect" onAction="#selectBinstance" />
 										

@@ -31,7 +31,9 @@
 								<TextField fx:id="myClassId" GridPane.rowIndex="1" GridPane.columnIndex="1" editable="false" />
 								
 							</children>
-						</GridPane>
+						</GridPane><Label fx:id="myClassAttributeLabel" text="attribute" />
+						<TextField fx:id="myClassAttribute" editable="true" />
+						
 					</children>
 				</StackPane><StackPane fx:id="_trash" visible="false" />
 				

@@ -1,7 +1,6 @@
 package com.dooapp.testpackage.entity.factories;
 
 import com.dooapp.testpackage.entity.MyClassBean;
-import java.util.Date;
 import com.dooapp.testpackage.wrapper.MyClass;
 
 //Start of user code for imports
@@ -21,6 +20,12 @@ public class MyClassBuilder {
     
 
 	
+	public MyClassBuilder attribute (String attribute)  {
+		myclass.setAttribute (attribute);
+		return this;	
+	}
+
+	
 	public MyClass build ()  {
 		return new MyClass (myclass);	
 	}
@@ -31,7 +36,7 @@ public class MyClassBuilder {
 	}
 
 	
-	public MyClassBuilder dateMe (Date dateMe)  {
+	public MyClassBuilder dateMe (short dateMe)  {
 		myclass.setDateMe (dateMe);
 		return this;	
 	}

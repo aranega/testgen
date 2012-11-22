@@ -8,11 +8,11 @@ import com.dooapp.testpackage.entity.BInstanceBean;
 import javafx.collections.ObservableList;
 import javafx.collections.FXCollections;
 import java.util.ArrayList;
-import javafx.beans.property.StringProperty;
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.LongProperty;
 import javafx.beans.property.DoubleProperty;
 import com.dooapp.testpackage.entity.AInstanceBean;
-import javafx.beans.property.LongProperty;
-import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.StringProperty;
 
 //Start of user code for imports
 // TODO: import me!

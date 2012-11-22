@@ -1,11 +1,10 @@
 package com.dooapp.testpackage.wrapper;
 
+import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.SimpleLongProperty;
-import javafx.beans.property.SimpleObjectProperty;
-import javafx.beans.property.ObjectProperty;
-import java.util.Date;
-import javafx.beans.property.LongProperty;
 import com.dooapp.testpackage.entity.MyClassBean;
+import javafx.beans.property.LongProperty;
+import javafx.beans.property.StringProperty;
 
 //Start of user code for imports
 // TODO: import me!
@@ -20,7 +19,7 @@ public class MyClass {
 	// Other attributes
 	//End of user code
 	
-	private ObjectProperty<Date> dateMeProperty;
+	private StringProperty attributeProperty;
 	
 	private LongProperty idProperty;
 	
@@ -30,6 +29,24 @@ public class MyClass {
 	
 	public MyClass(final MyClassBean entity) {
 		this.myClass = entity;
+		attributeProperty = new SimpleStringProperty()
+			{
+				@Override
+				public String get()
+				{
+					if (myClass.getAttribute() != null)
+						return myClass.getAttribute();
+					else
+						return "";
+				};
+				
+				@Override
+				public void set(String arg0)
+				{
+					
+						myClass.setAttribute(arg0);
+				};
+			};
 		idProperty = new SimpleLongProperty()
 			{
 				@Override
@@ -45,24 +62,6 @@ public class MyClass {
 						myClass.setId(arg0);
 				};
 			};
-		dateMeProperty = new SimpleObjectProperty<Date>()
-			{
-				@Override
-				public Date get()
-				{
-					if (myClass.getDateMe() != null)
-						return myClass.getDateMe();
-					else
-						return new Date();
-				};
-				
-				@Override
-				public void set(Date arg0)
-				{
-					
-						myClass.setDateMe(arg0);
-				};
-			};
 			
 	}
 
@@ -72,13 +71,13 @@ public class MyClass {
 	}
 
 	
-	public ObjectProperty<Date> dateMeProperty ()  {
-		return this.dateMeProperty;	
+	public StringProperty attributeProperty ()  {
+		return this.attributeProperty;	
 	}
 
 	
-	public Date getDateMe ()  {
-		return this.dateMeProperty.get();	
+	public String getAttribute ()  {
+		return this.attributeProperty.get();	
 	}
 
 	
@@ -97,13 +96,13 @@ public class MyClass {
 	}
 
 	
-	public void setDateMe (Date myDateMe)  {
-		this.dateMeProperty.set(myDateMe);	
+	public void setAttribute (String myAttribute)  {
+		this.attributeProperty.set(myAttribute);	
 	}
 
 	
-	public void setDateMeProperty (ObjectProperty<Date> myDateMeProperty)  {
-		this.dateMeProperty = myDateMeProperty;	
+	public void setAttributeProperty (StringProperty myAttributeProperty)  {
+		this.attributeProperty = myAttributeProperty;	
 	}
 
 	
@@ -122,8 +121,8 @@ public class MyClass {
 	}
 
 	
-	public void unsetDateMeProperty ()  {
-		this.dateMeProperty = null;	
+	public void unsetAttributeProperty ()  {
+		this.attributeProperty = null;	
 	}
 
 	

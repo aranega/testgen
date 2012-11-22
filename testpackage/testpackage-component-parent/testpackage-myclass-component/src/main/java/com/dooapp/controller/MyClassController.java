@@ -1,13 +1,13 @@
 package com.dooapp.controller;
 
-import javafx.scene.control.TextField;
-import java.net.URL;
-import java.util.ResourceBundle;
-import com.dooapp.testpackage.wrapper.MyClass;
-import javafx.fxml.Initializable;
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
+import com.dooapp.testpackage.wrapper.MyClass;
+import java.util.ResourceBundle;
+import java.net.URL;
+import javafx.scene.control.TextField;
+import javafx.fxml.Initializable;
 import com.google.inject.Singleton;
+import javafx.fxml.FXML;
 
 //Start of user code for imports
 // TODO: import me!
@@ -22,7 +22,7 @@ public class MyClassController implements Initializable {
 	// Other attributes
 	//End of user code
 	@FXML
-	private TextField myClassDateMe;
+	private TextField myClassAttribute;
 	@FXML
 	private TextField myClassId;
 	
@@ -46,10 +46,10 @@ public class MyClassController implements Initializable {
 	
 	public void initialize (URL args0, ResourceBundle args1)  {
 		// Bindings
-		myClassDateMe.setText(String.valueOf(myClassWrapper.getDateMe()));
+		myClassAttribute.setText(String.valueOf(myClassWrapper.getAttribute()));
 		myClassId.setText(String.valueOf(myClassWrapper.getId()));
 		
-		myClassDateMe.textProperty().bindBidirectional(myClassWrapper.dateMeProperty(), new javafx.util.converter.DateStringConverter());
+		myClassWrapper.attributeProperty().bindBidirectional(myClassAttribute.textProperty());
 		myClassId.textProperty().bindBidirectional(myClassWrapper.idProperty(), new javafx.util.converter.NumberStringConverter());
 		
 			

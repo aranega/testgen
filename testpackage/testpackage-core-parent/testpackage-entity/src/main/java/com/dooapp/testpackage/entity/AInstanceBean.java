@@ -1,14 +1,14 @@
 package com.dooapp.testpackage.entity;
 
 import java.util.UUID;
-import java.util.Set;
 import java.util.List;
+import java.util.Set;
 import javax.persistence.ManyToMany;
-import javax.persistence.Column;
-import javax.persistence.JoinTable;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.JoinTable;
 
 //Start of user code for imports
 // TODO: import me!

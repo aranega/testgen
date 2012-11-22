@@ -1,15 +1,15 @@
 package com.dooapp.controller;
 
-import javafx.fxml.Initializable;
-import javafx.event.ActionEvent;
-import java.util.ResourceBundle;
-import com.dooapp.testpackage.wrapper.BInstance;
 import java.net.URL;
-import javafx.scene.control.TextField;
+import javafx.fxml.Initializable;
+import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
 import javafx.scene.control.ComboBox;
+import com.dooapp.testpackage.wrapper.BInstance;
 import com.dooapp.testpackage.entity.CInstanceBean;
-import com.google.inject.Singleton;
+import javafx.scene.control.TextField;
 import javafx.fxml.FXML;
+import com.google.inject.Singleton;
 
 //Start of user code for imports
 // TODO: import me!

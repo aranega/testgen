@@ -1,7 +1,7 @@
 package com.dooapp.testpackage.entity.factories;
 
-import com.dooapp.testpackage.wrapper.BInstance;
 import com.dooapp.testpackage.entity.BInstanceBean;
+import com.dooapp.testpackage.wrapper.BInstance;
 
 //Start of user code for imports
 // TODO: import me!

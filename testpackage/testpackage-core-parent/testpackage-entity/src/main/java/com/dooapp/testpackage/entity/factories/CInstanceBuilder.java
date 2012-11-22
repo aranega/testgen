@@ -1,7 +1,7 @@
 package com.dooapp.testpackage.entity.factories;
 
-import com.dooapp.testpackage.entity.CInstanceBean;
 import com.dooapp.testpackage.wrapper.CInstance;
+import com.dooapp.testpackage.entity.CInstanceBean;
 
 //Start of user code for imports
 // TODO: import me!
