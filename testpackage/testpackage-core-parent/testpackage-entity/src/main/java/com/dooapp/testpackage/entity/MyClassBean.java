@@ -16,7 +16,7 @@ import javax.persistence.GeneratedValue;
 @Entity
 public class MyClassBean {
 	//Start of user code for attributes
-	// Other attributes
+    private String myAtt;
 	//End of user code
 	
 	private Date dateMe;
