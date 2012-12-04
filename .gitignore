@@ -39,3 +39,11 @@ Icon?
 .Trashes.tmp/
 
 .tmp/
+
+.tmp/*
+
+.tmp/**
+
+.tmp/model_*.xmi
+
+model_*.xmi
