@@ -19,9 +19,6 @@ public class Cart
 	private Customer customer;
 	
 	
-	private Long id;
-	
-	
 	private Set<Item> items;
 	
 	
@@ -55,12 +52,6 @@ public class Cart
 	public Customer getCustomer () 
 	{
 		return this.customer;	
-	}
-
-	
-	public Long getId () 
-	{
-		return this.id;	
 	}
 
 	
@@ -116,12 +107,6 @@ public class Cart
 	}
 
 	
-	public void setId (Long myId) 
-	{
-		this.id = myId;	
-	}
-
-	
 	public void setOrder (Order myOrder) 
 	{
 		if (this.order != myOrder) {
@@ -148,12 +133,6 @@ public class Cart
 		Customer oldcustomer = this.customer;
 		this.customer = null;
 		oldcustomer.unsetCarts ();	
-	}
-
-	
-	public void unsetId () 
-	{
-		this.id = null;	
 	}
 
 	

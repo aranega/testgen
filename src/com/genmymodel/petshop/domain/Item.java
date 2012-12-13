@@ -8,9 +8,6 @@ public class Item
 
 	
 	
-	private Long id;
-	
-	
 	private Double price;
 	
 	
@@ -19,12 +16,6 @@ public class Item
 	
 	private String quantity;
     
-
-	
-	public Long getId () 
-	{
-		return this.id;	
-	}
 
 	
 	public Double getPrice () 
@@ -45,12 +36,6 @@ public class Item
 	}
 
 	
-	public void setId (Long myId) 
-	{
-		this.id = myId;	
-	}
-
-	
 	public void setPrice (Double myPrice) 
 	{
 		this.price = myPrice;	
@@ -66,12 +51,6 @@ public class Item
 	public void setQuantity (String myQuantity) 
 	{
 		this.quantity = myQuantity;	
-	}
-
-	
-	public void unsetId () 
-	{
-		this.id = null;	
 	}
 
 	

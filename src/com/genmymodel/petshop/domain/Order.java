@@ -1,7 +1,7 @@
 package com.genmymodel.petshop.domain;
 
-import java.util.List;
 import java.util.Set;
+import java.util.List;
 import com.genmymodel.petshop.domain.OrderStatus;
 
 
@@ -21,9 +21,6 @@ public class Order
 	
 	
 	private Address deliveryAddress;
-	
-	
-	private Long id;
 	
 	
 	private Set<Item> items;
@@ -71,12 +68,6 @@ public class Order
 	public Address getDeliveryAddress () 
 	{
 		return this.deliveryAddress;	
-	}
-
-	
-	public Long getId () 
-	{
-		return this.id;	
 	}
 
 	
@@ -157,12 +148,6 @@ public class Order
 	}
 
 	
-	public void setId (Long myId) 
-	{
-		this.id = myId;	
-	}
-
-	
 	public void setPaymentAddress (Address myPaymentAddress) 
 	{
 		this.paymentAddress = myPaymentAddress;	
@@ -210,12 +195,6 @@ public class Order
 	public void unsetDeliveryAddress () 
 	{
 		this.deliveryAddress = null;	
-	}
-
-	
-	public void unsetId () 
-	{
-		this.id = null;	
 	}
 
 	

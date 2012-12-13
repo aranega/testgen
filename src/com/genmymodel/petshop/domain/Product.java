@@ -11,9 +11,6 @@ public class Product
 	private String description;
 	
 	
-	private Long id;
-	
-	
 	private String name;
     
 
@@ -21,12 +18,6 @@ public class Product
 	public String getDescription () 
 	{
 		return this.description;	
-	}
-
-	
-	public Long getId () 
-	{
-		return this.id;	
 	}
 
 	
@@ -42,12 +33,6 @@ public class Product
 	}
 
 	
-	public void setId (Long myId) 
-	{
-		this.id = myId;	
-	}
-
-	
 	public void setName (String myName) 
 	{
 		this.name = myName;	
@@ -57,12 +42,6 @@ public class Product
 	public void unsetDescription () 
 	{
 		this.description = null;	
-	}
-
-	
-	public void unsetId () 
-	{
-		this.id = null;	
 	}
 
 	

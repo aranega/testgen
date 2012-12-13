@@ -14,9 +14,6 @@ public class Address
 	private String country;
 	
 	
-	private Long id;
-	
-	
 	private String line1;
 	
 	
@@ -33,12 +30,6 @@ public class Address
 	public String getCountry () 
 	{
 		return this.country;	
-	}
-
-	
-	public Long getId () 
-	{
-		return this.id;	
 	}
 
 	
@@ -66,12 +57,6 @@ public class Address
 	}
 
 	
-	public void setId (Long myId) 
-	{
-		this.id = myId;	
-	}
-
-	
 	public void setLine1 (String myLine1) 
 	{
 		this.line1 = myLine1;	
@@ -93,12 +78,6 @@ public class Address
 	public void unsetCountry () 
 	{
 		this.country = null;	
-	}
-
-	
-	public void unsetId () 
-	{
-		this.id = null;	
 	}
 
 	

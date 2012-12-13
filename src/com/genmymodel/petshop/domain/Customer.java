@@ -1,7 +1,7 @@
 package com.genmymodel.petshop.domain;
 
-import java.util.Set;
 import java.util.List;
+import java.util.Set;
 
 
 
@@ -17,9 +17,6 @@ public class Customer
 	
 	
 	private String firstName;
-	
-	
-	private Long id;
 	
 	
 	private String lastName;
@@ -56,12 +53,6 @@ public class Customer
 	public String getFirstName () 
 	{
 		return this.firstName;	
-	}
-
-	
-	public Long getId () 
-	{
-		return this.id;	
 	}
 
 	
@@ -117,12 +108,6 @@ public class Customer
 	}
 
 	
-	public void setId (Long myId) 
-	{
-		this.id = myId;	
-	}
-
-	
 	public void setLastName (String myLastName) 
 	{
 		this.lastName = myLastName;	
@@ -148,12 +133,6 @@ public class Customer
 	public void unsetFirstName () 
 	{
 		this.firstName = null;	
-	}
-
-	
-	public void unsetId () 
-	{
-		this.id = null;	
 	}
 
 	
