@@ -1,16 +1,13 @@
 package simple.model.simple.model.domain;
 
-import java.util.List;
 import java.util.Set;
+import java.util.List;
 
 
 
 public class A
 {
 
-	
-	
-	private Long id;
 	
 	
 	private Long longNum;
@@ -34,12 +31,6 @@ public class A
 			
 		this.mult.add (newMult);
 			
-	}
-
-	
-	public Long getId () 
-	{
-		return this.id;	
 	}
 
 	
@@ -82,12 +73,6 @@ public class A
 	}
 
 	
-	public void setId (Long myId) 
-	{
-		this.id = myId;	
-	}
-
-	
 	public void setLongNum (Long myLongNum) 
 	{
 		this.longNum = myLongNum;	
@@ -103,12 +88,6 @@ public class A
 	public void setNum (Integer myNum) 
 	{
 		this.num = myNum;	
-	}
-
-	
-	public void unsetId () 
-	{
-		this.id = null;	
 	}
 
 	

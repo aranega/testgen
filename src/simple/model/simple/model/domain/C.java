@@ -11,9 +11,6 @@ public class C
 	private B b;
 	
 	
-	private Long id;
-	
-	
 	private String name;
     
 
@@ -21,12 +18,6 @@ public class C
 	public B getB () 
 	{
 		return this.b;	
-	}
-
-	
-	public Long getId () 
-	{
-		return this.id;	
 	}
 
 	
@@ -49,12 +40,6 @@ public class C
 	}
 
 	
-	public void setId (Long myId) 
-	{
-		this.id = myId;	
-	}
-
-	
 	public void setName (String myName) 
 	{
 		this.name = myName;	
@@ -68,12 +53,6 @@ public class C
 		B oldb = this.b;
 		this.b = null;
 		oldb.removeMult (this);	
-	}
-
-	
-	public void unsetId () 
-	{
-		this.id = null;	
 	}
 
 	

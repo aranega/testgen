@@ -10,9 +10,6 @@ public class B
 
 	
 	
-	private Long id;
-	
-	
 	private Set<C> mult;
 	
 	
@@ -32,12 +29,6 @@ public class B
 		if (this.mult.add (newMult))
 			newMult.setB (this);
 			
-	}
-
-	
-	public Long getId () 
-	{
-		return this.id;	
 	}
 
 	
@@ -74,12 +65,6 @@ public class B
 	}
 
 	
-	public void setId (Long myId) 
-	{
-		this.id = myId;	
-	}
-
-	
 	public void setName (String myName) 
 	{
 		this.name = myName;	
@@ -89,12 +74,6 @@ public class B
 	public void setSingle (C mySingle) 
 	{
 		this.single = mySingle;	
-	}
-
-	
-	public void unsetId () 
-	{
-		this.id = null;	
 	}
 
 	
