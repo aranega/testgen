@@ -36,9 +36,9 @@ public class CustomerBuilder<BUILDER extends CustomerBuilder<?>>
 	
 	private Integer version;
 	@javax.inject.Inject
-	OrderBuilder<?> orderBuilder;
-	@javax.inject.Inject
 	CartBuilder<?> cartBuilder;
+	@javax.inject.Inject
+	OrderBuilder<?> orderBuilder;
 	@javax.inject.Inject
 	AddressBuilder<?> addressBuilder;
 	@javax.inject.Inject

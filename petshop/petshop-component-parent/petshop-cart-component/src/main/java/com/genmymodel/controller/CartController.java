@@ -15,6 +15,9 @@ import java.net.URL;
 import  javafx.scene.control.TableView;
 import  javafx.scene.control.ComboBox;
 import  javafx.scene.control.TextField;
+import petshop.wrappers.Item;
+import petshop.wrappers.Customer;
+import petshop.wrappers.Order;
 
 //Start of user code for imports
 // TODO: import me!
