@@ -47,3 +47,7 @@ Icon?
 .tmp/model_*.xmi
 
 model_*.xmi
+
+bin/
+
+bin/*
