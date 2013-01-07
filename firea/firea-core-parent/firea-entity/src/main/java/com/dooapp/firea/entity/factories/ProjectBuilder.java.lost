@@ -1,0 +1,6 @@
+
+Mon Jan 07 10:20:38 CET 2013
+================================================================================
+Start of user code default feature for handleDefaultName
+		result.setName(cfg.getProperty("defaultValue.Project.name"));
+		//End of user code

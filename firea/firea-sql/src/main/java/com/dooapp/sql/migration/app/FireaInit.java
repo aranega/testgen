@@ -54,7 +54,6 @@ public class FireaInit implements JavaMigration {
 						"ID BIGINT PRIMARY KEY," +
 						"title VARCHAR(255)," +
 						"sourceFile VARCHAR(255)," +
-						"preview VARCHAR(255)," +
 						"error BOOLEAN," +
 						"dataId VARCHAR(255)," +
 						"uuid CHAR(36));");
@@ -81,7 +80,7 @@ public class FireaInit implements JavaMigration {
 		 */
 		jdbcTemplate.execute("CREATE TABLE IF NOT EXISTS ProjectBean (" +
 						"ID BIGINT PRIMARY KEY," +
-						"NAMECOLUMN VARCHAR(255)," +
+						"nameDo VARCHAR(255)," +
 						"description VARCHAR(255)," +
 						"kind VARCHAR(255)," +
 						"Status VARCHAR(255)," +
@@ -154,7 +153,7 @@ public class FireaInit implements JavaMigration {
 		jdbcTemplate.execute("CREATE TABLE IF NOT EXISTS GazBean (" +
 						"ID BIGINT PRIMARY KEY," +
 						"NAMECOLUMN VARCHAR(255)," +
-						"TYPECOLUMN VARCHAR(255)," +
+						"TYPECOLUMN BIGINT," +
 						"density DOUBLE," +
 						"weight VARCHAR(255)," +
 						"uuid CHAR(36));");
@@ -181,8 +180,7 @@ public class FireaInit implements JavaMigration {
 						"slowUnloadingValue DOUBLE," +
 						"retentionGoal DOUBLE," +
 						"leekRepartitionPercent DOUBLE," +
-						"uuid CHAR(36)," +
-						"gaz_ID BIGINT);");
+						"uuid CHAR(36));");
 		
 		/*
 		 *  Table structure BottleConfiguration
@@ -357,7 +355,6 @@ public class FireaInit implements JavaMigration {
 		
 		
 		
-		jdbcTemplate.execute("ALTER TABLE GazConfigurationBean ADD FOREIGN KEY(gaz_ID) REFERENCES GazBean(ID);");
 		
 		jdbcTemplate.execute("ALTER TABLE BottleConfigurationBean ADD FOREIGN KEY(gazconfiguration_ID) REFERENCES GazConfigurationBean(ID);");
 		jdbcTemplate.execute("ALTER TABLE BottleConfigurationBean ADD FOREIGN KEY(bottletype_ID) REFERENCES BottleTypeBean(ID);");

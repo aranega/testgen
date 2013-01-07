@@ -41,7 +41,9 @@ public class GazCriteria implements com.dooapp.lib.common.entity.Wrapper
 	
 	private StringProperty nameProperty;
 	
-	private StringProperty typeProperty;
+	private LongProperty typeMaxProperty;
+	
+	private LongProperty typeMinProperty;
 	
 	private ObjectProperty<java.util.Date> updateDateMaxProperty;
 	
@@ -431,32 +433,32 @@ public class GazCriteria implements com.dooapp.lib.common.entity.Wrapper
 		updateName(myName, null);
 	}
 
-	public StringProperty typeProperty(){
-		if (this.typeProperty == null) {
-			this.typeProperty = new SimpleStringProperty(gazCriteria.getType());
-			this.typeProperty.addListener(new ChangeListener<String>() {
+	public LongProperty typeMaxProperty(){
+		if (this.typeMaxProperty == null) {
+			this.typeMaxProperty = new SimpleLongProperty(gazCriteria.getTypeMax());
+			this.typeMaxProperty.addListener(new ChangeListener<Number>() {
 				@Override
-				public void changed(ObservableValue<? extends String> arg0, String arg1, String arg2) {
-					gazCriteria.setType((String) arg2);
+				public void changed(ObservableValue<? extends Number> arg0, Number arg1, Number arg2) {
+					gazCriteria.setTypeMax((Long) arg2);
 				}
 			});
-			//Start of user code typeproperty method
+			//Start of user code typeMaxproperty method
 			//End of user code
 		}
-		return this.typeProperty;
+		return this.typeMaxProperty;
 	}
 	
-	public String getType(){
-		return typeProperty().get();
+	public long getTypeMax(){
+		return typeMaxProperty().get();
 	} 
 	
-	public void setType(String myType){
-		this.typeProperty().set(myType);
+	public void setTypeMax(long myTypeMax){
+		this.typeMaxProperty().set(myTypeMax);
 	}
 	
-	public void updateType(final String myType, final Object mutex) {
+	public void updateTypeMax(final long myTypeMax, final Object mutex) {
 		if (javafx.application.Platform.isFxApplicationThread()) {
-			setType(myType);
+			setTypeMax(myTypeMax);
 			if (mutex != null) {
 				mutex.notify();
 			}
@@ -464,7 +466,7 @@ public class GazCriteria implements com.dooapp.lib.common.entity.Wrapper
 			javafx.application.Platform.runLater(new Runnable() {
 				@Override
 				public void run() {
-					setType(myType);
+					setTypeMax(myTypeMax);
 					if (mutex != null) {
 						mutex.notify();
 					}
@@ -473,8 +475,54 @@ public class GazCriteria implements com.dooapp.lib.common.entity.Wrapper
 		}
 	}
 	
-	public void updateType(final String myType) {
-		updateType(myType, null);
+	public void updateTypeMax(final long myTypeMax) {
+		updateTypeMax(myTypeMax, null);
+	}
+
+	public LongProperty typeMinProperty(){
+		if (this.typeMinProperty == null) {
+			this.typeMinProperty = new SimpleLongProperty(gazCriteria.getTypeMin());
+			this.typeMinProperty.addListener(new ChangeListener<Number>() {
+				@Override
+				public void changed(ObservableValue<? extends Number> arg0, Number arg1, Number arg2) {
+					gazCriteria.setTypeMin((Long) arg2);
+				}
+			});
+			//Start of user code typeMinproperty method
+			//End of user code
+		}
+		return this.typeMinProperty;
+	}
+	
+	public long getTypeMin(){
+		return typeMinProperty().get();
+	} 
+	
+	public void setTypeMin(long myTypeMin){
+		this.typeMinProperty().set(myTypeMin);
+	}
+	
+	public void updateTypeMin(final long myTypeMin, final Object mutex) {
+		if (javafx.application.Platform.isFxApplicationThread()) {
+			setTypeMin(myTypeMin);
+			if (mutex != null) {
+				mutex.notify();
+			}
+		} else {
+			javafx.application.Platform.runLater(new Runnable() {
+				@Override
+				public void run() {
+					setTypeMin(myTypeMin);
+					if (mutex != null) {
+						mutex.notify();
+					}
+				}
+			});
+		}
+	}
+	
+	public void updateTypeMin(final long myTypeMin) {
+		updateTypeMin(myTypeMin, null);
 	}
 
 	public ObjectProperty<java.util.Date> updateDateMaxProperty() {

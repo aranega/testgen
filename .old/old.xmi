@@ -48,9 +48,6 @@
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="sourceFile">
         <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
       </eStructuralFeatures>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="preview">
-        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-      </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="error">
         <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
       </eStructuralFeatures>
@@ -88,7 +85,7 @@
       <eLiterals name="NFPA_2000"/>
     </eClassifiers>
     <eClassifiers xsi:type="emf4java:Entity" name="Project">
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="nameDo">
         <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="description">
@@ -227,14 +224,13 @@
         <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="type">
-        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="density">
         <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="weight" eType="//entity/GazWeight"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="bottletypes" upperBound="-1" eType="//entity/BottleType"/>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="gazconfiguration" upperBound="-1" eType="//entity/GazConfiguration" eOpposite="//entity/GazConfiguration/gaz"/>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
         <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
       </eStructuralFeatures>
@@ -261,7 +257,6 @@
     </eClassifiers>
     <eClassifiers xsi:type="emf4java:Entity" name="GazConfiguration">
       <eStructuralFeatures xsi:type="ecore:EReference" name="project" eType="//entity/Project" eOpposite="//entity/Project/gazconfiguration"/>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="gaz" eType="//entity/Gaz" eOpposite="//entity/Gaz/gazconfiguration"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="bottleconfigurations" upperBound="-1" eType="//entity/BottleConfiguration" eOpposite="//entity/BottleConfiguration/gazconfiguration"/>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="retentionInterface">
         <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
@@ -304,7 +299,7 @@
     </eClassifiers>
     <eClassifiers xsi:type="emf4java:SpecialEnum" name="BottleUnit">
       <eLiterals name="WEIGHT"/>
-      <eLiterals name="VOLUME"/>
+      <eLiterals name="VOLUME_NEW"/>
     </eClassifiers>
     <eClassifiers xsi:type="emf4java:Entity" name="Sample">
       <eStructuralFeatures xsi:type="ecore:EReference" name="project" lowerBound="1" eType="//entity/Project" eOpposite="//entity/Project/sample"/>

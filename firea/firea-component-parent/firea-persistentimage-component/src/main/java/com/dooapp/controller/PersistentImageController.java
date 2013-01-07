@@ -38,8 +38,6 @@ public class PersistentImageController extends AbstractController<Node> implemen
 	@javafx.fxml.FXML
 	private TextField id_data;
 	@javafx.fxml.FXML
-	private TextField preview_data;
-	@javafx.fxml.FXML
 	private TextField sourceFile_data;
 	@javafx.fxml.FXML
 	private TextField title_data;
@@ -77,8 +75,6 @@ public class PersistentImageController extends AbstractController<Node> implemen
 		this.binder.configureBindingBidirectional(error_data.textProperty(), persistentImage.errorProperty());
 		id_data.setText(String.valueOf(persistentImage.getId()));
 		this.binder.configureBindingBidirectional(id_data.textProperty(), persistentImage.idProperty());
-		preview_data.setText(String.valueOf(persistentImage.getPreview()));
-		this.binder.configureBindingBidirectional(preview_data.textProperty(), persistentImage.previewProperty());
 		sourceFile_data.setText(String.valueOf(persistentImage.getSourceFile()));
 		this.binder.configureBindingBidirectional(sourceFile_data.textProperty(), persistentImage.sourceFileProperty());
 		title_data.setText(String.valueOf(persistentImage.getTitle()));

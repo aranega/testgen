@@ -35,8 +35,6 @@ public class PersistentImage implements com.dooapp.lib.common.entity.Wrapper
 	
 	private LongProperty idProperty;
 	
-	private StringProperty previewProperty;
-	
 	private StringProperty sourceFileProperty;
 	
 	private StringProperty titleProperty;
@@ -269,52 +267,6 @@ public class PersistentImage implements com.dooapp.lib.common.entity.Wrapper
 	
 	public void updateId(final long myId) {
 		updateId(myId, null);
-	}
-
-	public StringProperty previewProperty(){
-		if (this.previewProperty == null) {
-			this.previewProperty = new SimpleStringProperty(persistentImage.getPreview());
-			this.previewProperty.addListener(new ChangeListener<String>() {
-				@Override
-				public void changed(ObservableValue<? extends String> arg0, String arg1, String arg2) {
-					persistentImage.setPreview((String) arg2);
-				}
-			});
-			//Start of user code previewproperty method
-			//End of user code
-		}
-		return this.previewProperty;
-	}
-	
-	public String getPreview(){
-		return previewProperty().get();
-	} 
-	
-	public void setPreview(String myPreview){
-		this.previewProperty().set(myPreview);
-	}
-	
-	public void updatePreview(final String myPreview, final Object mutex) {
-		if (javafx.application.Platform.isFxApplicationThread()) {
-			setPreview(myPreview);
-			if (mutex != null) {
-				mutex.notify();
-			}
-		} else {
-			javafx.application.Platform.runLater(new Runnable() {
-				@Override
-				public void run() {
-					setPreview(myPreview);
-					if (mutex != null) {
-						mutex.notify();
-					}
-				}
-			});
-		}
-	}
-	
-	public void updatePreview(final String myPreview) {
-		updatePreview(myPreview, null);
 	}
 
 	public StringProperty sourceFileProperty(){

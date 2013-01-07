@@ -18,7 +18,6 @@ import javafx.beans.property.StringProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.IntegerProperty;
 import com.dooapp.firea.entity.BottleTypeBean;
-import com.dooapp.firea.entity.GazConfigurationBean;
 //Start of user code for imports
 // TODO: import me!
 //End of user code
@@ -38,13 +37,11 @@ public class Gaz implements com.dooapp.lib.common.entity.Wrapper
 	
 	private DoubleProperty densityProperty;
 	
-	private ObjectProperty<ObservableList<GazConfiguration>> gazconfigurationProperty;
-	
 	private LongProperty idProperty;
 	
 	private StringProperty nameProperty;
 	
-	private StringProperty typeProperty;
+	private LongProperty typeProperty;
 	
 	private ObjectProperty<java.util.Date> updateDateProperty;
 	
@@ -221,41 +218,6 @@ public class Gaz implements com.dooapp.lib.common.entity.Wrapper
 		updateDensity(myDensity, null);
 	}
 
-	public ReadOnlyObjectProperty<ObservableList<GazConfiguration>> gazconfigurationProperty() {
-		if (gazconfigurationProperty == null) {
-			gazconfigurationProperty = new SimpleObjectProperty<ObservableList<GazConfiguration>>(
-					FXCollections.<GazConfiguration> observableArrayList());
-			for (GazConfigurationBean b : gaz.getGazconfiguration()) {
-				gazconfigurationProperty.get().add(b.getWrapper());
-			}
-			gazconfigurationProperty.get().addListener(new javafx.collections.ListChangeListener<GazConfiguration>() {
-				@Override
-				public void onChanged(javafx.collections.ListChangeListener.Change<? extends GazConfiguration> change) {
-					while (change.next()) {
-						if (change.getAddedSize() > 0) {
-							for (GazConfiguration tmp : change.getAddedSubList()) {
-								gaz.addGazconfiguration(tmp == null ? null : tmp.getBean());
-							}
-						}
-						if (change.getRemovedSize() > 0) {
-							for (GazConfiguration tmp : change.getRemoved()) {
-								gaz.getGazconfiguration().remove(tmp == null ? null : tmp.getBean());
-							}
-						}
-					}
-				}
-			});
-			//Start of user code gazconfigurationproperty method
-			//End of user code
-		}
-		return gazconfigurationProperty;
-	}
-	
-	public ObservableList<GazConfiguration> getGazconfiguration()
-	{ 
-		return gazconfigurationProperty().get(); 
-	}
-
 	public LongProperty idProperty(){
 		if (this.idProperty == null) {
 			this.idProperty = new SimpleLongProperty(gaz.getId());
@@ -348,13 +310,13 @@ public class Gaz implements com.dooapp.lib.common.entity.Wrapper
 		updateName(myName, null);
 	}
 
-	public StringProperty typeProperty(){
+	public LongProperty typeProperty(){
 		if (this.typeProperty == null) {
-			this.typeProperty = new SimpleStringProperty(gaz.getType());
-			this.typeProperty.addListener(new ChangeListener<String>() {
+			this.typeProperty = new SimpleLongProperty(gaz.getType());
+			this.typeProperty.addListener(new ChangeListener<Number>() {
 				@Override
-				public void changed(ObservableValue<? extends String> arg0, String arg1, String arg2) {
-					gaz.setType((String) arg2);
+				public void changed(ObservableValue<? extends Number> arg0, Number arg1, Number arg2) {
+					gaz.setType((Long) arg2);
 				}
 			});
 			//Start of user code typeproperty method
@@ -363,15 +325,15 @@ public class Gaz implements com.dooapp.lib.common.entity.Wrapper
 		return this.typeProperty;
 	}
 	
-	public String getType(){
+	public long getType(){
 		return typeProperty().get();
 	} 
 	
-	public void setType(String myType){
+	public void setType(long myType){
 		this.typeProperty().set(myType);
 	}
 	
-	public void updateType(final String myType, final Object mutex) {
+	public void updateType(final long myType, final Object mutex) {
 		if (javafx.application.Platform.isFxApplicationThread()) {
 			setType(myType);
 			if (mutex != null) {
@@ -390,7 +352,7 @@ public class Gaz implements com.dooapp.lib.common.entity.Wrapper
 		}
 	}
 	
-	public void updateType(final String myType) {
+	public void updateType(final long myType) {
 		updateType(myType, null);
 	}
 

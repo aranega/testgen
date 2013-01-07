@@ -39,8 +39,6 @@ public class GazConfiguration implements com.dooapp.lib.common.entity.Wrapper
 	
 	private BooleanProperty droppedFloorFullProperty;
 	
-	private ObjectProperty<Gaz> gazProperty;
-	
 	private LongProperty idProperty;
 	
 	private DoubleProperty leekRepartitionPercentProperty;
@@ -272,57 +270,6 @@ public class GazConfiguration implements com.dooapp.lib.common.entity.Wrapper
 	
 	public void updateDroppedFloorFull(final boolean myDroppedFloorFull) {
 		updateDroppedFloorFull(myDroppedFloorFull, null);
-	}
-
-	public ObjectProperty<Gaz> gazProperty() {
-		if (gazProperty == null) {
-			gazProperty = new SimpleObjectProperty<Gaz>(gazConfiguration.getGaz() == null ? null : gazConfiguration
-					.getGaz().getWrapper());
-			gazProperty.addListener(new ChangeListener<Gaz>() {
-				@Override
-				public void changed(ObservableValue<? extends Gaz> obj, Gaz oldValue, Gaz newValue) {
-					gazConfiguration.setGaz(newValue == null ? null : newValue.getBean());
-				}
-			});
-			//Start of user code gazproperty method
-			//End of user code
-		}
-		return gazProperty;
-	}
-	
-	public Gaz getGaz(){
-		return gazProperty().get();
-	} 
-	
-	public void setGaz(Gaz myGaz){
-		if (gazProperty == null) {
-				gazConfiguration.setGaz(myGaz == null ? null : myGaz.getBean());
-			} else {
-				this.gazProperty().set(myGaz);
-			}
-	}
-	
-	public void updateGaz(final Gaz myGaz, final Object mutex) {
-		if (javafx.application.Platform.isFxApplicationThread()) {
-			setGaz(myGaz);
-			if (mutex != null) {
-				mutex.notify();
-			}
-		} else {
-			javafx.application.Platform.runLater(new Runnable() {
-				@Override
-				public void run() {
-					setGaz(myGaz);
-					if (mutex != null) {
-						mutex.notify();
-					}
-				}
-			});
-		}
-	}
-	
-	public void updateGaz(final Gaz myGaz) {
-		updateGaz(myGaz, null);
 	}
 
 	public LongProperty idProperty(){

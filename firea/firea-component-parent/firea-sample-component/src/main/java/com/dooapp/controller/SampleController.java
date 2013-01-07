@@ -15,6 +15,11 @@ import java.net.URL;
 import  javafx.scene.control.TableView;
 import  javafx.scene.control.ComboBox;
 import  javafx.scene.control.TextField;
+import firea.wrappers.Project;
+import firea.wrappers.Step;
+import firea.entity.SampleStatus;
+import firea.entity.AirPressureCalculationMethod;
+import firea.entity.BeaufortScale;
 
 //Start of user code for imports
 // TODO: import me!

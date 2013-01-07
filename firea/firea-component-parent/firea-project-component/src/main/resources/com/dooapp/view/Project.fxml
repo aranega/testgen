@@ -25,8 +25,6 @@
 					<children>
 						<GridPane>
 							<children>
-								<Label fx:id="name_label" GridPane.rowIndex="0" GridPane.columnIndex="0" text="name" />
-								<TextField fx:id="name_data" GridPane.rowIndex="0" GridPane.columnIndex="1" editable="true" />
 								<Label fx:id="description_label" GridPane.rowIndex="1" GridPane.columnIndex="0" text="description" />
 								<TextField fx:id="description_data" GridPane.rowIndex="1" GridPane.columnIndex="1" editable="true" />
 								<Label fx:id="reference_label" GridPane.rowIndex="2" GridPane.columnIndex="0" text="reference" />
@@ -42,24 +40,14 @@
 								<Label fx:id="kind_label" GridPane.rowIndex="7" GridPane.columnIndex="0" text="kind" />
 								<ComboBox fx:id="kind_data" GridPane.rowIndex="7" GridPane.columnIndex="1">
 									<items>
-										<FXCollections fx:factory="observableArrayList">
-											<String fx:value="R13_APSAD" />
-											<String fx:value="ISO_14520_2006" />
-											<String fx:value="ISO_14520_2004" />
-											<String fx:value="NFPA_2008" />
-											<String fx:value="NFPA_2000" />
-											
-										</FXCollections>
+										<FXCollections fx:factory="observableArrayList" />
+										
 									</items>
 								</ComboBox><Label fx:id="status_label" GridPane.rowIndex="0" GridPane.columnIndex="2" text="Status" />
 								<ComboBox fx:id="status_data" GridPane.rowIndex="0" GridPane.columnIndex="3">
 									<items>
-										<FXCollections fx:factory="observableArrayList">
-											<String fx:value="TO_PLAN" />
-											<String fx:value="IN_PROGRESS" />
-											<String fx:value="DONE" />
-											
-										</FXCollections>
+										<FXCollections fx:factory="observableArrayList" />
+										
 									</items>
 								</ComboBox><Label fx:id="risque_label" GridPane.rowIndex="1" GridPane.columnIndex="2" text="risque" />
 								<ComboBox fx:id="risque_data" GridPane.rowIndex="1" GridPane.columnIndex="3" onAction="#selectRisque" />
@@ -82,114 +70,38 @@
 									<children>
 										<TableView fx:id="sample_dataview" prefHeight="50.0" editable="true">
 											<columns>
-												<TableColumn text="name">
-													<cellValueFactory>
-														<PropertyValueFactory property="name" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="date">
-													<cellValueFactory>
-														<PropertyValueFactory property="date" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="status">
-													<cellValueFactory>
-														<PropertyValueFactory property="status" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="airPressure">
-													<cellValueFactory>
-														<PropertyValueFactory property="airPressure" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="airPressureCalculationMethod">
-													<cellValueFactory>
-														<PropertyValueFactory property="airPressureCalculationMethod" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="beaufortScale">
-													<cellValueFactory>
-														<PropertyValueFactory property="beaufortScale" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="phiEPercent">
-													<cellValueFactory>
-														<PropertyValueFactory property="phiEPercent" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="phiIPercent">
-													<cellValueFactory>
-														<PropertyValueFactory property="phiIPercent" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="roI">
-													<cellValueFactory>
-														<PropertyValueFactory property="roI" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="roE">
-													<cellValueFactory>
-														<PropertyValueFactory property="roE" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="tetaI">
-													<cellValueFactory>
-														<PropertyValueFactory property="tetaI" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="tetaE">
-													<cellValueFactory>
-														<PropertyValueFactory property="tetaE" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="windMeasure">
-													<cellValueFactory>
-														<PropertyValueFactory property="windMeasure" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="highUp">
-													<cellValueFactory>
-														<PropertyValueFactory property="highUp" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="id">
-													<cellValueFactory>
-														<PropertyValueFactory property="id" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="creationDate">
-													<cellValueFactory>
-														<PropertyValueFactory property="creationDate" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="updateDate">
-													<cellValueFactory>
-														<PropertyValueFactory property="updateDate" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="version">
-													<cellValueFactory>
-														<PropertyValueFactory property="version" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="project">
-													<cellValueFactory>
-														<PropertyValueFactory property="project" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="step">
-													<cellValueFactory>
-														<PropertyValueFactory property="step" />
-														
-													</cellValueFactory>
-												</TableColumn>
+												<TableColumn text="name" />
+												<TableColumn text="date" />
+												<TableColumn text="status" />
+												<TableColumn text="airPressure" />
+												<TableColumn text="airPressureCalculationMethod" />
+												<TableColumn text="beaufortScale" />
+												<TableColumn text="phiEPercent" />
+												<TableColumn text="phiIPercent" />
+												<TableColumn text="roI" />
+												<TableColumn text="roE" />
+												<TableColumn text="tetaI" />
+												<TableColumn text="tetaE" />
+												<TableColumn text="windMeasure" />
+												<TableColumn text="highUp" />
+												<TableColumn text="id" />
+												<TableColumn text="creationDate" />
+												<TableColumn text="updateDate" />
+												<TableColumn text="version" />
+												<TableColumn text="project" />
+												<TableColumn text="step" />
+												
 											</columns>
 										</TableView><ComboBox fx:id="sample_data" onAction="#selectSample" />
 										
 									</children>
 								</VBox>
 							</children>
-						</GridPane>
+						</GridPane><TextField fx:id="nameDo_data" editable="true" />
+						<TextField fx:id="nameDo_data" editable="true" />
+						<Label fx:id="nameDo_label" text="nameDo" />
+						<Label fx:id="nameDo_label" text="nameDo" />
+						
 					</children>
 				</StackPane><StackPane fx:id="_trash" visible="false" />
 				

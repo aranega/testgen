@@ -38,8 +38,6 @@ public class PersistentImageBean implements Bean
 	@javax.persistence.Column(name = "ID")
 	private long id;
 	
-	private String preview;
-	
 	private String sourceFile;
 	
 	private String title;
@@ -140,13 +138,6 @@ public class PersistentImageBean implements Bean
 	
 	public void setId(long arg0){
 		this.id = arg0;
-	}
-	public String getPreview(){
-		return this.preview;
-	}
-	
-	public void setPreview(String arg0){
-		this.preview = arg0;
 	}
 	public String getSourceFile(){
 		return this.sourceFile;

@@ -39,7 +39,7 @@ public class ProjectCriteria implements com.dooapp.lib.common.entity.Wrapper
 	
 	private ObjectProperty<com.dooapp.firea.entity.ProjectKind> kindProperty;
 	
-	private StringProperty nameProperty;
+	private StringProperty nameDoProperty;
 	
 	private StringProperty referenceProperty;
 	
@@ -437,32 +437,32 @@ public class ProjectCriteria implements com.dooapp.lib.common.entity.Wrapper
 		updateKind(myKind, null);
 	}
 
-	public StringProperty nameProperty(){
-		if (this.nameProperty == null) {
-			this.nameProperty = new SimpleStringProperty(projectCriteria.getName());
-			this.nameProperty.addListener(new ChangeListener<String>() {
+	public StringProperty nameDoProperty(){
+		if (this.nameDoProperty == null) {
+			this.nameDoProperty = new SimpleStringProperty(projectCriteria.getNameDo());
+			this.nameDoProperty.addListener(new ChangeListener<String>() {
 				@Override
 				public void changed(ObservableValue<? extends String> arg0, String arg1, String arg2) {
-					projectCriteria.setName((String) arg2);
+					projectCriteria.setNameDo((String) arg2);
 				}
 			});
-			//Start of user code nameproperty method
+			//Start of user code nameDoproperty method
 			//End of user code
 		}
-		return this.nameProperty;
+		return this.nameDoProperty;
 	}
 	
-	public String getName(){
-		return nameProperty().get();
+	public String getNameDo(){
+		return nameDoProperty().get();
 	} 
 	
-	public void setName(String myName){
-		this.nameProperty().set(myName);
+	public void setNameDo(String myNameDo){
+		this.nameDoProperty().set(myNameDo);
 	}
 	
-	public void updateName(final String myName, final Object mutex) {
+	public void updateNameDo(final String myNameDo, final Object mutex) {
 		if (javafx.application.Platform.isFxApplicationThread()) {
-			setName(myName);
+			setNameDo(myNameDo);
 			if (mutex != null) {
 				mutex.notify();
 			}
@@ -470,7 +470,7 @@ public class ProjectCriteria implements com.dooapp.lib.common.entity.Wrapper
 			javafx.application.Platform.runLater(new Runnable() {
 				@Override
 				public void run() {
-					setName(myName);
+					setNameDo(myNameDo);
 					if (mutex != null) {
 						mutex.notify();
 					}
@@ -479,8 +479,8 @@ public class ProjectCriteria implements com.dooapp.lib.common.entity.Wrapper
 		}
 	}
 	
-	public void updateName(final String myName) {
-		updateName(myName, null);
+	public void updateNameDo(final String myNameDo) {
+		updateNameDo(myNameDo, null);
 	}
 
 	public StringProperty referenceProperty(){

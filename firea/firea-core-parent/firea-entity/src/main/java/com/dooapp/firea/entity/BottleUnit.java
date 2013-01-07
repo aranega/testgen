@@ -7,7 +7,7 @@ import com.dooapp.lib.guice.IOC;
 public enum BottleUnit
 {
 	WEIGHT("BottleUnit.WEIGHT"),
-	VOLUME("BottleUnit.VOLUME");
+	VOLUME_NEW("BottleUnit.VOLUME_NEW");
 	
 	/**
 	 * The famous {@link ResourceBundle}

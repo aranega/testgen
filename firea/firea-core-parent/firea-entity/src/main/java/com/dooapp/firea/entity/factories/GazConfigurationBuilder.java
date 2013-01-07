@@ -2,9 +2,8 @@ package com.dooapp.firea.entity.factories;
 
 
 import com.dooapp.firea.wrapper.GazConfiguration;
-import com.dooapp.firea.wrapper.BottleConfiguration;
 import com.dooapp.firea.wrapper.Project;
-import com.dooapp.firea.wrapper.Gaz;
+import com.dooapp.firea.wrapper.BottleConfiguration;
 //Start of user code for imports
 // TODO: import me!
 //End of user code
@@ -26,8 +25,6 @@ public class GazConfigurationBuilder<BUILDER extends GazConfigurationBuilder<?>>
 	
 	private Boolean droppedFloorFull;
 	
-	private Gaz gaz;
-	
 	private Long id;
 	
 	private Double leekRepartitionPercent;
@@ -46,11 +43,9 @@ public class GazConfigurationBuilder<BUILDER extends GazConfigurationBuilder<?>>
 	
 	private Integer version;
 	@javax.inject.Inject
-	ProjectBuilder<?> projectBuilder;
-	@javax.inject.Inject
-	GazBuilder<?> gazBuilder;
-	@javax.inject.Inject
 	BottleConfigurationBuilder<?> bottleConfigurationBuilder;
+	@javax.inject.Inject
+	ProjectBuilder<?> projectBuilder;
 	@javax.inject.Inject
 	java.util.Properties cfg;
 	/**
@@ -90,11 +85,6 @@ public class GazConfigurationBuilder<BUILDER extends GazConfigurationBuilder<?>>
 			handleDefaultDroppedFloorFull(result);
 		} else {
 			result.setDroppedFloorFull(droppedFloorFull);
-		}
-		if (gaz == null) {
-			handleDefaultGaz(result);
-		} else {
-			result.setGaz(gaz);
 		}
 		if (id == null) {
 			handleDefaultId(result);
@@ -177,12 +167,6 @@ public class GazConfigurationBuilder<BUILDER extends GazConfigurationBuilder<?>>
 		//End of user code
 	}
 
-	private void handleDefaultGaz(GazConfiguration result) {
-		//Start of user code default feature for handleDefaultGaz
-		//result.setGaz(null);
-		//End of user code
-	}
-
 	private void handleDefaultId(GazConfiguration result) {
 		//Start of user code default feature for handleDefaultId
 		result.setId(Long.valueOf(cfg.getProperty("defaultValue.GazConfiguration.id", "0")));
@@ -260,11 +244,6 @@ public class GazConfigurationBuilder<BUILDER extends GazConfigurationBuilder<?>>
 
 	public BUILDER droppedFloorFull(Boolean myDroppedFloorFull) {
 			this.droppedFloorFull = myDroppedFloorFull;
-			return (BUILDER) this;
-	}
-
-	public BUILDER gaz(Gaz myGaz) {
-			this.gaz = myGaz;
 			return (BUILDER) this;
 	}
 

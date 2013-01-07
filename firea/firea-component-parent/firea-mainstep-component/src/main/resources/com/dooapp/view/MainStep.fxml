@@ -48,15 +48,8 @@
 								<Label fx:id="status_label" GridPane.rowIndex="2" GridPane.columnIndex="2" text="status" />
 								<ComboBox fx:id="status_data" GridPane.rowIndex="2" GridPane.columnIndex="3">
 									<items>
-										<FXCollections fx:factory="observableArrayList">
-											<String fx:value="NO_STARTED" />
-											<String fx:value="READY" />
-											<String fx:value="IN_PROGRESS" />
-											<String fx:value="WAIT_FOR_VALIDATION" />
-											<String fx:value="DONE" />
-											<String fx:value="ERROR" />
-											
-										</FXCollections>
+										<FXCollections fx:factory="observableArrayList" />
+										
 									</items>
 								</ComboBox><Label fx:id="sample_label" GridPane.rowIndex="3" GridPane.columnIndex="2" text="sample" />
 								<ComboBox fx:id="sample_data" GridPane.rowIndex="3" GridPane.columnIndex="3" onAction="#selectSample" />
@@ -65,42 +58,14 @@
 									<children>
 										<TableView fx:id="points_dataview" prefHeight="50.0" editable="true">
 											<columns>
-												<TableColumn text="pressureGoal">
-													<cellValueFactory>
-														<PropertyValueFactory property="pressureGoal" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="id">
-													<cellValueFactory>
-														<PropertyValueFactory property="id" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="creationDate">
-													<cellValueFactory>
-														<PropertyValueFactory property="creationDate" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="updateDate">
-													<cellValueFactory>
-														<PropertyValueFactory property="updateDate" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="version">
-													<cellValueFactory>
-														<PropertyValueFactory property="version" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="step">
-													<cellValueFactory>
-														<PropertyValueFactory property="step" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="readings">
-													<cellValueFactory>
-														<PropertyValueFactory property="readings" />
-														
-													</cellValueFactory>
-												</TableColumn>
+												<TableColumn text="pressureGoal" />
+												<TableColumn text="id" />
+												<TableColumn text="creationDate" />
+												<TableColumn text="updateDate" />
+												<TableColumn text="version" />
+												<TableColumn text="step" />
+												<TableColumn text="readings" />
+												
 											</columns>
 										</TableView><ComboBox fx:id="points_data" onAction="#selectPoints" />
 										

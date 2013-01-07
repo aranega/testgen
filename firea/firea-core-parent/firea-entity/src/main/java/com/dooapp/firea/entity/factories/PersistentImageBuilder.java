@@ -23,8 +23,6 @@ public class PersistentImageBuilder<BUILDER extends PersistentImageBuilder<?>>
 	
 	private Long id;
 	
-	private String preview;
-	
 	private String sourceFile;
 	
 	private String title;
@@ -71,11 +69,6 @@ public class PersistentImageBuilder<BUILDER extends PersistentImageBuilder<?>>
 			handleDefaultId(result);
 		} else {
 			result.setId(id);
-		}
-		if (preview == null) {
-			handleDefaultPreview(result);
-		} else {
-			result.setPreview(preview);
 		}
 		if (sourceFile == null) {
 			handleDefaultSourceFile(result);
@@ -133,12 +126,6 @@ public class PersistentImageBuilder<BUILDER extends PersistentImageBuilder<?>>
 		//End of user code
 	}
 
-	private void handleDefaultPreview(PersistentImage result) {
-		//Start of user code default feature for handleDefaultPreview
-		result.setPreview(cfg.getProperty("defaultValue.PersistentImage.preview"));
-		//End of user code
-	}
-
 	private void handleDefaultSourceFile(PersistentImage result) {
 		//Start of user code default feature for handleDefaultSourceFile
 		result.setSourceFile(cfg.getProperty("defaultValue.PersistentImage.sourceFile"));
@@ -186,11 +173,6 @@ public class PersistentImageBuilder<BUILDER extends PersistentImageBuilder<?>>
 
 	public BUILDER id(Long myId) {
 			this.id = myId;
-			return (BUILDER) this;
-	}
-
-	public BUILDER preview(String myPreview) {
-			this.preview = myPreview;
 			return (BUILDER) this;
 	}
 

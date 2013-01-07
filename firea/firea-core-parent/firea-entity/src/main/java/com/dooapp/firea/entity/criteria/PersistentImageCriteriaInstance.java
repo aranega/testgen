@@ -28,8 +28,6 @@ public class PersistentImageCriteriaInstance implements Bean
 	
 	private Long idMin;
 	
-	private String preview;
-	
 	private String sourceFile;
 	
 	private String title;
@@ -104,13 +102,6 @@ public class PersistentImageCriteriaInstance implements Bean
 	
 	public void setIdMin(Long arg0){
 		this.idMin = arg0;
-	} 
-	public String getPreview(){
-		return this.preview;
-	}
-	
-	public void setPreview(String arg0){
-		this.preview = arg0;
 	} 
 	public String getSourceFile(){
 		return this.sourceFile;

@@ -58,40 +58,20 @@
 								<Label fx:id="status_label" GridPane.rowIndex="7" GridPane.columnIndex="2" text="status" />
 								<ComboBox fx:id="status_data" GridPane.rowIndex="7" GridPane.columnIndex="3">
 									<items>
-										<FXCollections fx:factory="observableArrayList">
-											<String fx:value="NO_STARTED" />
-											<String fx:value="STARTED" />
-											<String fx:value="DONE" />
-											<String fx:value="ERROR" />
-											
-										</FXCollections>
+										<FXCollections fx:factory="observableArrayList" />
+										
 									</items>
 								</ComboBox><Label fx:id="airPressureCalculationMethod_label" GridPane.rowIndex="0" GridPane.columnIndex="4" text="airPressureCalculationMethod" />
 								<ComboBox fx:id="airPressureCalculationMethod_data" GridPane.rowIndex="0" GridPane.columnIndex="5">
 									<items>
-										<FXCollections fx:factory="observableArrayList">
-											<String fx:value="MEASURE" />
-											<String fx:value="METEO_CENTER" />
-											<String fx:value="HIGH_UP_CALCULATION" />
-											
-										</FXCollections>
+										<FXCollections fx:factory="observableArrayList" />
+										
 									</items>
 								</ComboBox><Label fx:id="beaufortScale_label" GridPane.rowIndex="1" GridPane.columnIndex="4" text="beaufortScale" />
 								<ComboBox fx:id="beaufortScale_data" GridPane.rowIndex="1" GridPane.columnIndex="5">
 									<items>
-										<FXCollections fx:factory="observableArrayList">
-											<String fx:value="FORCE0" />
-											<String fx:value="FORCE1" />
-											<String fx:value="FORCE2" />
-											<String fx:value="FORCE3" />
-											<String fx:value="FORCE4" />
-											<String fx:value="FORCE5" />
-											<String fx:value="FORCE6" />
-											<String fx:value="FORCE7" />
-											<String fx:value="FORCE8" />
-											<String fx:value="FORCE9" />
-											
-										</FXCollections>
+										<FXCollections fx:factory="observableArrayList" />
+										
 									</items>
 								</ComboBox><Label fx:id="project_label" GridPane.rowIndex="2" GridPane.columnIndex="4" text="project" />
 								<ComboBox fx:id="project_data" GridPane.rowIndex="2" GridPane.columnIndex="5" onAction="#selectProject" />
@@ -100,47 +80,15 @@
 									<children>
 										<TableView fx:id="step_dataview" prefHeight="50.0" editable="true">
 											<columns>
-												<TableColumn text="status">
-													<cellValueFactory>
-														<PropertyValueFactory property="status" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="date">
-													<cellValueFactory>
-														<PropertyValueFactory property="date" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="id">
-													<cellValueFactory>
-														<PropertyValueFactory property="id" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="creationDate">
-													<cellValueFactory>
-														<PropertyValueFactory property="creationDate" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="updateDate">
-													<cellValueFactory>
-														<PropertyValueFactory property="updateDate" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="version">
-													<cellValueFactory>
-														<PropertyValueFactory property="version" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="sample">
-													<cellValueFactory>
-														<PropertyValueFactory property="sample" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="points">
-													<cellValueFactory>
-														<PropertyValueFactory property="points" />
-														
-													</cellValueFactory>
-												</TableColumn>
+												<TableColumn text="status" />
+												<TableColumn text="date" />
+												<TableColumn text="id" />
+												<TableColumn text="creationDate" />
+												<TableColumn text="updateDate" />
+												<TableColumn text="version" />
+												<TableColumn text="sample" />
+												<TableColumn text="points" />
+												
 											</columns>
 										</TableView><ComboBox fx:id="step_data" onAction="#selectStep" />
 										

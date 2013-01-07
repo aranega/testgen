@@ -33,8 +33,6 @@ public class GazBean implements Bean
 	private java.util.Date creationDate;
 	
 	private double density;
-	@javax.persistence.OneToMany(fetch = javax.persistence.FetchType.EAGER, mappedBy = "gaz", cascade = javax.persistence.CascadeType.ALL)
-	private java.util.Set<GazConfigurationBean> gazconfiguration;
 	@javax.persistence.Id
 	@javax.persistence.SequenceGenerator(name = "seq", initialValue = 1, allocationSize = 10)
 	@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.SEQUENCE, generator = "seq")
@@ -43,7 +41,7 @@ public class GazBean implements Bean
 	@javax.persistence.Column(name = "NAMECOLUMN")
 	private String name;
 	@javax.persistence.Column(name = "TYPECOLUMN")
-	private String type;
+	private long type;
 	@javax.persistence.Column(name = "UPDATE_DATE")
 	@javax.persistence.Temporal(javax.persistence.TemporalType.TIMESTAMP)
 	private java.util.Date updateDate;
@@ -144,20 +142,6 @@ public class GazBean implements Bean
 	public void setDensity(double arg0){
 		this.density = arg0;
 	}
-	public java.util.List<GazConfigurationBean> getGazconfiguration(){
-			if(this.gazconfiguration==null) {
-				this.gazconfiguration= new java.util.HashSet<GazConfigurationBean>();
-			}
-			return new java.util.ArrayList<GazConfigurationBean>(this.gazconfiguration);
-	}
-	
-	public void addGazconfiguration(GazConfigurationBean newGazconfiguration){
-		if(this.gazconfiguration==null) {
-				this.gazconfiguration= new java.util.HashSet<GazConfigurationBean>();
-			}
-				
-			this.gazconfiguration.add (newGazconfiguration);
-	} 
 	public long getId(){
 		return this.id;
 	}
@@ -172,11 +156,11 @@ public class GazBean implements Bean
 	public void setName(String arg0){
 		this.name = arg0;
 	}
-	public String getType(){
+	public long getType(){
 		return this.type;
 	}
 	
-	public void setType(String arg0){
+	public void setType(long arg0){
 		this.type = arg0;
 	}
 	public java.util.Date getUpdateDate(){

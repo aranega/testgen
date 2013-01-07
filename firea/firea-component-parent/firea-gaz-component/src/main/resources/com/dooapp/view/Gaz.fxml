@@ -42,144 +42,29 @@
 								<Label fx:id="weight_label" GridPane.rowIndex="7" GridPane.columnIndex="0" text="weight" />
 								<ComboBox fx:id="weight_data" GridPane.rowIndex="7" GridPane.columnIndex="1">
 									<items>
-										<FXCollections fx:factory="observableArrayList">
-											<String fx:value="HEAVY" />
-											<String fx:value="LIGHT" />
-											<String fx:value="MIXED" />
-											
-										</FXCollections>
+										<FXCollections fx:factory="observableArrayList" />
+										
 									</items>
 								</ComboBox><Label fx:id="bottletypes_label" GridPane.rowIndex="0" GridPane.columnIndex="2" text="bottletypes" />
 								<VBox GridPane.rowIndex="0" GridPane.columnIndex="3">
 									<children>
 										<TableView fx:id="bottletypes_dataview" prefHeight="50.0" editable="true">
 											<columns>
-												<TableColumn text="name">
-													<cellValueFactory>
-														<PropertyValueFactory property="name" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="weight">
-													<cellValueFactory>
-														<PropertyValueFactory property="weight" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="volume">
-													<cellValueFactory>
-														<PropertyValueFactory property="volume" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="id">
-													<cellValueFactory>
-														<PropertyValueFactory property="id" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="creationDate">
-													<cellValueFactory>
-														<PropertyValueFactory property="creationDate" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="updateDate">
-													<cellValueFactory>
-														<PropertyValueFactory property="updateDate" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="version">
-													<cellValueFactory>
-														<PropertyValueFactory property="version" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="bottleconfiguration">
-													<cellValueFactory>
-														<PropertyValueFactory property="bottleconfiguration" />
-														
-													</cellValueFactory>
-												</TableColumn>
+												<TableColumn text="name" />
+												<TableColumn text="weight" />
+												<TableColumn text="volume" />
+												<TableColumn text="id" />
+												<TableColumn text="creationDate" />
+												<TableColumn text="updateDate" />
+												<TableColumn text="version" />
+												<TableColumn text="bottleconfiguration" />
+												
 											</columns>
 										</TableView><ComboBox fx:id="bottletypes_data" onAction="#selectBottletypes" />
 										
 									</children>
-								</VBox><Label fx:id="gazconfiguration_label" GridPane.rowIndex="1" GridPane.columnIndex="2" text="gazconfiguration" />
-								<VBox GridPane.rowIndex="1" GridPane.columnIndex="3">
-									<children>
-										<TableView fx:id="gazconfiguration_dataview" prefHeight="50.0" editable="true">
-											<columns>
-												<TableColumn text="retentionInterface">
-													<cellValueFactory>
-														<PropertyValueFactory property="retentionInterface" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="droppedFloorFull">
-													<cellValueFactory>
-														<PropertyValueFactory property="droppedFloorFull" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="droppedCeilFull">
-													<cellValueFactory>
-														<PropertyValueFactory property="droppedCeilFull" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="slowUnloading">
-													<cellValueFactory>
-														<PropertyValueFactory property="slowUnloading" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="slowUnloadingValue">
-													<cellValueFactory>
-														<PropertyValueFactory property="slowUnloadingValue" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="retentionGoal">
-													<cellValueFactory>
-														<PropertyValueFactory property="retentionGoal" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="leekRepartitionPercent">
-													<cellValueFactory>
-														<PropertyValueFactory property="leekRepartitionPercent" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="id">
-													<cellValueFactory>
-														<PropertyValueFactory property="id" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="creationDate">
-													<cellValueFactory>
-														<PropertyValueFactory property="creationDate" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="updateDate">
-													<cellValueFactory>
-														<PropertyValueFactory property="updateDate" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="version">
-													<cellValueFactory>
-														<PropertyValueFactory property="version" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="project">
-													<cellValueFactory>
-														<PropertyValueFactory property="project" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="gaz">
-													<cellValueFactory>
-														<PropertyValueFactory property="gaz" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="bottleconfigurations">
-													<cellValueFactory>
-														<PropertyValueFactory property="bottleconfigurations" />
-														
-													</cellValueFactory>
-												</TableColumn>
-											</columns>
-										</TableView><ComboBox fx:id="gazconfiguration_data" onAction="#selectGazconfiguration" />
-										
-									</children>
-								</VBox>
+								</VBox><VBox GridPane.rowIndex="1" GridPane.columnIndex="3" />
+								
 							</children>
 						</GridPane>
 					</children>

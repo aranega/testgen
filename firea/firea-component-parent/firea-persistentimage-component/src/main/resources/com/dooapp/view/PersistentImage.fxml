@@ -29,8 +29,6 @@
 								<TextField fx:id="title_data" GridPane.rowIndex="0" GridPane.columnIndex="1" editable="true" />
 								<Label fx:id="sourceFile_label" GridPane.rowIndex="1" GridPane.columnIndex="0" text="sourceFile" />
 								<TextField fx:id="sourceFile_data" GridPane.rowIndex="1" GridPane.columnIndex="1" editable="true" />
-								<Label fx:id="preview_label" GridPane.rowIndex="2" GridPane.columnIndex="0" text="preview" />
-								<TextField fx:id="preview_data" GridPane.rowIndex="2" GridPane.columnIndex="1" editable="true" />
 								<Label fx:id="error_label" GridPane.rowIndex="3" GridPane.columnIndex="0" text="error" />
 								<TextField fx:id="error_data" GridPane.rowIndex="3" GridPane.columnIndex="1" editable="true" />
 								<Label fx:id="dataId_label" GridPane.rowIndex="4" GridPane.columnIndex="0" text="dataId" />

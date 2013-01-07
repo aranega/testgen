@@ -43,7 +43,7 @@ public class ProjectBuilder<BUILDER extends ProjectBuilder<?>>
 	
 	private com.dooapp.firea.entity.ProjectKind kind;
 	
-	private String name;
+	private String nameDo;
 	
 	private String reference;
 	
@@ -59,17 +59,17 @@ public class ProjectBuilder<BUILDER extends ProjectBuilder<?>>
 	
 	private Integer version;
 	@javax.inject.Inject
-	GazConfigurationBuilder<?> gazConfigurationBuilder;
+	PersistentImageBuilder<?> persistentImageBuilder;
 	@javax.inject.Inject
-	RisqueBuilder<?> risqueBuilder;
+	GazConfigurationBuilder<?> gazConfigurationBuilder;
 	@javax.inject.Inject
 	TestedRoomBuilder<?> testedRoomBuilder;
 	@javax.inject.Inject
-	PersistentImageBuilder<?> persistentImageBuilder;
+	SampleBuilder<?> sampleBuilder;
 	@javax.inject.Inject
 	ContactBuilder<?> contactBuilder;
 	@javax.inject.Inject
-	SampleBuilder<?> sampleBuilder;
+	RisqueBuilder<?> risqueBuilder;
 	@javax.inject.Inject
 	java.util.Properties cfg;
 	/**
@@ -140,10 +140,10 @@ public class ProjectBuilder<BUILDER extends ProjectBuilder<?>>
 		} else {
 			result.setKind(kind);
 		}
-		if (name == null) {
-			handleDefaultName(result);
+		if (nameDo == null) {
+			handleDefaultNameDo(result);
 		} else {
-			result.setName(name);
+			result.setNameDo(nameDo);
 		}
 		if (reference == null) {
 			handleDefaultReference(result);
@@ -252,9 +252,9 @@ public class ProjectBuilder<BUILDER extends ProjectBuilder<?>>
 		//End of user code
 	}
 
-	private void handleDefaultName(Project result) {
-		//Start of user code default feature for handleDefaultName
-		result.setName(cfg.getProperty("defaultValue.Project.name"));
+	private void handleDefaultNameDo(Project result) {
+		//Start of user code default feature for handleDefaultNameDo
+		result.setNameDo(cfg.getProperty("defaultValue.Project.nameDo"));
 		//End of user code
 	}
 
@@ -356,8 +356,8 @@ public class ProjectBuilder<BUILDER extends ProjectBuilder<?>>
 			return (BUILDER) this;
 	}
 
-	public BUILDER name(String myName) {
-			this.name = myName;
+	public BUILDER nameDo(String myNameDo) {
+			this.nameDo = myNameDo;
 			return (BUILDER) this;
 	}
 

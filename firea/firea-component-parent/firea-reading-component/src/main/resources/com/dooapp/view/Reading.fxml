@@ -50,37 +50,13 @@
 									<children>
 										<TableView fx:id="device_dataview" prefHeight="50.0" editable="true">
 											<columns>
-												<TableColumn text="serialNumber">
-													<cellValueFactory>
-														<PropertyValueFactory property="serialNumber" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="lastCalibrationDate">
-													<cellValueFactory>
-														<PropertyValueFactory property="lastCalibrationDate" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="id">
-													<cellValueFactory>
-														<PropertyValueFactory property="id" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="creationDate">
-													<cellValueFactory>
-														<PropertyValueFactory property="creationDate" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="updateDate">
-													<cellValueFactory>
-														<PropertyValueFactory property="updateDate" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="version">
-													<cellValueFactory>
-														<PropertyValueFactory property="version" />
-														
-													</cellValueFactory>
-												</TableColumn>
+												<TableColumn text="serialNumber" />
+												<TableColumn text="lastCalibrationDate" />
+												<TableColumn text="id" />
+												<TableColumn text="creationDate" />
+												<TableColumn text="updateDate" />
+												<TableColumn text="version" />
+												
 											</columns>
 										</TableView><ComboBox fx:id="device_data" onAction="#selectDevice" />
 										

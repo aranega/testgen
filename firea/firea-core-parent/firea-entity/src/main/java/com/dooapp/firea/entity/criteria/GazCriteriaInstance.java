@@ -30,7 +30,9 @@ public class GazCriteriaInstance implements Bean
 	
 	private String name;
 	
-	private String type;
+	private Long typeMax;
+	
+	private Long typeMin;
 	
 	private java.util.Date updateDateMax;
 	
@@ -112,12 +114,19 @@ public class GazCriteriaInstance implements Bean
 	public void setName(String arg0){
 		this.name = arg0;
 	} 
-	public String getType(){
-		return this.type;
+	public Long getTypeMax(){
+		return this.typeMax;
 	}
 	
-	public void setType(String arg0){
-		this.type = arg0;
+	public void setTypeMax(Long arg0){
+		this.typeMax = arg0;
+	} 
+	public Long getTypeMin(){
+		return this.typeMin;
+	}
+	
+	public void setTypeMin(Long arg0){
+		this.typeMin = arg0;
 	} 
 	public java.util.Date getUpdateDateMax(){
 		return this.updateDateMax;

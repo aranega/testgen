@@ -39,8 +39,6 @@ public class PersistentImageCriteria implements com.dooapp.lib.common.entity.Wra
 	
 	private LongProperty idMinProperty;
 	
-	private StringProperty previewProperty;
-	
 	private StringProperty sourceFileProperty;
 	
 	private StringProperty titleProperty;
@@ -383,52 +381,6 @@ public class PersistentImageCriteria implements com.dooapp.lib.common.entity.Wra
 	
 	public void updateIdMin(final long myIdMin) {
 		updateIdMin(myIdMin, null);
-	}
-
-	public StringProperty previewProperty(){
-		if (this.previewProperty == null) {
-			this.previewProperty = new SimpleStringProperty(persistentImageCriteria.getPreview());
-			this.previewProperty.addListener(new ChangeListener<String>() {
-				@Override
-				public void changed(ObservableValue<? extends String> arg0, String arg1, String arg2) {
-					persistentImageCriteria.setPreview((String) arg2);
-				}
-			});
-			//Start of user code previewproperty method
-			//End of user code
-		}
-		return this.previewProperty;
-	}
-	
-	public String getPreview(){
-		return previewProperty().get();
-	} 
-	
-	public void setPreview(String myPreview){
-		this.previewProperty().set(myPreview);
-	}
-	
-	public void updatePreview(final String myPreview, final Object mutex) {
-		if (javafx.application.Platform.isFxApplicationThread()) {
-			setPreview(myPreview);
-			if (mutex != null) {
-				mutex.notify();
-			}
-		} else {
-			javafx.application.Platform.runLater(new Runnable() {
-				@Override
-				public void run() {
-					setPreview(myPreview);
-					if (mutex != null) {
-						mutex.notify();
-					}
-				}
-			});
-		}
-	}
-	
-	public void updatePreview(final String myPreview) {
-		updatePreview(myPreview, null);
 	}
 
 	public StringProperty sourceFileProperty(){

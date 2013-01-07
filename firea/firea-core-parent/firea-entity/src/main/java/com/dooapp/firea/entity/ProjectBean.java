@@ -49,8 +49,8 @@ public class ProjectBean implements Bean
 	private PersistentImageBean image;
 	@javax.persistence.Enumerated(javax.persistence.EnumType.STRING)
 	private com.dooapp.firea.entity.ProjectKind kind;
-	@javax.persistence.Column(name = "NAMECOLUMN")
-	private String name;
+	
+	private String nameDo;
 	
 	private String reference;
 	@javax.persistence.ManyToOne(cascade = javax.persistence.CascadeType.ALL)
@@ -238,12 +238,12 @@ public class ProjectBean implements Bean
 	public void unsetKind(com.dooapp.firea.entity.ProjectKind arg0){
 		this.kind = null;
 	}
-	public String getName(){
-		return this.name;
+	public String getNameDo(){
+		return this.nameDo;
 	}
 	
-	public void setName(String arg0){
-		this.name = arg0;
+	public void setNameDo(String arg0){
+		this.nameDo = arg0;
 	}
 	public String getReference(){
 		return this.reference;

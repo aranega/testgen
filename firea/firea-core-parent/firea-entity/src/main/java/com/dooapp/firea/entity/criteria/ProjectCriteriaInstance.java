@@ -30,7 +30,7 @@ public class ProjectCriteriaInstance implements Bean
 	
 	private com.dooapp.firea.entity.ProjectKind kind;
 	
-	private String name;
+	private String nameDo;
 	
 	private String reference;
 	
@@ -112,12 +112,12 @@ public class ProjectCriteriaInstance implements Bean
 	public void setKind(com.dooapp.firea.entity.ProjectKind arg0){
 		this.kind = arg0;
 	} 
-	public String getName(){
-		return this.name;
+	public String getNameDo(){
+		return this.nameDo;
 	}
 	
-	public void setName(String arg0){
-		this.name = arg0;
+	public void setNameDo(String arg0){
+		this.nameDo = arg0;
 	} 
 	public String getReference(){
 		return this.reference;

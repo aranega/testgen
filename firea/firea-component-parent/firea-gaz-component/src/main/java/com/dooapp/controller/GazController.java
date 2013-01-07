@@ -15,6 +15,8 @@ import java.net.URL;
 import  javafx.scene.control.TableView;
 import  javafx.scene.control.ComboBox;
 import  javafx.scene.control.TextField;
+import firea.wrappers.BottleType;
+import firea.entity.GazWeight;
 
 //Start of user code for imports
 // TODO: import me!
@@ -39,10 +41,6 @@ public class GazController extends AbstractController<Node> implements javafx.fx
 	private TextField creationDate_data;
 	@javafx.fxml.FXML
 	private TextField density_data;
-	@javafx.fxml.FXML
-	private ComboBox<GazConfiguration> gazconfiguration_data;
-	@javafx.fxml.FXML
-	private TableView<GazConfiguration> gazconfiguration_dataview;
 	@javafx.fxml.FXML
 	private TextField id_data;
 	@javafx.fxml.FXML
@@ -113,14 +111,6 @@ public class GazController extends AbstractController<Node> implements javafx.fx
 	public void selectBottletypes () 
 	{
 		//Start of user code selectBottletypes
-		// TODO: implement me! 
-		//End of user code	
-	}
-
-	@javafx.fxml.FXML
-	public void selectGazconfiguration () 
-	{
-		//Start of user code selectGazconfiguration
 		// TODO: implement me! 
 		//End of user code	
 	}

@@ -34,8 +34,6 @@ public class GazConfigurationBean implements Bean
 	private boolean droppedCeilFull;
 	
 	private boolean droppedFloorFull;
-	@javax.persistence.ManyToOne(cascade = javax.persistence.CascadeType.ALL)
-	private GazBean gaz;
 	@javax.persistence.Id
 	@javax.persistence.SequenceGenerator(name = "seq", initialValue = 1, allocationSize = 10)
 	@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.SEQUENCE, generator = "seq")
@@ -158,18 +156,6 @@ public class GazConfigurationBean implements Bean
 	public void setDroppedFloorFull(boolean arg0){
 		this.droppedFloorFull = arg0;
 	}
-	public GazBean getGaz(){
-		return this.gaz;
-	}
-	
-	public void setGaz(GazBean arg0){
-		this.gaz = arg0;
-	}
-	
-	public void unsetGaz(){
-			this.gaz = null;
-			
-	} 
 	public long getId(){
 		return this.id;
 	}

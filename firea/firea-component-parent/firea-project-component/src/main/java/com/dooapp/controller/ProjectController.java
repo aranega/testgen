@@ -61,7 +61,9 @@ public class ProjectController extends AbstractController<Node> implements javaf
 	@javafx.fxml.FXML
 	private ComboBox<ProjectKind> kind_data;
 	@javafx.fxml.FXML
-	private TextField name_data;
+	private TextField nameDo_data;
+	@javafx.fxml.FXML
+	private TextField nameDo_data;
 	@javafx.fxml.FXML
 	private TextField reference_data;
 	@javafx.fxml.FXML
@@ -108,8 +110,10 @@ public class ProjectController extends AbstractController<Node> implements javaf
 		this.binder.configureBindingBidirectional(description_data.textProperty(), project.descriptionProperty());
 		id_data.setText(String.valueOf(project.getId()));
 		this.binder.configureBindingBidirectional(id_data.textProperty(), project.idProperty());
-		name_data.setText(String.valueOf(project.getName()));
-		this.binder.configureBindingBidirectional(name_data.textProperty(), project.nameProperty());
+		nameDo_data.setText(String.valueOf(project.getNameDo()));
+		this.binder.configureBindingBidirectional(nameDo_data.textProperty(), project.nameDoProperty());
+		nameDo_data.setText(String.valueOf(project.getNameDo()));
+		this.binder.configureBindingBidirectional(nameDo_data.textProperty(), project.nameDoProperty());
 		reference_data.setText(String.valueOf(project.getReference()));
 		this.binder.configureBindingBidirectional(reference_data.textProperty(), project.referenceProperty());
 		updateDate_data.setText(String.valueOf(project.getUpdateDate()));

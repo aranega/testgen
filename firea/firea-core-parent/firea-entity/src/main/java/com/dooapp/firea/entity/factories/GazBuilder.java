@@ -3,7 +3,6 @@ package com.dooapp.firea.entity.factories;
 
 import com.dooapp.firea.wrapper.Gaz;
 import com.dooapp.firea.wrapper.BottleType;
-import com.dooapp.firea.wrapper.GazConfiguration;
 import com.dooapp.firea.entity.GazWeight;
 //Start of user code for imports
 // TODO: import me!
@@ -24,21 +23,17 @@ public class GazBuilder<BUILDER extends GazBuilder<?>>
 	
 	private Double density;
 	
-	private java.util.Set<GazConfiguration> gazconfiguration;
-	
 	private Long id;
 	
 	private String name;
 	
-	private String type;
+	private Long type;
 	
 	private java.util.Date updateDate;
 	
 	private Integer version;
 	
 	private com.dooapp.firea.entity.GazWeight weight;
-	@javax.inject.Inject
-	GazConfigurationBuilder<?> gazConfigurationBuilder;
 	@javax.inject.Inject
 	BottleTypeBuilder<?> bottleTypeBuilder;
 	@javax.inject.Inject
@@ -75,11 +70,6 @@ public class GazBuilder<BUILDER extends GazBuilder<?>>
 			handleDefaultDensity(result);
 		} else {
 			result.setDensity(density);
-		}
-		if (gazconfiguration == null) {
-			handleDefaultGazconfiguration(result);
-		} else {
-			result.gazconfigurationProperty().get().addAll(gazconfiguration);
 		}
 		if (id == null) {
 			handleDefaultId(result);
@@ -141,12 +131,6 @@ public class GazBuilder<BUILDER extends GazBuilder<?>>
 		//End of user code
 	}
 
-	private void handleDefaultGazconfiguration(Gaz result) {
-		//Start of user code default feature for handleDefaultGazconfiguration
-		//do nothing
-		//End of user code
-	}
-
 	private void handleDefaultId(Gaz result) {
 		//Start of user code default feature for handleDefaultId
 		result.setId(Long.valueOf(cfg.getProperty("defaultValue.Gaz.id", "0")));
@@ -204,11 +188,6 @@ public class GazBuilder<BUILDER extends GazBuilder<?>>
 			return (BUILDER) this;
 	}
 
-	public BUILDER gazconfiguration(GazConfiguration... myGazconfiguration) {
-			this.gazconfiguration = new java.util.HashSet<GazConfiguration>(java.util.Arrays.asList(myGazconfiguration));
-			return (BUILDER) this;
-	}
-
 	public BUILDER id(Long myId) {
 			this.id = myId;
 			return (BUILDER) this;
@@ -219,7 +198,7 @@ public class GazBuilder<BUILDER extends GazBuilder<?>>
 			return (BUILDER) this;
 	}
 
-	public BUILDER type(String myType) {
+	public BUILDER type(Long myType) {
 			this.type = myType;
 			return (BUILDER) this;
 	}
