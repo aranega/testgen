@@ -22,6 +22,8 @@ public class StepBuilder<BUILDER extends StepBuilder<?>>
 	// Other attributes
 	//End of user code
 	
+	private String UnunsefuleAtt;
+	
 	private java.util.Date creationDate;
 	
 	private java.util.Date date;
@@ -67,6 +69,11 @@ public class StepBuilder<BUILDER extends StepBuilder<?>>
 	 */
 	public Step build() throws NullPointerException {
 		Step result =  this.createValue() ;
+		if (UnunsefuleAtt == null) {
+			handleDefaultUnunsefuleAtt(result);
+		} else {
+			result.setUnunsefuleAtt(UnunsefuleAtt);
+		}
 		if (creationDate == null) {
 			handleDefaultCreationDate(result);
 		} else {
@@ -113,6 +120,16 @@ public class StepBuilder<BUILDER extends StepBuilder<?>>
 	/*
 	 * Generated getters and setters
 	 */
+	/*
+	 * <!-- Start of user code comment for UnunsefuleAtt default method
+	 * End of user code -->
+	 */
+	private void handleDefaultUnunsefuleAtt(Step result) {
+		//Start of user code default feature for handleDefaultUnunsefuleAtt
+		result.setUnunsefuleAtt(cfg.getProperty("defaultValue.Step.ununsefuleAtt"));
+		//End of user code
+	}
+
 	/*
 	 * <!-- Start of user code comment for creationDate default method
 	 * End of user code -->
@@ -209,6 +226,15 @@ public class StepBuilder<BUILDER extends StepBuilder<?>>
 		//Start of user code default feature for handleDefaultVersion
 		result.setVersion(Integer.valueOf(cfg.getProperty("defaultValue.Step.version", "0")));
 		//End of user code
+	}
+
+	/*
+	 * <!-- Start of user code comment for UnunsefuleAtt
+	 * End of user code -->
+	 */
+	public BUILDER UnunsefuleAtt(String myUnunsefuleAtt) {
+			this.UnunsefuleAtt = myUnunsefuleAtt;
+			return (BUILDER) this;
 	}
 
 	/*

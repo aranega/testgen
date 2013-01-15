@@ -352,6 +352,9 @@
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="date">
         <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
       </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="UnunsefuleAtt">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
         <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
       </eStructuralFeatures>
@@ -470,7 +473,7 @@
     </eClassifiers>
     <eClassifiers xsi:type="emf4java:SpecialEnum" name="ProjectStatus">
       <eLiterals name="TO_PLAN"/>
-      <eLiterals name="IN_PROGRESS"/>
+      <eLiterals name="IN_PROGRESSION"/>
       <eLiterals name="DONE"/>
     </eClassifiers>
   </eSubpackages>

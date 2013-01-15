@@ -11,7 +11,7 @@ import com.dooapp.lib.guice.IOC;
 public enum ProjectStatus
 {
 	TO_PLAN("ProjectStatus.TO_PLAN"),
-	IN_PROGRESS("ProjectStatus.IN_PROGRESS"),
+	IN_PROGRESSION("ProjectStatus.IN_PROGRESSION"),
 	DONE("ProjectStatus.DONE");
 	
 	/**

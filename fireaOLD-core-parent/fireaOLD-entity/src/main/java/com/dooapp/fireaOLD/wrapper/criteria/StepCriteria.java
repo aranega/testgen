@@ -8,6 +8,8 @@ import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleLongProperty;
 import javafx.beans.property.LongProperty;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.IntegerProperty;
 //Start of user code for imports
@@ -24,6 +26,8 @@ public class StepCriteria implements com.dooapp.lib.common.entity.Wrapper
 	//Start of user code for attributes
 	// Other attributes
 	//End of user code
+	
+	private StringProperty ununsefuleAttProperty;
 	
 	private ObjectProperty<java.util.Date> creationDateMaxProperty;
 	
@@ -101,6 +105,67 @@ public class StepCriteria implements com.dooapp.lib.common.entity.Wrapper
 	public long getId(){
 		return 0;
 	}	
+
+	/*
+	 * <!-- Start of user code comment for UnunsefuleAtt property method 
+		-->
+	 * <!-- End of user code -->
+	 */
+	public StringProperty ununsefuleAttProperty(){
+		if (this.ununsefuleAttProperty == null) {
+			this.ununsefuleAttProperty = new SimpleStringProperty(stepCriteria.getUnunsefuleAtt());
+			this.ununsefuleAttProperty.addListener(new ChangeListener<String>() {
+				@Override
+				public void changed(ObservableValue<? extends String> arg0, String arg1, String arg2) {
+					stepCriteria.setUnunsefuleAtt((String) arg2);
+				}
+			});
+			//Start of user code UnunsefuleAttproperty method
+			//End of user code
+		}
+		return this.ununsefuleAttProperty;
+	}
+	
+	/*
+	 * <!-- Start of user code comment for UnunsefuleAtt getter 
+		-->
+	 * <!-- End of user code -->
+	 */
+	public String getUnunsefuleAtt(){
+		return ununsefuleAttProperty().get();
+	} 
+	
+	/*
+	 * <!-- Start of user code comment for UnunsefuleAtt setter 
+		-->
+	 * <!-- End of user code -->
+	 */
+	public void setUnunsefuleAtt(String myUnunsefuleAtt){
+		this.ununsefuleAttProperty().set(myUnunsefuleAtt);
+	}
+	
+	public void updateUnunsefuleAtt(final String myUnunsefuleAtt, final Object mutex) {
+		if (javafx.application.Platform.isFxApplicationThread()) {
+			setUnunsefuleAtt(myUnunsefuleAtt);
+			if (mutex != null) {
+				mutex.notify();
+			}
+		} else {
+			javafx.application.Platform.runLater(new Runnable() {
+				@Override
+				public void run() {
+					setUnunsefuleAtt(myUnunsefuleAtt);
+					if (mutex != null) {
+						mutex.notify();
+					}
+				}
+			});
+		}
+	}
+	
+	public void updateUnunsefuleAtt(final String myUnunsefuleAtt) {
+		updateUnunsefuleAtt(myUnunsefuleAtt, null);
+	}
 
 	/*
 	 * <!-- Start of user code comment for creationDateMax property method 

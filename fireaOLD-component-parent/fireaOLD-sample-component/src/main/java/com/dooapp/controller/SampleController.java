@@ -15,6 +15,11 @@ import java.net.URL;
 import  javafx.scene.control.TableView;
 import  javafx.scene.control.ComboBox;
 import  javafx.scene.control.TextField;
+import fireaOLD.wrappers.Project;
+import fireaOLD.wrappers.Step;
+import fireaOLD.entity.SampleStatus;
+import fireaOLD.entity.AirPressureCalculationMethod;
+import fireaOLD.entity.BeaufortScale;
 
 //Start of user code for imports
 // TODO: import me!
@@ -59,6 +64,10 @@ public class SampleController extends AbstractController<Node> implements javafx
 	private ComboBox<SampleStatus> status_data;
 	@javafx.fxml.FXML
 	private ComboBox<Step> step_data;
+	@javafx.fxml.FXML
+	private TableView<Step> step_dataview;
+	@javafx.fxml.FXML
+	private TableView<Step> step_dataview;
 	@javafx.fxml.FXML
 	private TableView<Step> step_dataview;
 	@javafx.fxml.FXML

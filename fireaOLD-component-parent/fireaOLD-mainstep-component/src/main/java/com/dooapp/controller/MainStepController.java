@@ -56,6 +56,10 @@ public class MainStepController extends AbstractController<Node> implements java
 	@javafx.fxml.FXML
 	private ComboBox<org.eclipse.emf.ecore.impl.DynamicEObjectImpl@75289698 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@3bb7113f (name: OclInvalid_Class) (instanceClassName: null) (abstract: false, interface: false))> status_data;
 	@javafx.fxml.FXML
+	private TextField ununsefuleAtt_data;
+	@javafx.fxml.FXML
+	private TextField ununsefuleAtt_data;
+	@javafx.fxml.FXML
 	private TextField updateDate_data;
 	@javafx.fxml.FXML
 	private TextField version_data;
@@ -97,6 +101,10 @@ public class MainStepController extends AbstractController<Node> implements java
 		this.binder.configureBindingBidirectional(id_data.textProperty(), mainStep.idProperty());
 		n_data.setText(String.valueOf(mainStep.getN()));
 		this.binder.configureBindingBidirectional(n_data.textProperty(), mainStep.nProperty());
+		ununsefuleAtt_data.setText(String.valueOf(mainStep.getUnunsefuleAtt()));
+		this.binder.configureBindingBidirectional(ununsefuleAtt_data.textProperty(), mainStep.ununsefuleAttProperty());
+		ununsefuleAtt_data.setText(String.valueOf(mainStep.getUnunsefuleAtt()));
+		this.binder.configureBindingBidirectional(ununsefuleAtt_data.textProperty(), mainStep.ununsefuleAttProperty());
 		updateDate_data.setText(String.valueOf(mainStep.getUpdateDate()));
 		this.binder.configureBindingBidirectional(updateDate_data.textProperty(), mainStep.updateDateProperty());
 		version_data.setText(String.valueOf(mainStep.getVersion()));

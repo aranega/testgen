@@ -53,13 +53,13 @@ public class ProjectBuilder<BUILDER extends ProjectBuilder<?>>
 	@javax.inject.Inject
 	SampleBuilder<?> sampleBuilder;
 	@javax.inject.Inject
-	PersistentImageBuilder<?> persistentImageBuilder;
+	ContactBuilder<?> contactBuilder;
 	@javax.inject.Inject
-	GazConfigurationBuilder<?> gazConfigurationBuilder;
+	PersistentImageBuilder<?> persistentImageBuilder;
 	@javax.inject.Inject
 	RisqueBuilder<?> risqueBuilder;
 	@javax.inject.Inject
-	ContactBuilder<?> contactBuilder;
+	GazConfigurationBuilder<?> gazConfigurationBuilder;
 	@javax.inject.Inject
 	java.util.Properties cfg;
 	/**

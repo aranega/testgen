@@ -19,6 +19,8 @@ public class StepCriteriaInstance implements Bean
 {
 	
 	
+	private String UnunsefuleAtt;
+	
 	private java.util.Date creationDateMax;
 	
 	private java.util.Date creationDateMin;
@@ -70,6 +72,21 @@ public class StepCriteriaInstance implements Bean
 		this.wrapper = wrapper;
 	}
 
+	/*
+	 * <!-- Start of user code comment for UnunsefuleAtt getter
+	 * End of user code -->
+	 */
+	public String getUnunsefuleAtt(){
+		return this.UnunsefuleAtt;
+	}
+	
+	/*
+	 * <!-- Start of user code comment for UnunsefuleAtt setter
+	 * End of user code -->
+	 */
+	public void setUnunsefuleAtt(String arg0){
+		this.UnunsefuleAtt = arg0;
+	} 
 	/*
 	 * <!-- Start of user code comment for creationDateMax getter
 	 * End of user code -->
