@@ -28,8 +28,6 @@ public class SampleBuilder<BUILDER extends SampleBuilder<?>>
 	
 	private com.dooapp.fireaOLD.entity.AirPressureCalculationMethod airPressureCalculationMethod;
 	
-	private String attribute;
-	
 	private com.dooapp.fireaOLD.entity.BeaufortScale beaufortScale;
 	
 	private java.util.Date creationDate;
@@ -102,11 +100,6 @@ public class SampleBuilder<BUILDER extends SampleBuilder<?>>
 			handleDefaultAirPressureCalculationMethod(result);
 		} else {
 			result.setAirPressureCalculationMethod(airPressureCalculationMethod);
-		}
-		if (attribute == null) {
-			handleDefaultAttribute(result);
-		} else {
-			result.setAttribute(attribute);
 		}
 		if (beaufortScale == null) {
 			handleDefaultBeaufortScale(result);
@@ -216,16 +209,6 @@ public class SampleBuilder<BUILDER extends SampleBuilder<?>>
 	private void handleDefaultAirPressureCalculationMethod(Sample result) {
 		//Start of user code default feature for handleDefaultAirPressureCalculationMethod
 		result.setAirPressureCalculationMethod(AirPressureCalculationMethod.valueOf(cfg.getProperty("defaultValue.Sample.airPressureCalculationMethod", "MEASUREs")));
-		//End of user code
-	}
-
-	/*
-	 * <!-- Start of user code comment for attribute default method
-	 * End of user code -->
-	 */
-	private void handleDefaultAttribute(Sample result) {
-		//Start of user code default feature for handleDefaultAttribute
-		result.setAttribute(cfg.getProperty("defaultValue.Sample.attribute"));
 		//End of user code
 	}
 
@@ -432,15 +415,6 @@ public class SampleBuilder<BUILDER extends SampleBuilder<?>>
 	 */
 	public BUILDER airPressureCalculationMethod(com.dooapp.fireaOLD.entity.AirPressureCalculationMethod myAirPressureCalculationMethod) {
 			this.airPressureCalculationMethod = myAirPressureCalculationMethod;
-			return (BUILDER) this;
-	}
-
-	/*
-	 * <!-- Start of user code comment for attribute
-	 * End of user code -->
-	 */
-	public BUILDER attribute(String myAttribute) {
-			this.attribute = myAttribute;
 			return (BUILDER) this;
 	}
 

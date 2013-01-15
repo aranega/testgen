@@ -15,6 +15,7 @@ import java.net.URL;
 import  javafx.scene.control.TableView;
 import  javafx.scene.control.ComboBox;
 import  javafx.scene.control.TextField;
+import fireaOLD.wrappers.BlowHole;
 
 //Start of user code for imports
 // TODO: import me!

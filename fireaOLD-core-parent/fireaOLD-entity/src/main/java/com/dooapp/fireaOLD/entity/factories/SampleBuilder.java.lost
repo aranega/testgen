@@ -1,0 +1,10 @@
+
+Tue Jan 15 17:43:14 CET 2013
+================================================================================
+Start of user code comment for attribute default method
+	 * End of user code
+Start of user code comment for attribute
+	 * End of user code
+Start of user code default feature for handleDefaultAttribute
+		result.setAttribute(cfg.getProperty("defaultValue.Sample.attribute"));
+		//End of user code

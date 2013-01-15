@@ -787,12 +787,6 @@
         </eAnnotations>
         <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
       </eStructuralFeatures>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute">
-        <eAnnotations source="genmymodel">
-          <details key="uuid" value="_F1O4YEFgEDCWvI42FO_ibw"/>
-        </eAnnotations>
-        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-      </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
         <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
       </eStructuralFeatures>
@@ -1049,7 +1043,7 @@
       <eAnnotations source="genmymodel">
         <details key="uuid" value="_L6htkUFeEDCWvI42FO_ibw"/>
       </eAnnotations>
-      <eLiterals name="MEASUREs">
+      <eLiterals name="MEASURE">
         <eAnnotations source="genmymodel">
           <details key="uuid" value="_L6htkkFeEDCWvI42FO_ibw"/>
         </eAnnotations>

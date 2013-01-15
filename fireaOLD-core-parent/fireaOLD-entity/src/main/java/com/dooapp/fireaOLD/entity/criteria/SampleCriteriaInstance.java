@@ -25,8 +25,6 @@ public class SampleCriteriaInstance implements Bean
 	
 	private Integer airPressureMin;
 	
-	private String attribute;
-	
 	private com.dooapp.fireaOLD.entity.BeaufortScale beaufortScale;
 	
 	private java.util.Date creationDateMax;
@@ -154,21 +152,6 @@ public class SampleCriteriaInstance implements Bean
 	 */
 	public void setAirPressureMin(Integer arg0){
 		this.airPressureMin = arg0;
-	} 
-	/*
-	 * <!-- Start of user code comment for attribute getter
-	 * End of user code -->
-	 */
-	public String getAttribute(){
-		return this.attribute;
-	}
-	
-	/*
-	 * <!-- Start of user code comment for attribute setter
-	 * End of user code -->
-	 */
-	public void setAttribute(String arg0){
-		this.attribute = arg0;
 	} 
 	/*
 	 * <!-- Start of user code comment for beaufortScale getter

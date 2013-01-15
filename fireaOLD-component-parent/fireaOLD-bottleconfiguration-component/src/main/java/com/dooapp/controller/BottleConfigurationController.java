@@ -14,6 +14,9 @@ import java.util.ResourceBundle;
 import java.net.URL;
 import  javafx.scene.control.ComboBox;
 import  javafx.scene.control.TextField;
+import fireaOLD.wrappers.GazConfiguration;
+import fireaOLD.wrappers.BottleType;
+import fireaOLD.entity.BottleUnit;
 
 //Start of user code for imports
 // TODO: import me!

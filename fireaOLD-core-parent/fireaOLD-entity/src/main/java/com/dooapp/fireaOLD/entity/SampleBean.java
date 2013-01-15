@@ -36,9 +36,6 @@ public class SampleBean implements Bean
 	private int airPressure;
 	@javax.persistence.Enumerated(javax.persistence.EnumType.STRING)
 	private com.dooapp.fireaOLD.entity.AirPressureCalculationMethod airPressureCalculationMethod;
-	
-	@javax.persistence.Column(name = "ATTRIBUTECOLUMN")
-	private String attribute;
 	@javax.persistence.Enumerated(javax.persistence.EnumType.STRING)
 	private com.dooapp.fireaOLD.entity.BeaufortScale beaufortScale;
 	@javax.persistence.Column(name = "CREATION_DATE")
@@ -188,21 +185,6 @@ public class SampleBean implements Bean
 	 */
 	public void unsetAirPressureCalculationMethod(com.dooapp.fireaOLD.entity.AirPressureCalculationMethod arg0){
 		this.airPressureCalculationMethod = null;
-	}
-	/*
-	 * <!-- Start of user code comment for attribute getter
-	 * End of user code -->
-	 */
-	public String getAttribute(){
-		return this.attribute;
-	}
-	
-	/*
-	 * <!-- Start of user code comment for attribute setter
-	 * End of user code -->
-	 */
-	public void setAttribute(String arg0){
-		this.attribute = arg0;
 	}
 	/*
 	 * <!-- Start of user code comment for beaufortScale getter

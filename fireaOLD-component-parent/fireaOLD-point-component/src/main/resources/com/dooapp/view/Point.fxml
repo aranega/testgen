@@ -42,62 +42,18 @@
 									<children>
 										<TableView fx:id="readings_dataview" prefHeight="50.0" editable="true">
 											<columns>
-												<TableColumn text="buildingPressure">
-													<cellValueFactory>
-														<PropertyValueFactory property="buildingPressure" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="fanPressure">
-													<cellValueFactory>
-														<PropertyValueFactory property="fanPressure" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="lowFlow">
-													<cellValueFactory>
-														<PropertyValueFactory property="lowFlow" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="timeAverage">
-													<cellValueFactory>
-														<PropertyValueFactory property="timeAverage" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="id">
-													<cellValueFactory>
-														<PropertyValueFactory property="id" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="creationDate">
-													<cellValueFactory>
-														<PropertyValueFactory property="creationDate" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="updateDate">
-													<cellValueFactory>
-														<PropertyValueFactory property="updateDate" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="version">
-													<cellValueFactory>
-														<PropertyValueFactory property="version" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="point">
-													<cellValueFactory>
-														<PropertyValueFactory property="point" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="device">
-													<cellValueFactory>
-														<PropertyValueFactory property="device" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="gaugemode">
-													<cellValueFactory>
-														<PropertyValueFactory property="gaugemode" />
-														
-													</cellValueFactory>
-												</TableColumn>
+												<TableColumn text="buildingPressure" />
+												<TableColumn text="fanPressure" />
+												<TableColumn text="lowFlow" />
+												<TableColumn text="timeAverage" />
+												<TableColumn text="id" />
+												<TableColumn text="creationDate" />
+												<TableColumn text="updateDate" />
+												<TableColumn text="version" />
+												<TableColumn text="point" />
+												<TableColumn text="device" />
+												<TableColumn text="gaugemode" />
+												
 											</columns>
 										</TableView><ComboBox fx:id="readings_data" onAction="#selectReadings" />
 										

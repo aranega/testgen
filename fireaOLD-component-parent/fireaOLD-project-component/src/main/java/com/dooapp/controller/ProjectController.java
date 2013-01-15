@@ -61,8 +61,6 @@ public class ProjectController extends AbstractController<Node> implements javaf
 	@javafx.fxml.FXML
 	private ComboBox<Sample> sample_data;
 	@javafx.fxml.FXML
-	private TableView<Sample> sample_dataview;
-	@javafx.fxml.FXML
 	private ComboBox<ProjectKind> status_data;
 	@javafx.fxml.FXML
 	private TextField updateDate_data;

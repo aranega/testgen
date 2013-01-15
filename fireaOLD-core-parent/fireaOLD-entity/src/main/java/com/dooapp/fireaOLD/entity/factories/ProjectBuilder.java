@@ -55,9 +55,9 @@ public class ProjectBuilder<BUILDER extends ProjectBuilder<?>>
 	@javax.inject.Inject
 	SampleBuilder<?> sampleBuilder;
 	@javax.inject.Inject
-	PersistentImageBuilder<?> persistentImageBuilder;
-	@javax.inject.Inject
 	RisqueBuilder<?> risqueBuilder;
+	@javax.inject.Inject
+	PersistentImageBuilder<?> persistentImageBuilder;
 	@javax.inject.Inject
 	ContactBuilder<?> contactBuilder;
 	@javax.inject.Inject

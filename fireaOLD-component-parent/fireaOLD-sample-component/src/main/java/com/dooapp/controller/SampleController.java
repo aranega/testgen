@@ -41,8 +41,6 @@ public class SampleController extends AbstractController<Node> implements javafx
 	@javafx.fxml.FXML
 	private TextField airPressure_data;
 	@javafx.fxml.FXML
-	private TextField attribute_data;
-	@javafx.fxml.FXML
 	private ComboBox<BeaufortScale> beaufortScale_data;
 	@javafx.fxml.FXML
 	private TextField creationDate_data;
@@ -102,8 +100,6 @@ public class SampleController extends AbstractController<Node> implements javafx
 	public void initialize(URL args0, ResourceBundle args1){
 		airPressure_data.setText(String.valueOf(sample.getAirPressure()));
 		this.binder.configureBindingBidirectional(airPressure_data.textProperty(), sample.airPressureProperty());
-		attribute_data.setText(String.valueOf(sample.getAttribute()));
-		this.binder.configureBindingBidirectional(attribute_data.textProperty(), sample.attributeProperty());
 		creationDate_data.setText(String.valueOf(sample.getCreationDate()));
 		this.binder.configureBindingBidirectional(creationDate_data.textProperty(), sample.creationDateProperty());
 		date_data.setText(String.valueOf(sample.getDate()));

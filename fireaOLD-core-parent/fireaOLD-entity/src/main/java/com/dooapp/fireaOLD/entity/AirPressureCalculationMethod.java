@@ -10,7 +10,7 @@ import com.dooapp.lib.guice.IOC;
 
 public enum AirPressureCalculationMethod
 {
-	MEASUREs("AirPressureCalculationMethod.MEASUREs"),
+	MEASURE("AirPressureCalculationMethod.MEASURE"),
 	METEO_CENTER("AirPressureCalculationMethod.METEO_CENTER"),
 	HIGH_UP_CALCULATION("AirPressureCalculationMethod.HIGH_UP_CALCULATION");
 	

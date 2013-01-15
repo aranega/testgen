@@ -40,26 +40,14 @@
 								<Label fx:id="kind_label" GridPane.rowIndex="6" GridPane.columnIndex="0" text="kind" />
 								<ComboBox fx:id="kind_data" GridPane.rowIndex="6" GridPane.columnIndex="1">
 									<items>
-										<FXCollections fx:factory="observableArrayList">
-											<String fx:value="R13_APSAD" />
-											<String fx:value="ISO_14520_2006" />
-											<String fx:value="ISO_14520_2004" />
-											<String fx:value="NFPA_2008" />
-											<String fx:value="NFPA_2000" />
-											
-										</FXCollections>
+										<FXCollections fx:factory="observableArrayList" />
+										
 									</items>
 								</ComboBox><Label fx:id="status_label" GridPane.rowIndex="7" GridPane.columnIndex="0" text="Status" />
 								<ComboBox fx:id="status_data" GridPane.rowIndex="7" GridPane.columnIndex="1">
 									<items>
-										<FXCollections fx:factory="observableArrayList">
-											<String fx:value="R13_APSAD" />
-											<String fx:value="ISO_14520_2006" />
-											<String fx:value="ISO_14520_2004" />
-											<String fx:value="NFPA_2008" />
-											<String fx:value="NFPA_2000" />
-											
-										</FXCollections>
+										<FXCollections fx:factory="observableArrayList" />
+										
 									</items>
 								</ComboBox><Label fx:id="risque_label" GridPane.rowIndex="0" GridPane.columnIndex="2" text="risque" />
 								<ComboBox fx:id="risque_data" GridPane.rowIndex="0" GridPane.columnIndex="3" onAction="#selectRisque" />
@@ -72,82 +60,22 @@
 									<children>
 										<TableView fx:id="contacts_dataview" prefHeight="50.0" editable="true">
 											<columns>
-												<TableColumn text="name">
-													<cellValueFactory>
-														<PropertyValueFactory property="name" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="person">
-													<cellValueFactory>
-														<PropertyValueFactory property="person" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="adress1">
-													<cellValueFactory>
-														<PropertyValueFactory property="adress1" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="address2">
-													<cellValueFactory>
-														<PropertyValueFactory property="address2" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="zipCode">
-													<cellValueFactory>
-														<PropertyValueFactory property="zipCode" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="city">
-													<cellValueFactory>
-														<PropertyValueFactory property="city" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="email">
-													<cellValueFactory>
-														<PropertyValueFactory property="email" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="phone">
-													<cellValueFactory>
-														<PropertyValueFactory property="phone" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="siret">
-													<cellValueFactory>
-														<PropertyValueFactory property="siret" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="kind">
-													<cellValueFactory>
-														<PropertyValueFactory property="kind" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="id">
-													<cellValueFactory>
-														<PropertyValueFactory property="id" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="creationDate">
-													<cellValueFactory>
-														<PropertyValueFactory property="creationDate" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="updateDate">
-													<cellValueFactory>
-														<PropertyValueFactory property="updateDate" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="version">
-													<cellValueFactory>
-														<PropertyValueFactory property="version" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="image">
-													<cellValueFactory>
-														<PropertyValueFactory property="image" />
-														
-													</cellValueFactory>
-												</TableColumn>
+												<TableColumn text="name" />
+												<TableColumn text="person" />
+												<TableColumn text="adress1" />
+												<TableColumn text="address2" />
+												<TableColumn text="zipCode" />
+												<TableColumn text="city" />
+												<TableColumn text="email" />
+												<TableColumn text="phone" />
+												<TableColumn text="siret" />
+												<TableColumn text="kind" />
+												<TableColumn text="id" />
+												<TableColumn text="creationDate" />
+												<TableColumn text="updateDate" />
+												<TableColumn text="version" />
+												<TableColumn text="image" />
+												
 											</columns>
 										</TableView><ComboBox fx:id="contacts_data" onAction="#selectContacts" />
 										
@@ -155,111 +83,7 @@
 								</VBox><Label fx:id="sample_label" GridPane.rowIndex="4" GridPane.columnIndex="2" text="sample" />
 								<VBox GridPane.rowIndex="4" GridPane.columnIndex="3">
 									<children>
-										<TableView fx:id="sample_dataview" prefHeight="50.0" editable="true">
-											<columns>
-												<TableColumn text="name">
-													<cellValueFactory>
-														<PropertyValueFactory property="name" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="date">
-													<cellValueFactory>
-														<PropertyValueFactory property="date" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="status">
-													<cellValueFactory>
-														<PropertyValueFactory property="status" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="airPressure">
-													<cellValueFactory>
-														<PropertyValueFactory property="airPressure" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="airPressureCalculationMethod">
-													<cellValueFactory>
-														<PropertyValueFactory property="airPressureCalculationMethod" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="beaufortScale">
-													<cellValueFactory>
-														<PropertyValueFactory property="beaufortScale" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="phiEPercent">
-													<cellValueFactory>
-														<PropertyValueFactory property="phiEPercent" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="phiIPercent">
-													<cellValueFactory>
-														<PropertyValueFactory property="phiIPercent" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="roI">
-													<cellValueFactory>
-														<PropertyValueFactory property="roI" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="roE">
-													<cellValueFactory>
-														<PropertyValueFactory property="roE" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="tetaI">
-													<cellValueFactory>
-														<PropertyValueFactory property="tetaI" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="tetaE">
-													<cellValueFactory>
-														<PropertyValueFactory property="tetaE" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="windMeasure">
-													<cellValueFactory>
-														<PropertyValueFactory property="windMeasure" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="attribute">
-													<cellValueFactory>
-														<PropertyValueFactory property="attribute" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="id">
-													<cellValueFactory>
-														<PropertyValueFactory property="id" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="creationDate">
-													<cellValueFactory>
-														<PropertyValueFactory property="creationDate" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="updateDate">
-													<cellValueFactory>
-														<PropertyValueFactory property="updateDate" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="version">
-													<cellValueFactory>
-														<PropertyValueFactory property="version" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="project">
-													<cellValueFactory>
-														<PropertyValueFactory property="project" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="step">
-													<cellValueFactory>
-														<PropertyValueFactory property="step" />
-														
-													</cellValueFactory>
-												</TableColumn>
-											</columns>
-										</TableView><ComboBox fx:id="sample_data" onAction="#selectSample" />
+										<ComboBox fx:id="sample_data" onAction="#selectSample" />
 										
 									</children>
 								</VBox>
