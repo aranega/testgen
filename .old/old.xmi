@@ -1,0 +1,1179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:emf4java="http://com.axellience/dooapp/emf4java" name="firea" nsURI="http://firea" nsPrefix="com.dooapp">
+  <eAnnotations source="genmymodel">
+    <details key="uuid" value="_pCte1V5wEeKFGKTARebC0g"/>
+  </eAnnotations>
+  <eSubpackages name="entity">
+    <eClassifiers xsi:type="emf4java:Entity" name="Contact">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_pCte1l5wEeKFGKTARebC0g"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCte115wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="person">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCte2F5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="adress1">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCte2V5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="address2">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCte2l5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="zipCode">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCte215wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="city">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCte3F5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="email">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCte3V5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="phone">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCte3l5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="siret">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCte315wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="kind" eType="//entity/ContactKind">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCte4F5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="image" lowerBound="1" eType="//entity/PersistentImage" eOpposite="//entity/PersistentImage/contact">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCte4V5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:SpecialEnum" name="ContactKind">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_pCte4l5wEeKFGKTARebC0g"/>
+      </eAnnotations>
+      <eLiterals name="TECHNICIAN">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuFwF5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="FIRM_MOE">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuFwV5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="FIRM_CUSTOMER">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuFwl5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="FIRM_MAINTENANCE">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuFw15wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Entity" name="PersistentImage">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_pCuFxF5wEeKFGKTARebC0g"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="title">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuFxV5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="sourceFile">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuFxl5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="preview">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuFx15wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="error">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuFyF5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="dataId">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuFyV5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="contact" lowerBound="1" eType="//entity/Contact" eOpposite="//entity/Contact/image">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuFyl5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Entity" name="Folder">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_pCuFy15wEeKFGKTARebC0g"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuFzF5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="displayOrder">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuFzV5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Entity" name="PersistentImageData">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_pCuFzl5wEeKFGKTARebC0g"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="data">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuFz15wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:SpecialEnum" name="ProjectKind">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_pCuF0F5wEeKFGKTARebC0g"/>
+      </eAnnotations>
+      <eLiterals name="R13_APSAD">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuF0V5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="ISO_14520_2006">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuF0l5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="ISO_14520_2004">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuF015wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="NFPA_2008">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuF1F5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="NFPA_2000">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuF1V5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Entity" name="Project">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_pCuF1l5wEeKFGKTARebC0g"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuF115wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="description">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuF2F5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="kind" eType="//entity/ProjectKind">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuF2V5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="risque" lowerBound="1" eType="//entity/Risque">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuF2l5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="image" lowerBound="1" eType="//entity/PersistentImage">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuF215wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="contacts" lowerBound="1" upperBound="-1" eType="//entity/Contact">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuF3F5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="gazconfiguration" lowerBound="1" eType="//entity/GazConfiguration" eOpposite="//entity/GazConfiguration/project">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuF3V5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="sample" upperBound="-1" eType="//entity/Sample" eOpposite="//entity/Sample/project">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuF3l5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="Status" eType="//entity/ProjectKind">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuF315wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Entity" name="Risque">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_pCuF4F5wEeKFGKTARebC0g"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="key">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuF4V5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Entity" name="TestedRoom">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_pCuF4l5wEeKFGKTARebC0g"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="CommissioningDate">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuF415wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="altitude">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuF5F5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="unloadTime">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuF5V5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="mecanicalStrength">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuF5l5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="droppedCeiling">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuF515wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="mainHeight">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuF6F5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="droppedFloor">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuF6V5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="totalHeight">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuF6l5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="indicatedVolume">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuF615wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="measuredVolume">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuF7F5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="volumeCorrection">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuF7V5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="netVolume">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuF7l5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="risqueHeight">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuF715wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="risqueHeightPercent">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuF8F5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="minimalProtectedHeight">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuF8V5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="choosenProtectedHeight">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuF8l5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuF815wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="uniformHorizontality">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCuF9F5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="climWithNewAir">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCus0F5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="climReclycle">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCus0V5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="climVMC">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCus0l5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="climDuct">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCus015wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="climWithNewAirAuto">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCus1F5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="climReclycleAuto">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCus1V5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="climVMCAuto">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCus1l5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="clapetsCF">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCus115wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="blowholes" upperBound="-1" eType="//entity/BlowHole" eOpposite="//entity/BlowHole/testedroom">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCus2F5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Entity" name="BlowHole">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_pCus2V5wEeKFGKTARebC0g"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="Discharge" eType="//entity/Discharge">
+        <eAnnotations xsi:type="emf4java:EJavadocAnnotation" source="javadoc">
+          <eAnnotations source="genmymodel">
+            <details key="uuid" value="_pCus215wEeKFGKTARebC0g"/>
+          </eAnnotations>
+          <details key="data" value="fdfddd"/>
+        </eAnnotations>
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCus2l5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="quantity">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCus3F5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="surface">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCus3V5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="testedroom" lowerBound="1" eType="//entity/TestedRoom" eOpposite="//entity/TestedRoom/blowholes">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCus3l5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:SpecialEnum" name="Discharge">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_pCus315wEeKFGKTARebC0g"/>
+      </eAnnotations>
+      <eLiterals name="Positive">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCus4F5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="Negative">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCus4V5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Entity" name="Gaz">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_pCus4l5wEeKFGKTARebC0g"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCus415wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="type">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCus5F5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="density">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCus5V5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="weight" eType="//entity/GazWeight">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCus5l5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="bottletypes" upperBound="-1" eType="//entity/BottleType">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCus515wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="gazconfiguration" upperBound="-1" eType="//entity/GazConfiguration" eOpposite="//entity/GazConfiguration/gaz">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCus6F5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:SpecialEnum" name="GazWeight">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_pCus6V5wEeKFGKTARebC0g"/>
+      </eAnnotations>
+      <eLiterals name="HEAVY">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCus6l5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="LIGHT">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCus615wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="MIXED">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCus7F5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Entity" name="BottleType">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_pCus7V5wEeKFGKTARebC0g"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCus7l5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="weight">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCus715wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="volume">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCus8F5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="bottleconfiguration" upperBound="-1" eType="//entity/BottleConfiguration" eOpposite="//entity/BottleConfiguration/bottletype">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCus8V5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Entity" name="GazConfiguration">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_pCus8l5wEeKFGKTARebC0g"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="project" lowerBound="1" eType="//entity/Project" eOpposite="//entity/Project/gazconfiguration">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCus815wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="gaz" eType="//entity/Gaz" eOpposite="//entity/Gaz/gazconfiguration">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCus9F5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="bottleconfigurations" upperBound="-1" eType="//entity/BottleConfiguration" eOpposite="//entity/BottleConfiguration/gazconfiguration">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCus9V5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="retentionInterface">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCus9l5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="droppedFloorFull">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCus915wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="droppedCeilFull">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCus-F5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="slowUnloading">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCus-V5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="slowUnloadingValue">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCus-l5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="retentionGoal">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCus-15wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="leekRepartitionPercent">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCus_F5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Entity" name="BottleConfiguration">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_pCus_V5wEeKFGKTARebC0g"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="gazconfiguration" lowerBound="1" eType="//entity/GazConfiguration" eOpposite="//entity/GazConfiguration/bottleconfigurations">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCus_l5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="bottletype" eType="//entity/BottleType" eOpposite="//entity/BottleType/bottleconfiguration">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCus_15wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="quantity">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCutAF5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="load">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvT4F5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="unit" eType="//entity/BottleUnit">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvT4V5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:SpecialEnum" name="BottleUnit">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_pCvT4l5wEeKFGKTARebC0g"/>
+      </eAnnotations>
+      <eLiterals name="WEIGHT">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvT415wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="VOLUME">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvT5F5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Entity" name="Sample">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_pCvT5V5wEeKFGKTARebC0g"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="project" lowerBound="1" eType="//entity/Project" eOpposite="//entity/Project/sample">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvT5l5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvT515wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="date">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvT6F5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="step" upperBound="-1" eType="//entity/Step" eOpposite="//entity/Step/sample">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvT6V5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="status" eType="//entity/SampleStatus">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvT6l5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="airPressure">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvT615wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="airPressureCalculationMethod" eType="//entity/AirPressureCalculationMethod">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvT7F5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="beaufortScale" eType="//entity/BeaufortScale">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvT7V5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="phiEPercent">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvT7l5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="phiIPercent">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvT715wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="roI">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvT8F5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="roE">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvT8V5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="tetaI">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvT8l5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="tetaE">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvT815wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="windMeasure">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvT9F5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:SpecialEnum" name="SampleStatus">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_pCvT9V5wEeKFGKTARebC0g"/>
+      </eAnnotations>
+      <eLiterals name="NO_STARTED">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvT9l5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="STARTED">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvT915wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="DONE">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvT-F5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="ERROR">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvT-V5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Entity" name="Step">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_pCvT-l5wEeKFGKTARebC0g"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="sample" lowerBound="1" eType="//entity/Sample" eOpposite="//entity/Sample/step">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvT-15wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="points" upperBound="-1" eType="//entity/Point" eOpposite="//entity/Point/step">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvT_F5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="status" eType="//entity/StepStatus">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvT_V5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="date">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvT_l5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Entity" name="Point">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_pCvT_15wEeKFGKTARebC0g"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="step" lowerBound="1" eType="//entity/Step" eOpposite="//entity/Step/points">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvUAF5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="readings" upperBound="-1" eType="//entity/Reading" eOpposite="//entity/Reading/point">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvUAV5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="pressureGoal">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvUAl5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Entity" name="Reading">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_pCvUA15wEeKFGKTARebC0g"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="point" eType="//entity/Point" eOpposite="//entity/Point/readings">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvUBF5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="device" upperBound="-1" eType="//entity/Device">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvUBV5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="buildingPressure">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvUBl5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="fanPressure">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvUB15wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="lowFlow">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvUCF5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="timeAverage">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvUCV5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="gaugemode" eType="//entity/GaugeMode">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvUCl5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Entity" name="Device">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_pCvUC15wEeKFGKTARebC0g"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="serialNumber">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvUDF5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="lastCalibrationDate">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvUDV5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Entity" name="CalibrationStep" eSuperTypes="//entity/Step">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_pCvUDl5wEeKFGKTARebC0g"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="beforeHoleELA">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvUD15wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="afterHoleELA">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvUEF5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="errorPercent">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvUEV5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Entity" name="EventStep" eSuperTypes="//entity/Step">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_pCvUEl5wEeKFGKTARebC0g"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="direction" eType="//entity/Direction">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCvUE15wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Entity" name="MainStep" eSuperTypes="//entity/Step">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_pCv68F5wEeKFGKTARebC0g"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="direction">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCv68V5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="calculatedELA">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCv68l5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="correlation">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCv6815wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="n">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCv69F5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="cl">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCv69V5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:SpecialEnum" name="StepStatus">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_pCv69l5wEeKFGKTARebC0g"/>
+      </eAnnotations>
+      <eLiterals name="NO_STARTED">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCv6915wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="READY">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCv6-F5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="IN_PROGRESS">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCv6-V5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="WAIT_FOR_VALIDATION">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCv6-l5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="DONE">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCv6-15wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="ERROR">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCv6_F5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:SpecialEnum" name="AirPressureCalculationMethod">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_pCv6_V5wEeKFGKTARebC0g"/>
+      </eAnnotations>
+      <eLiterals name="MEASURE">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCv6_l5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="METEO_CENTER">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCv6_15wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="HIGH_UP_CALCULATION">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCv7AF5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:SpecialEnum" name="BeaufortScale">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_pCv7AV5wEeKFGKTARebC0g"/>
+      </eAnnotations>
+      <eLiterals name="FORCE0">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCv7Al5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="FORCE1">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCv7A15wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="FORCE2">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCv7BF5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="FORCE3">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCv7BV5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="FORCE4">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCv7Bl5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="FORCE5">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCv7B15wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="FORCE6">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCv7CF5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="FORCE7">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCv7CV5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="FORCE8">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCv7Cl5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="FORCE9">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCv7C15wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:SpecialEnum" name="Direction">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_pCv7DF5wEeKFGKTARebC0g"/>
+      </eAnnotations>
+      <eLiterals name="PRESSURE">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCv7DV5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="DEPRESSURE">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCv7Dl5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Entity" name="GaugeMode">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_pCv7D15wEeKFGKTARebC0g"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCv7EF5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="gaugeType">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCv7EV5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:SpecialEnum" name="ProjectStatus">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_pCv7El5wEeKFGKTARebC0g"/>
+      </eAnnotations>
+      <eLiterals name="TO_PLAN">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCv7E15wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="IN_PROGRESS">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCv7FF5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="DONE">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_pCv7FV5wEeKFGKTARebC0g"/>
+        </eAnnotations>
+      </eLiterals>
+    </eClassifiers>
+  </eSubpackages>
+</ecore:EPackage>
