@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="ASCII"?>
+<metaxml:Root xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:metaxml="http://com.axellience/dooapp/xml">
+  <documents docName="StackPane">
+    <children name="children">
+      <children name="Label">
+        <attributes xsi:type="metaxml:ValueAttribute" name="text" value="FIX ME"/>
+      </children>
+    </children>
+    <children name="prefHeight">
+      <children name="Long">
+        <attributes xsi:type="metaxml:ValueAttribute" name="value" value="-1"/>
+      </children>
+    </children>
+    <children name="prefWidth">
+      <children name="Long">
+        <attributes xsi:type="metaxml:ValueAttribute" name="value" value="-1"/>
+      </children>
+    </children>
+    <attributes xsi:type="metaxml:ValueAttribute" name="id" value="StackPane"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="maxHeight" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="maxWidth" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="minHeight" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="minWidth" value="-Infinity"/>
+  </documents>
+  <documents docName="StackPane">
+    <children name="children">
+      <children name="Label">
+        <attributes xsi:type="metaxml:ValueAttribute" name="text" value="FIX ME"/>
+      </children>
+    </children>
+    <children name="prefHeight">
+      <children name="Long">
+        <attributes xsi:type="metaxml:ValueAttribute" name="value" value="-1"/>
+      </children>
+    </children>
+    <children name="prefWidth">
+      <children name="Long">
+        <attributes xsi:type="metaxml:ValueAttribute" name="value" value="-1"/>
+      </children>
+    </children>
+    <attributes xsi:type="metaxml:ValueAttribute" name="id" value="StackPane"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="maxHeight" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="maxWidth" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="minHeight" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="minWidth" value="-Infinity"/>
+  </documents>
+  <documents docName="StackPane">
+    <children name="children">
+      <children name="Label">
+        <attributes xsi:type="metaxml:ValueAttribute" name="text" value="FIX ME"/>
+      </children>
+    </children>
+    <children name="prefHeight">
+      <children name="Long">
+        <attributes xsi:type="metaxml:ValueAttribute" name="value" value="-1"/>
+      </children>
+    </children>
+    <children name="prefWidth">
+      <children name="Long">
+        <attributes xsi:type="metaxml:ValueAttribute" name="value" value="-1"/>
+      </children>
+    </children>
+    <attributes xsi:type="metaxml:ValueAttribute" name="id" value="StackPane"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="maxHeight" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="maxWidth" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="minHeight" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="minWidth" value="-Infinity"/>
+  </documents>
+  <documents docName="StackPane">
+    <children name="children">
+      <children name="Label">
+        <attributes xsi:type="metaxml:ValueAttribute" name="text" value="FIX ME"/>
+      </children>
+    </children>
+    <children name="prefHeight">
+      <children name="Long">
+        <attributes xsi:type="metaxml:ValueAttribute" name="value" value="-1"/>
+      </children>
+    </children>
+    <children name="prefWidth">
+      <children name="Long">
+        <attributes xsi:type="metaxml:ValueAttribute" name="value" value="-1"/>
+      </children>
+    </children>
+    <attributes xsi:type="metaxml:ValueAttribute" name="id" value="StackPane"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="maxHeight" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="maxWidth" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="minHeight" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="minWidth" value="-Infinity"/>
+  </documents>
+  <documents docName="StackPane">
+    <children name="children">
+      <children name="Label">
+        <attributes xsi:type="metaxml:ValueAttribute" name="text" value="FIX ME"/>
+      </children>
+    </children>
+    <children name="prefHeight">
+      <children name="Long">
+        <attributes xsi:type="metaxml:ValueAttribute" name="value" value="-1"/>
+      </children>
+    </children>
+    <children name="prefWidth">
+      <children name="Long">
+        <attributes xsi:type="metaxml:ValueAttribute" name="value" value="-1"/>
+      </children>
+    </children>
+    <attributes xsi:type="metaxml:ValueAttribute" name="id" value="StackPane"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="maxHeight" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="maxWidth" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="minHeight" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="minWidth" value="-Infinity"/>
+  </documents>
+  <documents docName="StackPane">
+    <children name="children">
+      <children name="Label">
+        <attributes xsi:type="metaxml:ValueAttribute" name="text" value="FIX ME"/>
+      </children>
+    </children>
+    <children name="prefHeight">
+      <children name="Long">
+        <attributes xsi:type="metaxml:ValueAttribute" name="value" value="-1"/>
+      </children>
+    </children>
+    <children name="prefWidth">
+      <children name="Long">
+        <attributes xsi:type="metaxml:ValueAttribute" name="value" value="-1"/>
+      </children>
+    </children>
+    <attributes xsi:type="metaxml:ValueAttribute" name="id" value="StackPane"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="maxHeight" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="maxWidth" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="minHeight" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="minWidth" value="-Infinity"/>
+  </documents>
+  <documents docName="StackPane">
+    <children name="children">
+      <children name="Label">
+        <attributes xsi:type="metaxml:ValueAttribute" name="text" value="FIX ME"/>
+      </children>
+    </children>
+    <children name="prefHeight">
+      <children name="Long">
+        <attributes xsi:type="metaxml:ValueAttribute" name="value" value="-1"/>
+      </children>
+    </children>
+    <children name="prefWidth">
+      <children name="Long">
+        <attributes xsi:type="metaxml:ValueAttribute" name="value" value="-1"/>
+      </children>
+    </children>
+    <attributes xsi:type="metaxml:ValueAttribute" name="id" value="StackPane"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="maxHeight" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="maxWidth" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="minHeight" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="minWidth" value="-Infinity"/>
+  </documents>
+  <documents docName="StackPane">
+    <children name="children">
+      <children name="Label">
+        <attributes xsi:type="metaxml:ValueAttribute" name="text" value="FIX ME"/>
+      </children>
+    </children>
+    <children name="prefHeight">
+      <children name="Long">
+        <attributes xsi:type="metaxml:ValueAttribute" name="value" value="-1"/>
+      </children>
+    </children>
+    <children name="prefWidth">
+      <children name="Long">
+        <attributes xsi:type="metaxml:ValueAttribute" name="value" value="-1"/>
+      </children>
+    </children>
+    <attributes xsi:type="metaxml:ValueAttribute" name="id" value="StackPane"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="maxHeight" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="maxWidth" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="minHeight" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="minWidth" value="-Infinity"/>
+  </documents>
+  <documents docName="StackPane">
+    <children name="children">
+      <children name="Label">
+        <attributes xsi:type="metaxml:ValueAttribute" name="text" value="FIX ME"/>
+      </children>
+    </children>
+    <children name="prefHeight">
+      <children name="Long">
+        <attributes xsi:type="metaxml:ValueAttribute" name="value" value="-1"/>
+      </children>
+    </children>
+    <children name="prefWidth">
+      <children name="Long">
+        <attributes xsi:type="metaxml:ValueAttribute" name="value" value="-1"/>
+      </children>
+    </children>
+    <attributes xsi:type="metaxml:ValueAttribute" name="id" value="StackPane"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="maxHeight" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="maxWidth" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="minHeight" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="minWidth" value="-Infinity"/>
+  </documents>
+  <documents docName="StackPane">
+    <children name="children">
+      <children name="Label">
+        <attributes xsi:type="metaxml:ValueAttribute" name="text" value="FIX ME"/>
+      </children>
+    </children>
+    <children name="prefHeight">
+      <children name="Long">
+        <attributes xsi:type="metaxml:ValueAttribute" name="value" value="-1"/>
+      </children>
+    </children>
+    <children name="prefWidth">
+      <children name="Long">
+        <attributes xsi:type="metaxml:ValueAttribute" name="value" value="-1"/>
+      </children>
+    </children>
+    <attributes xsi:type="metaxml:ValueAttribute" name="id" value="StackPane"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="maxHeight" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="maxWidth" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="minHeight" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="minWidth" value="-Infinity"/>
+  </documents>
+  <documents docName="StackPane">
+    <children name="children">
+      <children name="Label">
+        <attributes xsi:type="metaxml:ValueAttribute" name="text" value="FIX ME"/>
+      </children>
+    </children>
+    <children name="prefHeight">
+      <children name="Long">
+        <attributes xsi:type="metaxml:ValueAttribute" name="value" value="-1"/>
+      </children>
+    </children>
+    <children name="prefWidth">
+      <children name="Long">
+        <attributes xsi:type="metaxml:ValueAttribute" name="value" value="-1"/>
+      </children>
+    </children>
+    <attributes xsi:type="metaxml:ValueAttribute" name="id" value="StackPane"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="maxHeight" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="maxWidth" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="minHeight" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="minWidth" value="-Infinity"/>
+  </documents>
+  <documents docName="StackPane">
+    <children name="children">
+      <children name="Label">
+        <attributes xsi:type="metaxml:ValueAttribute" name="text" value="FIX ME"/>
+      </children>
+    </children>
+    <children name="prefHeight">
+      <children name="Long">
+        <attributes xsi:type="metaxml:ValueAttribute" name="value" value="-1"/>
+      </children>
+    </children>
+    <children name="prefWidth">
+      <children name="Long">
+        <attributes xsi:type="metaxml:ValueAttribute" name="value" value="-1"/>
+      </children>
+    </children>
+    <attributes xsi:type="metaxml:ValueAttribute" name="id" value="StackPane"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="maxHeight" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="maxWidth" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="minHeight" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="minWidth" value="-Infinity"/>
+  </documents>
+  <documents docName="StackPane">
+    <children name="children">
+      <children name="Label">
+        <attributes xsi:type="metaxml:ValueAttribute" name="text" value="FIX ME"/>
+      </children>
+    </children>
+    <children name="prefHeight">
+      <children name="Long">
+        <attributes xsi:type="metaxml:ValueAttribute" name="value" value="-1"/>
+      </children>
+    </children>
+    <children name="prefWidth">
+      <children name="Long">
+        <attributes xsi:type="metaxml:ValueAttribute" name="value" value="-1"/>
+      </children>
+    </children>
+    <attributes xsi:type="metaxml:ValueAttribute" name="id" value="StackPane"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="maxHeight" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="maxWidth" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="minHeight" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="minWidth" value="-Infinity"/>
+  </documents>
+  <documents docName="StackPane">
+    <children name="children">
+      <children name="Label">
+        <attributes xsi:type="metaxml:ValueAttribute" name="text" value="FIX ME"/>
+      </children>
+    </children>
+    <children name="prefHeight">
+      <children name="Long">
+        <attributes xsi:type="metaxml:ValueAttribute" name="value" value="-1"/>
+      </children>
+    </children>
+    <children name="prefWidth">
+      <children name="Long">
+        <attributes xsi:type="metaxml:ValueAttribute" name="value" value="-1"/>
+      </children>
+    </children>
+    <attributes xsi:type="metaxml:ValueAttribute" name="id" value="StackPane"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="maxHeight" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="maxWidth" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="minHeight" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="minWidth" value="-Infinity"/>
+  </documents>
+  <documents docName="StackPane">
+    <children name="children">
+      <children name="Label">
+        <attributes xsi:type="metaxml:ValueAttribute" name="text" value="FIX ME"/>
+      </children>
+    </children>
+    <children name="prefHeight">
+      <children name="Long">
+        <attributes xsi:type="metaxml:ValueAttribute" name="value" value="-1"/>
+      </children>
+    </children>
+    <children name="prefWidth">
+      <children name="Long">
+        <attributes xsi:type="metaxml:ValueAttribute" name="value" value="-1"/>
+      </children>
+    </children>
+    <attributes xsi:type="metaxml:ValueAttribute" name="id" value="StackPane"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="maxHeight" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="maxWidth" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="minHeight" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="minWidth" value="-Infinity"/>
+  </documents>
+  <documents docName="StackPane">
+    <children name="children">
+      <children name="Label">
+        <attributes xsi:type="metaxml:ValueAttribute" name="text" value="FIX ME"/>
+      </children>
+    </children>
+    <children name="prefHeight">
+      <children name="Long">
+        <attributes xsi:type="metaxml:ValueAttribute" name="value" value="-1"/>
+      </children>
+    </children>
+    <children name="prefWidth">
+      <children name="Long">
+        <attributes xsi:type="metaxml:ValueAttribute" name="value" value="-1"/>
+      </children>
+    </children>
+    <attributes xsi:type="metaxml:ValueAttribute" name="id" value="StackPane"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="maxHeight" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="maxWidth" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="minHeight" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="minWidth" value="-Infinity"/>
+  </documents>
+  <documents docName="StackPane">
+    <children name="children">
+      <children name="Label">
+        <attributes xsi:type="metaxml:ValueAttribute" name="text" value="FIX ME"/>
+      </children>
+    </children>
+    <children name="prefHeight">
+      <children name="Long">
+        <attributes xsi:type="metaxml:ValueAttribute" name="value" value="-1"/>
+      </children>
+    </children>
+    <children name="prefWidth">
+      <children name="Long">
+        <attributes xsi:type="metaxml:ValueAttribute" name="value" value="-1"/>
+      </children>
+    </children>
+    <attributes xsi:type="metaxml:ValueAttribute" name="id" value="StackPane"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="maxHeight" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="maxWidth" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="minHeight" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="minWidth" value="-Infinity"/>
+  </documents>
+  <documents docName="StackPane">
+    <children name="children">
+      <children name="Label">
+        <attributes xsi:type="metaxml:ValueAttribute" name="text" value="FIX ME"/>
+      </children>
+    </children>
+    <children name="prefHeight">
+      <children name="Long">
+        <attributes xsi:type="metaxml:ValueAttribute" name="value" value="-1"/>
+      </children>
+    </children>
+    <children name="prefWidth">
+      <children name="Long">
+        <attributes xsi:type="metaxml:ValueAttribute" name="value" value="-1"/>
+      </children>
+    </children>
+    <attributes xsi:type="metaxml:ValueAttribute" name="id" value="StackPane"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="maxHeight" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="maxWidth" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="minHeight" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="minWidth" value="-Infinity"/>
+  </documents>
+  <documents docName="StackPane">
+    <children name="children">
+      <children name="Label">
+        <attributes xsi:type="metaxml:ValueAttribute" name="text" value="FIX ME"/>
+      </children>
+    </children>
+    <children name="prefHeight">
+      <children name="Long">
+        <attributes xsi:type="metaxml:ValueAttribute" name="value" value="-1"/>
+      </children>
+    </children>
+    <children name="prefWidth">
+      <children name="Long">
+        <attributes xsi:type="metaxml:ValueAttribute" name="value" value="-1"/>
+      </children>
+    </children>
+    <attributes xsi:type="metaxml:ValueAttribute" name="id" value="StackPane"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="maxHeight" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="maxWidth" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="minHeight" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="minWidth" value="-Infinity"/>
+  </documents>
+  <documents docName="StackPane">
+    <children name="children">
+      <children name="Label">
+        <attributes xsi:type="metaxml:ValueAttribute" name="text" value="FIX ME"/>
+      </children>
+    </children>
+    <children name="prefHeight">
+      <children name="Long">
+        <attributes xsi:type="metaxml:ValueAttribute" name="value" value="-1"/>
+      </children>
+    </children>
+    <children name="prefWidth">
+      <children name="Long">
+        <attributes xsi:type="metaxml:ValueAttribute" name="value" value="-1"/>
+      </children>
+    </children>
+    <attributes xsi:type="metaxml:ValueAttribute" name="id" value="StackPane"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="maxHeight" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="maxWidth" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="minHeight" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="minWidth" value="-Infinity"/>
+  </documents>
+  <documents docName="StackPane">
+    <children name="children">
+      <children name="Label">
+        <attributes xsi:type="metaxml:ValueAttribute" name="text" value="FIX ME"/>
+      </children>
+    </children>
+    <children name="prefHeight">
+      <children name="Long">
+        <attributes xsi:type="metaxml:ValueAttribute" name="value" value="-1"/>
+      </children>
+    </children>
+    <children name="prefWidth">
+      <children name="Long">
+        <attributes xsi:type="metaxml:ValueAttribute" name="value" value="-1"/>
+      </children>
+    </children>
+    <attributes xsi:type="metaxml:ValueAttribute" name="id" value="StackPane"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="maxHeight" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="maxWidth" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="minHeight" value="-Infinity"/>
+    <attributes xsi:type="metaxml:ValueAttribute" name="minWidth" value="-Infinity"/>
+  </documents>
+</metaxml:Root>
