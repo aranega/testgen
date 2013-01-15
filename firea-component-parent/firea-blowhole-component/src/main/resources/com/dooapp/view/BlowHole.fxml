@@ -40,11 +40,8 @@
 								<Label fx:id="discharge_label" GridPane.rowIndex="6" GridPane.columnIndex="0" text="Discharge" />
 								<ComboBox fx:id="discharge_data" GridPane.rowIndex="6" GridPane.columnIndex="1">
 									<items>
-										<FXCollections fx:factory="observableArrayList">
-											<String fx:value="Positive" />
-											<String fx:value="Negative" />
-											
-										</FXCollections>
+										<FXCollections fx:factory="observableArrayList" />
+										
 									</items>
 								</ComboBox><Label fx:id="testedroom_label" GridPane.rowIndex="7" GridPane.columnIndex="0" text="testedroom" />
 								<ComboBox fx:id="testedroom_data" GridPane.rowIndex="7" GridPane.columnIndex="1" onAction="#selectTestedroom" />

@@ -19,7 +19,6 @@ import com.dooapp.lib.common.entity.Bean;
  */
 //Start of user code for queries
 //End of user code
-
 @javax.persistence.Entity
 public class BlowHoleBean implements Bean
 {
@@ -46,7 +45,6 @@ public class BlowHoleBean implements Bean
 	private int quantity;
 	
 	private double surface;
-	
 	@javax.persistence.ManyToOne(cascade = javax.persistence.CascadeType.ALL)
 	private TestedRoomBean testedroom;
 	@javax.persistence.Column(name = "UPDATE_DATE")

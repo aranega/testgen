@@ -19,7 +19,6 @@ import com.dooapp.lib.common.entity.Bean;
  */
 //Start of user code for queries
 //End of user code
-
 @javax.persistence.Entity
 public class BottleTypeBean implements Bean
 {
@@ -32,7 +31,6 @@ public class BottleTypeBean implements Bean
 	 */
 	private static final Logger logger = LoggerFactory.getLogger(BottleTypeBean.class);
 
-	
 	@javax.persistence.OneToMany(fetch = javax.persistence.FetchType.EAGER, mappedBy = "bottletype", cascade = javax.persistence.CascadeType.ALL)
 	private java.util.Set<BottleConfigurationBean> bottleconfiguration;
 	@javax.persistence.Column(name = "CREATION_DATE")
@@ -43,7 +41,6 @@ public class BottleTypeBean implements Bean
 	@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.SEQUENCE, generator = "seq")
 	@javax.persistence.Column(name = "ID")
 	private long id;
-	
 	@javax.persistence.Column(name = "NAMECOLUMN")
 	private String name;
 	@javax.persistence.Column(name = "UPDATE_DATE")

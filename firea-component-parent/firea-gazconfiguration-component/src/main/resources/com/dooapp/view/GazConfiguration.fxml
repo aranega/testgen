@@ -56,52 +56,16 @@
 									<children>
 										<TableView fx:id="bottleconfigurations_dataview" prefHeight="50.0" editable="true">
 											<columns>
-												<TableColumn text="quantity">
-													<cellValueFactory>
-														<PropertyValueFactory property="quantity" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="load">
-													<cellValueFactory>
-														<PropertyValueFactory property="load" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="unit">
-													<cellValueFactory>
-														<PropertyValueFactory property="unit" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="id">
-													<cellValueFactory>
-														<PropertyValueFactory property="id" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="creationDate">
-													<cellValueFactory>
-														<PropertyValueFactory property="creationDate" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="updateDate">
-													<cellValueFactory>
-														<PropertyValueFactory property="updateDate" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="version">
-													<cellValueFactory>
-														<PropertyValueFactory property="version" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="gazconfiguration">
-													<cellValueFactory>
-														<PropertyValueFactory property="gazconfiguration" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="bottletype">
-													<cellValueFactory>
-														<PropertyValueFactory property="bottletype" />
-														
-													</cellValueFactory>
-												</TableColumn>
+												<TableColumn text="quantity" />
+												<TableColumn text="load" />
+												<TableColumn text="unit" />
+												<TableColumn text="id" />
+												<TableColumn text="creationDate" />
+												<TableColumn text="updateDate" />
+												<TableColumn text="version" />
+												<TableColumn text="gazconfiguration" />
+												<TableColumn text="bottletype" />
+												
 											</columns>
 										</TableView><ComboBox fx:id="bottleconfigurations_data" onAction="#selectBottleconfigurations" />
 										

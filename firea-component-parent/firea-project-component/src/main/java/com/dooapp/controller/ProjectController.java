@@ -15,6 +15,13 @@ import java.net.URL;
 import  javafx.scene.control.TableView;
 import  javafx.scene.control.ComboBox;
 import  javafx.scene.control.TextField;
+import firea.wrappers.Risque;
+import firea.wrappers.PersistentImage;
+import firea.wrappers.Contact;
+import firea.wrappers.GazConfiguration;
+import firea.wrappers.Sample;
+import firea.entity.ProjectKind;
+import firea.entity.ProjectKind;
 
 //Start of user code for imports
 // TODO: import me!

@@ -50,6 +50,8 @@ public class Project implements com.dooapp.lib.common.entity.Wrapper
 	
 	private StringProperty nameProperty;
 	
+	private ObjectProperty<byte[]> newAttProperty;
+	
 	private ObjectProperty<Risque> risqueProperty;
 	
 	private ObjectProperty<ObservableList<Sample>> sampleProperty;
@@ -651,6 +653,71 @@ public class Project implements com.dooapp.lib.common.entity.Wrapper
 	
 	public void updateName(final String myName) {
 		updateName(myName, null);
+	}
+
+	/*
+	 * <!-- Start of user code comment for newAtt property method 
+		-->
+	 * <!-- End of user code -->
+	 */
+	public ObjectProperty<byte[]> newAttProperty() {
+		if (newAttProperty == null) {
+			newAttProperty = new SimpleObjectProperty<byte[]>(project.getNewAtt());
+			newAttProperty.addListener(new ChangeListener<byte[]>() {
+				@Override
+				public void changed(ObservableValue<? extends byte[]> arg0, byte[] arg1, byte[] arg2) {
+					project.setNewAtt(arg2);
+				}
+			});
+			//Start of user code newAttproperty method
+			//End of user code
+		}
+		return newAttProperty;
+	}
+	
+	/*
+	 * <!-- Start of user code comment for newAtt getter 
+		-->
+	 * <!-- End of user code -->
+	 */
+	public byte[] getNewAtt(){
+		return newAttProperty().get();
+	} 
+	
+	/*
+	 * <!-- Start of user code comment for newAtt setter 
+		-->
+	 * <!-- End of user code -->
+	 */
+	public void setNewAtt(byte[] myNewAtt){
+		if (newAttProperty == null) {
+				project.setNewAtt(myNewAtt);
+			} else {
+				this.newAttProperty().set(myNewAtt);
+			}
+	}
+	
+	public void updateNewAtt(final byte[] myNewAtt, final Object mutex) {
+		if (javafx.application.Platform.isFxApplicationThread()) {
+			setNewAtt(myNewAtt);
+			if (mutex != null) {
+				mutex.notify();
+			}
+		} else {
+			javafx.application.Platform.runLater(new Runnable() {
+				@Override
+				public void run() {
+					setNewAtt(myNewAtt);
+					if (mutex != null) {
+						mutex.notify();
+					}
+				}
+			});
+		}
+	}
+	
+	public void updateNewAtt(final byte[] myNewAtt) {
+		updateNewAtt(myNewAtt, null);
 	}
 
 	/*

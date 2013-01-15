@@ -90,47 +90,15 @@
 									<children>
 										<TableView fx:id="blowholes_dataview" prefHeight="50.0" editable="true">
 											<columns>
-												<TableColumn text="Discharge">
-													<cellValueFactory>
-														<PropertyValueFactory property="Discharge" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="quantity">
-													<cellValueFactory>
-														<PropertyValueFactory property="quantity" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="surface">
-													<cellValueFactory>
-														<PropertyValueFactory property="surface" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="id">
-													<cellValueFactory>
-														<PropertyValueFactory property="id" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="creationDate">
-													<cellValueFactory>
-														<PropertyValueFactory property="creationDate" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="updateDate">
-													<cellValueFactory>
-														<PropertyValueFactory property="updateDate" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="version">
-													<cellValueFactory>
-														<PropertyValueFactory property="version" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="testedroom">
-													<cellValueFactory>
-														<PropertyValueFactory property="testedroom" />
-														
-													</cellValueFactory>
-												</TableColumn>
+												<TableColumn text="Discharge" />
+												<TableColumn text="quantity" />
+												<TableColumn text="surface" />
+												<TableColumn text="id" />
+												<TableColumn text="creationDate" />
+												<TableColumn text="updateDate" />
+												<TableColumn text="version" />
+												<TableColumn text="testedroom" />
+												
 											</columns>
 										</TableView><ComboBox fx:id="blowholes_data" onAction="#selectBlowholes" />
 										

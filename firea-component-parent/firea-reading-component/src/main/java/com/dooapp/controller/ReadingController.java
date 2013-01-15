@@ -15,6 +15,9 @@ import java.net.URL;
 import  javafx.scene.control.TableView;
 import  javafx.scene.control.ComboBox;
 import  javafx.scene.control.TextField;
+import firea.wrappers.Point;
+import firea.wrappers.Device;
+import firea.wrappers.GaugeMode;
 
 //Start of user code for imports
 // TODO: import me!

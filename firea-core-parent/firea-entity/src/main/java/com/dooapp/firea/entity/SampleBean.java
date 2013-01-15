@@ -19,7 +19,6 @@ import com.dooapp.lib.common.entity.Bean;
  */
 //Start of user code for queries
 //End of user code
-
 @javax.persistence.Entity
 public class SampleBean implements Bean
 {
@@ -41,7 +40,6 @@ public class SampleBean implements Bean
 	@javax.persistence.Column(name = "CREATION_DATE")
 	@javax.persistence.Temporal(javax.persistence.TemporalType.TIMESTAMP)
 	private java.util.Date creationDate;
-	
 	@javax.persistence.Column(name = "DATECOLUMN")
 	private java.util.Date date;
 	@javax.persistence.Id
@@ -49,14 +47,12 @@ public class SampleBean implements Bean
 	@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.SEQUENCE, generator = "seq")
 	@javax.persistence.Column(name = "ID")
 	private long id;
-	
 	@javax.persistence.Column(name = "NAMECOLUMN")
 	private String name;
 	
 	private double phiEPercent;
 	
 	private double phiIPercent;
-	
 	@javax.persistence.ManyToOne(cascade = javax.persistence.CascadeType.ALL)
 	private ProjectBean project;
 	
@@ -65,7 +61,6 @@ public class SampleBean implements Bean
 	private double roI;
 	@javax.persistence.Enumerated(javax.persistence.EnumType.STRING)
 	private com.dooapp.firea.entity.SampleStatus status;
-	
 	@javax.persistence.OneToMany(fetch = javax.persistence.FetchType.EAGER, mappedBy = "sample", cascade = javax.persistence.CascadeType.ALL)
 	private java.util.Set<StepBean> step;
 	

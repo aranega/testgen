@@ -19,7 +19,6 @@ import com.dooapp.lib.common.entity.Bean;
  */
 //Start of user code for queries
 //End of user code
-
 @javax.persistence.Entity
 public class RisqueBean implements Bean
 {
@@ -40,7 +39,6 @@ public class RisqueBean implements Bean
 	@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.SEQUENCE, generator = "seq")
 	@javax.persistence.Column(name = "ID")
 	private long id;
-	
 	@javax.persistence.Column(name = "KEYCOLUMN")
 	private String key;
 	@javax.persistence.Column(name = "UPDATE_DATE")

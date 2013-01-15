@@ -54,13 +54,8 @@
 								<Label fx:id="kind_label" GridPane.rowIndex="5" GridPane.columnIndex="2" text="kind" />
 								<ComboBox fx:id="kind_data" GridPane.rowIndex="5" GridPane.columnIndex="3">
 									<items>
-										<FXCollections fx:factory="observableArrayList">
-											<String fx:value="TECHNICIAN" />
-											<String fx:value="FIRM_MOE" />
-											<String fx:value="FIRM_CUSTOMER" />
-											<String fx:value="FIRM_MAINTENANCE" />
-											
-										</FXCollections>
+										<FXCollections fx:factory="observableArrayList" />
+										
 									</items>
 								</ComboBox><Label fx:id="image_label" GridPane.rowIndex="6" GridPane.columnIndex="2" text="image" />
 								<ComboBox fx:id="image_data" GridPane.rowIndex="6" GridPane.columnIndex="3" onAction="#selectImage" />

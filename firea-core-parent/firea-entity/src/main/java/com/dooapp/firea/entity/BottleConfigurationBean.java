@@ -19,7 +19,6 @@ import com.dooapp.lib.common.entity.Bean;
  */
 //Start of user code for queries
 //End of user code
-
 @javax.persistence.Entity
 public class BottleConfigurationBean implements Bean
 {
@@ -32,13 +31,11 @@ public class BottleConfigurationBean implements Bean
 	 */
 	private static final Logger logger = LoggerFactory.getLogger(BottleConfigurationBean.class);
 
-	
 	@javax.persistence.ManyToOne(cascade = javax.persistence.CascadeType.ALL)
 	private BottleTypeBean bottletype;
 	@javax.persistence.Column(name = "CREATION_DATE")
 	@javax.persistence.Temporal(javax.persistence.TemporalType.TIMESTAMP)
 	private java.util.Date creationDate;
-	
 	@javax.persistence.ManyToOne(cascade = javax.persistence.CascadeType.ALL)
 	private GazConfigurationBean gazconfiguration;
 	@javax.persistence.Id
@@ -46,7 +43,6 @@ public class BottleConfigurationBean implements Bean
 	@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.SEQUENCE, generator = "seq")
 	@javax.persistence.Column(name = "ID")
 	private long id;
-	
 	@javax.persistence.Column(name = "LOADCOLUMN")
 	private double load;
 	
