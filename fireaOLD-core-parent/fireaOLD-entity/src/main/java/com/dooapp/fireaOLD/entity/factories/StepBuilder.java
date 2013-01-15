@@ -40,9 +40,9 @@ public class StepBuilder<BUILDER extends StepBuilder<?>>
 	
 	private Integer version;
 	@javax.inject.Inject
-	PointBuilder<?> pointBuilder;
-	@javax.inject.Inject
 	SampleBuilder<?> sampleBuilder;
+	@javax.inject.Inject
+	PointBuilder<?> pointBuilder;
 	@javax.inject.Inject
 	java.util.Properties cfg;
 	/**
