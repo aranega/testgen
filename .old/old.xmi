@@ -200,7 +200,7 @@
         <details key="uuid" value="_i-Q7gEFJEDCR5JQSWoC9oA"/>
       </eAnnotations>
     </eClassifiers>
-    <eClassifiers xsi:type="emf4java:Entity" name="Toy" eSuperTypes="//entity/Product">
+    <eClassifiers xsi:type="emf4java:Entity" name="Toying" eSuperTypes="//entity/Product">
       <eAnnotations source="genmymodel">
         <details key="uuid" value="_i-T-0EFJEDCR5JQSWoC9oA"/>
       </eAnnotations>

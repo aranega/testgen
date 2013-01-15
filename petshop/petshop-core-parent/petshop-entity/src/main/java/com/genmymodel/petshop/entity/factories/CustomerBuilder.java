@@ -36,11 +36,11 @@ public class CustomerBuilder<BUILDER extends CustomerBuilder<?>>
 	
 	private Integer version;
 	@javax.inject.Inject
-	OrderBuilder<?> orderBuilder;
+	AddressBuilder<?> addressBuilder;
 	@javax.inject.Inject
 	CartBuilder<?> cartBuilder;
 	@javax.inject.Inject
-	AddressBuilder<?> addressBuilder;
+	OrderBuilder<?> orderBuilder;
 	@javax.inject.Inject
 	java.util.Properties cfg;
 	/**

@@ -1,6 +1,6 @@
 package com.genmymodel.controller;
 
-import petshop.wrapper.Item;
+import petshop.wrapper.Toying;
 
 import com.dooapp.lib.controller.AbstractController;
 import com.google.inject.Inject;
@@ -12,9 +12,7 @@ import org.slf4j.LoggerFactory;
 import javafx.scene.Node;
 import java.util.ResourceBundle;
 import java.net.URL;
-import  javafx.scene.control.ComboBox;
 import  javafx.scene.control.TextField;
-import petshop.wrappers.Product;
 
 //Start of user code for imports
 // TODO: import me!
@@ -25,22 +23,20 @@ import petshop.wrappers.Product;
 
 
 @Singleton
-public class ItemController extends AbstractController<Node> implements javafx.fxml.Initializable 
+public class ToyingController extends AbstractController<Node> implements javafx.fxml.Initializable 
 {
 	/**
 	 * The logger
 	 */
-	private static final Logger logger = LoggerFactory.getLogger(ItemController.class);
+	private static final Logger logger = LoggerFactory.getLogger(ToyingController.class);
 	@javafx.fxml.FXML
 	private TextField creationDate_data;
 	@javafx.fxml.FXML
+	private TextField description_data;
+	@javafx.fxml.FXML
 	private TextField id_data;
 	@javafx.fxml.FXML
-	private TextField price_data;
-	@javafx.fxml.FXML
-	private ComboBox<Product> product_data;
-	@javafx.fxml.FXML
-	private TextField quantity_data;
+	private TextField name_data;
 	@javafx.fxml.FXML
 	private TextField updateDate_data;
 	@javafx.fxml.FXML
@@ -53,7 +49,7 @@ public class ItemController extends AbstractController<Node> implements javafx.f
  	 * Handled Wrapper
 	 *
 	 */
-	private Item item;
+	private Toying toying;
 
 	/*
  	 * Handled ResourceBundle
@@ -62,23 +58,23 @@ public class ItemController extends AbstractController<Node> implements javafx.f
 	@Inject
 	private ResourceBundle rb;
 
-	public void setItem(Item wrapper){
-		this.item = wrapper;
+	public void setToying(Toying wrapper){
+		this.toying = wrapper;
 	}
 	
 	public void initialize(URL args0, ResourceBundle args1){
-		creationDate_data.setText(String.valueOf(item.getCreationDate()));
-		this.binder.configureBindingBidirectional(creationDate_data.textProperty(), item.creationDateProperty());
-		id_data.setText(String.valueOf(item.getId()));
-		this.binder.configureBindingBidirectional(id_data.textProperty(), item.idProperty());
-		price_data.setText(String.valueOf(item.getPrice()));
-		this.binder.configureBindingBidirectional(price_data.textProperty(), item.priceProperty());
-		quantity_data.setText(String.valueOf(item.getQuantity()));
-		this.binder.configureBindingBidirectional(quantity_data.textProperty(), item.quantityProperty());
-		updateDate_data.setText(String.valueOf(item.getUpdateDate()));
-		this.binder.configureBindingBidirectional(updateDate_data.textProperty(), item.updateDateProperty());
-		version_data.setText(String.valueOf(item.getVersion()));
-		this.binder.configureBindingBidirectional(version_data.textProperty(), item.versionProperty());
+		creationDate_data.setText(String.valueOf(toying.getCreationDate()));
+		this.binder.configureBindingBidirectional(creationDate_data.textProperty(), toying.creationDateProperty());
+		description_data.setText(String.valueOf(toying.getDescription()));
+		this.binder.configureBindingBidirectional(description_data.textProperty(), toying.descriptionProperty());
+		id_data.setText(String.valueOf(toying.getId()));
+		this.binder.configureBindingBidirectional(id_data.textProperty(), toying.idProperty());
+		name_data.setText(String.valueOf(toying.getName()));
+		this.binder.configureBindingBidirectional(name_data.textProperty(), toying.nameProperty());
+		updateDate_data.setText(String.valueOf(toying.getUpdateDate()));
+		this.binder.configureBindingBidirectional(updateDate_data.textProperty(), toying.updateDateProperty());
+		version_data.setText(String.valueOf(toying.getVersion()));
+		this.binder.configureBindingBidirectional(version_data.textProperty(), toying.versionProperty());
 	}
 
 	@javafx.fxml.FXML
@@ -93,14 +89,6 @@ public class ItemController extends AbstractController<Node> implements javafx.f
 	public void handleSubmitButtonAction () 
 	{
 		//Start of user code handleSubmitButtonAction
-		// TODO: implement me! 
-		//End of user code	
-	}
-
-	@javafx.fxml.FXML
-	public void selectProduct () 
-	{
-		//Start of user code selectProduct
 		// TODO: implement me! 
 		//End of user code	
 	}

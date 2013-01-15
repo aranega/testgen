@@ -12,7 +12,7 @@
 		<class>com.genmymodel.petshop.entity.CartBean</class>
 		<class>com.genmymodel.petshop.entity.OrderBean</class>
 		<class>com.genmymodel.petshop.entity.FoodBean</class>
-		<class>com.genmymodel.petshop.entity.ToyBean</class>
+		<class>com.genmymodel.petshop.entity.ToyingBean</class>
 	<!-- Start of user code class code
 	-->
 		
