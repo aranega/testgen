@@ -25,6 +25,8 @@ public class RisqueBuilder<BUILDER extends RisqueBuilder<?>>
 	
 	private String key;
 	
+	private byte[] tab;
+	
 	private java.util.Date updateDate;
 	
 	private Integer version;
@@ -68,6 +70,11 @@ public class RisqueBuilder<BUILDER extends RisqueBuilder<?>>
 			handleDefaultKey(result);
 		} else {
 			result.setKey(key);
+		}
+		if (tab == null) {
+			handleDefaultTab(result);
+		} else {
+			result.setTab(tab);
 		}
 		if (updateDate == null) {
 			handleDefaultUpdateDate(result);
@@ -122,6 +129,16 @@ public class RisqueBuilder<BUILDER extends RisqueBuilder<?>>
 	}
 
 	/*
+	 * <!-- Start of user code comment for tab default method
+	 * End of user code -->
+	 */
+	private void handleDefaultTab(Risque result) {
+		//Start of user code default feature for handleDefaultTab
+		// Read from file ?
+		//End of user code
+	}
+
+	/*
 	 * <!-- Start of user code comment for updateDate default method
 	 * End of user code -->
 	 */
@@ -171,6 +188,15 @@ public class RisqueBuilder<BUILDER extends RisqueBuilder<?>>
 	 */
 	public BUILDER key(String myKey) {
 			this.key = myKey;
+			return (BUILDER) this;
+	}
+
+	/*
+	 * <!-- Start of user code comment for tab
+	 * End of user code -->
+	 */
+	public BUILDER tab(byte[] myTab) {
+			this.tab = myTab;
 			return (BUILDER) this;
 	}
 

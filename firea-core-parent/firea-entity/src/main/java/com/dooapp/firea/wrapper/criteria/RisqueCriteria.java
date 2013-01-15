@@ -37,6 +37,8 @@ public class RisqueCriteria implements com.dooapp.lib.common.entity.Wrapper
 	
 	private StringProperty keyProperty;
 	
+	private ObjectProperty<byte[]> tabProperty;
+	
 	private ObjectProperty<java.util.Date> updateDateMaxProperty;
 	
 	private ObjectProperty<java.util.Date> updateDateMinProperty;
@@ -411,6 +413,71 @@ public class RisqueCriteria implements com.dooapp.lib.common.entity.Wrapper
 	
 	public void updateKey(final String myKey) {
 		updateKey(myKey, null);
+	}
+
+	/*
+	 * <!-- Start of user code comment for tab property method 
+		-->
+	 * <!-- End of user code -->
+	 */
+	public ObjectProperty<byte[]> tabProperty() {
+		if (tabProperty == null) {
+			tabProperty = new SimpleObjectProperty<byte[]>(risqueCriteria.getTab());
+			tabProperty.addListener(new ChangeListener<byte[]>() {
+				@Override
+				public void changed(ObservableValue<? extends byte[]> arg0, byte[] arg1, byte[] arg2) {
+					risqueCriteria.setTab(arg2);
+				}
+			});
+			//Start of user code tabproperty method
+			//End of user code
+		}
+		return tabProperty;
+	}
+	
+	/*
+	 * <!-- Start of user code comment for tab getter 
+		-->
+	 * <!-- End of user code -->
+	 */
+	public byte[] getTab(){
+		return tabProperty().get();
+	} 
+	
+	/*
+	 * <!-- Start of user code comment for tab setter 
+		-->
+	 * <!-- End of user code -->
+	 */
+	public void setTab(byte[] myTab){
+		if (tabProperty == null) {
+				risqueCriteria.setTab(myTab);
+			} else {
+				this.tabProperty().set(myTab);
+			}
+	}
+	
+	public void updateTab(final byte[] myTab, final Object mutex) {
+		if (javafx.application.Platform.isFxApplicationThread()) {
+			setTab(myTab);
+			if (mutex != null) {
+				mutex.notify();
+			}
+		} else {
+			javafx.application.Platform.runLater(new Runnable() {
+				@Override
+				public void run() {
+					setTab(myTab);
+					if (mutex != null) {
+						mutex.notify();
+					}
+				}
+			});
+		}
+	}
+	
+	public void updateTab(final byte[] myTab) {
+		updateTab(myTab, null);
 	}
 
 	/*

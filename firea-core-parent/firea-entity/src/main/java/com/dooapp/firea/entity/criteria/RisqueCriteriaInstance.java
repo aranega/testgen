@@ -29,6 +29,8 @@ public class RisqueCriteriaInstance implements Bean
 	
 	private String key;
 	
+	private byte[] tab;
+	
 	private java.util.Date updateDateMax;
 	
 	private java.util.Date updateDateMin;
@@ -140,6 +142,21 @@ public class RisqueCriteriaInstance implements Bean
 	 */
 	public void setKey(String arg0){
 		this.key = arg0;
+	} 
+	/*
+	 * <!-- Start of user code comment for tab getter
+	 * End of user code -->
+	 */
+	public byte[] getTab(){
+		return this.tab;
+	}
+	
+	/*
+	 * <!-- Start of user code comment for tab setter
+	 * End of user code -->
+	 */
+	public void setTab(byte[] arg0){
+		this.tab = arg0;
 	} 
 	/*
 	 * <!-- Start of user code comment for updateDateMax getter

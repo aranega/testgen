@@ -62,9 +62,9 @@ public class SampleBuilder<BUILDER extends SampleBuilder<?>>
 	
 	private Double windMeasure;
 	@javax.inject.Inject
-	ProjectBuilder<?> projectBuilder;
-	@javax.inject.Inject
 	StepBuilder<?> stepBuilder;
+	@javax.inject.Inject
+	ProjectBuilder<?> projectBuilder;
 	@javax.inject.Inject
 	java.util.Properties cfg;
 	/**

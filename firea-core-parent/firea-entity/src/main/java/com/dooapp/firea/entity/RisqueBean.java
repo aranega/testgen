@@ -19,7 +19,6 @@ import com.dooapp.lib.common.entity.Bean;
  */
 //Start of user code for queries
 //End of user code
-
 @javax.persistence.Entity
 public class RisqueBean implements Bean
 {
@@ -40,9 +39,10 @@ public class RisqueBean implements Bean
 	@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.SEQUENCE, generator = "seq")
 	@javax.persistence.Column(name = "ID")
 	private long id;
-	
 	@javax.persistence.Column(name = "KEYCOLUMN")
 	private String key;
+	
+	private byte[] tab;
 	@javax.persistence.Column(name = "UPDATE_DATE")
 	@javax.persistence.Temporal(javax.persistence.TemporalType.TIMESTAMP)
 	private java.util.Date updateDate;
@@ -169,6 +169,29 @@ public class RisqueBean implements Bean
 	 */
 	public void setKey(String arg0){
 		this.key = arg0;
+	}
+	/*
+	 * <!-- Start of user code comment for tab getter
+	 * End of user code -->
+	 */
+	public byte[] getTab(){
+		return this.tab;
+	}
+	
+	/*
+	 * <!-- Start of user code comment for tab setter
+	 * End of user code -->
+	 */
+	public void setTab(byte[] arg0){
+		this.tab = arg0;
+	}
+	
+	/*
+	 * <!-- Start of user code comment for tab unsetter
+	 * End of user code -->
+	 */
+	public void unsetTab(byte[] arg0){
+		this.tab = null;
 	}
 	/*
 	 * <!-- Start of user code comment for updateDate getter

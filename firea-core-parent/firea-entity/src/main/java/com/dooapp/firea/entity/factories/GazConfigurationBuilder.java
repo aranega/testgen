@@ -52,9 +52,9 @@ public class GazConfigurationBuilder<BUILDER extends GazConfigurationBuilder<?>>
 	@javax.inject.Inject
 	ProjectBuilder<?> projectBuilder;
 	@javax.inject.Inject
-	GazBuilder<?> gazBuilder;
-	@javax.inject.Inject
 	BottleConfigurationBuilder<?> bottleConfigurationBuilder;
+	@javax.inject.Inject
+	GazBuilder<?> gazBuilder;
 	@javax.inject.Inject
 	java.util.Properties cfg;
 	/**

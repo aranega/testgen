@@ -19,7 +19,6 @@ import com.dooapp.lib.common.entity.Bean;
  */
 //Start of user code for queries
 //End of user code
-
 @javax.persistence.Entity
 public class PointBean implements Bean
 {
@@ -42,10 +41,8 @@ public class PointBean implements Bean
 	private long id;
 	
 	private double pressureGoal;
-	
 	@javax.persistence.OneToMany(fetch = javax.persistence.FetchType.EAGER, mappedBy = "point", cascade = javax.persistence.CascadeType.ALL)
 	private java.util.Set<ReadingBean> readings;
-	
 	@javax.persistence.ManyToOne(cascade = javax.persistence.CascadeType.ALL)
 	private StepBean step;
 	@javax.persistence.Column(name = "UPDATE_DATE")

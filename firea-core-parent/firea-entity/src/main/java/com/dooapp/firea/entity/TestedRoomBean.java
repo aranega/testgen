@@ -19,7 +19,6 @@ import com.dooapp.lib.common.entity.Bean;
  */
 //Start of user code for queries
 //End of user code
-
 @javax.persistence.Entity
 public class TestedRoomBean implements Bean
 {
@@ -36,7 +35,6 @@ public class TestedRoomBean implements Bean
 	private java.util.Date CommissioningDate;
 	
 	private int altitude;
-	
 	@javax.persistence.OneToMany(fetch = javax.persistence.FetchType.EAGER, mappedBy = "testedroom", cascade = javax.persistence.CascadeType.ALL)
 	private java.util.Set<BlowHoleBean> blowholes;
 	
@@ -79,7 +77,6 @@ public class TestedRoomBean implements Bean
 	private int mecanicalStrength;
 	
 	private int minimalProtectedHeight;
-	
 	@javax.persistence.Column(name = "NAMECOLUMN")
 	private String name;
 	

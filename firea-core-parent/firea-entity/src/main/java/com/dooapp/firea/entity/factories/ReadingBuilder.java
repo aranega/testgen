@@ -46,9 +46,9 @@ public class ReadingBuilder<BUILDER extends ReadingBuilder<?>>
 	@javax.inject.Inject
 	DeviceBuilder<?> deviceBuilder;
 	@javax.inject.Inject
-	PointBuilder<?> pointBuilder;
-	@javax.inject.Inject
 	GaugeModeBuilder<?> gaugeModeBuilder;
+	@javax.inject.Inject
+	PointBuilder<?> pointBuilder;
 	@javax.inject.Inject
 	java.util.Properties cfg;
 	/**

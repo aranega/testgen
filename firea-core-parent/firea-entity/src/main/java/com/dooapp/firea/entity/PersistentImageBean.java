@@ -19,7 +19,6 @@ import com.dooapp.lib.common.entity.Bean;
  */
 //Start of user code for queries
 //End of user code
-
 @javax.persistence.Entity
 public class PersistentImageBean implements Bean
 {
@@ -32,7 +31,6 @@ public class PersistentImageBean implements Bean
 	 */
 	private static final Logger logger = LoggerFactory.getLogger(PersistentImageBean.class);
 
-	
 	@javax.persistence.OneToOne(optional = false, cascade = javax.persistence.CascadeType.ALL)
 	private ContactBean contact;
 	@javax.persistence.Column(name = "CREATION_DATE")

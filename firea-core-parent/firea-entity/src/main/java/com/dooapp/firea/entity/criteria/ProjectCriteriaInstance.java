@@ -35,8 +35,6 @@ public class ProjectCriteriaInstance implements Bean
 	
 	private String name;
 	
-	private byte[] newAtt;
-	
 	private java.util.Date updateDateMax;
 	
 	private java.util.Date updateDateMin;
@@ -193,21 +191,6 @@ public class ProjectCriteriaInstance implements Bean
 	 */
 	public void setName(String arg0){
 		this.name = arg0;
-	} 
-	/*
-	 * <!-- Start of user code comment for newAtt getter
-	 * End of user code -->
-	 */
-	public byte[] getNewAtt(){
-		return this.newAtt;
-	}
-	
-	/*
-	 * <!-- Start of user code comment for newAtt setter
-	 * End of user code -->
-	 */
-	public void setNewAtt(byte[] arg0){
-		this.newAtt = arg0;
 	} 
 	/*
 	 * <!-- Start of user code comment for updateDateMax getter

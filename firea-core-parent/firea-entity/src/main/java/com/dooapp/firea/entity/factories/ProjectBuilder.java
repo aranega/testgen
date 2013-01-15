@@ -43,8 +43,6 @@ public class ProjectBuilder<BUILDER extends ProjectBuilder<?>>
 	
 	private String name;
 	
-	private byte[] newAtt;
-	
 	private Risque risque;
 	
 	private java.util.Set<Sample> sample;
@@ -53,15 +51,15 @@ public class ProjectBuilder<BUILDER extends ProjectBuilder<?>>
 	
 	private Integer version;
 	@javax.inject.Inject
-	PersistentImageBuilder<?> persistentImageBuilder;
+	RisqueBuilder<?> risqueBuilder;
 	@javax.inject.Inject
-	SampleBuilder<?> sampleBuilder;
+	PersistentImageBuilder<?> persistentImageBuilder;
 	@javax.inject.Inject
 	ContactBuilder<?> contactBuilder;
 	@javax.inject.Inject
-	GazConfigurationBuilder<?> gazConfigurationBuilder;
+	SampleBuilder<?> sampleBuilder;
 	@javax.inject.Inject
-	RisqueBuilder<?> risqueBuilder;
+	GazConfigurationBuilder<?> gazConfigurationBuilder;
 	@javax.inject.Inject
 	java.util.Properties cfg;
 	/**
@@ -132,11 +130,6 @@ public class ProjectBuilder<BUILDER extends ProjectBuilder<?>>
 			handleDefaultName(result);
 		} else {
 			result.setName(name);
-		}
-		if (newAtt == null) {
-			handleDefaultNewAtt(result);
-		} else {
-			result.setNewAtt(newAtt);
 		}
 		if (risque == null) {
 			handleDefaultRisque(result);
@@ -257,16 +250,6 @@ public class ProjectBuilder<BUILDER extends ProjectBuilder<?>>
 	private void handleDefaultName(Project result) {
 		//Start of user code default feature for handleDefaultName
 		result.setName(cfg.getProperty("defaultValue.Project.name"));
-		//End of user code
-	}
-
-	/*
-	 * <!-- Start of user code comment for newAtt default method
-	 * End of user code -->
-	 */
-	private void handleDefaultNewAtt(Project result) {
-		//Start of user code default feature for handleDefaultNewAtt
-		// Read from file ?
 		//End of user code
 	}
 
@@ -394,15 +377,6 @@ public class ProjectBuilder<BUILDER extends ProjectBuilder<?>>
 	 */
 	public BUILDER name(String myName) {
 			this.name = myName;
-			return (BUILDER) this;
-	}
-
-	/*
-	 * <!-- Start of user code comment for newAtt
-	 * End of user code -->
-	 */
-	public BUILDER newAtt(byte[] myNewAtt) {
-			this.newAtt = myNewAtt;
 			return (BUILDER) this;
 	}
 
