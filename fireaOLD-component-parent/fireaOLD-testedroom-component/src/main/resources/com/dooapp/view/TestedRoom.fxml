@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+<?import javafx.paint.*?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.Button?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" fx:id="TestedRoom" fx:controller="fireaOLD-component-parent/fireaOLD-testedroom-component/src/main/java/com/dooapp/controller/TestedRoomController">
+	<top>
+		<Label style="-fx-font: NORMAL 20 Tahoma;" text="Enter values for TestedRoom  Properties" />
+		
+	</top><center>
+		<VBox>
+			<children>
+				<HBox fx:id="_content" />
+				<StackPane fx:id="_stack" visible="false">
+					<children>
+						<GridPane>
+							<children>
+								<Label fx:id="commissioningDate_label" GridPane.rowIndex="0" GridPane.columnIndex="0" text="CommissioningDate" />
+								<TextField fx:id="commissioningDate_data" GridPane.rowIndex="0" GridPane.columnIndex="1" editable="true" />
+								<Label fx:id="altitude_label" GridPane.rowIndex="1" GridPane.columnIndex="0" text="altitude" />
+								<TextField fx:id="altitude_data" GridPane.rowIndex="1" GridPane.columnIndex="1" editable="true" />
+								<Label fx:id="unloadTime_label" GridPane.rowIndex="2" GridPane.columnIndex="0" text="unloadTime" />
+								<TextField fx:id="unloadTime_data" GridPane.rowIndex="2" GridPane.columnIndex="1" editable="true" />
+								<Label fx:id="mecanicalStrength_label" GridPane.rowIndex="3" GridPane.columnIndex="0" text="mecanicalStrength" />
+								<TextField fx:id="mecanicalStrength_data" GridPane.rowIndex="3" GridPane.columnIndex="1" editable="true" />
+								<Label fx:id="droppedCeiling_label" GridPane.rowIndex="4" GridPane.columnIndex="0" text="droppedCeiling" />
+								<TextField fx:id="droppedCeiling_data" GridPane.rowIndex="4" GridPane.columnIndex="1" editable="true" />
+								<Label fx:id="mainHeight_label" GridPane.rowIndex="5" GridPane.columnIndex="0" text="mainHeight" />
+								<TextField fx:id="mainHeight_data" GridPane.rowIndex="5" GridPane.columnIndex="1" editable="true" />
+								<Label fx:id="droppedFloor_label" GridPane.rowIndex="6" GridPane.columnIndex="0" text="droppedFloor" />
+								<TextField fx:id="droppedFloor_data" GridPane.rowIndex="6" GridPane.columnIndex="1" editable="true" />
+								<Label fx:id="totalHeight_label" GridPane.rowIndex="7" GridPane.columnIndex="0" text="totalHeight" />
+								<TextField fx:id="totalHeight_data" GridPane.rowIndex="7" GridPane.columnIndex="1" editable="true" />
+								<Label fx:id="indicatedVolume_label" GridPane.rowIndex="0" GridPane.columnIndex="2" text="indicatedVolume" />
+								<TextField fx:id="indicatedVolume_data" GridPane.rowIndex="0" GridPane.columnIndex="3" editable="true" />
+								<Label fx:id="measuredVolume_label" GridPane.rowIndex="1" GridPane.columnIndex="2" text="measuredVolume" />
+								<TextField fx:id="measuredVolume_data" GridPane.rowIndex="1" GridPane.columnIndex="3" editable="true" />
+								<Label fx:id="volumeCorrection_label" GridPane.rowIndex="2" GridPane.columnIndex="2" text="volumeCorrection" />
+								<TextField fx:id="volumeCorrection_data" GridPane.rowIndex="2" GridPane.columnIndex="3" editable="true" />
+								<Label fx:id="netVolume_label" GridPane.rowIndex="3" GridPane.columnIndex="2" text="netVolume" />
+								<TextField fx:id="netVolume_data" GridPane.rowIndex="3" GridPane.columnIndex="3" editable="true" />
+								<Label fx:id="risqueHeight_label" GridPane.rowIndex="4" GridPane.columnIndex="2" text="risqueHeight" />
+								<TextField fx:id="risqueHeight_data" GridPane.rowIndex="4" GridPane.columnIndex="3" editable="true" />
+								<Label fx:id="risqueHeightPercent_label" GridPane.rowIndex="5" GridPane.columnIndex="2" text="risqueHeightPercent" />
+								<TextField fx:id="risqueHeightPercent_data" GridPane.rowIndex="5" GridPane.columnIndex="3" editable="true" />
+								<Label fx:id="minimalProtectedHeight_label" GridPane.rowIndex="6" GridPane.columnIndex="2" text="minimalProtectedHeight" />
+								<TextField fx:id="minimalProtectedHeight_data" GridPane.rowIndex="6" GridPane.columnIndex="3" editable="true" />
+								<Label fx:id="choosenProtectedHeight_label" GridPane.rowIndex="7" GridPane.columnIndex="2" text="choosenProtectedHeight" />
+								<TextField fx:id="choosenProtectedHeight_data" GridPane.rowIndex="7" GridPane.columnIndex="3" editable="true" />
+								<Label fx:id="name_label" GridPane.rowIndex="0" GridPane.columnIndex="4" text="name" />
+								<TextField fx:id="name_data" GridPane.rowIndex="0" GridPane.columnIndex="5" editable="true" />
+								<Label fx:id="uniformHorizontality_label" GridPane.rowIndex="1" GridPane.columnIndex="4" text="uniformHorizontality" />
+								<TextField fx:id="uniformHorizontality_data" GridPane.rowIndex="1" GridPane.columnIndex="5" editable="true" />
+								<Label fx:id="climWithNewAir_label" GridPane.rowIndex="2" GridPane.columnIndex="4" text="climWithNewAir" />
+								<TextField fx:id="climWithNewAir_data" GridPane.rowIndex="2" GridPane.columnIndex="5" editable="true" />
+								<Label fx:id="climReclycle_label" GridPane.rowIndex="3" GridPane.columnIndex="4" text="climReclycle" />
+								<TextField fx:id="climReclycle_data" GridPane.rowIndex="3" GridPane.columnIndex="5" editable="true" />
+								<Label fx:id="climVMC_label" GridPane.rowIndex="4" GridPane.columnIndex="4" text="climVMC" />
+								<TextField fx:id="climVMC_data" GridPane.rowIndex="4" GridPane.columnIndex="5" editable="true" />
+								<Label fx:id="climDuct_label" GridPane.rowIndex="5" GridPane.columnIndex="4" text="climDuct" />
+								<TextField fx:id="climDuct_data" GridPane.rowIndex="5" GridPane.columnIndex="5" editable="true" />
+								<Label fx:id="climWithNewAirAuto_label" GridPane.rowIndex="6" GridPane.columnIndex="4" text="climWithNewAirAuto" />
+								<TextField fx:id="climWithNewAirAuto_data" GridPane.rowIndex="6" GridPane.columnIndex="5" editable="true" />
+								<Label fx:id="climReclycleAuto_label" GridPane.rowIndex="7" GridPane.columnIndex="4" text="climReclycleAuto" />
+								<TextField fx:id="climReclycleAuto_data" GridPane.rowIndex="7" GridPane.columnIndex="5" editable="true" />
+								<Label fx:id="climVMCAuto_label" GridPane.rowIndex="0" GridPane.columnIndex="6" text="climVMCAuto" />
+								<TextField fx:id="climVMCAuto_data" GridPane.rowIndex="0" GridPane.columnIndex="7" editable="true" />
+								<Label fx:id="clapetsCF_label" GridPane.rowIndex="1" GridPane.columnIndex="6" text="clapetsCF" />
+								<TextField fx:id="clapetsCF_data" GridPane.rowIndex="1" GridPane.columnIndex="7" editable="true" />
+								<Label fx:id="id_label" GridPane.rowIndex="2" GridPane.columnIndex="6" text="id" />
+								<TextField fx:id="id_data" GridPane.rowIndex="2" GridPane.columnIndex="7" editable="false" />
+								<Label fx:id="creationDate_label" GridPane.rowIndex="3" GridPane.columnIndex="6" text="creationDate" />
+								<TextField fx:id="creationDate_data" GridPane.rowIndex="3" GridPane.columnIndex="7" editable="true" />
+								<Label fx:id="updateDate_label" GridPane.rowIndex="4" GridPane.columnIndex="6" text="updateDate" />
+								<TextField fx:id="updateDate_data" GridPane.rowIndex="4" GridPane.columnIndex="7" editable="true" />
+								<Label fx:id="version_label" GridPane.rowIndex="5" GridPane.columnIndex="6" text="version" />
+								<TextField fx:id="version_data" GridPane.rowIndex="5" GridPane.columnIndex="7" editable="true" />
+								<Label fx:id="blowholes_label" GridPane.rowIndex="6" GridPane.columnIndex="6" text="blowholes" />
+								<VBox GridPane.rowIndex="6" GridPane.columnIndex="7">
+									<children>
+										<TableView fx:id="blowholes_dataview" prefHeight="50.0" editable="true">
+											<columns>
+												<TableColumn text="Discharge">
+													<cellValueFactory>
+														<PropertyValueFactory property="Discharge" />
+														
+													</cellValueFactory>
+												</TableColumn><TableColumn text="quantity">
+													<cellValueFactory>
+														<PropertyValueFactory property="quantity" />
+														
+													</cellValueFactory>
+												</TableColumn><TableColumn text="surface">
+													<cellValueFactory>
+														<PropertyValueFactory property="surface" />
+														
+													</cellValueFactory>
+												</TableColumn><TableColumn text="id">
+													<cellValueFactory>
+														<PropertyValueFactory property="id" />
+														
+													</cellValueFactory>
+												</TableColumn><TableColumn text="creationDate">
+													<cellValueFactory>
+														<PropertyValueFactory property="creationDate" />
+														
+													</cellValueFactory>
+												</TableColumn><TableColumn text="updateDate">
+													<cellValueFactory>
+														<PropertyValueFactory property="updateDate" />
+														
+													</cellValueFactory>
+												</TableColumn><TableColumn text="version">
+													<cellValueFactory>
+														<PropertyValueFactory property="version" />
+														
+													</cellValueFactory>
+												</TableColumn><TableColumn text="testedroom">
+													<cellValueFactory>
+														<PropertyValueFactory property="testedroom" />
+														
+													</cellValueFactory>
+												</TableColumn>
+											</columns>
+										</TableView><ComboBox fx:id="blowholes_data" onAction="#selectBlowholes" />
+										
+									</children>
+								</VBox>
+							</children>
+						</GridPane>
+					</children>
+				</StackPane><StackPane fx:id="_trash" visible="false" />
+				
+			</children>
+		</VBox>
+	</center><bottom>
+		<HBox>
+			<children>
+				<Button text="OK" onAction="#handleSubmitButtonAction" cancelButton="false" />
+				<Button text="Cancel" onAction="#handleCancelButtonAction" cancelButton="false" />
+				
+			</children>
+		</HBox>
+	</bottom>
+</BorderPane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence"
+	version="2.0">
+
+	<persistence-unit name="dooapp" transaction-type="RESOURCE_LOCAL">
+		<class>com.dooapp.fireaOLD.entity.ContactBean</class>
+		<class>com.dooapp.fireaOLD.entity.PersistentImageBean</class>
+		<class>com.dooapp.fireaOLD.entity.FolderBean</class>
+		<class>com.dooapp.fireaOLD.entity.PersistentImageDataBean</class>
+		<class>com.dooapp.fireaOLD.entity.ProjectBean</class>
+		<class>com.dooapp.fireaOLD.entity.RisqueBean</class>
+		<class>com.dooapp.fireaOLD.entity.TestedRoomBean</class>
+		<class>com.dooapp.fireaOLD.entity.BlowHoleBean</class>
+		<class>com.dooapp.fireaOLD.entity.GazBean</class>
+		<class>com.dooapp.fireaOLD.entity.BottleTypeBean</class>
+		<class>com.dooapp.fireaOLD.entity.GazConfigurationBean</class>
+		<class>com.dooapp.fireaOLD.entity.BottleConfigurationBean</class>
+		<class>com.dooapp.fireaOLD.entity.SampleBean</class>
+		<class>com.dooapp.fireaOLD.entity.StepBean</class>
+		<class>com.dooapp.fireaOLD.entity.PointBean</class>
+		<class>com.dooapp.fireaOLD.entity.ReadingBean</class>
+		<class>com.dooapp.fireaOLD.entity.DeviceBean</class>
+		<class>com.dooapp.fireaOLD.entity.CalibrationStepBean</class>
+		<class>com.dooapp.fireaOLD.entity.EventStepBean</class>
+		<class>com.dooapp.fireaOLD.entity.MainStepBean</class>
+		<class>com.dooapp.fireaOLD.entity.GaugeModeBean</class>
+	<!-- Start of user code class code
+	-->
+		
+	<!-- End of user code -->
+ 		<properties>
+      		<property name="hibernate.max_fetch_depth" value="0" />
+      		<property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect" />
+      		<property name="hibernate.show_sql" value="false" />
+      		<property name="hibernate.connection.driver_class" value="org.h2.Driver" />
+      		<property name="hibernate.format_sql" value="false" />
+			<!-- Start of user code property code
+			<property name="hibernate.hbm2ddl.auto" value="update"/>
+End of user code -->
+    	</properties>
+	</persistence-unit>
+</persistence>

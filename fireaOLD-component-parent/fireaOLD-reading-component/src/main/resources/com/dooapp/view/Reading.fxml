@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+<?import javafx.paint.*?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.Button?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" fx:id="Reading" fx:controller="fireaOLD-component-parent/fireaOLD-reading-component/src/main/java/com/dooapp/controller/ReadingController">
+	<top>
+		<Label style="-fx-font: NORMAL 20 Tahoma;" text="Enter values for Reading  Properties" />
+		
+	</top><center>
+		<VBox>
+			<children>
+				<HBox fx:id="_content" />
+				<StackPane fx:id="_stack" visible="false">
+					<children>
+						<GridPane>
+							<children>
+								<Label fx:id="buildingPressure_label" GridPane.rowIndex="0" GridPane.columnIndex="0" text="buildingPressure" />
+								<TextField fx:id="buildingPressure_data" GridPane.rowIndex="0" GridPane.columnIndex="1" editable="true" />
+								<Label fx:id="fanPressure_label" GridPane.rowIndex="1" GridPane.columnIndex="0" text="fanPressure" />
+								<TextField fx:id="fanPressure_data" GridPane.rowIndex="1" GridPane.columnIndex="1" editable="true" />
+								<Label fx:id="lowFlow_label" GridPane.rowIndex="2" GridPane.columnIndex="0" text="lowFlow" />
+								<TextField fx:id="lowFlow_data" GridPane.rowIndex="2" GridPane.columnIndex="1" editable="true" />
+								<Label fx:id="timeAverage_label" GridPane.rowIndex="3" GridPane.columnIndex="0" text="timeAverage" />
+								<TextField fx:id="timeAverage_data" GridPane.rowIndex="3" GridPane.columnIndex="1" editable="true" />
+								<Label fx:id="id_label" GridPane.rowIndex="4" GridPane.columnIndex="0" text="id" />
+								<TextField fx:id="id_data" GridPane.rowIndex="4" GridPane.columnIndex="1" editable="false" />
+								<Label fx:id="creationDate_label" GridPane.rowIndex="5" GridPane.columnIndex="0" text="creationDate" />
+								<TextField fx:id="creationDate_data" GridPane.rowIndex="5" GridPane.columnIndex="1" editable="true" />
+								<Label fx:id="updateDate_label" GridPane.rowIndex="6" GridPane.columnIndex="0" text="updateDate" />
+								<TextField fx:id="updateDate_data" GridPane.rowIndex="6" GridPane.columnIndex="1" editable="true" />
+								<Label fx:id="version_label" GridPane.rowIndex="7" GridPane.columnIndex="0" text="version" />
+								<TextField fx:id="version_data" GridPane.rowIndex="7" GridPane.columnIndex="1" editable="true" />
+								<Label fx:id="point_label" GridPane.rowIndex="0" GridPane.columnIndex="2" text="point" />
+								<ComboBox fx:id="point_data" GridPane.rowIndex="0" GridPane.columnIndex="3" onAction="#selectPoint" />
+								<Label fx:id="gaugemode_label" GridPane.rowIndex="1" GridPane.columnIndex="2" text="gaugemode" />
+								<ComboBox fx:id="gaugemode_data" GridPane.rowIndex="1" GridPane.columnIndex="3" onAction="#selectGaugemode" />
+								<Label fx:id="device_label" GridPane.rowIndex="2" GridPane.columnIndex="2" text="device" />
+								<VBox GridPane.rowIndex="2" GridPane.columnIndex="3">
+									<children>
+										<TableView fx:id="device_dataview" prefHeight="50.0" editable="true">
+											<columns>
+												<TableColumn text="serialNumber">
+													<cellValueFactory>
+														<PropertyValueFactory property="serialNumber" />
+														
+													</cellValueFactory>
+												</TableColumn><TableColumn text="lastCalibrationDate">
+													<cellValueFactory>
+														<PropertyValueFactory property="lastCalibrationDate" />
+														
+													</cellValueFactory>
+												</TableColumn><TableColumn text="id">
+													<cellValueFactory>
+														<PropertyValueFactory property="id" />
+														
+													</cellValueFactory>
+												</TableColumn><TableColumn text="creationDate">
+													<cellValueFactory>
+														<PropertyValueFactory property="creationDate" />
+														
+													</cellValueFactory>
+												</TableColumn><TableColumn text="updateDate">
+													<cellValueFactory>
+														<PropertyValueFactory property="updateDate" />
+														
+													</cellValueFactory>
+												</TableColumn><TableColumn text="version">
+													<cellValueFactory>
+														<PropertyValueFactory property="version" />
+														
+													</cellValueFactory>
+												</TableColumn>
+											</columns>
+										</TableView><ComboBox fx:id="device_data" onAction="#selectDevice" />
+										
+									</children>
+								</VBox>
+							</children>
+						</GridPane>
+					</children>
+				</StackPane><StackPane fx:id="_trash" visible="false" />
+				
+			</children>
+		</VBox>
+	</center><bottom>
+		<HBox>
+			<children>
+				<Button text="OK" onAction="#handleSubmitButtonAction" cancelButton="false" />
+				<Button text="Cancel" onAction="#handleCancelButtonAction" cancelButton="false" />
+				
+			</children>
+		</HBox>
+	</bottom>
+</BorderPane>
