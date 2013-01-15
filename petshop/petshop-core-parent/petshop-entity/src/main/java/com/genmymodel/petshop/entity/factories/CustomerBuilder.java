@@ -20,6 +20,8 @@ public class CustomerBuilder<BUILDER extends CustomerBuilder<?>>
 	
 	private Address address;
 	
+	private byte[] attribute;
+	
 	private Cart carts;
 	
 	private java.util.Date creationDate;
@@ -36,9 +38,9 @@ public class CustomerBuilder<BUILDER extends CustomerBuilder<?>>
 	
 	private Integer version;
 	@javax.inject.Inject
-	AddressBuilder<?> addressBuilder;
-	@javax.inject.Inject
 	CartBuilder<?> cartBuilder;
+	@javax.inject.Inject
+	AddressBuilder<?> addressBuilder;
 	@javax.inject.Inject
 	OrderBuilder<?> orderBuilder;
 	@javax.inject.Inject
@@ -65,6 +67,11 @@ public class CustomerBuilder<BUILDER extends CustomerBuilder<?>>
 			handleDefaultAddress(result);
 		} else {
 			result.setAddress(address);
+		}
+		if (attribute == null) {
+			handleDefaultAttribute(result);
+		} else {
+			result.setAttribute(attribute);
 		}
 		if (carts == null) {
 			handleDefaultCarts(result);
@@ -115,6 +122,12 @@ public class CustomerBuilder<BUILDER extends CustomerBuilder<?>>
 	private void handleDefaultAddress(Customer result) {
 		//Start of user code default feature for handleDefaultAddress
 		//result.setAddress(null);
+		//End of user code
+	}
+
+	private void handleDefaultAttribute(Customer result) {
+		//Start of user code default feature for handleDefaultAttribute
+		// Read from file ?
 		//End of user code
 	}
 
@@ -180,6 +193,11 @@ public class CustomerBuilder<BUILDER extends CustomerBuilder<?>>
 
 	public BUILDER address(Address myAddress) {
 			this.address = myAddress;
+			return (BUILDER) this;
+	}
+
+	public BUILDER attribute(byte[] myAttribute) {
+			this.attribute = myAttribute;
 			return (BUILDER) this;
 	}
 

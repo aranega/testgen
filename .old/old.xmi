@@ -80,6 +80,12 @@
           <details key="uuid" value="_i4yloEFJEDCR5JQSWoC9oA"/>
         </eAnnotations>
       </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_f4BUkEFPEDC0Jvxkhsc58g"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EByteArray"/>
+      </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
         <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
       </eStructuralFeatures>
@@ -209,12 +215,12 @@
       <eAnnotations source="genmymodel">
         <details key="uuid" value="_i-XCIEFJEDCR5JQSWoC9oA"/>
       </eAnnotations>
-      <eLiterals name="preparation">
+      <eLiterals name="preparationKK">
         <eAnnotations source="genmymodel">
           <details key="uuid" value="_i-Y3UEFJEDCR5JQSWoC9oA"/>
         </eAnnotations>
       </eLiterals>
-      <eLiterals name="expedition">
+      <eLiterals name="expeditionff">
         <eAnnotations source="genmymodel">
           <details key="uuid" value="_i-asgEFJEDCR5JQSWoC9oA"/>
         </eAnnotations>

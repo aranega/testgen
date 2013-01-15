@@ -44,13 +44,13 @@ public class OrderBuilder<BUILDER extends OrderBuilder<?>>
 	
 	private Integer version;
 	@javax.inject.Inject
-	AddressBuilder<?> addressBuilder;
+	ItemBuilder<?> itemBuilder;
 	@javax.inject.Inject
 	CartBuilder<?> cartBuilder;
 	@javax.inject.Inject
-	CustomerBuilder<?> customerBuilder;
+	AddressBuilder<?> addressBuilder;
 	@javax.inject.Inject
-	ItemBuilder<?> itemBuilder;
+	CustomerBuilder<?> customerBuilder;
 	@javax.inject.Inject
 	java.util.Properties cfg;
 	/**

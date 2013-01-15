@@ -34,11 +34,11 @@ public class CartBuilder<BUILDER extends CartBuilder<?>>
 	
 	private Integer version;
 	@javax.inject.Inject
-	OrderBuilder<?> orderBuilder;
+	ItemBuilder<?> itemBuilder;
 	@javax.inject.Inject
 	CustomerBuilder<?> customerBuilder;
 	@javax.inject.Inject
-	ItemBuilder<?> itemBuilder;
+	OrderBuilder<?> orderBuilder;
 	@javax.inject.Inject
 	java.util.Properties cfg;
 	/**

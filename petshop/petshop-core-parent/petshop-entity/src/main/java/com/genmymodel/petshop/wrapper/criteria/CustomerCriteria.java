@@ -25,6 +25,8 @@ public class CustomerCriteria implements com.dooapp.lib.common.entity.Wrapper
 	// Other attributes
 	//End of user code
 	
+	private ObjectProperty<byte[]> attributeProperty;
+	
 	private ObjectProperty<java.util.Date> creationDateMaxProperty;
 	
 	private ObjectProperty<java.util.Date> creationDateMinProperty;
@@ -92,6 +94,56 @@ public class CustomerCriteria implements com.dooapp.lib.common.entity.Wrapper
 	public long getId(){
 		return 0;
 	}	
+
+	public ObjectProperty<byte[]> attributeProperty() {
+		if (attributeProperty == null) {
+			attributeProperty = new SimpleObjectProperty<byte[]>(customerCriteria.getAttribute());
+			attributeProperty.addListener(new ChangeListener<byte[]>() {
+				@Override
+				public void changed(ObservableValue<? extends byte[]> arg0, byte[] arg1, byte[] arg2) {
+					customerCriteria.setAttribute(arg2);
+				}
+			});
+			//Start of user code attributeproperty method
+			//End of user code
+		}
+		return attributeProperty;
+	}
+	
+	public byte[] getAttribute(){
+		return attributeProperty().get();
+	} 
+	
+	public void setAttribute(byte[] myAttribute){
+		if (attributeProperty == null) {
+				customerCriteria.setAttribute(myAttribute);
+			} else {
+				this.attributeProperty().set(myAttribute);
+			}
+	}
+	
+	public void updateAttribute(final byte[] myAttribute, final Object mutex) {
+		if (javafx.application.Platform.isFxApplicationThread()) {
+			setAttribute(myAttribute);
+			if (mutex != null) {
+				mutex.notify();
+			}
+		} else {
+			javafx.application.Platform.runLater(new Runnable() {
+				@Override
+				public void run() {
+					setAttribute(myAttribute);
+					if (mutex != null) {
+						mutex.notify();
+					}
+				}
+			});
+		}
+	}
+	
+	public void updateAttribute(final byte[] myAttribute) {
+		updateAttribute(myAttribute, null);
+	}
 
 	public ObjectProperty<java.util.Date> creationDateMaxProperty() {
 		if (creationDateMaxProperty == null) {

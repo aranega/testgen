@@ -6,8 +6,8 @@ import com.dooapp.lib.guice.IOC;
 
 public enum OrderStatus
 {
-	preparation("OrderStatus.preparation"),
-	expedition("OrderStatus.expedition");
+	preparationKK("OrderStatus.preparationKK"),
+	expeditionff("OrderStatus.expeditionff");
 	
 	/**
 	 * The famous {@link ResourceBundle}

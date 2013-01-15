@@ -30,6 +30,9 @@ public class CustomerBean implements Bean
 	@javax.persistence.ManyToOne(cascade = javax.persistence.CascadeType.ALL)
 	private AddressBean address;
 	
+	@javax.persistence.Column(name = "ATTRIBUTECOLUMN")
+	private byte[] attribute;
+	
 	@javax.persistence.OneToOne(optional = true, cascade = javax.persistence.CascadeType.ALL)
 	private CartBean carts;
 	@javax.persistence.Column(name = "CREATION_DATE")
@@ -125,6 +128,17 @@ public class CustomerBean implements Bean
 			this.address = null;
 			
 	} 
+	public byte[] getAttribute(){
+		return this.attribute;
+	}
+	
+	public void setAttribute(byte[] arg0){
+		this.attribute = arg0;
+	}
+	
+	public void unsetAttribute(byte[] arg0){
+		this.attribute = null;
+	}
 	public CartBean getCarts(){
 		return this.carts;
 	}

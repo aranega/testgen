@@ -16,6 +16,8 @@ public class CustomerCriteriaInstance implements Bean
 {
 	
 	
+	private byte[] attribute;
+	
 	private java.util.Date creationDateMax;
 	
 	private java.util.Date creationDateMin;
@@ -57,6 +59,13 @@ public class CustomerCriteriaInstance implements Bean
 		this.wrapper = wrapper;
 	}
 
+	public byte[] getAttribute(){
+		return this.attribute;
+	}
+	
+	public void setAttribute(byte[] arg0){
+		this.attribute = arg0;
+	} 
 	public java.util.Date getCreationDateMax(){
 		return this.creationDateMax;
 	}
