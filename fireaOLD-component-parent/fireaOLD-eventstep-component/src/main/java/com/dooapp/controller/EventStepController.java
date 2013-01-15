@@ -15,6 +15,9 @@ import java.net.URL;
 import  javafx.scene.control.TableView;
 import  javafx.scene.control.ComboBox;
 import  javafx.scene.control.TextField;
+import fireaOLD.wrappers.Sample;
+import fireaOLD.wrappers.Point;
+import fireaOLD.entity.StepStatus;
 import fireaOLD.entity.Direction;
 
 //Start of user code for imports
@@ -49,10 +52,6 @@ public class EventStepController extends AbstractController<Node> implements jav
 	@javafx.fxml.FXML
 	private ComboBox<org.eclipse.emf.ecore.impl.DynamicEObjectImpl@75289698 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@3bb7113f (name: OclInvalid_Class) (instanceClassName: null) (abstract: false, interface: false))> status_data;
 	@javafx.fxml.FXML
-	private TextField ununsefuleAtt_data;
-	@javafx.fxml.FXML
-	private TextField ununsefuleAtt_data;
-	@javafx.fxml.FXML
 	private TextField updateDate_data;
 	@javafx.fxml.FXML
 	private TextField version_data;
@@ -84,10 +83,6 @@ public class EventStepController extends AbstractController<Node> implements jav
 		this.binder.configureBindingBidirectional(date_data.textProperty(), eventStep.dateProperty());
 		id_data.setText(String.valueOf(eventStep.getId()));
 		this.binder.configureBindingBidirectional(id_data.textProperty(), eventStep.idProperty());
-		ununsefuleAtt_data.setText(String.valueOf(eventStep.getUnunsefuleAtt()));
-		this.binder.configureBindingBidirectional(ununsefuleAtt_data.textProperty(), eventStep.ununsefuleAttProperty());
-		ununsefuleAtt_data.setText(String.valueOf(eventStep.getUnunsefuleAtt()));
-		this.binder.configureBindingBidirectional(ununsefuleAtt_data.textProperty(), eventStep.ununsefuleAttProperty());
 		updateDate_data.setText(String.valueOf(eventStep.getUpdateDate()));
 		this.binder.configureBindingBidirectional(updateDate_data.textProperty(), eventStep.updateDateProperty());
 		version_data.setText(String.valueOf(eventStep.getVersion()));

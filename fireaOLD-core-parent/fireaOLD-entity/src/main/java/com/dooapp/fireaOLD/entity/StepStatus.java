@@ -12,7 +12,7 @@ public enum StepStatus
 {
 	NO_STARTED("StepStatus.NO_STARTED"),
 	READY("StepStatus.READY"),
-	IN_PROGRESSION("StepStatus.IN_PROGRESSION"),
+	IN_PROGRESS("StepStatus.IN_PROGRESS"),
 	WAIT_FOR_VALIDATION("StepStatus.WAIT_FOR_VALIDATION"),
 	DONE("StepStatus.DONE"),
 	ERROR("StepStatus.ERROR");

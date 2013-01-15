@@ -68,11 +68,7 @@
 									</children>
 								</VBox>
 							</children>
-						</GridPane><TextField fx:id="ununsefuleAtt_data" editable="true" />
-						<TextField fx:id="ununsefuleAtt_data" editable="true" />
-						<Label fx:id="ununsefuleAtt_label" text="UnunsefuleAtt" />
-						<Label fx:id="ununsefuleAtt_label" text="UnunsefuleAtt" />
-						
+						</GridPane>
 					</children>
 				</StackPane><StackPane fx:id="_trash" visible="false" />
 				

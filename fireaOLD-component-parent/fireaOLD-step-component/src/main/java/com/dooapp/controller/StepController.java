@@ -15,9 +15,6 @@ import java.net.URL;
 import  javafx.scene.control.TableView;
 import  javafx.scene.control.ComboBox;
 import  javafx.scene.control.TextField;
-import fireaOLD.wrappers.Sample;
-import fireaOLD.wrappers.Point;
-import fireaOLD.entity.StepStatus;
 
 //Start of user code for imports
 // TODO: import me!
@@ -48,10 +45,6 @@ public class StepController extends AbstractController<Node> implements javafx.f
 	private ComboBox<Sample> sample_data;
 	@javafx.fxml.FXML
 	private ComboBox<StepStatus> status_data;
-	@javafx.fxml.FXML
-	private TextField ununsefuleAtt_data;
-	@javafx.fxml.FXML
-	private TextField ununsefuleAtt_data;
 	@javafx.fxml.FXML
 	private TextField updateDate_data;
 	@javafx.fxml.FXML
@@ -84,10 +77,6 @@ public class StepController extends AbstractController<Node> implements javafx.f
 		this.binder.configureBindingBidirectional(date_data.textProperty(), step.dateProperty());
 		id_data.setText(String.valueOf(step.getId()));
 		this.binder.configureBindingBidirectional(id_data.textProperty(), step.idProperty());
-		ununsefuleAtt_data.setText(String.valueOf(step.getUnunsefuleAtt()));
-		this.binder.configureBindingBidirectional(ununsefuleAtt_data.textProperty(), step.ununsefuleAttProperty());
-		ununsefuleAtt_data.setText(String.valueOf(step.getUnunsefuleAtt()));
-		this.binder.configureBindingBidirectional(ununsefuleAtt_data.textProperty(), step.ununsefuleAttProperty());
 		updateDate_data.setText(String.valueOf(step.getUpdateDate()));
 		this.binder.configureBindingBidirectional(updateDate_data.textProperty(), step.updateDateProperty());
 		version_data.setText(String.valueOf(step.getVersion()));

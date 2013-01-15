@@ -67,10 +67,6 @@ public class SampleController extends AbstractController<Node> implements javafx
 	@javafx.fxml.FXML
 	private TableView<Step> step_dataview;
 	@javafx.fxml.FXML
-	private TableView<Step> step_dataview;
-	@javafx.fxml.FXML
-	private TableView<Step> step_dataview;
-	@javafx.fxml.FXML
 	private TextField tetaE_data;
 	@javafx.fxml.FXML
 	private TextField tetaI_data;

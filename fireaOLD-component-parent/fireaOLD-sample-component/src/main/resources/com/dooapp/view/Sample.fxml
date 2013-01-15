@@ -93,33 +93,7 @@
 									</children>
 								</VBox>
 							</children>
-						</GridPane><TableView fx:id="step_dataview" prefHeight="50.0" editable="true">
-							<columns>
-								<TableColumn text="status" />
-								<TableColumn text="date" />
-								<TableColumn text="UnunsefuleAtt" />
-								<TableColumn text="id" />
-								<TableColumn text="creationDate" />
-								<TableColumn text="updateDate" />
-								<TableColumn text="version" />
-								<TableColumn text="sample" />
-								<TableColumn text="points" />
-								
-							</columns>
-						</TableView><TableView fx:id="step_dataview" prefHeight="50.0" editable="true">
-							<columns>
-								<TableColumn text="status" />
-								<TableColumn text="date" />
-								<TableColumn text="UnunsefuleAtt" />
-								<TableColumn text="id" />
-								<TableColumn text="creationDate" />
-								<TableColumn text="updateDate" />
-								<TableColumn text="version" />
-								<TableColumn text="sample" />
-								<TableColumn text="points" />
-								
-							</columns>
-						</TableView>
+						</GridPane>
 					</children>
 				</StackPane><StackPane fx:id="_trash" visible="false" />
 				

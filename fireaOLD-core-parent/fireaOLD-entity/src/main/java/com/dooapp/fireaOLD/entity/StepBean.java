@@ -31,8 +31,6 @@ public class StepBean implements Bean
 	 */
 	private static final Logger logger = LoggerFactory.getLogger(StepBean.class);
 
-	
-	private String UnunsefuleAtt;
 	@javax.persistence.Column(name = "CREATION_DATE")
 	@javax.persistence.Temporal(javax.persistence.TemporalType.TIMESTAMP)
 	private java.util.Date creationDate;
@@ -123,21 +121,6 @@ public class StepBean implements Bean
 	}
 	
 
-	/*
-	 * <!-- Start of user code comment for UnunsefuleAtt getter
-	 * End of user code -->
-	 */
-	public String getUnunsefuleAtt(){
-		return this.UnunsefuleAtt;
-	}
-	
-	/*
-	 * <!-- Start of user code comment for UnunsefuleAtt setter
-	 * End of user code -->
-	 */
-	public void setUnunsefuleAtt(String arg0){
-		this.UnunsefuleAtt = arg0;
-	}
 	/*
 	 * <!-- Start of user code comment for creationDate getter
 	 * End of user code -->

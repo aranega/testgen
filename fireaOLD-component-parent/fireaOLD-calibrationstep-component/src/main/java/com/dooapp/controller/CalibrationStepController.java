@@ -52,10 +52,6 @@ public class CalibrationStepController extends AbstractController<Node> implemen
 	@javafx.fxml.FXML
 	private ComboBox<org.eclipse.emf.ecore.impl.DynamicEObjectImpl@75289698 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@3bb7113f (name: OclInvalid_Class) (instanceClassName: null) (abstract: false, interface: false))> status_data;
 	@javafx.fxml.FXML
-	private TextField ununsefuleAtt_data;
-	@javafx.fxml.FXML
-	private TextField ununsefuleAtt_data;
-	@javafx.fxml.FXML
 	private TextField updateDate_data;
 	@javafx.fxml.FXML
 	private TextField version_data;
@@ -93,10 +89,6 @@ public class CalibrationStepController extends AbstractController<Node> implemen
 		this.binder.configureBindingBidirectional(errorPercent_data.textProperty(), calibrationStep.errorPercentProperty());
 		id_data.setText(String.valueOf(calibrationStep.getId()));
 		this.binder.configureBindingBidirectional(id_data.textProperty(), calibrationStep.idProperty());
-		ununsefuleAtt_data.setText(String.valueOf(calibrationStep.getUnunsefuleAtt()));
-		this.binder.configureBindingBidirectional(ununsefuleAtt_data.textProperty(), calibrationStep.ununsefuleAttProperty());
-		ununsefuleAtt_data.setText(String.valueOf(calibrationStep.getUnunsefuleAtt()));
-		this.binder.configureBindingBidirectional(ununsefuleAtt_data.textProperty(), calibrationStep.ununsefuleAttProperty());
 		updateDate_data.setText(String.valueOf(calibrationStep.getUpdateDate()));
 		this.binder.configureBindingBidirectional(updateDate_data.textProperty(), calibrationStep.updateDateProperty());
 		version_data.setText(String.valueOf(calibrationStep.getVersion()));
