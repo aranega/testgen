@@ -19,6 +19,7 @@ import com.dooapp.lib.common.entity.Bean;
  */
 //Start of user code for queries
 //End of user code
+
 @javax.persistence.Entity
 public class ReadingBean implements Bean
 {
@@ -36,11 +37,13 @@ public class ReadingBean implements Bean
 	@javax.persistence.Column(name = "CREATION_DATE")
 	@javax.persistence.Temporal(javax.persistence.TemporalType.TIMESTAMP)
 	private java.util.Date creationDate;
+	
 	@javax.persistence.ManyToMany(cascade = javax.persistence.CascadeType.ALL, fetch = javax.persistence.FetchType.EAGER)
 	@javax.persistence.JoinTable(name = "READING_DEVICE")
 	private java.util.Set<DeviceBean> device;
 	
 	private double fanPressure;
+	
 	@javax.persistence.ManyToOne(cascade = javax.persistence.CascadeType.ALL)
 	private GaugeModeBean gaugemode;
 	@javax.persistence.Id
@@ -50,6 +53,7 @@ public class ReadingBean implements Bean
 	private long id;
 	
 	private boolean lowFlow;
+	
 	@javax.persistence.ManyToOne(cascade = javax.persistence.CascadeType.ALL)
 	private PointBean point;
 	

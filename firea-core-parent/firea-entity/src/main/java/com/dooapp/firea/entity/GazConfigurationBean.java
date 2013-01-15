@@ -19,6 +19,7 @@ import com.dooapp.lib.common.entity.Bean;
  */
 //Start of user code for queries
 //End of user code
+
 @javax.persistence.Entity
 public class GazConfigurationBean implements Bean
 {
@@ -31,6 +32,7 @@ public class GazConfigurationBean implements Bean
 	 */
 	private static final Logger logger = LoggerFactory.getLogger(GazConfigurationBean.class);
 
+	
 	@javax.persistence.OneToMany(fetch = javax.persistence.FetchType.EAGER, mappedBy = "gazconfiguration", cascade = javax.persistence.CascadeType.ALL)
 	private java.util.Set<BottleConfigurationBean> bottleconfigurations;
 	@javax.persistence.Column(name = "CREATION_DATE")
@@ -40,6 +42,7 @@ public class GazConfigurationBean implements Bean
 	private boolean droppedCeilFull;
 	
 	private boolean droppedFloorFull;
+	
 	@javax.persistence.ManyToOne(cascade = javax.persistence.CascadeType.ALL)
 	private GazBean gaz;
 	@javax.persistence.Id
@@ -49,6 +52,7 @@ public class GazConfigurationBean implements Bean
 	private long id;
 	
 	private double leekRepartitionPercent;
+	
 	@javax.persistence.OneToOne(optional = false, cascade = javax.persistence.CascadeType.ALL, mappedBy = "gazconfiguration")
 	private ProjectBean project;
 	

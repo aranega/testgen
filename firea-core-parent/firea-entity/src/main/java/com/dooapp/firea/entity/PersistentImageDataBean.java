@@ -19,6 +19,7 @@ import com.dooapp.lib.common.entity.Bean;
  */
 //Start of user code for queries
 //End of user code
+
 @javax.persistence.Entity
 public class PersistentImageDataBean implements Bean
 {
@@ -34,6 +35,7 @@ public class PersistentImageDataBean implements Bean
 	@javax.persistence.Column(name = "CREATION_DATE")
 	@javax.persistence.Temporal(javax.persistence.TemporalType.TIMESTAMP)
 	private java.util.Date creationDate;
+	
 	@javax.persistence.Column(name = "DATACOLUMN")
 	private String data;
 	@javax.persistence.Id

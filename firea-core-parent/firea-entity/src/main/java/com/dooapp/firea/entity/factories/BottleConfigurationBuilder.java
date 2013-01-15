@@ -40,9 +40,9 @@ public class BottleConfigurationBuilder<BUILDER extends BottleConfigurationBuild
 	
 	private Integer version;
 	@javax.inject.Inject
-	BottleTypeBuilder<?> bottleTypeBuilder;
-	@javax.inject.Inject
 	GazConfigurationBuilder<?> gazConfigurationBuilder;
+	@javax.inject.Inject
+	BottleTypeBuilder<?> bottleTypeBuilder;
 	@javax.inject.Inject
 	java.util.Properties cfg;
 	/**

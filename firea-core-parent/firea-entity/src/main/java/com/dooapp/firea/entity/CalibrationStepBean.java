@@ -19,6 +19,7 @@ import com.dooapp.lib.common.entity.Bean;
  */
 //Start of user code for queries
 //End of user code
+
 @javax.persistence.Entity
 public class CalibrationStepBean extends StepBean implements Bean
 {

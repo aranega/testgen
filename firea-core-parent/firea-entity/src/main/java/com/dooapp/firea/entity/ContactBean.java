@@ -19,6 +19,7 @@ import com.dooapp.lib.common.entity.Bean;
  */
 //Start of user code for queries
 //End of user code
+
 @javax.persistence.Entity
 public class ContactBean implements Bean
 {
@@ -47,10 +48,12 @@ public class ContactBean implements Bean
 	@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.SEQUENCE, generator = "seq")
 	@javax.persistence.Column(name = "ID")
 	private long id;
+	
 	@javax.persistence.OneToOne(optional = false, cascade = javax.persistence.CascadeType.ALL, mappedBy = "contact")
 	private PersistentImageBean image;
 	@javax.persistence.Enumerated(javax.persistence.EnumType.STRING)
 	private com.dooapp.firea.entity.ContactKind kind;
+	
 	@javax.persistence.Column(name = "NAMECOLUMN")
 	private String name;
 	

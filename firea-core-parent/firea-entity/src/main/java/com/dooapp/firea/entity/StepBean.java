@@ -19,6 +19,7 @@ import com.dooapp.lib.common.entity.Bean;
  */
 //Start of user code for queries
 //End of user code
+
 @javax.persistence.Entity
 public class StepBean implements Bean
 {
@@ -34,6 +35,7 @@ public class StepBean implements Bean
 	@javax.persistence.Column(name = "CREATION_DATE")
 	@javax.persistence.Temporal(javax.persistence.TemporalType.TIMESTAMP)
 	private java.util.Date creationDate;
+	
 	@javax.persistence.Column(name = "DATECOLUMN")
 	private java.util.Date date;
 	@javax.persistence.Id
@@ -41,8 +43,10 @@ public class StepBean implements Bean
 	@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.SEQUENCE, generator = "seq")
 	@javax.persistence.Column(name = "ID")
 	private long id;
+	
 	@javax.persistence.OneToMany(fetch = javax.persistence.FetchType.EAGER, mappedBy = "step", cascade = javax.persistence.CascadeType.ALL)
 	private java.util.Set<PointBean> points;
+	
 	@javax.persistence.ManyToOne(cascade = javax.persistence.CascadeType.ALL)
 	private SampleBean sample;
 	@javax.persistence.Enumerated(javax.persistence.EnumType.STRING)

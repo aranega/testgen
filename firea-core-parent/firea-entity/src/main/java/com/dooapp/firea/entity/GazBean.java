@@ -19,6 +19,7 @@ import com.dooapp.lib.common.entity.Bean;
  */
 //Start of user code for queries
 //End of user code
+
 @javax.persistence.Entity
 public class GazBean implements Bean
 {
@@ -31,6 +32,7 @@ public class GazBean implements Bean
 	 */
 	private static final Logger logger = LoggerFactory.getLogger(GazBean.class);
 
+	
 	@javax.persistence.ManyToMany(cascade = javax.persistence.CascadeType.ALL, fetch = javax.persistence.FetchType.EAGER)
 	@javax.persistence.JoinTable(name = "GAZ_BOTTLETYPES")
 	private java.util.Set<BottleTypeBean> bottletypes;
@@ -39,6 +41,7 @@ public class GazBean implements Bean
 	private java.util.Date creationDate;
 	
 	private double density;
+	
 	@javax.persistence.OneToMany(fetch = javax.persistence.FetchType.EAGER, mappedBy = "gaz", cascade = javax.persistence.CascadeType.ALL)
 	private java.util.Set<GazConfigurationBean> gazconfiguration;
 	@javax.persistence.Id
@@ -46,8 +49,10 @@ public class GazBean implements Bean
 	@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.SEQUENCE, generator = "seq")
 	@javax.persistence.Column(name = "ID")
 	private long id;
+	
 	@javax.persistence.Column(name = "NAMECOLUMN")
 	private String name;
+	
 	@javax.persistence.Column(name = "TYPECOLUMN")
 	private String type;
 	@javax.persistence.Column(name = "UPDATE_DATE")

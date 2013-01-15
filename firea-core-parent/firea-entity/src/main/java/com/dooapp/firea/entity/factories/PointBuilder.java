@@ -35,9 +35,9 @@ public class PointBuilder<BUILDER extends PointBuilder<?>>
 	
 	private Integer version;
 	@javax.inject.Inject
-	ReadingBuilder<?> readingBuilder;
-	@javax.inject.Inject
 	StepBuilder<?> stepBuilder;
+	@javax.inject.Inject
+	ReadingBuilder<?> readingBuilder;
 	@javax.inject.Inject
 	java.util.Properties cfg;
 	/**

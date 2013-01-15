@@ -19,6 +19,7 @@ import com.dooapp.lib.common.entity.Bean;
  */
 //Start of user code for queries
 //End of user code
+
 @javax.persistence.Entity
 public class ProjectBean implements Bean
 {
@@ -33,6 +34,7 @@ public class ProjectBean implements Bean
 
 	@javax.persistence.Enumerated(javax.persistence.EnumType.STRING)
 	private com.dooapp.firea.entity.ProjectKind Status;
+	
 	@javax.persistence.ManyToMany(cascade = javax.persistence.CascadeType.ALL, fetch = javax.persistence.FetchType.EAGER)
 	@javax.persistence.JoinTable(name = "PROJECT_CONTACTS")
 	private java.util.Set<ContactBean> contacts;
@@ -41,6 +43,7 @@ public class ProjectBean implements Bean
 	private java.util.Date creationDate;
 	
 	private String description;
+	
 	@javax.persistence.OneToOne(optional = false, cascade = javax.persistence.CascadeType.ALL)
 	private GazConfigurationBean gazconfiguration;
 	@javax.persistence.Id
@@ -48,16 +51,20 @@ public class ProjectBean implements Bean
 	@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.SEQUENCE, generator = "seq")
 	@javax.persistence.Column(name = "ID")
 	private long id;
+	
 	@javax.persistence.ManyToOne(cascade = javax.persistence.CascadeType.ALL)
 	private PersistentImageBean image;
 	@javax.persistence.Enumerated(javax.persistence.EnumType.STRING)
 	private com.dooapp.firea.entity.ProjectKind kind;
+	
 	@javax.persistence.Column(name = "NAMECOLUMN")
 	private String name;
 	
 	private byte[] newAtt;
+	
 	@javax.persistence.ManyToOne(cascade = javax.persistence.CascadeType.ALL)
 	private RisqueBean risque;
+	
 	@javax.persistence.OneToMany(fetch = javax.persistence.FetchType.EAGER, mappedBy = "project", cascade = javax.persistence.CascadeType.ALL)
 	private java.util.Set<SampleBean> sample;
 	@javax.persistence.Column(name = "UPDATE_DATE")
