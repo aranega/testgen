@@ -40,8 +40,8 @@
   <entries key="SampleStatus.NO_STARTED" value="[Translate Me]SampleStatus.NO_STARTED"/>
   <entries key="ProjectKind.R13_APSAD" value="[Translate Me]ProjectKind.R13_APSAD"/>
   <entries key="StepStatus.NO_STARTED" value="[Translate Me]StepStatus.NO_STARTED"/>
-  <entries key="ContactKind.FIRM_MAINTENANCE" value="[Translate Me]ContactKind.FIRM_MAINTENANCE"/>
   <entries key="StepStatus.DONE" value="[Translate Me]StepStatus.DONE"/>
+  <entries key="ContactKind.FIRM_MAINTENANCE" value="[Translate Me]ContactKind.FIRM_MAINTENANCE"/>
   <entries key="ProjectKind.ISO_14520_2006" value="[Translate Me]ProjectKind.ISO_14520_2006"/>
   <entries key="ProjectKind.ISO_14520_2004" value="[Translate Me]ProjectKind.ISO_14520_2004"/>
   <entries key="Direction.PRESSURE" value="[Translate Me]Direction.PRESSURE"/>

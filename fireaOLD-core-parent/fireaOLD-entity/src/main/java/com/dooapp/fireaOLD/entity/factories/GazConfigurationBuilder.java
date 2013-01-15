@@ -50,11 +50,11 @@ public class GazConfigurationBuilder<BUILDER extends GazConfigurationBuilder<?>>
 	
 	private Integer version;
 	@javax.inject.Inject
-	ProjectBuilder<?> projectBuilder;
+	GazBuilder<?> gazBuilder;
 	@javax.inject.Inject
 	BottleConfigurationBuilder<?> bottleConfigurationBuilder;
 	@javax.inject.Inject
-	GazBuilder<?> gazBuilder;
+	ProjectBuilder<?> projectBuilder;
 	@javax.inject.Inject
 	java.util.Properties cfg;
 	/**

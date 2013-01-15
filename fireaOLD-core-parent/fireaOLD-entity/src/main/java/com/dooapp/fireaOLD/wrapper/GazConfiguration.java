@@ -13,10 +13,10 @@ import javafx.beans.property.SimpleDoubleProperty;
 import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.SimpleLongProperty;
 import javafx.beans.property.LongProperty;
-import javafx.beans.property.SimpleBooleanProperty;
-import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.SimpleBooleanProperty;
+import javafx.beans.property.BooleanProperty;
 import com.dooapp.fireaOLD.entity.BottleConfigurationBean;
 //Start of user code for imports
 // TODO: import me!

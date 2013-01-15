@@ -15,6 +15,9 @@ import java.net.URL;
 import  javafx.scene.control.TableView;
 import  javafx.scene.control.ComboBox;
 import  javafx.scene.control.TextField;
+import fireaOLD.wrappers.Sample;
+import fireaOLD.wrappers.Point;
+import fireaOLD.entity.StepStatus;
 
 //Start of user code for imports
 // TODO: import me!
@@ -44,13 +47,13 @@ public class CalibrationStepController extends AbstractController<Node> implemen
 	@javafx.fxml.FXML
 	private TextField id_data;
 	@javafx.fxml.FXML
-	private ComboBox<org.eclipse.emf.ecore.impl.DynamicEObjectImpl@75289698 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@3bb7113f (name: OclInvalid_Class) (instanceClassName: null) (abstract: false, interface: false))> points_data;
+	private ComboBox<org.eclipse.emf.ecore.impl.DynamicEObjectImpl@102bf1d7 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@3512628c (name: OclInvalid_Class) (instanceClassName: null) (abstract: false, interface: false))> points_data;
 	@javafx.fxml.FXML
-	private TableView<org.eclipse.emf.ecore.impl.DynamicEObjectImpl@75289698 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@3bb7113f (name: OclInvalid_Class) (instanceClassName: null) (abstract: false, interface: false))> points_dataview;
+	private TableView<org.eclipse.emf.ecore.impl.DynamicEObjectImpl@102bf1d7 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@3512628c (name: OclInvalid_Class) (instanceClassName: null) (abstract: false, interface: false))> points_dataview;
 	@javafx.fxml.FXML
-	private ComboBox<org.eclipse.emf.ecore.impl.DynamicEObjectImpl@75289698 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@3bb7113f (name: OclInvalid_Class) (instanceClassName: null) (abstract: false, interface: false))> sample_data;
+	private ComboBox<org.eclipse.emf.ecore.impl.DynamicEObjectImpl@102bf1d7 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@3512628c (name: OclInvalid_Class) (instanceClassName: null) (abstract: false, interface: false))> sample_data;
 	@javafx.fxml.FXML
-	private ComboBox<org.eclipse.emf.ecore.impl.DynamicEObjectImpl@75289698 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@3bb7113f (name: OclInvalid_Class) (instanceClassName: null) (abstract: false, interface: false))> status_data;
+	private ComboBox<org.eclipse.emf.ecore.impl.DynamicEObjectImpl@102bf1d7 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@3512628c (name: OclInvalid_Class) (instanceClassName: null) (abstract: false, interface: false))> status_data;
 	@javafx.fxml.FXML
 	private TextField updateDate_data;
 	@javafx.fxml.FXML
