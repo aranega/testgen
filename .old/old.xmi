@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:emf4java="http://com.axellience/dooapp/emf4java" name="petshop" nsURI="http://petshop" nsPrefix="com.genmymodel">
+  <eAnnotations source="genmymodel">
+    <details key="uuid" value="_i1MfEEFJEDCR5JQSWoC9oA"/>
+  </eAnnotations>
+  <eSubpackages name="entity">
+    <eClassifiers xsi:type="emf4java:Entity" name="Product">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_i1MfEUFJEDCR5JQSWoC9oA"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_i1PiYEFJEDCR5JQSWoC9oA"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="description">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_i1tccEFJEDCR5JQSWoC9oA"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Entity" name="Item">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_i2NLsEFJEDCR5JQSWoC9oA"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="price">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_i2Q2EEFJEDCR5JQSWoC9oA"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="product" lowerBound="1" eType="//entity/Product">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_i20PsEFJEDCR5JQSWoC9oA"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="quantity">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_i269YEFJEDCR5JQSWoC9oA"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Entity" name="Customer">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_i3dv8EFJEDCR5JQSWoC9oA"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="firstName">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_i3gzQEFJEDCR5JQSWoC9oA"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="lastName">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_i4GCEEFJEDCR5JQSWoC9oA"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="address" eType="//entity/Address" containment="true">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_i4nmgEFJEDCR5JQSWoC9oA"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="carts" eType="//entity/Cart" containment="true" eOpposite="//entity/Cart/customer">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_i4tGEEFJEDCR5JQSWoC9oA"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="orders" upperBound="-1" eType="//entity/Order" containment="true" eOpposite="//entity/Order/customer">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_i4yloEFJEDCR5JQSWoC9oA"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Entity" name="Address">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_i44sQEFJEDCR5JQSWoC9oA"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="line1">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_i48WoEFJEDCR5JQSWoC9oA"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="line2">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_i5fJMEFJEDCR5JQSWoC9oA"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="city">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_i6Ci0EFJEDCR5JQSWoC9oA"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="country">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_i6pm0EFJEDCR5JQSWoC9oA"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Entity" name="Cart">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_i7NAcEFJEDCR5JQSWoC9oA"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="items" lowerBound="1" upperBound="-1" eType="//entity/Item" containment="true">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_i7RR4EFJEDCR5JQSWoC9oA"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="creationDate">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_i7X_kEFJEDCR5JQSWoC9oA"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="customer" lowerBound="1" eType="//entity/Customer" eOpposite="//entity/Customer/carts">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_i76yIEFJEDCR5JQSWoC9oA"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="order" eType="//entity/Order" eOpposite="//entity/Order/cart">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_i8A4wEFJEDCR5JQSWoC9oA"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Entity" name="Order">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_i8G_YEFJEDCR5JQSWoC9oA"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="reference">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_i8KCsEFJEDCR5JQSWoC9oA"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="date">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_i8s1QEFJEDCR5JQSWoC9oA"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="cart" eType="//entity/Cart" eOpposite="//entity/Cart/order">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_i9SEEEFJEDCR5JQSWoC9oA"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="items" lowerBound="1" upperBound="-1" eType="//entity/Item">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_i9XjoEFJEDCR5JQSWoC9oA"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="customer" lowerBound="1" eType="//entity/Customer" eOpposite="//entity/Customer/orders">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_i9dDMEFJEDCR5JQSWoC9oA"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="deliveryAddress" lowerBound="1" eType="//entity/Address">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_i9jJ0EFJEDCR5JQSWoC9oA"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="paymentAddress" lowerBound="1" eType="//entity/Address">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_i9opYEFJEDCR5JQSWoC9oA"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="status" eType="//entity/OrderStatus">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_i9uwAEFJEDCR5JQSWoC9oA"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Entity" name="Food" eSuperTypes="//entity/Product">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_i-Q7gEFJEDCR5JQSWoC9oA"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Entity" name="Toy" eSuperTypes="//entity/Product">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_i-T-0EFJEDCR5JQSWoC9oA"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:SpecialEnum" name="OrderStatus">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_i-XCIEFJEDCR5JQSWoC9oA"/>
+      </eAnnotations>
+      <eLiterals name="preparation">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_i-Y3UEFJEDCR5JQSWoC9oA"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="expedition">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_i-asgEFJEDCR5JQSWoC9oA"/>
+        </eAnnotations>
+      </eLiterals>
+    </eClassifiers>
+  </eSubpackages>
+</ecore:EPackage>
