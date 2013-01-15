@@ -4,8 +4,8 @@ package com.dooapp.firea.entity.factories;
 import com.dooapp.firea.wrapper.Project;
 import com.dooapp.firea.wrapper.PersistentImage;
 import com.dooapp.firea.wrapper.Contact;
-import com.dooapp.firea.wrapper.Sample;
 import com.dooapp.firea.wrapper.GazConfiguration;
+import com.dooapp.firea.wrapper.Sample;
 import com.dooapp.firea.wrapper.Risque;
 import com.dooapp.firea.entity.ProjectKind;
 //Start of user code for imports
@@ -53,15 +53,15 @@ public class ProjectBuilder<BUILDER extends ProjectBuilder<?>>
 	
 	private Integer version;
 	@javax.inject.Inject
-	ContactBuilder<?> contactBuilder;
-	@javax.inject.Inject
 	PersistentImageBuilder<?> persistentImageBuilder;
 	@javax.inject.Inject
-	RisqueBuilder<?> risqueBuilder;
+	SampleBuilder<?> sampleBuilder;
+	@javax.inject.Inject
+	ContactBuilder<?> contactBuilder;
 	@javax.inject.Inject
 	GazConfigurationBuilder<?> gazConfigurationBuilder;
 	@javax.inject.Inject
-	SampleBuilder<?> sampleBuilder;
+	RisqueBuilder<?> risqueBuilder;
 	@javax.inject.Inject
 	java.util.Properties cfg;
 	/**

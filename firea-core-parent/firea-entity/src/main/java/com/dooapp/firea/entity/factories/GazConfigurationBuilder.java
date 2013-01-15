@@ -2,8 +2,8 @@ package com.dooapp.firea.entity.factories;
 
 
 import com.dooapp.firea.wrapper.GazConfiguration;
-import com.dooapp.firea.wrapper.Project;
 import com.dooapp.firea.wrapper.BottleConfiguration;
+import com.dooapp.firea.wrapper.Project;
 import com.dooapp.firea.wrapper.Gaz;
 //Start of user code for imports
 // TODO: import me!
@@ -50,11 +50,11 @@ public class GazConfigurationBuilder<BUILDER extends GazConfigurationBuilder<?>>
 	
 	private Integer version;
 	@javax.inject.Inject
-	BottleConfigurationBuilder<?> bottleConfigurationBuilder;
-	@javax.inject.Inject
 	ProjectBuilder<?> projectBuilder;
 	@javax.inject.Inject
 	GazBuilder<?> gazBuilder;
+	@javax.inject.Inject
+	BottleConfigurationBuilder<?> bottleConfigurationBuilder;
 	@javax.inject.Inject
 	java.util.Properties cfg;
 	/**
