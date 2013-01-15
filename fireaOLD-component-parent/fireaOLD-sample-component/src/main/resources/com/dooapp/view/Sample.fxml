@@ -95,101 +95,29 @@
 							</children>
 						</GridPane><TableView fx:id="step_dataview" prefHeight="50.0" editable="true">
 							<columns>
-								<TableColumn text="status">
-									<cellValueFactory>
-										<PropertyValueFactory property="status" />
-										
-									</cellValueFactory>
-								</TableColumn><TableColumn text="date">
-									<cellValueFactory>
-										<PropertyValueFactory property="date" />
-										
-									</cellValueFactory>
-								</TableColumn><TableColumn text="UnunsefuleAtt">
-									<cellValueFactory>
-										<PropertyValueFactory property="UnunsefuleAtt" />
-										
-									</cellValueFactory>
-								</TableColumn><TableColumn text="id">
-									<cellValueFactory>
-										<PropertyValueFactory property="id" />
-										
-									</cellValueFactory>
-								</TableColumn><TableColumn text="creationDate">
-									<cellValueFactory>
-										<PropertyValueFactory property="creationDate" />
-										
-									</cellValueFactory>
-								</TableColumn><TableColumn text="updateDate">
-									<cellValueFactory>
-										<PropertyValueFactory property="updateDate" />
-										
-									</cellValueFactory>
-								</TableColumn><TableColumn text="version">
-									<cellValueFactory>
-										<PropertyValueFactory property="version" />
-										
-									</cellValueFactory>
-								</TableColumn><TableColumn text="sample">
-									<cellValueFactory>
-										<PropertyValueFactory property="sample" />
-										
-									</cellValueFactory>
-								</TableColumn><TableColumn text="points">
-									<cellValueFactory>
-										<PropertyValueFactory property="points" />
-										
-									</cellValueFactory>
-								</TableColumn>
+								<TableColumn text="status" />
+								<TableColumn text="date" />
+								<TableColumn text="UnunsefuleAtt" />
+								<TableColumn text="id" />
+								<TableColumn text="creationDate" />
+								<TableColumn text="updateDate" />
+								<TableColumn text="version" />
+								<TableColumn text="sample" />
+								<TableColumn text="points" />
+								
 							</columns>
 						</TableView><TableView fx:id="step_dataview" prefHeight="50.0" editable="true">
 							<columns>
-								<TableColumn text="status">
-									<cellValueFactory>
-										<PropertyValueFactory property="status" />
-										
-									</cellValueFactory>
-								</TableColumn><TableColumn text="date">
-									<cellValueFactory>
-										<PropertyValueFactory property="date" />
-										
-									</cellValueFactory>
-								</TableColumn><TableColumn text="UnunsefuleAtt">
-									<cellValueFactory>
-										<PropertyValueFactory property="UnunsefuleAtt" />
-										
-									</cellValueFactory>
-								</TableColumn><TableColumn text="id">
-									<cellValueFactory>
-										<PropertyValueFactory property="id" />
-										
-									</cellValueFactory>
-								</TableColumn><TableColumn text="creationDate">
-									<cellValueFactory>
-										<PropertyValueFactory property="creationDate" />
-										
-									</cellValueFactory>
-								</TableColumn><TableColumn text="updateDate">
-									<cellValueFactory>
-										<PropertyValueFactory property="updateDate" />
-										
-									</cellValueFactory>
-								</TableColumn><TableColumn text="version">
-									<cellValueFactory>
-										<PropertyValueFactory property="version" />
-										
-									</cellValueFactory>
-								</TableColumn><TableColumn text="sample">
-									<cellValueFactory>
-										<PropertyValueFactory property="sample" />
-										
-									</cellValueFactory>
-								</TableColumn><TableColumn text="points">
-									<cellValueFactory>
-										<PropertyValueFactory property="points" />
-										
-									</cellValueFactory>
-								</TableColumn>
+								<TableColumn text="status" />
+								<TableColumn text="date" />
+								<TableColumn text="UnunsefuleAtt" />
+								<TableColumn text="id" />
+								<TableColumn text="creationDate" />
+								<TableColumn text="updateDate" />
+								<TableColumn text="version" />
+								<TableColumn text="sample" />
+								<TableColumn text="points" />
+								
 							</columns>
 						</TableView>
 					</children>

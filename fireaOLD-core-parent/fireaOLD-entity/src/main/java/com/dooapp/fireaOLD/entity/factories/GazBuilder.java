@@ -42,9 +42,9 @@ public class GazBuilder<BUILDER extends GazBuilder<?>>
 	
 	private com.dooapp.fireaOLD.entity.GazWeight weight;
 	@javax.inject.Inject
-	BottleTypeBuilder<?> bottleTypeBuilder;
-	@javax.inject.Inject
 	GazConfigurationBuilder<?> gazConfigurationBuilder;
+	@javax.inject.Inject
+	BottleTypeBuilder<?> bottleTypeBuilder;
 	@javax.inject.Inject
 	java.util.Properties cfg;
 	/**
