@@ -434,7 +434,7 @@
     <eClassifiers xsi:type="emf4java:SpecialEnum" name="StepStatus">
       <eLiterals name="NO_STARTED"/>
       <eLiterals name="READY"/>
-      <eLiterals name="IN_PROGRESS"/>
+      <eLiterals name="IN_PROGRESSION"/>
       <eLiterals name="WAIT_FOR_VALIDATION"/>
       <eLiterals name="DONE"/>
       <eLiterals name="ERROR"/>
