@@ -19,6 +19,8 @@ public class FoodBuilder<BUILDER extends FoodBuilder<?>> extends ProductBuilder<
 	// Other attributes
 	//End of user code
 	
+	private String attribute;
+	
 	
 	/*
 	 * Constructors
@@ -39,12 +41,36 @@ public class FoodBuilder<BUILDER extends FoodBuilder<?>> extends ProductBuilder<
 	 */
 	public Food build() throws NullPointerException {
 		Food result =  (Food) super.build();
+		if (attribute == null) {
+			handleDefaultAttribute(result);
+		} else {
+			result.setAttribute(attribute);
+		}
 		return result;	
 	}
 
 	/*
 	 * Generated getters and setters
 	 */
+	/*
+	 * <!-- Start of user code comment for attribute default method
+	 * End of user code -->
+	 */
+	private void handleDefaultAttribute(Food result) {
+		//Start of user code default feature for handleDefaultAttribute
+		result.setAttribute(cfg.getProperty("defaultValue.Food.attribute"));
+		//End of user code
+	}
+
+	/*
+	 * <!-- Start of user code comment for attribute
+	 * End of user code -->
+	 */
+	public BUILDER attribute(String myAttribute) {
+			this.attribute = myAttribute;
+			return (BUILDER) this;
+	}
+
 	/*
 	 * User Methods
      */

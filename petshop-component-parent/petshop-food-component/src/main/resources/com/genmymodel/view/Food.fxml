@@ -39,7 +39,11 @@
 								<TextField fx:id="version_data" GridPane.rowIndex="5" GridPane.columnIndex="1" editable="true" />
 								
 							</children>
-						</GridPane>
+						</GridPane><TextField fx:id="attribute_data" editable="true" />
+						<TextField fx:id="attribute_data" editable="true" />
+						<Label fx:id="attribute_label" text="attribute" />
+						<Label fx:id="attribute_label" text="attribute" />
+						
 					</children>
 				</StackPane><StackPane fx:id="_trash" visible="false" />
 				

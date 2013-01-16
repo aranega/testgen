@@ -30,6 +30,10 @@ public class FoodController extends AbstractController<Node> implements javafx.f
 	 */
 	private static final Logger logger = LoggerFactory.getLogger(FoodController.class);
 	@javafx.fxml.FXML
+	private TextField attribute_data;
+	@javafx.fxml.FXML
+	private TextField attribute_data;
+	@javafx.fxml.FXML
 	private TextField creationDate_data;
 	@javafx.fxml.FXML
 	private TextField description_data;
@@ -63,6 +67,10 @@ public class FoodController extends AbstractController<Node> implements javafx.f
 	}
 	
 	public void initialize(URL args0, ResourceBundle args1){
+		attribute_data.setText(String.valueOf(food.getAttribute()));
+		this.binder.configureBindingBidirectional(attribute_data.textProperty(), food.attributeProperty());
+		attribute_data.setText(String.valueOf(food.getAttribute()));
+		this.binder.configureBindingBidirectional(attribute_data.textProperty(), food.attributeProperty());
 		creationDate_data.setText(String.valueOf(food.getCreationDate()));
 		this.binder.configureBindingBidirectional(creationDate_data.textProperty(), food.creationDateProperty());
 		description_data.setText(String.valueOf(food.getDescription()));

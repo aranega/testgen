@@ -15,7 +15,7 @@ import com.dooapp.lib.guice.IOC;
 public enum OrderStatus
 {
 	preparation("OrderStatus.preparation"),
-	expedition("OrderStatus.expedition");
+	expeditions("OrderStatus.expeditions");
 	
 	/**
 	 * The famous {@link ResourceBundle}

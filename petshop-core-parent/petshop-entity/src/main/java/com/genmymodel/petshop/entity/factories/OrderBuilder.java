@@ -50,9 +50,9 @@ public class OrderBuilder<BUILDER extends OrderBuilder<?>>
 	@javax.inject.Inject
 	CartBuilder<?> cartBuilder;
 	@javax.inject.Inject
-	CustomerBuilder<?> customerBuilder;
-	@javax.inject.Inject
 	AddressBuilder<?> addressBuilder;
+	@javax.inject.Inject
+	CustomerBuilder<?> customerBuilder;
 	@javax.inject.Inject
 	ItemBuilder<?> itemBuilder;
 	@javax.inject.Inject

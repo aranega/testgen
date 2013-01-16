@@ -46,67 +46,19 @@
 									<children>
 										<TableView fx:id="orders_dataview" prefHeight="50.0" editable="true">
 											<columns>
-												<TableColumn text="reference">
-													<cellValueFactory>
-														<PropertyValueFactory property="reference" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="date">
-													<cellValueFactory>
-														<PropertyValueFactory property="date" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="status">
-													<cellValueFactory>
-														<PropertyValueFactory property="status" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="id">
-													<cellValueFactory>
-														<PropertyValueFactory property="id" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="creationDate">
-													<cellValueFactory>
-														<PropertyValueFactory property="creationDate" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="updateDate">
-													<cellValueFactory>
-														<PropertyValueFactory property="updateDate" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="version">
-													<cellValueFactory>
-														<PropertyValueFactory property="version" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="cart">
-													<cellValueFactory>
-														<PropertyValueFactory property="cart" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="items">
-													<cellValueFactory>
-														<PropertyValueFactory property="items" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="customer">
-													<cellValueFactory>
-														<PropertyValueFactory property="customer" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="deliveryAddress">
-													<cellValueFactory>
-														<PropertyValueFactory property="deliveryAddress" />
-														
-													</cellValueFactory>
-												</TableColumn><TableColumn text="paymentAddress">
-													<cellValueFactory>
-														<PropertyValueFactory property="paymentAddress" />
-														
-													</cellValueFactory>
-												</TableColumn>
+												<TableColumn text="reference" />
+												<TableColumn text="date" />
+												<TableColumn text="status" />
+												<TableColumn text="id" />
+												<TableColumn text="creationDate" />
+												<TableColumn text="updateDate" />
+												<TableColumn text="version" />
+												<TableColumn text="cart" />
+												<TableColumn text="items" />
+												<TableColumn text="customer" />
+												<TableColumn text="deliveryAddress" />
+												<TableColumn text="paymentAddress" />
+												
 											</columns>
 										</TableView><ComboBox fx:id="orders_data" onAction="#selectOrders" />
 										<Button text="Create Order instance" onAction="#create" cancelButton="false" />

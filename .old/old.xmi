@@ -199,6 +199,12 @@
       <eAnnotations source="genmymodel">
         <details key="uuid" value="_PmBI0EIXEDCnTNANnzxZRQ"/>
       </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_2UtAIEIXEDCnTNANnzxZRQ"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
     </eClassifiers>
     <eClassifiers xsi:type="emf4java:Entity" name="Toy" eSuperTypes="//entity/Product">
       <eAnnotations source="genmymodel">
@@ -220,7 +226,7 @@
           <details key="uuid" value="_PmK50EIXEDCnTNANnzxZRQ"/>
         </eAnnotations>
       </eLiterals>
-      <eLiterals name="expedition">
+      <eLiterals name="expeditions">
         <eAnnotations source="genmymodel">
           <details key="uuid" value="_PmK50UIXEDCnTNANnzxZRQ"/>
         </eAnnotations>

@@ -32,6 +32,9 @@ public class FoodBean extends ProductBean implements Bean
 	 */
 	private static final Logger logger = LoggerFactory.getLogger(FoodBean.class);
 
+	
+	@javax.persistence.Column(name = "ATTRIBUTECOLUMN")
+	private String attribute;
 
 	@javax.persistence.Transient
 	private Food wrapper;
@@ -71,6 +74,21 @@ public class FoodBean extends ProductBean implements Bean
 	
 	
 
+	/*
+	 * <!-- Start of user code comment for attribute getter
+	 * End of user code -->
+	 */
+	public String getAttribute(){
+		return this.attribute;
+	}
+	
+	/*
+	 * <!-- Start of user code comment for attribute setter
+	 * End of user code -->
+	 */
+	public void setAttribute(String arg0){
+		this.attribute = arg0;
+	}
     
 
 

@@ -18,6 +18,8 @@ import com.dooapp.lib.common.entity.Bean;
 public class FoodCriteriaInstance extends ProductCriteriaInstance implements Bean
 {
 	
+	
+	private String attribute;
 	//Start of user code for attributes
 	// Other attributes
 	//End of user code
@@ -50,6 +52,21 @@ public class FoodCriteriaInstance extends ProductCriteriaInstance implements Bea
 		this.wrapper = wrapper;
 	}
 
+	/*
+	 * <!-- Start of user code comment for attribute getter
+	 * End of user code -->
+	 */
+	public String getAttribute(){
+		return this.attribute;
+	}
+	
+	/*
+	 * <!-- Start of user code comment for attribute setter
+	 * End of user code -->
+	 */
+	public void setAttribute(String arg0){
+		this.attribute = arg0;
+	} 
     
 
 
