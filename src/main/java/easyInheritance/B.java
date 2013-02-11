@@ -1,5 +1,6 @@
 package easyInheritance;
 
+import java.util.Date;
 
 /**
  * <!-- begin-user-doc -->
@@ -9,6 +10,16 @@ package easyInheritance;
 
 public class B
 {
+	protected Date myDate;
+	
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated NOT
+	 * @ordered
+	 */
+	
+	private String attribute;
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -16,15 +27,7 @@ public class B
 	 * @ordered
 	 */
 	
-	protected String attribute;
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	
-	protected String attribute2;
+	 String attribute2;
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
