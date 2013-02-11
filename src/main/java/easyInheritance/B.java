@@ -27,7 +27,7 @@ public class B
 	 * @ordered
 	 */
 	
-	 String attribute2;
+	 protected String attribute2;
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
