@@ -27,6 +27,16 @@ public class CartBuilder<BUILDER extends CartBuilder<?>>
 
 // End of user code
 {
+	/**
+	 *  
+	 */
+	private java.util.Date creationDate;
+
+	/**
+	 *  
+	 */
+	private java.util.Date creationDate;
+
 	// Start of user code for attributes
 	// Other attributes
 	// End of user code
@@ -126,6 +136,30 @@ public class CartBuilder<BUILDER extends CartBuilder<?>>
 		return result;	
 	}
 
+	private void handleDefaultCreationDate(Cart result) {
+		// Start of user code default feature for handleDefaultCreationDate
+		try {
+				result.setCreationDate(cfg.getProperty("defaultValue.Cart.creationDate") == null ? 
+						null :
+						 DATE_FORMAT.parse(cfg.getProperty("defaultValue.Cart.creationDate")));
+			} catch (java.text.ParseException e) {
+				throw new RuntimeException(e);
+		}
+		// End of user code
+	}
+
+	private void handleDefaultCreationDate(Cart result) {
+		// Start of user code default feature for handleDefaultCreationDate
+		try {
+				result.setCreationDate(cfg.getProperty("defaultValue.Cart.creationDate") == null ? 
+						null :
+						 DATE_FORMAT.parse(cfg.getProperty("defaultValue.Cart.creationDate")));
+			} catch (java.text.ParseException e) {
+				throw new RuntimeException(e);
+		}
+		// End of user code
+	}
+
 	/*
 	 * Generated getters and setters
 	 */
@@ -217,6 +251,16 @@ public class CartBuilder<BUILDER extends CartBuilder<?>>
 		// Start of user code default feature for handleDefaultVersion
 		result.setVersion(Integer.valueOf(cfg.getProperty("defaultValue.Cart.version", "0")));
 		// End of user code
+	}
+
+	public BUILDER creationDate(java.util.Date myCreationDate) {
+		this.creationDate = myCreationDate;
+		return (BUILDER) this;
+	}
+
+	public BUILDER creationDate(java.util.Date myCreationDate) {
+		this.creationDate = myCreationDate;
+		return (BUILDER) this;
 	}
 
 	/*

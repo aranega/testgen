@@ -70,6 +70,17 @@ public class ItemBuilderTest
 		//End of user code
 	}
 	@Test
+	public void setterNGetterMyAttributeIsBioutifoul() throws Exception {
+		//Start of user code getter and setter for myAttributeIsBioutifoul attribute
+		Item unsavedItem = itemBuilder.myAttributeIsBioutifoul("").build();
+		Item savedItem = manager.save(unsavedItem);
+		Item dbItem = manager.get(Item.class, savedItem.getId());
+		Assert.assertNotNull(dbItem.getMyAttributeIsBioutifoul());
+		//End of user code
+	}
+
+
+	@Test
 	public void setterNGetterPrice() throws Exception {
 		//Start of user code getter and setter for price attribute
 		Item unsavedItem = itemBuilder.price(0.0).build();

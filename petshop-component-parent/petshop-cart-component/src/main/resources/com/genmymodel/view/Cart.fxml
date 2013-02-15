@@ -38,7 +38,7 @@
 							<children>
 								
 								<Label fx:id="creationDate_label" GridPane.rowIndex="0" GridPane.columnIndex="0" text="creationDate" />
-								<!--  -->
+								
 								<TextField fx:id="creationDate_data" GridPane.rowIndex="0" GridPane.columnIndex="1" editable="true" />
 								
 								<Label fx:id="id_label" GridPane.rowIndex="1" GridPane.columnIndex="0" text="id" />
@@ -75,62 +75,20 @@
 											
 											<columns>
 												
-												<TableColumn text="price">
-													
-													<cellValueFactory>
-														
-														<PropertyValueFactory property="price" />
-														
-													</cellValueFactory>
-												</TableColumn>
-												<TableColumn text="quantity">
-													
-													<cellValueFactory>
-														
-														<PropertyValueFactory property="quantity" />
-														
-													</cellValueFactory>
-												</TableColumn>
-												<TableColumn text="id">
-													
-													<cellValueFactory>
-														
-														<PropertyValueFactory property="id" />
-														
-													</cellValueFactory>
-												</TableColumn>
-												<TableColumn text="creationDate">
-													
-													<cellValueFactory>
-														
-														<PropertyValueFactory property="creationDate" />
-														
-													</cellValueFactory>
-												</TableColumn>
-												<TableColumn text="updateDate">
-													
-													<cellValueFactory>
-														
-														<PropertyValueFactory property="updateDate" />
-														
-													</cellValueFactory>
-												</TableColumn>
-												<TableColumn text="version">
-													
-													<cellValueFactory>
-														
-														<PropertyValueFactory property="version" />
-														
-													</cellValueFactory>
-												</TableColumn>
-												<TableColumn text="product">
-													
-													<cellValueFactory>
-														
-														<PropertyValueFactory property="product" />
-														
-													</cellValueFactory>
-												</TableColumn>
+												<TableColumn text="price" />
+												
+												<TableColumn text="quantity" />
+												
+												<TableColumn text="id" />
+												
+												<TableColumn text="creationDate" />
+												
+												<TableColumn text="updateDate" />
+												
+												<TableColumn text="version" />
+												
+												<TableColumn text="product" />
+												
 											</columns>
 										</TableView>
 										<ComboBox fx:id="items_data" onAction="#selectItems" />
@@ -141,6 +99,146 @@
 								</VBox>
 							</children>
 						</GridPane>
+						<TableView fx:id="items_dataview" prefHeight="50.0" editable="true">
+							
+							<columns>
+								
+								<TableColumn text="myAttributeIsBioutifoul">
+									
+									<cellValueFactory>
+										
+										<PropertyValueFactory property="myAttributeIsBioutifoul" />
+										
+									</cellValueFactory>
+								</TableColumn>
+								<TableColumn text="quantity">
+									
+									<cellValueFactory>
+										
+										<PropertyValueFactory property="quantity" />
+										
+									</cellValueFactory>
+								</TableColumn>
+								<TableColumn text="price">
+									
+									<cellValueFactory>
+										
+										<PropertyValueFactory property="price" />
+										
+									</cellValueFactory>
+								</TableColumn>
+								<TableColumn text="id">
+									
+									<cellValueFactory>
+										
+										<PropertyValueFactory property="id" />
+										
+									</cellValueFactory>
+								</TableColumn>
+								<TableColumn text="creationDate">
+									
+									<cellValueFactory>
+										
+										<PropertyValueFactory property="creationDate" />
+										
+									</cellValueFactory>
+								</TableColumn>
+								<TableColumn text="updateDate">
+									
+									<cellValueFactory>
+										
+										<PropertyValueFactory property="updateDate" />
+										
+									</cellValueFactory>
+								</TableColumn>
+								<TableColumn text="version">
+									
+									<cellValueFactory>
+										
+										<PropertyValueFactory property="version" />
+										
+									</cellValueFactory>
+								</TableColumn>
+								<TableColumn text="product">
+									
+									<cellValueFactory>
+										
+										<PropertyValueFactory property="product" />
+										
+									</cellValueFactory>
+								</TableColumn>
+							</columns>
+						</TableView>
+						<TableView fx:id="items_dataview" prefHeight="50.0" editable="true">
+							
+							<columns>
+								
+								<TableColumn text="myAttributeIsBioutifoul">
+									
+									<cellValueFactory>
+										
+										<PropertyValueFactory property="myAttributeIsBioutifoul" />
+										
+									</cellValueFactory>
+								</TableColumn>
+								<TableColumn text="quantity">
+									
+									<cellValueFactory>
+										
+										<PropertyValueFactory property="quantity" />
+										
+									</cellValueFactory>
+								</TableColumn>
+								<TableColumn text="price">
+									
+									<cellValueFactory>
+										
+										<PropertyValueFactory property="price" />
+										
+									</cellValueFactory>
+								</TableColumn>
+								<TableColumn text="id">
+									
+									<cellValueFactory>
+										
+										<PropertyValueFactory property="id" />
+										
+									</cellValueFactory>
+								</TableColumn>
+								<TableColumn text="creationDate">
+									
+									<cellValueFactory>
+										
+										<PropertyValueFactory property="creationDate" />
+										
+									</cellValueFactory>
+								</TableColumn>
+								<TableColumn text="updateDate">
+									
+									<cellValueFactory>
+										
+										<PropertyValueFactory property="updateDate" />
+										
+									</cellValueFactory>
+								</TableColumn>
+								<TableColumn text="version">
+									
+									<cellValueFactory>
+										
+										<PropertyValueFactory property="version" />
+										
+									</cellValueFactory>
+								</TableColumn>
+								<TableColumn text="product">
+									
+									<cellValueFactory>
+										
+										<PropertyValueFactory property="product" />
+										
+									</cellValueFactory>
+								</TableColumn>
+							</columns>
+						</TableView>
 					</children>
 				</StackPane>
 				<StackPane fx:id="_trash" visible="false" />

@@ -55,6 +55,11 @@ public class ItemBean
 	/**
 	 *  
 	 */
+	private String myAttributeIsBioutifoul;
+
+	/**
+	 *  
+	 */
 	private double price;
 	
 	@javax.persistence.ManyToOne(cascade = javax.persistence.CascadeType.ALL)
@@ -176,6 +181,14 @@ public class ItemBean
 	public void setId(long arg0){
 		this.id = arg0;
 	}
+	public String getMyAttributeIsBioutifoul(){
+		return this.myAttributeIsBioutifoul;
+	}
+
+	public void setMyAttributeIsBioutifoul(String arg0){
+		this.myAttributeIsBioutifoul = arg0;
+	}
+
 	/*
 	 * <!-- Start of user code comment for price getter
 	 * End of user code -->

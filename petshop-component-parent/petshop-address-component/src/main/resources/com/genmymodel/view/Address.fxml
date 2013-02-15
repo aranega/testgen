@@ -13,7 +13,7 @@
 <?import javafx.scene.control.cell.PropertyValueFactory?>
 <?import javafx.scene.control.Button?>
 
-<!--  -->
+
 <BorderPane xmlns:fx="http://javafx.com/fxml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" fx:id="Address" fx:controller="petshop-component-parent/petshop-address-component/src/main/java/com/genmymodel/controller/AddressController">
 	
 	<top>
@@ -38,19 +38,19 @@
 							<children>
 								
 								<Label fx:id="line2_label" GridPane.rowIndex="0" GridPane.columnIndex="0" text="line2" />
-								<!--  -->
+								
 								<TextField fx:id="line2_data" GridPane.rowIndex="0" GridPane.columnIndex="1" editable="true" />
 								
 								<Label fx:id="line1_label" GridPane.rowIndex="1" GridPane.columnIndex="0" text="line1" />
-								<!--  -->
+								
 								<TextField fx:id="line1_data" GridPane.rowIndex="1" GridPane.columnIndex="1" editable="true" />
 								
 								<Label fx:id="country_label" GridPane.rowIndex="2" GridPane.columnIndex="0" text="country" />
-								<!--  -->
+								
 								<TextField fx:id="country_data" GridPane.rowIndex="2" GridPane.columnIndex="1" editable="true" />
 								
 								<Label fx:id="city_label" GridPane.rowIndex="3" GridPane.columnIndex="0" text="city" />
-								<!--  -->
+								
 								<TextField fx:id="city_data" GridPane.rowIndex="3" GridPane.columnIndex="1" editable="true" />
 								
 								<Label fx:id="id_label" GridPane.rowIndex="4" GridPane.columnIndex="0" text="id" />

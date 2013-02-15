@@ -37,6 +37,17 @@ public class CartTest
 		this.wrapper = null;
 	}
 
+	@Test
+	public void setAndGetCreationDate() {
+		//Start of user code basic set and get for creationDate attribute
+		java.util.Date tmp = new java.util.Date();
+		this.wrapper.setCreationDate(tmp);
+		java.util.Date result = this.wrapper.getCreationDate();
+		Assert.assertNotNull(result);
+		Assert.assertEquals(tmp, result);
+		//End of user code
+	}
+
 	/*
 	 * Basic Atts setter/getter
 	 */

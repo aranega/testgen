@@ -40,6 +40,17 @@ public class ItemTest
 		this.wrapper = null;
 	}
 
+	@Test
+	public void setAndGetMyAttributeIsBioutifoul() {
+		//Start of user code basic set and get for myAttributeIsBioutifoul attribute
+		String tmp = "";
+		this.wrapper.setMyAttributeIsBioutifoul(tmp);
+		String result = this.wrapper.getMyAttributeIsBioutifoul();
+		Assert.assertNotNull(result);
+		Assert.assertEquals(tmp, result);
+		//End of user code
+	}
+
 	/*
 	 * Basic Atts setter/getter
 	 */

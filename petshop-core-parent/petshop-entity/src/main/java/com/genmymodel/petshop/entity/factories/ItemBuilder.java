@@ -37,6 +37,11 @@ public class ItemBuilder<BUILDER extends ItemBuilder<?>>
 	/**
 	 *  
 	 */
+	private String myAttributeIsBioutifoul;
+
+	/**
+	 *  
+	 */
 	private Double price;
 	
 	private Product product;
@@ -144,6 +149,12 @@ public class ItemBuilder<BUILDER extends ItemBuilder<?>>
 		// End of user code
 	}
 
+	private void handleDefaultMyAttributeIsBioutifoul(Item result) {
+		// Start of user code default feature for handleDefaultMyAttributeIsBioutifoul
+		result.setMyAttributeIsBioutifoul(cfg.getProperty("defaultValue.Item.myAttributeIsBioutifoul"));
+		// End of user code
+	}
+
 	/*
 	 * <!-- Start of user code comment for price default method
 	 * End of user code -->
@@ -215,6 +226,11 @@ public class ItemBuilder<BUILDER extends ItemBuilder<?>>
 	 */
 	public BUILDER id(Long myId) {
 		this.id = myId;
+		return (BUILDER) this;
+	}
+
+	public BUILDER myAttributeIsBioutifoul(String myMyAttributeIsBioutifoul) {
+		this.myAttributeIsBioutifoul = myMyAttributeIsBioutifoul;
 		return (BUILDER) this;
 	}
 

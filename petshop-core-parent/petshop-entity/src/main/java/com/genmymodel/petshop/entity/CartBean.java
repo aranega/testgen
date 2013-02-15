@@ -45,6 +45,18 @@ public class CartBean
 	 *  
 	 */
 	private java.util.Date creationDate;
+
+
+	/**
+	 *  
+	 */
+	private java.util.Date creationDate;
+
+
+	/**
+	 *  
+	 */
+	private java.util.Date creationDate;
 	@javax.persistence.Column(name = "CREATION_DATE")
 	@javax.persistence.Temporal(javax.persistence.TemporalType.TIMESTAMP)
 	private java.util.Date creationDate;
@@ -136,6 +148,30 @@ public class CartBean
 		updateDate = new java.util.Date();
 	}
 	
+
+	public java.util.Date getCreationDate(){
+		return this.creationDate;
+	}
+
+	public void setCreationDate(java.util.Date arg0){
+		this.creationDate = arg0;
+	}
+
+	public void unsetCreationDate(java.util.Date arg0){
+		this.creationDate = null;
+	}
+
+	public java.util.Date getCreationDate(){
+		return this.creationDate;
+	}
+
+	public void setCreationDate(java.util.Date arg0){
+		this.creationDate = arg0;
+	}
+
+	public void unsetCreationDate(java.util.Date arg0){
+		this.creationDate = null;
+	}
 
 	/*
 	 * <!-- Start of user code comment for creationDate getter

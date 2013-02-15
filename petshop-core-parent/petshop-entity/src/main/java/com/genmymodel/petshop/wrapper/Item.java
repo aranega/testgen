@@ -48,6 +48,11 @@ public class Item
 	/**
 	 *  
 	 */
+	private StringProperty myAttributeIsBioutifoulProperty;
+
+	/**
+	 *  
+	 */
 	private DoubleProperty priceProperty;
 	
 	private ObjectProperty<Product> productProperty;
@@ -225,6 +230,57 @@ public class Item
 	public void updateId(final long myId) {
 		updateId(myId, null);
 	}
+
+	public StringProperty myAttributeIsBioutifoulProperty(){
+		if (this.myAttributeIsBioutifoulProperty == null) {
+			this.myAttributeIsBioutifoulProperty = new SimpleStringProperty(item.getMyAttributeIsBioutifoul());
+			this.myAttributeIsBioutifoulProperty.addListener(new ChangeListener<String>() {
+				@Override
+				public void changed(ObservableValue<? extends String> arg0, String arg1, String arg2) {
+					item.setMyAttributeIsBioutifoul((String) arg2);
+				}
+			});
+			//Start of user code myAttributeIsBioutifoulproperty method
+			//End of user code
+		}
+		return this.myAttributeIsBioutifoulProperty;
+	}
+
+
+	public String getMyAttributeIsBioutifoul(){
+		return myAttributeIsBioutifoulProperty().get();
+	}
+
+
+	public void setMyAttributeIsBioutifoul(String myMyAttributeIsBioutifoul){
+		this.myAttributeIsBioutifoulProperty().set(myMyAttributeIsBioutifoul);
+	}
+
+
+	public void updateMyAttributeIsBioutifoul(final String myMyAttributeIsBioutifoul, final Object mutex) {
+		if (javafx.application.Platform.isFxApplicationThread()) {
+			setMyAttributeIsBioutifoul(myMyAttributeIsBioutifoul);
+			if (mutex != null) {
+				mutex.notify();
+			}
+		} else {
+			javafx.application.Platform.runLater(new Runnable() {
+				@Override
+				public void run() {
+					setMyAttributeIsBioutifoul(myMyAttributeIsBioutifoul);
+					if (mutex != null) {
+						mutex.notify();
+					}
+				}
+			});
+		}
+	}
+
+
+	public void updateMyAttributeIsBioutifoul(final String myMyAttributeIsBioutifoul) {
+		updateMyAttributeIsBioutifoul(myMyAttributeIsBioutifoul, null);
+	}
+
 
 	/*
 	 * <!-- Start of user code comment for price property method 

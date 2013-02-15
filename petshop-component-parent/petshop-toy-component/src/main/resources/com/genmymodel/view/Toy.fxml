@@ -13,7 +13,7 @@
 <?import javafx.scene.control.cell.PropertyValueFactory?>
 <?import javafx.scene.control.Button?>
 
-<!--  -->
+
 <BorderPane xmlns:fx="http://javafx.com/fxml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" fx:id="Toy" fx:controller="petshop-component-parent/petshop-toy-component/src/main/java/com/genmymodel/controller/ToyController">
 	
 	<top>

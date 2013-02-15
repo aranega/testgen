@@ -75,6 +75,17 @@ public class CartBuilderTest
 		Assert.assertNotNull(dbCart.getCreationDate());
 		//End of user code
 	}
+
+
+	@Test
+	public void setterNGetterCreationDate() throws Exception {
+		//Start of user code getter and setter for creationDate attribute
+		Cart unsavedCart = cartBuilder.creationDate(new java.util.Date()).build();
+		Cart savedCart = manager.save(unsavedCart);
+		Cart dbCart = manager.get(Cart.class, savedCart.getId());
+		Assert.assertNotNull(dbCart.getCreationDate());
+		//End of user code
+	}
 	@Test
 	public void setterNGetterId() throws Exception {
 		//Start of user code getter and setter for id attribute

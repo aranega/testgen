@@ -5,14 +5,14 @@
 	version="2.0">
 
 	<persistence-unit name="dooapp" transaction-type="RESOURCE_LOCAL">
-		<class>com.genmymodel.petshop.entity.CustomerBean</class>
-		<class>com.genmymodel.petshop.entity.OrderBean</class>
 		<class>com.genmymodel.petshop.entity.FoodBean</class>
+		<class>com.genmymodel.petshop.entity.CustomerBean</class>
 		<class>com.genmymodel.petshop.entity.ProductBean</class>
+		<class>com.genmymodel.petshop.entity.OrderBean</class>
 		<class>com.genmymodel.petshop.entity.AddressBean</class>
+		<class>com.genmymodel.petshop.entity.ItemBean</class>
 		<class>com.genmymodel.petshop.entity.ToyBean</class>
 		<class>com.genmymodel.petshop.entity.CartBean</class>
-		<class>com.genmymodel.petshop.entity.ItemBean</class>
 	<!-- Start of user code class code
 	-->
 		

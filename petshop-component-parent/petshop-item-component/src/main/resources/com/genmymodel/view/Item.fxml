@@ -13,7 +13,7 @@
 <?import javafx.scene.control.cell.PropertyValueFactory?>
 <?import javafx.scene.control.Button?>
 
-<!--  -->
+
 <BorderPane xmlns:fx="http://javafx.com/fxml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" fx:id="Item" fx:controller="petshop-component-parent/petshop-item-component/src/main/java/com/genmymodel/controller/ItemController">
 	
 	<top>
@@ -38,11 +38,11 @@
 							<children>
 								
 								<Label fx:id="price_label" GridPane.rowIndex="0" GridPane.columnIndex="0" text="price" />
-								<!--  -->
+								
 								<TextField fx:id="price_data" GridPane.rowIndex="0" GridPane.columnIndex="1" editable="true" />
 								
 								<Label fx:id="quantity_label" GridPane.rowIndex="1" GridPane.columnIndex="0" text="quantity" />
-								<!--  -->
+								
 								<TextField fx:id="quantity_data" GridPane.rowIndex="1" GridPane.columnIndex="1" editable="true" />
 								
 								<Label fx:id="id_label" GridPane.rowIndex="2" GridPane.columnIndex="0" text="id" />
@@ -66,7 +66,15 @@
 								<ComboBox fx:id="product_data" GridPane.rowIndex="6" GridPane.columnIndex="1" onAction="#selectProduct" />
 								
 							</children>
-						</GridPane>
+						</GridPane><!--  -->
+						<TextField fx:id="myAttributeIsBioutifoul_data" editable="true" />
+						
+						<Label fx:id="myAttributeIsBioutifoul_label" text="myAttributeIsBioutifoul" />
+						
+						<Label fx:id="myAttributeIsBioutifoul_label" text="myAttributeIsBioutifoul" />
+						<!--  -->
+						<TextField fx:id="myAttributeIsBioutifoul_data" editable="true" />
+						
 					</children>
 				</StackPane>
 				<StackPane fx:id="_trash" visible="false" />

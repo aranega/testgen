@@ -33,6 +33,8 @@ public class ItemCriteriaInstance
 	
 	private Long idMin;
 	
+	private String myAttributeIsBioutifoul;
+
 	private Double priceMax;
 	
 	private Double priceMin;
@@ -136,6 +138,14 @@ public class ItemCriteriaInstance
 	public void setIdMin(Long arg0){
 		this.idMin = arg0;
 	} 
+	public String getMyAttributeIsBioutifoul(){
+		return this.myAttributeIsBioutifoul;
+	}
+
+	public void setMyAttributeIsBioutifoul(String arg0){
+		this.myAttributeIsBioutifoul = arg0;
+	}
+
 	/*
 	 * <!-- Start of user code comment for priceMax getter
 	 * End of user code -->
