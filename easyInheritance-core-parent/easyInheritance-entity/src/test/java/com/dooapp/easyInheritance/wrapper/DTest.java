@@ -64,6 +64,20 @@ public class DTest
 	 * @generated
 	 */
 	@Test
+	public void setAndGetAttribute2() {
+		String tmp = "";
+		this.wrapper.setAttribute2(tmp);
+		String result = this.wrapper.getAttribute2();
+		Assert.assertNotNull(result);
+		Assert.assertEquals(tmp, result);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	@Test
 	public void setAndGetId() {
 		Long tmp = 0L;
 		this.wrapper.setId(tmp);

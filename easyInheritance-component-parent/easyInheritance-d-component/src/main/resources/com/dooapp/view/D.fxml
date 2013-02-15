@@ -38,7 +38,7 @@
 							<children>
 								
 								<Label fx:id="attribute_label" GridPane.rowIndex="0" GridPane.columnIndex="0" text="attribute" />
-								<!--  -->
+								
 								<TextField fx:id="attribute_data" GridPane.rowIndex="0" GridPane.columnIndex="1" editable="true" />
 								
 								<Label fx:id="id_label" GridPane.rowIndex="1" GridPane.columnIndex="0" text="id" />
@@ -63,6 +63,14 @@
 								
 							</children>
 						</GridPane>
+						<Label fx:id="attribute2_label" text="attribute2" />
+						<!--  -->
+						<TextField fx:id="attribute2_data" editable="true" />
+						
+						<Label fx:id="attribute2_label" text="attribute2" />
+						<!--  -->
+						<TextField fx:id="attribute2_data" editable="true" />
+						
 					</children>
 				</StackPane>
 				<StackPane fx:id="_trash" visible="false" />

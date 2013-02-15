@@ -32,6 +32,12 @@ public class DCriteriaInstance
 	 * <!--  end-user-doc  -->
 	 * @generated
 	 */
+	private String attribute2;
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
 	private java.util.Date creationDateMax;
 	/**
 	 * <!-- begin-user-doc -->
@@ -122,6 +128,24 @@ public class DCriteriaInstance
 	public void setAttribute(String arg0){
 		this.attribute = arg0;
 	} 
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	public String getAttribute2(){
+		return this.attribute2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	public void setAttribute2(String arg0){
+		this.attribute2 = arg0;
+	}
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->

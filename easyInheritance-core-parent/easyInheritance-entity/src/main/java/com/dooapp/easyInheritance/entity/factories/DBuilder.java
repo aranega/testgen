@@ -31,6 +31,14 @@ public class DBuilder<BUILDER extends DBuilder<?>>
 	
 	private String attribute;
 	/**
+	 *  
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	
+	private String attribute2;
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
 	 * @generated
@@ -119,6 +127,11 @@ public class DBuilder<BUILDER extends DBuilder<?>>
 		} else { 
 			result.setAttribute(attribute);
 		}
+		if (attribute2 == null) {
+			handleDefaultAttribute2(result);
+		} else { 
+			result.setAttribute2(attribute2);
+		}
 		if (b == null) {
 			handleDefaultB(result);
 		} else { 
@@ -159,6 +172,15 @@ public class DBuilder<BUILDER extends DBuilder<?>>
 	 */
 	private void handleDefaultAttribute(D result) {
 		result.setAttribute(cfg.getProperty("defaultValue.D.attribute"));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	private void handleDefaultAttribute2(D result) {
+		result.setAttribute2(cfg.getProperty("defaultValue.D.attribute2"));
 	}
 
 	/**
@@ -226,6 +248,17 @@ public class DBuilder<BUILDER extends DBuilder<?>>
 	@SuppressWarnings("unchecked")
 	public BUILDER attribute(String myAttribute) {
 		this.attribute = myAttribute;
+		return (BUILDER) this;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public BUILDER attribute2(String myAttribute2) {
+		this.attribute2 = myAttribute2;
 		return (BUILDER) this;
 	}
 

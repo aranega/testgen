@@ -44,6 +44,14 @@ public class D
 	
 	private StringProperty attributeProperty;
 	/**
+	 *  
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	
+	private StringProperty attribute2Property;
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
 	 * @generated
@@ -205,6 +213,80 @@ public class D
 	public void updateAttribute(final String myAttribute) {
 		updateAttribute(myAttribute, null);
 	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	public StringProperty attribute2Property(){
+		if (this.attribute2Property == null) {
+			this.attribute2Property = new SimpleStringProperty(d.getAttribute2());
+			this.attribute2Property.addListener(new ChangeListener<String>() {
+				@Override
+				public void changed(ObservableValue<? extends String> arg0, String arg1, String arg2) {
+					d.setAttribute2((String) arg2);
+				}
+			});
+		}
+		return this.attribute2Property;
+	}
+
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	public String getAttribute2(){
+		return attribute2Property().get();
+	}
+
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	public void setAttribute2(String myAttribute2){
+		this.attribute2Property().set(myAttribute2);
+	}
+
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	public void updateAttribute2(final String myAttribute2, final Object mutex) {
+		if (javafx.application.Platform.isFxApplicationThread()) {
+			setAttribute2(myAttribute2);
+			if (mutex != null) {
+				mutex.notify();
+			}
+		} else {
+			javafx.application.Platform.runLater(new Runnable() {
+				@Override
+				public void run() {
+					setAttribute2(myAttribute2);
+					if (mutex != null) {
+						mutex.notify();
+					}
+				}
+			});
+		}
+	}
+
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	public void updateAttribute2(final String myAttribute2) {
+		updateAttribute2(myAttribute2, null);
+	}
+
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -586,6 +668,8 @@ public class D
 		Element xmlElement = new Element("D");
 		if (getAttribute() != null)
 			xmlElement.setAttribute(new Attribute("attribute", getAttribute()));
+		if (getAttribute2() != null)
+			xmlElement.setAttribute(new Attribute("attribute2", getAttribute2()));
 		xmlElement.setAttribute(new Attribute("id", String.valueOf(getId())));
 		if (getCreationDate() != null)
 			xmlElement.setAttribute(new Attribute("creationDate", getCreationDate().toString()));

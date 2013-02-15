@@ -66,6 +66,20 @@ public class DBeanTest
 	 * @generated
 	 */
 	@Test
+	public void setAndGetAttribute2() {
+		String tmp = "";
+		this.bean.setAttribute2(tmp);
+		String result = this.bean.getAttribute2();
+		Assert.assertNotNull(result);
+		Assert.assertEquals(tmp, result);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	@Test
 	public void setAndGetId() {
 		Long tmp = 0L;
 		this.bean.setId(tmp);

@@ -92,6 +92,19 @@ public class DBuilderTest
 	 * @generated
 	 */
 	@Test
+	public void setterNGetterAttribute2() throws Exception {
+		D unsavedD = dBuilder.attribute2("").build();
+		D savedD = manager.save(unsavedD);
+		D dbD = manager.get(D.class, savedD.getId());
+		Assert.assertNotNull(dbD.getAttribute2());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	@Test
 	public void setterNGetterId() throws Exception {
 		D unsavedD = dBuilder.id(0L).build();
 		D savedD = manager.save(unsavedD);
