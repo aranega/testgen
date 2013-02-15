@@ -1,0 +1,28 @@
+
+# Entities and attributes
+
+entity jpa --class ~.domain.B  --sequenceName B_SEQ
+	field string --fieldName attribute2 --notNull
+	field string --fieldName Myattribute --notNull
+	
+entity jpa --class ~.domain.D  --sequenceName D_SEQ
+	
+entity jpa --class ~.domain.MyA  --sequenceName MYA_SEQ --extends ~.domain.B
+	
+entity jpa --class ~.domain.MyC  --sequenceName MYC_SEQ --extends ~.domain.B
+	
+
+
+# Start of user code for entities and atributes
+
+# End of user code
+
+# References (relations between entities)
+field reference --fieldName d --type D --class  ~.domain.B --cardinality ONE_TO_ONE
+field reference --fieldName b --type B --class  ~.domain.D --cardinality ONE_TO_ONE
+
+
+# Start of user code for references
+
+# End of user code for references
+
