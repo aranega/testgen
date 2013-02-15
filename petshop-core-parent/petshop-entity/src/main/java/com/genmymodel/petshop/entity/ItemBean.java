@@ -284,6 +284,7 @@ public class ItemBean
 			xmlElement.setAttribute(new Attribute("updateDate", getUpdateDate().toString()));
 		xmlElement.setAttribute(new Attribute("version", String.valueOf(getVersion())));
 		
+		// Commentaire inutile
 		if (getProduct() != null)
 			xmlElement.setAttribute("product", String.valueOf(getProduct().getId()));
 		
@@ -291,7 +292,8 @@ public class ItemBean
 	}
 
 	//Start of user code for methods
-	// Other methods
+	//Just an addition
+	
 	//End of user code
 
 }
