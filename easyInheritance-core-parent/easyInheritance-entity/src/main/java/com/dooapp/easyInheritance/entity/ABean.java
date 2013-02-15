@@ -21,7 +21,7 @@ import com.dooapp.lib.common.entity.Bean;
 @javax.persistence.Table(name = "ATABLE")
 public class ABean
 //Start of user code bloc for inheritance
- extends BBean, Object
+ extends BBean
 //End of user code
 //Start of user code bloc for interfaces
  implements Bean
