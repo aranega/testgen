@@ -40,6 +40,7 @@ public class D
 	 * <!--  end-user-doc  -->
 	 * @generated
 	 */
+	*
 	private StringProperty attributeProperty;
 	/**
 	 * <!-- begin-user-doc -->
