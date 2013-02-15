@@ -9,11 +9,6 @@
         <details key="uuid" value="_0axJoFKXEDC2EOZcFeYldQ"/>
       </eAnnotations>
     </eClassifiers>
-    <eClassifiers xsi:type="emf4java:Entity" name="C" eSuperTypes="//entity/B">
-      <eAnnotations source="genmymodel">
-        <details key="uuid" value="_0qBtoFKXEDC2EOZcFeYldQ"/>
-      </eAnnotations>
-    </eClassifiers>
     <eClassifiers xsi:type="emf4java:Entity" name="B">
       <eAnnotations source="genmymodel">
         <details key="uuid" value="_zIebUFKXEDC2EOZcFeYldQ"/>
@@ -44,6 +39,11 @@
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
         <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
       </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Entity" name="C" eSuperTypes="//entity/B">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_0qBtoFKXEDC2EOZcFeYldQ"/>
+      </eAnnotations>
     </eClassifiers>
     <eClassifiers xsi:type="emf4java:Entity" name="D">
       <eAnnotations source="genmymodel">
