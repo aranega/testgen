@@ -17,7 +17,7 @@ import com.dooapp.lib.common.entity.Bean;
 
 public class DBean
 //Start of user code bloc for inheritance
-
+extends Object
 //End of user code
 //Start of user code bloc for interfaces
  implements Bean
