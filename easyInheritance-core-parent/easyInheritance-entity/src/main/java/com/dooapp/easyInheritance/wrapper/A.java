@@ -106,10 +106,10 @@ public class A
 	 */
 	private Element toDomXML(){
 		Element xmlElement = new Element("A");
-		if (getAttribute() != null)
-			xmlElement.setAttribute(new Attribute("attribute", getAttribute()));
 		if (getAttribute2() != null)
 			xmlElement.setAttribute(new Attribute("attribute2", getAttribute2()));
+		if (getAttribute() != null)
+			xmlElement.setAttribute(new Attribute("attribute", getAttribute()));
 		xmlElement.setAttribute(new Attribute("id", String.valueOf(getId())));
 		if (getCreationDate() != null)
 			xmlElement.setAttribute(new Attribute("creationDate", getCreationDate().toString()));
