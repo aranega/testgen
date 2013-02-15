@@ -9,18 +9,10 @@
         <details key="uuid" value="_0axJoFKXEDC2EOZcFeYldQ"/>
       </eAnnotations>
     </eClassifiers>
-    <eClassifiers xsi:type="emf4java:Entity" name="D">
+    <eClassifiers xsi:type="emf4java:Entity" name="C" eSuperTypes="//entity/B">
       <eAnnotations source="genmymodel">
-        <details key="uuid" value="_zvleoFKXEDC2EOZcFeYldQ"/>
+        <details key="uuid" value="_0qBtoFKXEDC2EOZcFeYldQ"/>
       </eAnnotations>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="b" eType="//entity/B" eOpposite="//entity/B/d">
-        <eAnnotations source="genmymodel">
-          <details key="uuid" value="_6Dz1wlKXEDC2EOZcFeYldQ"/>
-        </eAnnotations>
-      </eStructuralFeatures>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
-        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
-      </eStructuralFeatures>
     </eClassifiers>
     <eClassifiers xsi:type="emf4java:Entity" name="B">
       <eAnnotations source="genmymodel">
@@ -53,10 +45,18 @@
         <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
       </eStructuralFeatures>
     </eClassifiers>
-    <eClassifiers xsi:type="emf4java:Entity" name="C" eSuperTypes="//entity/B">
+    <eClassifiers xsi:type="emf4java:Entity" name="D">
       <eAnnotations source="genmymodel">
-        <details key="uuid" value="_0qBtoFKXEDC2EOZcFeYldQ"/>
+        <details key="uuid" value="_zvleoFKXEDC2EOZcFeYldQ"/>
       </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="b" eType="//entity/B" eOpposite="//entity/B/d">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_6Dz1wlKXEDC2EOZcFeYldQ"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eStructuralFeatures>
     </eClassifiers>
   </eSubpackages>
 </ecore:EPackage>
