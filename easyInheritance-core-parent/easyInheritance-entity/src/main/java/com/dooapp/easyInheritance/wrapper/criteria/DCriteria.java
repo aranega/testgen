@@ -8,6 +8,8 @@ import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleLongProperty;
 import javafx.beans.property.LongProperty;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.IntegerProperty;
 
@@ -29,6 +31,12 @@ public class DCriteria
 // End of user code
 {
 
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	private StringProperty attributeProperty;
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -140,6 +148,75 @@ public class DCriteria
 	public long getId(){
 		return 0;
 	}	
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	public StringProperty attributeProperty(){
+		if (this.attributeProperty == null) {
+			this.attributeProperty = new SimpleStringProperty(dCriteria.getAttribute());
+			this.attributeProperty.addListener(new ChangeListener<String>() {
+				@Override
+				public void changed(ObservableValue<? extends String> arg0, String arg1, String arg2) {
+					dCriteria.setAttribute((String) arg2);
+				}
+			});
+		}
+		return this.attributeProperty;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	public String getAttribute(){
+		return attributeProperty().get();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	public void setAttribute(String myAttribute){
+		this.attributeProperty().set(myAttribute);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	public void updateAttribute(final String myAttribute, final Object mutex) {
+		if (javafx.application.Platform.isFxApplicationThread()) {
+			setAttribute(myAttribute);
+			if (mutex != null) {
+				mutex.notify();
+			}
+		} else {
+			javafx.application.Platform.runLater(new Runnable() {
+				@Override
+				public void run() {
+					setAttribute(myAttribute);
+					if (mutex != null) {
+						mutex.notify();
+					}
+				}
+			});
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	public void updateAttribute(final String myAttribute) {
+		updateAttribute(myAttribute, null);
+	}
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -26,6 +26,12 @@ public class DCriteriaInstance
 	 * <!--  end-user-doc  -->
 	 * @generated
 	 */
+	private String attribute;
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
 	private java.util.Date creationDateMax;
 	/**
 	 * <!-- begin-user-doc -->
@@ -97,6 +103,24 @@ public class DCriteriaInstance
 			throw new RuntimeException("A bean can only have one wrapper, use #getWrapper instead");
 		}
 		this.wrapper = wrapper;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	public String getAttribute(){
+		return this.attribute;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	public void setAttribute(String arg0){
+		this.attribute = arg0;
 	}
 
 	/**

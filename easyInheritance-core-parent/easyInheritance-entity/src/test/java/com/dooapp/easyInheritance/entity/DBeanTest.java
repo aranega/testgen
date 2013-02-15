@@ -43,6 +43,20 @@ public class DBeanTest
 		this.bean = null;
 	}
 
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	@Test
+	public void setAndGetAttribute() {
+		String tmp = "";
+		this.bean.setAttribute(tmp);
+		String result = this.bean.getAttribute();
+		Assert.assertNotNull(result);
+		Assert.assertEquals(tmp, result);
+	}
+
 	/***************************
 	 * Basic Atts setter/getter
 	 ***************************/

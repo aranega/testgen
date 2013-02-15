@@ -334,11 +334,12 @@ public class BBean
     
 
 	/**
-	 * <!-- begin-user-doc -->
+	* * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
 	 * @generated
 	 */
 	
+	*
 	public void operation ( ) 
 	{
 		// TODO: implement me! 	
