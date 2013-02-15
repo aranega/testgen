@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_easyinheritance_domain_MyA" items="${myas}" z="7TZFiX4Yifpm5zCLJhFh3xndMkU=">
+        <table:table data="${myas}" id="l_easyinheritance_domain_MyA" path="/myas" z="AZX4PQhKavZu2iHEIxU0JAFOGVw=">
+            <table:column id="c_easyinheritance_domain_MyA_attribute2" property="attribute2" z="RM8gOqE5EADDSdG7fS7RmV2ZJ6s="/>
+            <table:column id="c_easyinheritance_domain_MyA_Myattribute" property="myattribute" z="tWcDYAp92aaHtELFIRa6z6nUt1E="/>
+            <table:column id="c_easyinheritance_domain_MyA_d" property="d" z="ObtMVcIatz/gRUCkRH31qrt8tSc="/>
+        </table:table>
+    </page:list>
+</div>
