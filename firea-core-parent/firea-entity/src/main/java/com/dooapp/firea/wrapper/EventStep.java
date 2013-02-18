@@ -186,10 +186,12 @@ public class EventStep
 	 */
 	private Element toDomXML(){
 		Element xmlElement = new Element("EventStep");
-		if (getStatus() != null)
-			xmlElement.setAttribute(new Attribute("status", getStatus()));
+		if (getAttribute() != null)
+			xmlElement.setAttribute(new Attribute("attribute", getAttribute()));
 		if (getDate() != null)
 			xmlElement.setAttribute(new Attribute("date", getDate().toString()));
+		if (getStatus() != null)
+			xmlElement.setAttribute(new Attribute("status", getStatus()));
 		xmlElement.setAttribute(new Attribute("id", String.valueOf(getId())));
 		if (getCreationDate() != null)
 			xmlElement.setAttribute(new Attribute("creationDate", getCreationDate().toString()));
@@ -199,10 +201,10 @@ public class EventStep
 		if (getDirection() != null)
 			xmlElement.setAttribute(new Attribute("direction", getDirection()));
 		
-		if (getSample() != null)
-			xmlElement.setAttribute("sample", String.valueOf(getSample().getId()));
 		if (getPoints() != null)
 			xmlElement.setAttribute("points", String.valueOf(getPoints().getId()));
+		if (getSample() != null)
+			xmlElement.setAttribute("sample", String.valueOf(getSample().getId()));
 		
 		
 		// For custom purposes

@@ -81,6 +81,19 @@ public class MainStepBuilderTest
 	 * @generated
 	 */
 	@Test
+	public void setterNGetterAttribute() throws Exception {
+		MainStep unsavedMainStep = mainStepBuilder.attribute("").build();
+		MainStep savedMainStep = manager.save(unsavedMainStep);
+		MainStep dbMainStep = manager.get(MainStep.class, savedMainStep.getId());
+		Assert.assertNotNull(dbMainStep.getAttribute());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	@Test
 	public void setterNGetterStatus() throws Exception {
 		MainStep unsavedMainStep = mainStepBuilder.status("").build();
 		MainStep savedMainStep = manager.save(unsavedMainStep);

@@ -81,6 +81,19 @@ public class EventStepBuilderTest
 	 * @generated
 	 */
 	@Test
+	public void setterNGetterAttribute() throws Exception {
+		EventStep unsavedEventStep = eventStepBuilder.attribute("").build();
+		EventStep savedEventStep = manager.save(unsavedEventStep);
+		EventStep dbEventStep = manager.get(EventStep.class, savedEventStep.getId());
+		Assert.assertNotNull(dbEventStep.getAttribute());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	@Test
 	public void setterNGetterStatus() throws Exception {
 		EventStep unsavedEventStep = eventStepBuilder.status("").build();
 		EventStep savedEventStep = manager.save(unsavedEventStep);

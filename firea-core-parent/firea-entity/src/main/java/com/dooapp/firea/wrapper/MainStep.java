@@ -492,27 +492,29 @@ public class MainStep
 	 */
 	private Element toDomXML(){
 		Element xmlElement = new Element("MainStep");
-		if (getStatus() != null)
-			xmlElement.setAttribute(new Attribute("status", getStatus()));
+		if (getAttribute() != null)
+			xmlElement.setAttribute(new Attribute("attribute", getAttribute()));
 		if (getDate() != null)
 			xmlElement.setAttribute(new Attribute("date", getDate().toString()));
+		if (getStatus() != null)
+			xmlElement.setAttribute(new Attribute("status", getStatus()));
 		xmlElement.setAttribute(new Attribute("id", String.valueOf(getId())));
 		if (getCreationDate() != null)
 			xmlElement.setAttribute(new Attribute("creationDate", getCreationDate().toString()));
 		if (getUpdateDate() != null)
 			xmlElement.setAttribute(new Attribute("updateDate", getUpdateDate().toString()));
 		xmlElement.setAttribute(new Attribute("version", String.valueOf(getVersion())));
-		xmlElement.setAttribute(new Attribute("cl", String.valueOf(getCl())));
-		xmlElement.setAttribute(new Attribute("calculatedELA", String.valueOf(getCalculatedELA())));
 		if (getDirection() != null)
 			xmlElement.setAttribute(new Attribute("direction", getDirection()));
 		xmlElement.setAttribute(new Attribute("n", String.valueOf(getN())));
 		xmlElement.setAttribute(new Attribute("correlation", String.valueOf(getCorrelation())));
+		xmlElement.setAttribute(new Attribute("calculatedELA", String.valueOf(getCalculatedELA())));
+		xmlElement.setAttribute(new Attribute("cl", String.valueOf(getCl())));
 		
-		if (getSample() != null)
-			xmlElement.setAttribute("sample", String.valueOf(getSample().getId()));
 		if (getPoints() != null)
 			xmlElement.setAttribute("points", String.valueOf(getPoints().getId()));
+		if (getSample() != null)
+			xmlElement.setAttribute("sample", String.valueOf(getSample().getId()));
 		
 		
 		// For custom purposes

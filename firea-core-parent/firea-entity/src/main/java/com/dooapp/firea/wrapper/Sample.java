@@ -1582,24 +1582,24 @@ public class Sample
 	 */
 	private Element toDomXML(){
 		Element xmlElement = new Element("Sample");
-		xmlElement.setAttribute(new Attribute("phiIPercent", String.valueOf(getPhiIPercent())));
-		xmlElement.setAttribute(new Attribute("tetaI", String.valueOf(getTetaI())));
-		if (getStatus() != null)
-			xmlElement.setAttribute(new Attribute("status", getStatus()));
-		xmlElement.setAttribute(new Attribute("airPressure", String.valueOf(getAirPressure())));
-		if (getName() != null)
-			xmlElement.setAttribute(new Attribute("name", getName()));
+		xmlElement.setAttribute(new Attribute("roI", String.valueOf(getRoI())));
 		if (getBeaufortScale() != null)
 			xmlElement.setAttribute(new Attribute("beaufortScale", getBeaufortScale()));
-		xmlElement.setAttribute(new Attribute("roE", String.valueOf(getRoE())));
+		xmlElement.setAttribute(new Attribute("phiIPercent", String.valueOf(getPhiIPercent())));
+		if (getName() != null)
+			xmlElement.setAttribute(new Attribute("name", getName()));
+		xmlElement.setAttribute(new Attribute("windMeasure", String.valueOf(getWindMeasure())));
+		xmlElement.setAttribute(new Attribute("airPressure", String.valueOf(getAirPressure())));
 		xmlElement.setAttribute(new Attribute("tetaE", String.valueOf(getTetaE())));
+		if (getStatus() != null)
+			xmlElement.setAttribute(new Attribute("status", getStatus()));
+		xmlElement.setAttribute(new Attribute("roE", String.valueOf(getRoE())));
 		if (getAirPressureCalculationMethod() != null)
 			xmlElement.setAttribute(new Attribute("airPressureCalculationMethod", getAirPressureCalculationMethod()));
-		xmlElement.setAttribute(new Attribute("windMeasure", String.valueOf(getWindMeasure())));
+		xmlElement.setAttribute(new Attribute("phiEPercent", String.valueOf(getPhiEPercent())));
+		xmlElement.setAttribute(new Attribute("tetaI", String.valueOf(getTetaI())));
 		if (getDate() != null)
 			xmlElement.setAttribute(new Attribute("date", getDate().toString()));
-		xmlElement.setAttribute(new Attribute("roI", String.valueOf(getRoI())));
-		xmlElement.setAttribute(new Attribute("phiEPercent", String.valueOf(getPhiEPercent())));
 		xmlElement.setAttribute(new Attribute("id", String.valueOf(getId())));
 		if (getCreationDate() != null)
 			xmlElement.setAttribute(new Attribute("creationDate", getCreationDate().toString()));

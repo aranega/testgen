@@ -901,12 +901,12 @@ public class Gaz
 	 */
 	private Element toDomXML(){
 		Element xmlElement = new Element("Gaz");
-		if (getType() != null)
-			xmlElement.setAttribute(new Attribute("type", getType()));
-		xmlElement.setAttribute(new Attribute("density", String.valueOf(getDensity())));
+		xmlElement.setAttribute(new Attribute("weight", String.valueOf(getWeight())));
 		if (getName() != null)
 			xmlElement.setAttribute(new Attribute("name", getName()));
-		xmlElement.setAttribute(new Attribute("weight", String.valueOf(getWeight())));
+		xmlElement.setAttribute(new Attribute("density", String.valueOf(getDensity())));
+		if (getType() != null)
+			xmlElement.setAttribute(new Attribute("type", getType()));
 		xmlElement.setAttribute(new Attribute("id", String.valueOf(getId())));
 		if (getCreationDate() != null)
 			xmlElement.setAttribute(new Attribute("creationDate", getCreationDate().toString()));

@@ -36,6 +36,12 @@ public class StepCriteria
 	 * <!--  end-user-doc  -->
 	 * @generated
 	 */
+	private StringProperty attributeProperty;
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
 	private ObjectProperty<java.util.Date> creationDateMaxProperty;
 	/**
 	 * <!-- begin-user-doc -->
@@ -160,6 +166,75 @@ public class StepCriteria
 	public long getId(){
 		return 0;
 	}	
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	public StringProperty attributeProperty(){
+		if (this.attributeProperty == null) {
+			this.attributeProperty = new SimpleStringProperty(stepCriteria.getAttribute());
+			this.attributeProperty.addListener(new ChangeListener<String>() {
+				@Override
+				public void changed(ObservableValue<? extends String> arg0, String arg1, String arg2) {
+					stepCriteria.setAttribute((String) arg2);
+				}
+			});
+		}
+		return this.attributeProperty;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	public String getAttribute(){
+		return attributeProperty().get();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	public void setAttribute(String myAttribute){
+		this.attributeProperty().set(myAttribute);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	public void updateAttribute(final String myAttribute, final Object mutex) {
+		if (javafx.application.Platform.isFxApplicationThread()) {
+			setAttribute(myAttribute);
+			if (mutex != null) {
+				mutex.notify();
+			}
+		} else {
+			javafx.application.Platform.runLater(new Runnable() {
+				@Override
+				public void run() {
+					setAttribute(myAttribute);
+					if (mutex != null) {
+						mutex.notify();
+					}
+				}
+			});
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	public void updateAttribute(final String myAttribute) {
+		updateAttribute(myAttribute, null);
+	}
 
 	/**
 	 * <!-- begin-user-doc -->

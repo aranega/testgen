@@ -699,9 +699,9 @@ public class BlowHole
 	 */
 	private Element toDomXML(){
 		Element xmlElement = new Element("BlowHole");
-		xmlElement.setAttribute(new Attribute("quantity", String.valueOf(getQuantity())));
 		xmlElement.setAttribute(new Attribute("Discharge", String.valueOf(getDischarge())));
 		xmlElement.setAttribute(new Attribute("surface", String.valueOf(getSurface())));
+		xmlElement.setAttribute(new Attribute("quantity", String.valueOf(getQuantity())));
 		xmlElement.setAttribute(new Attribute("id", String.valueOf(getId())));
 		if (getCreationDate() != null)
 			xmlElement.setAttribute(new Attribute("creationDate", getCreationDate().toString()));

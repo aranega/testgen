@@ -975,10 +975,10 @@ public class Reading
 	 */
 	private Element toDomXML(){
 		Element xmlElement = new Element("Reading");
-		xmlElement.setAttribute(new Attribute("buildingPressure", String.valueOf(getBuildingPressure())));
-		xmlElement.setAttribute(new Attribute("timeAverage", String.valueOf(getTimeAverage())));
-		xmlElement.setAttribute(new Attribute("lowFlow", String.valueOf(isLowFlow())));
 		xmlElement.setAttribute(new Attribute("fanPressure", String.valueOf(getFanPressure())));
+		xmlElement.setAttribute(new Attribute("timeAverage", String.valueOf(getTimeAverage())));
+		xmlElement.setAttribute(new Attribute("buildingPressure", String.valueOf(getBuildingPressure())));
+		xmlElement.setAttribute(new Attribute("lowFlow", String.valueOf(isLowFlow())));
 		xmlElement.setAttribute(new Attribute("id", String.valueOf(getId())));
 		if (getCreationDate() != null)
 			xmlElement.setAttribute(new Attribute("creationDate", getCreationDate().toString()));
@@ -986,12 +986,12 @@ public class Reading
 			xmlElement.setAttribute(new Attribute("updateDate", getUpdateDate().toString()));
 		xmlElement.setAttribute(new Attribute("version", String.valueOf(getVersion())));
 		
-		if (getGaugemode() != null)
-			xmlElement.setAttribute("gaugemode", String.valueOf(getGaugemode().getId()));
-		if (getDevice() != null)
-			xmlElement.setAttribute("device", String.valueOf(getDevice().getId()));
 		if (getPoint() != null)
 			xmlElement.setAttribute("point", String.valueOf(getPoint().getId()));
+		if (getDevice() != null)
+			xmlElement.setAttribute("device", String.valueOf(getDevice().getId()));
+		if (getGaugemode() != null)
+			xmlElement.setAttribute("gaugemode", String.valueOf(getGaugemode().getId()));
 		
 		
 		// For custom purposes

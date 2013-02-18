@@ -737,10 +737,10 @@ public class BottleType
 	 */
 	private Element toDomXML(){
 		Element xmlElement = new Element("BottleType");
-		xmlElement.setAttribute(new Attribute("volume", String.valueOf(getVolume())));
-		xmlElement.setAttribute(new Attribute("weight", String.valueOf(getWeight())));
 		if (getName() != null)
 			xmlElement.setAttribute(new Attribute("name", getName()));
+		xmlElement.setAttribute(new Attribute("volume", String.valueOf(getVolume())));
+		xmlElement.setAttribute(new Attribute("weight", String.valueOf(getWeight())));
 		xmlElement.setAttribute(new Attribute("id", String.valueOf(getId())));
 		if (getCreationDate() != null)
 			xmlElement.setAttribute(new Attribute("creationDate", getCreationDate().toString()));

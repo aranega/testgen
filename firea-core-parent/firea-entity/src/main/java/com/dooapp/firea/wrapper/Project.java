@@ -1135,14 +1135,14 @@ public class Project
 	 */
 	private Element toDomXML(){
 		Element xmlElement = new Element("Project");
-		if (getStatus() != null)
-			xmlElement.setAttribute(new Attribute("Status", getStatus()));
-		if (getKind() != null)
-			xmlElement.setAttribute(new Attribute("kind", getKind()));
 		if (getDescription() != null)
 			xmlElement.setAttribute(new Attribute("description", getDescription()));
+		if (getKind() != null)
+			xmlElement.setAttribute(new Attribute("kind", getKind()));
 		if (getName() != null)
 			xmlElement.setAttribute(new Attribute("name", getName()));
+		if (getStatus() != null)
+			xmlElement.setAttribute(new Attribute("Status", getStatus()));
 		xmlElement.setAttribute(new Attribute("id", String.valueOf(getId())));
 		if (getCreationDate() != null)
 			xmlElement.setAttribute(new Attribute("creationDate", getCreationDate().toString()));
@@ -1152,14 +1152,14 @@ public class Project
 		
 		if (getRisque() != null)
 			xmlElement.setAttribute("risque", String.valueOf(getRisque().getId()));
-		if (getSample() != null)
-			xmlElement.setAttribute("sample", String.valueOf(getSample().getId()));
+		if (getContacts() != null)
+			xmlElement.setAttribute("contacts", String.valueOf(getContacts().getId()));
 		if (getImage() != null)
 			xmlElement.setAttribute("image", String.valueOf(getImage().getId()));
 		if (getGazconfiguration() != null)
 			xmlElement.setAttribute("gazconfiguration", String.valueOf(getGazconfiguration().getId()));
-		if (getContacts() != null)
-			xmlElement.setAttribute("contacts", String.valueOf(getContacts().getId()));
+		if (getSample() != null)
+			xmlElement.setAttribute("sample", String.valueOf(getSample().getId()));
 		
 		
 		// For custom purposes

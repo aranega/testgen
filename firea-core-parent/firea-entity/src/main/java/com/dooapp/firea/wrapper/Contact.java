@@ -1273,20 +1273,20 @@ public class Contact
 			xmlElement.setAttribute(new Attribute("zipCode", getZipCode()));
 		if (getAddress2() != null)
 			xmlElement.setAttribute(new Attribute("address2", getAddress2()));
-		if (getPerson() != null)
-			xmlElement.setAttribute(new Attribute("person", getPerson()));
-		if (getKind() != null)
-			xmlElement.setAttribute(new Attribute("kind", getKind()));
-		if (getName() != null)
-			xmlElement.setAttribute(new Attribute("name", getName()));
-		if (getSiret() != null)
-			xmlElement.setAttribute(new Attribute("siret", getSiret()));
-		if (getAdress1() != null)
-			xmlElement.setAttribute(new Attribute("adress1", getAdress1()));
 		if (getPhone() != null)
 			xmlElement.setAttribute(new Attribute("phone", getPhone()));
+		if (getAdress1() != null)
+			xmlElement.setAttribute(new Attribute("adress1", getAdress1()));
+		if (getSiret() != null)
+			xmlElement.setAttribute(new Attribute("siret", getSiret()));
 		if (getEmail() != null)
 			xmlElement.setAttribute(new Attribute("email", getEmail()));
+		if (getName() != null)
+			xmlElement.setAttribute(new Attribute("name", getName()));
+		if (getKind() != null)
+			xmlElement.setAttribute(new Attribute("kind", getKind()));
+		if (getPerson() != null)
+			xmlElement.setAttribute(new Attribute("person", getPerson()));
 		xmlElement.setAttribute(new Attribute("id", String.valueOf(getId())));
 		if (getCreationDate() != null)
 			xmlElement.setAttribute(new Attribute("creationDate", getCreationDate().toString()));

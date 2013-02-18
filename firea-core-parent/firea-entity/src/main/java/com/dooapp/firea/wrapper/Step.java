@@ -37,6 +37,14 @@ public class Step
 // End of user code
 {
 	/**
+	 *  
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	
+	private StringProperty attributeProperty;
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
 	 * @generated
@@ -149,6 +157,80 @@ public class Step
 		return  this.step;
 	}
 	
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	public StringProperty attributeProperty(){
+		if (this.attributeProperty == null) {
+			this.attributeProperty = new SimpleStringProperty(step.getAttribute());
+			this.attributeProperty.addListener(new ChangeListener<String>() {
+				@Override
+				public void changed(ObservableValue<? extends String> arg0, String arg1, String arg2) {
+					step.setAttribute((String) arg2);
+				}
+			});
+		}
+		return this.attributeProperty;
+	}
+
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	public String getAttribute(){
+		return attributeProperty().get();
+	}
+
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	public void setAttribute(String myAttribute){
+		this.attributeProperty().set(myAttribute);
+	}
+
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	public void updateAttribute(final String myAttribute, final Object mutex) {
+		if (javafx.application.Platform.isFxApplicationThread()) {
+			setAttribute(myAttribute);
+			if (mutex != null) {
+				mutex.notify();
+			}
+		} else {
+			javafx.application.Platform.runLater(new Runnable() {
+				@Override
+				public void run() {
+					setAttribute(myAttribute);
+					if (mutex != null) {
+						mutex.notify();
+					}
+				}
+			});
+		}
+	}
+
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	public void updateAttribute(final String myAttribute) {
+		updateAttribute(myAttribute, null);
+	}
+
 
 	/*
 	 * Generated getters and setters
@@ -747,10 +829,12 @@ public class Step
 	 */
 	private Element toDomXML(){
 		Element xmlElement = new Element("Step");
-		if (getStatus() != null)
-			xmlElement.setAttribute(new Attribute("status", getStatus()));
+		if (getAttribute() != null)
+			xmlElement.setAttribute(new Attribute("attribute", getAttribute()));
 		if (getDate() != null)
 			xmlElement.setAttribute(new Attribute("date", getDate().toString()));
+		if (getStatus() != null)
+			xmlElement.setAttribute(new Attribute("status", getStatus()));
 		xmlElement.setAttribute(new Attribute("id", String.valueOf(getId())));
 		if (getCreationDate() != null)
 			xmlElement.setAttribute(new Attribute("creationDate", getCreationDate().toString()));
@@ -758,10 +842,10 @@ public class Step
 			xmlElement.setAttribute(new Attribute("updateDate", getUpdateDate().toString()));
 		xmlElement.setAttribute(new Attribute("version", String.valueOf(getVersion())));
 		
-		if (getSample() != null)
-			xmlElement.setAttribute("sample", String.valueOf(getSample().getId()));
 		if (getPoints() != null)
 			xmlElement.setAttribute("points", String.valueOf(getPoints().getId()));
+		if (getSample() != null)
+			xmlElement.setAttribute("sample", String.valueOf(getSample().getId()));
 		
 		
 		// For custom purposes

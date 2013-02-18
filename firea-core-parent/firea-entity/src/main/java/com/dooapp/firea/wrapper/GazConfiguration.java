@@ -1203,13 +1203,13 @@ public class GazConfiguration
 	 */
 	private Element toDomXML(){
 		Element xmlElement = new Element("GazConfiguration");
-		xmlElement.setAttribute(new Attribute("droppedFloorFull", String.valueOf(isDroppedFloorFull())));
-		xmlElement.setAttribute(new Attribute("retentionInterface", String.valueOf(isRetentionInterface())));
+		xmlElement.setAttribute(new Attribute("retentionGoal", String.valueOf(getRetentionGoal())));
+		xmlElement.setAttribute(new Attribute("slowUnloading", String.valueOf(isSlowUnloading())));
 		xmlElement.setAttribute(new Attribute("slowUnloadingValue", String.valueOf(getSlowUnloadingValue())));
 		xmlElement.setAttribute(new Attribute("leekRepartitionPercent", String.valueOf(getLeekRepartitionPercent())));
 		xmlElement.setAttribute(new Attribute("droppedCeilFull", String.valueOf(isDroppedCeilFull())));
-		xmlElement.setAttribute(new Attribute("retentionGoal", String.valueOf(getRetentionGoal())));
-		xmlElement.setAttribute(new Attribute("slowUnloading", String.valueOf(isSlowUnloading())));
+		xmlElement.setAttribute(new Attribute("droppedFloorFull", String.valueOf(isDroppedFloorFull())));
+		xmlElement.setAttribute(new Attribute("retentionInterface", String.valueOf(isRetentionInterface())));
 		xmlElement.setAttribute(new Attribute("id", String.valueOf(getId())));
 		if (getCreationDate() != null)
 			xmlElement.setAttribute(new Attribute("creationDate", getCreationDate().toString()));
@@ -1219,10 +1219,10 @@ public class GazConfiguration
 		
 		if (getBottleconfigurations() != null)
 			xmlElement.setAttribute("bottleconfigurations", String.valueOf(getBottleconfigurations().getId()));
-		if (getGaz() != null)
-			xmlElement.setAttribute("gaz", String.valueOf(getGaz().getId()));
 		if (getProject() != null)
 			xmlElement.setAttribute("project", String.valueOf(getProject().getId()));
+		if (getGaz() != null)
+			xmlElement.setAttribute("gaz", String.valueOf(getGaz().getId()));
 		
 		
 		// For custom purposes

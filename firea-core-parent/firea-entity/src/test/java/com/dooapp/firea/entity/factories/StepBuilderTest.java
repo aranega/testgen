@@ -81,6 +81,19 @@ public class StepBuilderTest
 	 * @generated
 	 */
 	@Test
+	public void setterNGetterAttribute() throws Exception {
+		Step unsavedStep = stepBuilder.attribute("").build();
+		Step savedStep = manager.save(unsavedStep);
+		Step dbStep = manager.get(Step.class, savedStep.getId());
+		Assert.assertNotNull(dbStep.getAttribute());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	@Test
 	public void setterNGetterStatus() throws Exception {
 		Step unsavedStep = stepBuilder.status("").build();
 		Step savedStep = manager.save(unsavedStep);

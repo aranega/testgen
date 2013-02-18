@@ -818,10 +818,10 @@ public class BottleConfiguration
 	 */
 	private Element toDomXML(){
 		Element xmlElement = new Element("BottleConfiguration");
-		xmlElement.setAttribute(new Attribute("load", String.valueOf(getLoad())));
+		xmlElement.setAttribute(new Attribute("quantity", String.valueOf(getQuantity())));
 		if (getUnit() != null)
 			xmlElement.setAttribute(new Attribute("unit", getUnit()));
-		xmlElement.setAttribute(new Attribute("quantity", String.valueOf(getQuantity())));
+		xmlElement.setAttribute(new Attribute("load", String.valueOf(getLoad())));
 		xmlElement.setAttribute(new Attribute("id", String.valueOf(getId())));
 		if (getCreationDate() != null)
 			xmlElement.setAttribute(new Attribute("creationDate", getCreationDate().toString()));

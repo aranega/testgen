@@ -578,9 +578,9 @@ public class Folder
 	 */
 	private Element toDomXML(){
 		Element xmlElement = new Element("Folder");
-		xmlElement.setAttribute(new Attribute("displayOrder", String.valueOf(getDisplayOrder())));
 		if (getName() != null)
 			xmlElement.setAttribute(new Attribute("name", getName()));
+		xmlElement.setAttribute(new Attribute("displayOrder", String.valueOf(getDisplayOrder())));
 		xmlElement.setAttribute(new Attribute("id", String.valueOf(getId())));
 		if (getCreationDate() != null)
 			xmlElement.setAttribute(new Attribute("creationDate", getCreationDate().toString()));

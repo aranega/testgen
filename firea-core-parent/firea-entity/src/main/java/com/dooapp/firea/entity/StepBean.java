@@ -33,6 +33,15 @@ public class StepBean
 	private static final Logger logger = LoggerFactory.getLogger(StepBean.class);
 
 	/**
+	 * 
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	
+	private String attribute;
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
 	 * @generated
@@ -75,7 +84,7 @@ public class StepBean
 	 * @generated
 	 */
 	
-	 String status;
+	 private String status;
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -184,6 +193,26 @@ public class StepBean
 		updateDate = new java.util.Date();
 	}
 	
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	public String getAttribute(){
+		return this.attribute;
+	}
+
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	public void setAttribute(String arg0){
+		this.attribute = arg0;
+	}
+
 
 	/**
 	 * <!-- begin-user-doc -->

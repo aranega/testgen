@@ -81,6 +81,19 @@ public class CalibrationStepBuilderTest
 	 * @generated
 	 */
 	@Test
+	public void setterNGetterAttribute() throws Exception {
+		CalibrationStep unsavedCalibrationStep = calibrationStepBuilder.attribute("").build();
+		CalibrationStep savedCalibrationStep = manager.save(unsavedCalibrationStep);
+		CalibrationStep dbCalibrationStep = manager.get(CalibrationStep.class, savedCalibrationStep.getId());
+		Assert.assertNotNull(dbCalibrationStep.getAttribute());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	@Test
 	public void setterNGetterStatus() throws Exception {
 		CalibrationStep unsavedCalibrationStep = calibrationStepBuilder.status("").build();
 		CalibrationStep savedCalibrationStep = manager.save(unsavedCalibrationStep);

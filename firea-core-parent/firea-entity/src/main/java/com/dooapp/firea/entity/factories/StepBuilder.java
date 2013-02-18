@@ -25,6 +25,14 @@ public class StepBuilder<BUILDER extends StepBuilder<?>>
 // End of user code
 {
 	/**
+	 *  
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	
+	private String attribute;
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
 	 * @generated
@@ -130,6 +138,11 @@ public class StepBuilder<BUILDER extends StepBuilder<?>>
 	 */
 	public Step build() throws NullPointerException {
 		Step result =  this.createValue() ;
+		if (attribute == null) {
+			handleDefaultAttribute(result);
+		} else { 
+			result.setAttribute(attribute);
+		}
 		if (creationDate == null) {
 			handleDefaultCreationDate(result);
 		} else { 
@@ -166,6 +179,15 @@ public class StepBuilder<BUILDER extends StepBuilder<?>>
 			result.setVersion(version);
 		}
 		return result;	
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	private void handleDefaultAttribute(Step result) {
+		result.setAttribute(cfg.getProperty("defaultValue.Step.attribute"));
 	}
 
 	/*
@@ -231,6 +253,17 @@ public class StepBuilder<BUILDER extends StepBuilder<?>>
 	 */
 	private void handleDefaultVersion(Step result) {
 		result.setVersion(Integer.valueOf(cfg.getProperty("defaultValue.Step.version", "0")));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public BUILDER attribute(String myAttribute) {
+		this.attribute = myAttribute;
+		return (BUILDER) this;
 	}
 
 	/**

@@ -13,7 +13,7 @@
 <?import javafx.scene.control.cell.PropertyValueFactory?>
 <?import javafx.scene.control.Button?>
 
-<!--  -->
+
 <BorderPane xmlns:fx="http://javafx.com/fxml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" fx:id="BlowHole" fx:controller="firea-component-parent/firea-blowhole-component/src/main/java/com/dooapp/controller/BlowHoleController">
 	
 	<top>
@@ -38,11 +38,11 @@
 							<children>
 								
 								<Label fx:id="quantity_label" GridPane.rowIndex="0" GridPane.columnIndex="0" text="quantity" />
-								<!--  -->
+								
 								<TextField fx:id="quantity_data" GridPane.rowIndex="0" GridPane.columnIndex="1" editable="true" />
 								
 								<Label fx:id="surface_label" GridPane.rowIndex="1" GridPane.columnIndex="0" text="surface" />
-								<!--  -->
+								
 								<TextField fx:id="surface_data" GridPane.rowIndex="1" GridPane.columnIndex="1" editable="true" />
 								
 								<Label fx:id="id_label" GridPane.rowIndex="2" GridPane.columnIndex="0" text="id" />
@@ -62,18 +62,13 @@
 								<TextField fx:id="version_data" GridPane.rowIndex="5" GridPane.columnIndex="1" editable="true" />
 								
 								<Label fx:id="discharge_label" GridPane.rowIndex="6" GridPane.columnIndex="0" text="Discharge" />
-								<!-- fdfddd -->
+								
 								<ComboBox fx:id="discharge_data" GridPane.rowIndex="6" GridPane.columnIndex="1">
 									
 									<items>
 										
-										<FXCollections fx:factory="observableArrayList">
-											
-											<String fx:value="Positive" />
-											
-											<String fx:value="Negative" />
-											
-										</FXCollections>
+										<FXCollections fx:factory="observableArrayList" />
+										
 									</items>
 								</ComboBox>
 								<Label fx:id="testedroom_label" GridPane.rowIndex="7" GridPane.columnIndex="0" text="testedroom" />

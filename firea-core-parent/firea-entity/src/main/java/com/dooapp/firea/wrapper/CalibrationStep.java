@@ -338,10 +338,12 @@ public class CalibrationStep
 	 */
 	private Element toDomXML(){
 		Element xmlElement = new Element("CalibrationStep");
-		if (getStatus() != null)
-			xmlElement.setAttribute(new Attribute("status", getStatus()));
+		if (getAttribute() != null)
+			xmlElement.setAttribute(new Attribute("attribute", getAttribute()));
 		if (getDate() != null)
 			xmlElement.setAttribute(new Attribute("date", getDate().toString()));
+		if (getStatus() != null)
+			xmlElement.setAttribute(new Attribute("status", getStatus()));
 		xmlElement.setAttribute(new Attribute("id", String.valueOf(getId())));
 		if (getCreationDate() != null)
 			xmlElement.setAttribute(new Attribute("creationDate", getCreationDate().toString()));
@@ -349,13 +351,13 @@ public class CalibrationStep
 			xmlElement.setAttribute(new Attribute("updateDate", getUpdateDate().toString()));
 		xmlElement.setAttribute(new Attribute("version", String.valueOf(getVersion())));
 		xmlElement.setAttribute(new Attribute("afterHoleELA", String.valueOf(getAfterHoleELA())));
-		xmlElement.setAttribute(new Attribute("errorPercent", String.valueOf(getErrorPercent())));
 		xmlElement.setAttribute(new Attribute("beforeHoleELA", String.valueOf(getBeforeHoleELA())));
+		xmlElement.setAttribute(new Attribute("errorPercent", String.valueOf(getErrorPercent())));
 		
-		if (getSample() != null)
-			xmlElement.setAttribute("sample", String.valueOf(getSample().getId()));
 		if (getPoints() != null)
 			xmlElement.setAttribute("points", String.valueOf(getPoints().getId()));
+		if (getSample() != null)
+			xmlElement.setAttribute("sample", String.valueOf(getSample().getId()));
 		
 		
 		// For custom purposes

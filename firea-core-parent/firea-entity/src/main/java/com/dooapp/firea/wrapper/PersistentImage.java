@@ -889,15 +889,15 @@ public class PersistentImage
 	 */
 	private Element toDomXML(){
 		Element xmlElement = new Element("PersistentImage");
-		if (getTitle() != null)
-			xmlElement.setAttribute(new Attribute("title", getTitle()));
-		if (getDataId() != null)
-			xmlElement.setAttribute(new Attribute("dataId", getDataId()));
-		if (getPreview() != null)
-			xmlElement.setAttribute(new Attribute("preview", getPreview()));
+		xmlElement.setAttribute(new Attribute("error", String.valueOf(isError())));
 		if (getSourceFile() != null)
 			xmlElement.setAttribute(new Attribute("sourceFile", getSourceFile()));
-		xmlElement.setAttribute(new Attribute("error", String.valueOf(isError())));
+		if (getTitle() != null)
+			xmlElement.setAttribute(new Attribute("title", getTitle()));
+		if (getPreview() != null)
+			xmlElement.setAttribute(new Attribute("preview", getPreview()));
+		if (getDataId() != null)
+			xmlElement.setAttribute(new Attribute("dataId", getDataId()));
 		xmlElement.setAttribute(new Attribute("id", String.valueOf(getId())));
 		if (getCreationDate() != null)
 			xmlElement.setAttribute(new Attribute("creationDate", getCreationDate().toString()));

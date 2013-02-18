@@ -91,6 +91,14 @@
 								
 							</children>
 						</GridPane>
+						<Label fx:id="attribute_label" text="attribute" />
+						<!--  -->
+						<TextField fx:id="attribute_data" editable="true" />
+						
+						<TextField fx:id="attribute_data" editable="true" />
+						
+						<Label fx:id="attribute_label" text="attribute" />
+						
 					</children>
 				</StackPane>
 				<StackPane fx:id="_trash" visible="false" />

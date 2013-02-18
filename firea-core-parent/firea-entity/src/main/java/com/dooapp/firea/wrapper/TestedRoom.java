@@ -2491,35 +2491,35 @@ public class TestedRoom
 	 */
 	private Element toDomXML(){
 		Element xmlElement = new Element("TestedRoom");
-		xmlElement.setAttribute(new Attribute("uniformHorizontality", String.valueOf(isUniformHorizontality())));
-		xmlElement.setAttribute(new Attribute("climWithNewAirAuto", String.valueOf(isClimWithNewAirAuto())));
-		xmlElement.setAttribute(new Attribute("choosenProtectedHeight", String.valueOf(getChoosenProtectedHeight())));
-		xmlElement.setAttribute(new Attribute("climDuct", String.valueOf(isClimDuct())));
-		xmlElement.setAttribute(new Attribute("risqueHeightPercent", String.valueOf(getRisqueHeightPercent())));
+		xmlElement.setAttribute(new Attribute("altitude", String.valueOf(getAltitude())));
+		xmlElement.setAttribute(new Attribute("mecanicalStrength", String.valueOf(getMecanicalStrength())));
+		xmlElement.setAttribute(new Attribute("mainHeight", String.valueOf(getMainHeight())));
+		xmlElement.setAttribute(new Attribute("climReclycleAuto", String.valueOf(isClimReclycleAuto())));
 		xmlElement.setAttribute(new Attribute("totalHeight", String.valueOf(getTotalHeight())));
-		xmlElement.setAttribute(new Attribute("volumeCorrection", String.valueOf(getVolumeCorrection())));
+		xmlElement.setAttribute(new Attribute("droppedCeiling", String.valueOf(getDroppedCeiling())));
+		xmlElement.setAttribute(new Attribute("netVolume", String.valueOf(getNetVolume())));
+		xmlElement.setAttribute(new Attribute("risqueHeightPercent", String.valueOf(getRisqueHeightPercent())));
+		xmlElement.setAttribute(new Attribute("climReclycle", String.valueOf(isClimReclycle())));
+		xmlElement.setAttribute(new Attribute("choosenProtectedHeight", String.valueOf(getChoosenProtectedHeight())));
+		xmlElement.setAttribute(new Attribute("risqueHeight", String.valueOf(getRisqueHeight())));
+		xmlElement.setAttribute(new Attribute("climWithNewAir", String.valueOf(isClimWithNewAir())));
+		xmlElement.setAttribute(new Attribute("climWithNewAirAuto", String.valueOf(isClimWithNewAirAuto())));
+		xmlElement.setAttribute(new Attribute("unloadTime", String.valueOf(getUnloadTime())));
 		if (getCommissioningDate() != null)
 			xmlElement.setAttribute(new Attribute("CommissioningDate", getCommissioningDate().toString()));
-		xmlElement.setAttribute(new Attribute("climWithNewAir", String.valueOf(isClimWithNewAir())));
-		xmlElement.setAttribute(new Attribute("indicatedVolume", String.valueOf(getIndicatedVolume())));
-		xmlElement.setAttribute(new Attribute("droppedFloor", String.valueOf(getDroppedFloor())));
-		xmlElement.setAttribute(new Attribute("mainHeight", String.valueOf(getMainHeight())));
 		xmlElement.setAttribute(new Attribute("climVMC", String.valueOf(isClimVMC())));
-		xmlElement.setAttribute(new Attribute("climReclycle", String.valueOf(isClimReclycle())));
-		xmlElement.setAttribute(new Attribute("mecanicalStrength", String.valueOf(getMecanicalStrength())));
-		xmlElement.setAttribute(new Attribute("netVolume", String.valueOf(getNetVolume())));
-		xmlElement.setAttribute(new Attribute("risqueHeight", String.valueOf(getRisqueHeight())));
-		if (getClimVMCAuto() != null)
-			xmlElement.setAttribute(new Attribute("climVMCAuto", getClimVMCAuto()));
-		xmlElement.setAttribute(new Attribute("unloadTime", String.valueOf(getUnloadTime())));
 		xmlElement.setAttribute(new Attribute("clapetsCF", String.valueOf(isClapetsCF())));
-		xmlElement.setAttribute(new Attribute("minimalProtectedHeight", String.valueOf(getMinimalProtectedHeight())));
-		xmlElement.setAttribute(new Attribute("droppedCeiling", String.valueOf(getDroppedCeiling())));
-		xmlElement.setAttribute(new Attribute("measuredVolume", String.valueOf(getMeasuredVolume())));
 		if (getName() != null)
 			xmlElement.setAttribute(new Attribute("name", getName()));
-		xmlElement.setAttribute(new Attribute("altitude", String.valueOf(getAltitude())));
-		xmlElement.setAttribute(new Attribute("climReclycleAuto", String.valueOf(isClimReclycleAuto())));
+		xmlElement.setAttribute(new Attribute("droppedFloor", String.valueOf(getDroppedFloor())));
+		xmlElement.setAttribute(new Attribute("minimalProtectedHeight", String.valueOf(getMinimalProtectedHeight())));
+		xmlElement.setAttribute(new Attribute("measuredVolume", String.valueOf(getMeasuredVolume())));
+		xmlElement.setAttribute(new Attribute("climDuct", String.valueOf(isClimDuct())));
+		xmlElement.setAttribute(new Attribute("indicatedVolume", String.valueOf(getIndicatedVolume())));
+		xmlElement.setAttribute(new Attribute("uniformHorizontality", String.valueOf(isUniformHorizontality())));
+		xmlElement.setAttribute(new Attribute("volumeCorrection", String.valueOf(getVolumeCorrection())));
+		if (getClimVMCAuto() != null)
+			xmlElement.setAttribute(new Attribute("climVMCAuto", getClimVMCAuto()));
 		xmlElement.setAttribute(new Attribute("id", String.valueOf(getId())));
 		if (getCreationDate() != null)
 			xmlElement.setAttribute(new Attribute("creationDate", getCreationDate().toString()));

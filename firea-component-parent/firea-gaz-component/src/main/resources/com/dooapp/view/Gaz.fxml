@@ -13,7 +13,7 @@
 <?import javafx.scene.control.cell.PropertyValueFactory?>
 <?import javafx.scene.control.Button?>
 
-<!--  -->
+
 <BorderPane xmlns:fx="http://javafx.com/fxml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" fx:id="Gaz" fx:controller="firea-component-parent/firea-gaz-component/src/main/java/com/dooapp/controller/GazController">
 	
 	<top>
@@ -66,20 +66,13 @@
 								<TextField fx:id="version_data" GridPane.rowIndex="6" GridPane.columnIndex="1" editable="true" />
 								
 								<Label fx:id="weight_label" GridPane.rowIndex="7" GridPane.columnIndex="0" text="weight" />
-								<!--  -->
+								
 								<ComboBox fx:id="weight_data" GridPane.rowIndex="7" GridPane.columnIndex="1">
 									
 									<items>
 										
-										<FXCollections fx:factory="observableArrayList">
-											
-											<String fx:value="HEAVY" />
-											
-											<String fx:value="LIGHT" />
-											
-											<String fx:value="MIXED" />
-											
-										</FXCollections>
+										<FXCollections fx:factory="observableArrayList" />
+										
 									</items>
 								</ComboBox>
 								<Label fx:id="bottletypes_label" GridPane.rowIndex="0" GridPane.columnIndex="2" text="bottletypes" />

@@ -41,6 +41,20 @@ public class MainStepTest
 		this.wrapper = null;
 	}
 
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	@Test
+	public void setAndGetAttribute() {
+		String tmp = "";
+		this.wrapper.setAttribute(tmp);
+		String result = this.wrapper.getAttribute();
+		Assert.assertNotNull(result);
+		Assert.assertEquals(tmp, result);
+	}
+
 	/********************
 	 * Basic Refs tester
 	 ********************/

@@ -578,10 +578,10 @@ public class GaugeMode
 	 */
 	private Element toDomXML(){
 		Element xmlElement = new Element("GaugeMode");
-		if (getGaugeType() != null)
-			xmlElement.setAttribute(new Attribute("gaugeType", getGaugeType()));
 		if (getName() != null)
 			xmlElement.setAttribute(new Attribute("name", getName()));
+		if (getGaugeType() != null)
+			xmlElement.setAttribute(new Attribute("gaugeType", getGaugeType()));
 		xmlElement.setAttribute(new Attribute("id", String.valueOf(getId())));
 		if (getCreationDate() != null)
 			xmlElement.setAttribute(new Attribute("creationDate", getCreationDate().toString()));
