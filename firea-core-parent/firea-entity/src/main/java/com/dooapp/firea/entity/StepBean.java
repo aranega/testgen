@@ -75,7 +75,7 @@ public class StepBean
 	 * @generated
 	 */
 	
-	private String status;
+	 String status;
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -86,10 +86,10 @@ public class StepBean
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
-	 * @generated
+	 * @generated NOT
 	 */
 	
-	private int version;
+	public int version;
 
 	/**
  	 * <!-- begin-user-doc -->
@@ -114,6 +114,12 @@ public class StepBean
 	 */
 	@javax.persistence.Column(name = "UUID", columnDefinition = "CHAR(36)")
 	protected String uuid;
+	
+	public String getUUID() {
+		return uuid;
+	}
+	
+	
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
