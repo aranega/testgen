@@ -262,20 +262,20 @@ public class DelayedTask
 	 */
 	private Element toDomXML(){
 		Element xmlElement = new Element("DelayedTask");
+		xmlElement.setAttribute(new Attribute("isCompleted", String.valueOf(isIsCompleted())));
 		if (getTitle() != null)
 			xmlElement.setAttribute(new Attribute("title", getTitle()));
 		xmlElement.setAttribute(new Attribute("priority", String.valueOf(getPriority())));
-		xmlElement.setAttribute(new Attribute("isCompleted", String.valueOf(isIsCompleted())));
 		xmlElement.setAttribute(new Attribute("id", String.valueOf(getId())));
 		if (getCreationDate() != null)
 			xmlElement.setAttribute(new Attribute("creationDate", getCreationDate().toString()));
 		if (getUpdateDate() != null)
 			xmlElement.setAttribute(new Attribute("updateDate", getUpdateDate().toString()));
 		xmlElement.setAttribute(new Attribute("version", String.valueOf(getVersion())));
-		if (getStartAt() != null)
-			xmlElement.setAttribute(new Attribute("startAt", getStartAt()));
 		if (getEndAt() != null)
 			xmlElement.setAttribute(new Attribute("endAt", getEndAt()));
+		if (getStartAt() != null)
+			xmlElement.setAttribute(new Attribute("startAt", getStartAt()));
 		
 		if (getOwner() != null)
 			xmlElement.setAttribute("owner", String.valueOf(getOwner().getId()));

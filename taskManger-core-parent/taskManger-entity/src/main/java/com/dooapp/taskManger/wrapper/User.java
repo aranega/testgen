@@ -713,9 +713,9 @@ public class User
 		Element xmlElement = new Element("User");
 		if (getLastname() != null)
 			xmlElement.setAttribute(new Attribute("lastname", getLastname()));
-		xmlElement.setAttribute(new Attribute("age", String.valueOf(getAge())));
 		if (getFirstname() != null)
 			xmlElement.setAttribute(new Attribute("firstname", getFirstname()));
+		xmlElement.setAttribute(new Attribute("age", String.valueOf(getAge())));
 		xmlElement.setAttribute(new Attribute("id", String.valueOf(getId())));
 		if (getCreationDate() != null)
 			xmlElement.setAttribute(new Attribute("creationDate", getCreationDate().toString()));

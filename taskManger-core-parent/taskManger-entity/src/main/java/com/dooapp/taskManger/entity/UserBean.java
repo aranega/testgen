@@ -334,7 +334,7 @@ public class UserBean
 	
 	public void getFullname () 
 	{
-		System.out.println("TOTO");
+		// TODO: implement me! 	
 	}
 
 	/**
