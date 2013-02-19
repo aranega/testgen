@@ -340,12 +340,12 @@ public class TaskBean
 	
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
-	 * @generated
+	 * @generated NOT
 	 */
 	
 	public void finish () 
 	{
-		// TODO: implement me! 	
+		System.out.println("FINISH");	
 	}
 
 	/**
@@ -381,8 +381,12 @@ public class TaskBean
 	
 	public Boolean isPrior (String toTask) 
 	{
-		// TODO: implement me! return false;
+		return true;
 			
+	}
+	
+	public void newMethodImpl() {
+		
 	}
 
 }
