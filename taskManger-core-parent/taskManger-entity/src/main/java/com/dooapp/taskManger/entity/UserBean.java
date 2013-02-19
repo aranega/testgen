@@ -334,20 +334,24 @@ public class UserBean
 	
 	public void getFullname () 
 	{
-		// TODO: implement me! 	
+		System.out.println("TOTO");
 	}
 
 	/**
 	 * Return whether or not a user owned the given task
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
-	 * @generated
+	 * @generated NOT
 	 */
 	
 	public Boolean owned (String atask) 
 	{
-		// TODO: implement me! return false;
+		return true;
 			
+	}
+	
+	public void print() {
+		System.out.println("Test");
 	}
 
 }
