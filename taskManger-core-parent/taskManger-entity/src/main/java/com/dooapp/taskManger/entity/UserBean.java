@@ -32,7 +32,7 @@ public class UserBean
 	private static final Logger logger = LoggerFactory.getLogger(UserBean.class);
 
 	
-	private int age;
+	public double age;
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -172,23 +172,6 @@ public class UserBean
 	}
 	
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 */
-	public int getAge(){
-		return this.age;
-	}
-	
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 */
-	public void setAge(int arg0){
-		this.age = arg0;
-	}
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
