@@ -742,8 +742,8 @@ public class Task
 	 */
 	private Element toDomXML(){
 		Element xmlElement = new Element("Task");
-		xmlElement.setAttribute(new Attribute("isCompleted", String.valueOf(isIsCompleted())));
 		xmlElement.setAttribute(new Attribute("priority", String.valueOf(getPriority())));
+		xmlElement.setAttribute(new Attribute("isCompleted", String.valueOf(isIsCompleted())));
 		if (getTitle() != null)
 			xmlElement.setAttribute(new Attribute("title", getTitle()));
 		xmlElement.setAttribute(new Attribute("id", String.valueOf(getId())));

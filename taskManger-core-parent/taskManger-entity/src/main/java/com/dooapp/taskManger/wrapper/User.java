@@ -26,6 +26,7 @@ import org.jdom2.Attribute;
 import org.jdom2.Element;
 
 /**
+ *  
  * <!-- begin-user-doc -->
  * <!--  end-user-doc  -->
  * @generated
@@ -40,6 +41,7 @@ public class User
 // End of user code
 {
 	/**
+	 *  
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
 	 * @generated
@@ -709,11 +711,11 @@ public class User
 	 */
 	private Element toDomXML(){
 		Element xmlElement = new Element("User");
-		if (getLastname() != null)
-			xmlElement.setAttribute(new Attribute("lastname", getLastname()));
+		xmlElement.setAttribute(new Attribute("age", String.valueOf(getAge())));
 		if (getFirstname() != null)
 			xmlElement.setAttribute(new Attribute("firstname", getFirstname()));
-		xmlElement.setAttribute(new Attribute("age", String.valueOf(getAge())));
+		if (getLastname() != null)
+			xmlElement.setAttribute(new Attribute("lastname", getLastname()));
 		xmlElement.setAttribute(new Attribute("id", String.valueOf(getId())));
 		if (getCreationDate() != null)
 			xmlElement.setAttribute(new Attribute("creationDate", getCreationDate().toString()));

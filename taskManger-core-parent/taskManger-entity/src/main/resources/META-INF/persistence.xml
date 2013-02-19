@@ -5,9 +5,9 @@
 	version="2.0">
 
 	<persistence-unit name="dooapp" transaction-type="RESOURCE_LOCAL">
-		<class>com.dooapp.taskManger.entity.TaskBean</class>
 		<class>com.dooapp.taskManger.entity.UserBean</class>
 		<class>com.dooapp.taskManger.entity.DelayedTaskBean</class>
+		<class>com.dooapp.taskManger.entity.TaskBean</class>
 	<!--
 		* Start of user code for entities
 	  -->

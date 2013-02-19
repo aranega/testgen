@@ -10,6 +10,7 @@ import com.dooapp.lib.common.entity.Bean;
 
 
 /**
+ * 
  * <!-- begin-user-doc -->
  * <!--  end-user-doc  -->
  * @generated
@@ -171,6 +172,24 @@ public class UserBean
 		updateDate = new java.util.Date();
 	}
 	
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	public int getAge(){
+		return this.age;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	public void setAge(int arg0){
+		this.age = arg0;
+	}
 
 	/**
 	 * <!-- begin-user-doc -->

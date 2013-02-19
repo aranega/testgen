@@ -9,6 +9,7 @@ import com.dooapp.taskManger.wrapper.Task;
 
 
 /**
+ *  
  * <!-- begin-user-doc -->
  * <!--  end-user-doc  -->
  * @generated
@@ -23,6 +24,7 @@ public class UserBuilder<BUILDER extends UserBuilder<?>>
 // End of user code
 {
 	/**
+	 *  
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
 	 * @generated
