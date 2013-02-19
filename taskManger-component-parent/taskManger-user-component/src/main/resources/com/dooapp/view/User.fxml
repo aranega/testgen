@@ -75,70 +75,22 @@
 											
 											<columns>
 												
-												<TableColumn text="priority">
-													
-													<cellValueFactory>
-														
-														<PropertyValueFactory property="priority" />
-														
-													</cellValueFactory>
-												</TableColumn>
-												<TableColumn text="title">
-													
-													<cellValueFactory>
-														
-														<PropertyValueFactory property="title" />
-														
-													</cellValueFactory>
-												</TableColumn>
-												<TableColumn text="isCompleted">
-													
-													<cellValueFactory>
-														
-														<PropertyValueFactory property="isCompleted" />
-														
-													</cellValueFactory>
-												</TableColumn>
-												<TableColumn text="id">
-													
-													<cellValueFactory>
-														
-														<PropertyValueFactory property="id" />
-														
-													</cellValueFactory>
-												</TableColumn>
-												<TableColumn text="creationDate">
-													
-													<cellValueFactory>
-														
-														<PropertyValueFactory property="creationDate" />
-														
-													</cellValueFactory>
-												</TableColumn>
-												<TableColumn text="updateDate">
-													
-													<cellValueFactory>
-														
-														<PropertyValueFactory property="updateDate" />
-														
-													</cellValueFactory>
-												</TableColumn>
-												<TableColumn text="version">
-													
-													<cellValueFactory>
-														
-														<PropertyValueFactory property="version" />
-														
-													</cellValueFactory>
-												</TableColumn>
-												<TableColumn text="owner">
-													
-													<cellValueFactory>
-														
-														<PropertyValueFactory property="owner" />
-														
-													</cellValueFactory>
-												</TableColumn>
+												<TableColumn text="priority" />
+												
+												<TableColumn text="title" />
+												
+												<TableColumn text="isCompleted" />
+												
+												<TableColumn text="id" />
+												
+												<TableColumn text="creationDate" />
+												
+												<TableColumn text="updateDate" />
+												
+												<TableColumn text="version" />
+												
+												<TableColumn text="owner" />
+												
 											</columns>
 										</TableView>
 										<ComboBox fx:id="duties_data" onAction="#selectDuties" />

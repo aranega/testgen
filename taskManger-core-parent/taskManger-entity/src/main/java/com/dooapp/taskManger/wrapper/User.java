@@ -708,10 +708,10 @@ public class User
 	 */
 	private Element toDomXML(){
 		Element xmlElement = new Element("User");
-		if (getFirstname() != null)
-			xmlElement.setAttribute(new Attribute("firstname", getFirstname()));
 		if (getLastname() != null)
 			xmlElement.setAttribute(new Attribute("lastname", getLastname()));
+		if (getFirstname() != null)
+			xmlElement.setAttribute(new Attribute("firstname", getFirstname()));
 		xmlElement.setAttribute(new Attribute("age", String.valueOf(getAge())));
 		xmlElement.setAttribute(new Attribute("id", String.valueOf(getId())));
 		if (getCreationDate() != null)

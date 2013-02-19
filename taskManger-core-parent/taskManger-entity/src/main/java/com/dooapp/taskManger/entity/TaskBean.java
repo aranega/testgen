@@ -381,7 +381,7 @@ public class TaskBean
 	
 	public Boolean isPrior (String toTask) 
 	{
-		return true;
+		// TODO: implement me! return false;
 			
 	}
 	
