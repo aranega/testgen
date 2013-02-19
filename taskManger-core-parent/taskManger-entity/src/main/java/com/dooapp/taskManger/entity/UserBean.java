@@ -31,11 +31,6 @@ public class UserBean
  	 */
 	private static final Logger logger = LoggerFactory.getLogger(UserBean.class);
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 */
 	
 	private int age;
 	/**
