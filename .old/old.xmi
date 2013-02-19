@@ -7,6 +7,26 @@
     <details key="data" value=""/>
   </eAnnotations>
   <eSubpackages name="entity">
+    <eClassifiers xsi:type="emf4java:SpecialEnum" name="Priority">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_gg038FONEDCavdDCoGPdxQ"/>
+      </eAnnotations>
+      <eLiterals name="LOW">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_ozOL8FONEDCavdDCoGPdxQ"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="MEDIUM" value="1">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_qjOxAFONEDCavdDCoGPdxQ"/>
+        </eAnnotations>
+      </eLiterals>
+      <eLiterals name="HARD" value="2">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_sALQIFONEDCavdDCoGPdxQ"/>
+        </eAnnotations>
+      </eLiterals>
+    </eClassifiers>
     <eClassifiers xsi:type="emf4java:Entity" name="User">
       <eAnnotations source="genmymodel">
         <details key="uuid" value="_Nx23YFONEDCavdDCoGPdxQ"/>
@@ -37,6 +57,17 @@
           <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
         </eParameters>
       </eOperations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="lastname" lowerBound="1">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_P-o4AFONEDCavdDCoGPdxQ"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="duties" upperBound="-1" eType="//entity/Task" eOpposite="//entity/Task/owner">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_GqB8QFOREDCavdDCoGPdxQ"/>
+        </eAnnotations>
+      </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="age" lowerBound="1">
         <eAnnotations source="genmymodel">
           <details key="uuid" value="_Q9NZEFONEDCavdDCoGPdxQ"/>
@@ -45,11 +76,6 @@
           <details key="data" value=""/>
         </eAnnotations>
         <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
-      </eStructuralFeatures>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="duties" upperBound="-1" eType="//entity/Task" eOpposite="//entity/Task/owner">
-        <eAnnotations source="genmymodel">
-          <details key="uuid" value="_GqB8QFOREDCavdDCoGPdxQ"/>
-        </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="firstname" lowerBound="1">
         <eAnnotations source="genmymodel">
@@ -60,49 +86,23 @@
         </eAnnotations>
         <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
       </eStructuralFeatures>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="lastname" lowerBound="1">
-        <eAnnotations source="genmymodel">
-          <details key="uuid" value="_P-o4AFONEDCavdDCoGPdxQ"/>
-        </eAnnotations>
-        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-      </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
         <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
       </eStructuralFeatures>
-    </eClassifiers>
-    <eClassifiers xsi:type="emf4java:SpecialEnum" name="Priority">
-      <eAnnotations source="genmymodel">
-        <details key="uuid" value="_gg038FONEDCavdDCoGPdxQ"/>
-      </eAnnotations>
-      <eLiterals name="LOW">
-        <eAnnotations source="genmymodel">
-          <details key="uuid" value="_ozOL8FONEDCavdDCoGPdxQ"/>
-        </eAnnotations>
-      </eLiterals>
-      <eLiterals name="MEDIUM" value="1">
-        <eAnnotations source="genmymodel">
-          <details key="uuid" value="_qjOxAFONEDCavdDCoGPdxQ"/>
-        </eAnnotations>
-      </eLiterals>
-      <eLiterals name="HARD" value="2">
-        <eAnnotations source="genmymodel">
-          <details key="uuid" value="_sALQIFONEDCavdDCoGPdxQ"/>
-        </eAnnotations>
-      </eLiterals>
     </eClassifiers>
     <eClassifiers xsi:type="emf4java:Entity" name="DelayedTask" eSuperTypes="//entity/Task">
       <eAnnotations source="genmymodel">
         <details key="uuid" value="_v9nOsFOQEDCavdDCoGPdxQ"/>
       </eAnnotations>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="endAt" lowerBound="1">
-        <eAnnotations source="genmymodel">
-          <details key="uuid" value="_-7IW4FOQEDCavdDCoGPdxQ"/>
-        </eAnnotations>
-        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-      </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="startAt" lowerBound="1">
         <eAnnotations source="genmymodel">
           <details key="uuid" value="_zdsDMFOQEDCavdDCoGPdxQ"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="endAt" lowerBound="1">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_-7IW4FOQEDCavdDCoGPdxQ"/>
         </eAnnotations>
         <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
       </eStructuralFeatures>
@@ -150,14 +150,20 @@
           <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
         </eParameters>
       </eOperations>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="priority" lowerBound="1" eType="//entity/Priority">
-        <eAnnotations source="genmymodel">
-          <details key="uuid" value="_9vpYAFOMEDCavdDCoGPdxQ"/>
-        </eAnnotations>
-      </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference" name="owner" eType="//entity/User" eOpposite="//entity/User/duties">
         <eAnnotations source="genmymodel">
           <details key="uuid" value="_Gp-48FOREDCavdDCoGPdxQ"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="title" lowerBound="1">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_r05CoFOMEDCavdDCoGPdxQ"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="priority" lowerBound="1" eType="//entity/Priority">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_9vpYAFOMEDCavdDCoGPdxQ"/>
         </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="isCompleted" lowerBound="1">
@@ -165,12 +171,6 @@
           <details key="uuid" value="_KEPWIFONEDCavdDCoGPdxQ"/>
         </eAnnotations>
         <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
-      </eStructuralFeatures>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="title" lowerBound="1">
-        <eAnnotations source="genmymodel">
-          <details key="uuid" value="_r05CoFOMEDCavdDCoGPdxQ"/>
-        </eAnnotations>
-        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
         <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
