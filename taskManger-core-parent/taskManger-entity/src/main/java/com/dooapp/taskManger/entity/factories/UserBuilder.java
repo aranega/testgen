@@ -44,6 +44,7 @@ public class UserBuilder<BUILDER extends UserBuilder<?>>
 	
 	private java.util.Set<Task> duties;
 	/**
+	 *  
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
 	 * @generated

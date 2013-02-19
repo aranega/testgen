@@ -61,6 +61,7 @@ public class User
 	
 	private ObjectProperty<ObservableList<Task>> dutiesProperty;
 	/**
+	 *  
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
 	 * @generated
@@ -708,11 +709,11 @@ public class User
 	 */
 	private Element toDomXML(){
 		Element xmlElement = new Element("User");
+		if (getLastname() != null)
+			xmlElement.setAttribute(new Attribute("lastname", getLastname()));
 		if (getFirstname() != null)
 			xmlElement.setAttribute(new Attribute("firstname", getFirstname()));
 		xmlElement.setAttribute(new Attribute("age", String.valueOf(getAge())));
-		if (getLastname() != null)
-			xmlElement.setAttribute(new Attribute("lastname", getLastname()));
 		xmlElement.setAttribute(new Attribute("id", String.valueOf(getId())));
 		if (getCreationDate() != null)
 			xmlElement.setAttribute(new Attribute("creationDate", getCreationDate().toString()));

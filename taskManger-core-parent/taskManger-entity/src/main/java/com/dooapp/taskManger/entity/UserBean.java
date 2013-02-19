@@ -48,6 +48,7 @@ public class UserBean
 	
 	private java.util.Set<TaskBean> duties;
 	/**
+	 * 
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
 	 * @generated
