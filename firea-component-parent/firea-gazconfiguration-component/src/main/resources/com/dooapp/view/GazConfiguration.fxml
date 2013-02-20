@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+<?import javafx.paint.*?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.Button?>
+
+<!--  -->
+<BorderPane xmlns:fx="http://javafx.com/fxml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" fx:id="GazConfiguration" fx:controller="firea-component-parent/firea-gazconfiguration-component/src/main/java/com/dooapp/controller/GazConfigurationController">
+	
+	<top>
+		
+		<Label style="-fx-font: NORMAL 20 Tahoma;" text="Enter values for GazConfiguration  Properties" />
+		
+	</top>
+	<center>
+		
+		<VBox>
+			
+			<children>
+				
+				<HBox fx:id="_content" />
+				
+				<StackPane fx:id="_stack" visible="false">
+					
+					<children>
+						
+						<GridPane>
+							
+							<children>
+								
+								<Label fx:id="retentionInterface_label" GridPane.rowIndex="0" GridPane.columnIndex="0" text="retentionInterface" />
+								
+								<TextField fx:id="retentionInterface_data" GridPane.rowIndex="0" GridPane.columnIndex="1" editable="true" />
+								
+								<Label fx:id="droppedCeilFull_label" GridPane.rowIndex="1" GridPane.columnIndex="0" text="droppedCeilFull" />
+								<!--  -->
+								<TextField fx:id="droppedCeilFull_data" GridPane.rowIndex="1" GridPane.columnIndex="1" editable="true" />
+								
+								<Label fx:id="slowUnloading_label" GridPane.rowIndex="2" GridPane.columnIndex="0" text="slowUnloading" />
+								<!--  -->
+								<TextField fx:id="slowUnloading_data" GridPane.rowIndex="2" GridPane.columnIndex="1" editable="true" />
+								
+								<Label fx:id="totalLoadToInstall_label" GridPane.rowIndex="3" GridPane.columnIndex="0" text="totalLoadToInstall" />
+								<!--  -->
+								<TextField fx:id="totalLoadToInstall_data" GridPane.rowIndex="3" GridPane.columnIndex="1" editable="true" />
+								
+								<Label fx:id="chosenInitialConcentration_label" GridPane.rowIndex="4" GridPane.columnIndex="0" text="chosenInitialConcentration" />
+								<!--  -->
+								<TextField fx:id="chosenInitialConcentration_data" GridPane.rowIndex="4" GridPane.columnIndex="1" editable="true" />
+								
+								<Label fx:id="slowUnloadingValue_label" GridPane.rowIndex="5" GridPane.columnIndex="0" text="slowUnloadingValue" />
+								
+								<TextField fx:id="slowUnloadingValue_data" GridPane.rowIndex="5" GridPane.columnIndex="1" editable="true" />
+								
+								<Label fx:id="leekRepartitionPercent_label" GridPane.rowIndex="6" GridPane.columnIndex="0" text="leekRepartitionPercent" />
+								<!--  -->
+								<TextField fx:id="leekRepartitionPercent_data" GridPane.rowIndex="6" GridPane.columnIndex="1" editable="true" />
+								
+								<Label fx:id="installedInitialConcentration_label" GridPane.rowIndex="7" GridPane.columnIndex="0" text="installedInitialConcentration" />
+								<!--  -->
+								<TextField fx:id="installedInitialConcentration_data" GridPane.rowIndex="7" GridPane.columnIndex="1" editable="true" />
+								
+								<Label fx:id="prescribedFinalConcentration_label" GridPane.rowIndex="0" GridPane.columnIndex="2" text="prescribedFinalConcentration" />
+								<!--  -->
+								<TextField fx:id="prescribedFinalConcentration_data" GridPane.rowIndex="0" GridPane.columnIndex="3" editable="true" />
+								
+								<Label fx:id="droppedFloorFull_label" GridPane.rowIndex="1" GridPane.columnIndex="2" text="droppedFloorFull" />
+								
+								<TextField fx:id="droppedFloorFull_data" GridPane.rowIndex="1" GridPane.columnIndex="3" editable="true" />
+								
+								<Label fx:id="chosenFinalConcentration_label" GridPane.rowIndex="2" GridPane.columnIndex="2" text="chosenFinalConcentration" />
+								<!--  -->
+								<TextField fx:id="chosenFinalConcentration_data" GridPane.rowIndex="2" GridPane.columnIndex="3" editable="true" />
+								
+								<Label fx:id="retentionGoal_label" GridPane.rowIndex="3" GridPane.columnIndex="2" text="retentionGoal" />
+								<!--  -->
+								<TextField fx:id="retentionGoal_data" GridPane.rowIndex="3" GridPane.columnIndex="3" editable="true" />
+								
+								<Label fx:id="prescribedRetention_label" GridPane.rowIndex="4" GridPane.columnIndex="2" text="prescribedRetention" />
+								<!--  -->
+								<TextField fx:id="prescribedRetention_data" GridPane.rowIndex="4" GridPane.columnIndex="3" editable="true" />
+								
+								<Label fx:id="prescribedInitialConcentration_label" GridPane.rowIndex="5" GridPane.columnIndex="2" text="prescribedInitialConcentration" />
+								<!--  -->
+								<TextField fx:id="prescribedInitialConcentration_data" GridPane.rowIndex="5" GridPane.columnIndex="3" editable="true" />
+								
+								<Label fx:id="id_label" GridPane.rowIndex="6" GridPane.columnIndex="2" text="id" />
+								
+								<TextField fx:id="id_data" GridPane.rowIndex="6" GridPane.columnIndex="3" editable="false" />
+								
+								<Label fx:id="creationDate_label" GridPane.rowIndex="7" GridPane.columnIndex="2" text="creationDate" />
+								
+								<TextField fx:id="creationDate_data" GridPane.rowIndex="7" GridPane.columnIndex="3" editable="true" />
+								
+								<Label fx:id="updateDate_label" GridPane.rowIndex="0" GridPane.columnIndex="4" text="updateDate" />
+								
+								<TextField fx:id="updateDate_data" GridPane.rowIndex="0" GridPane.columnIndex="5" editable="true" />
+								
+								<Label fx:id="version_label" GridPane.rowIndex="1" GridPane.columnIndex="4" text="version" />
+								
+								<TextField fx:id="version_data" GridPane.rowIndex="1" GridPane.columnIndex="5" editable="true" />
+								
+								<Label fx:id="forcedGazWeight_label" GridPane.rowIndex="2" GridPane.columnIndex="4" text="forcedGazWeight" />
+								<!--  -->
+								<ComboBox fx:id="forcedGazWeight_data" GridPane.rowIndex="2" GridPane.columnIndex="5">
+									
+									<items>
+										
+										<FXCollections fx:factory="observableArrayList">
+											
+											<String fx:value="HEAVY" />
+											
+											<String fx:value="LIGHT" />
+											
+											<String fx:value="MIXED" />
+											
+										</FXCollections>
+									</items>
+								</ComboBox>
+								<Label fx:id="gaz_label" GridPane.rowIndex="3" GridPane.columnIndex="4" text="gaz" />
+								<!--  -->
+								<ComboBox fx:id="gaz_data" GridPane.rowIndex="3" GridPane.columnIndex="5" onAction="#selectGaz" />
+								
+								<Label fx:id="project_label" GridPane.rowIndex="4" GridPane.columnIndex="4" text="project" />
+								
+								<ComboBox fx:id="project_data" GridPane.rowIndex="4" GridPane.columnIndex="5" onAction="#selectProject" />
+								
+								<Label fx:id="bottleConfigurations_label" GridPane.rowIndex="5" GridPane.columnIndex="4" text="bottleConfigurations" />
+								
+								<VBox GridPane.rowIndex="5" GridPane.columnIndex="5">
+									
+									<children>
+										
+										<TableView fx:id="bottleConfigurations_dataview" prefHeight="50.0" editable="true">
+											
+											<columns>
+												
+												<TableColumn text="quantity">
+													
+													<cellValueFactory>
+														
+														<PropertyValueFactory property="quantity" />
+														
+													</cellValueFactory>
+												</TableColumn>
+												<TableColumn text="load">
+													
+													<cellValueFactory>
+														
+														<PropertyValueFactory property="load" />
+														
+													</cellValueFactory>
+												</TableColumn>
+												<TableColumn text="unit">
+													
+													<cellValueFactory>
+														
+														<PropertyValueFactory property="unit" />
+														
+													</cellValueFactory>
+												</TableColumn>
+												<TableColumn text="id">
+													
+													<cellValueFactory>
+														
+														<PropertyValueFactory property="id" />
+														
+													</cellValueFactory>
+												</TableColumn>
+												<TableColumn text="creationDate">
+													
+													<cellValueFactory>
+														
+														<PropertyValueFactory property="creationDate" />
+														
+													</cellValueFactory>
+												</TableColumn>
+												<TableColumn text="updateDate">
+													
+													<cellValueFactory>
+														
+														<PropertyValueFactory property="updateDate" />
+														
+													</cellValueFactory>
+												</TableColumn>
+												<TableColumn text="version">
+													
+													<cellValueFactory>
+														
+														<PropertyValueFactory property="version" />
+														
+													</cellValueFactory>
+												</TableColumn>
+												<TableColumn text="bottletype">
+													
+													<cellValueFactory>
+														
+														<PropertyValueFactory property="bottletype" />
+														
+													</cellValueFactory>
+												</TableColumn>
+												<TableColumn text="gazConfiguration">
+													
+													<cellValueFactory>
+														
+														<PropertyValueFactory property="gazConfiguration" />
+														
+													</cellValueFactory>
+												</TableColumn>
+											</columns>
+										</TableView>
+										<ComboBox fx:id="bottleConfigurations_data" onAction="#selectBottleConfigurations" />
+										
+										<Button text="Create BottleConfiguration instance" onAction="#create" cancelButton="false" />
+										
+									</children>
+								</VBox>
+							</children>
+						</GridPane>
+					</children>
+				</StackPane>
+				<StackPane fx:id="_trash" visible="false" />
+				
+			</children>
+		</VBox>
+	</center>
+	<bottom>
+		
+		<HBox>
+			
+			<children>
+				
+				<Button text="OK" onAction="#handleSubmitButtonAction" cancelButton="false" />
+				
+				<Button text="Cancel" onAction="#handleCancelButtonAction" cancelButton="false" />
+				
+			</children>
+		</HBox>
+	</bottom>
+</BorderPane>

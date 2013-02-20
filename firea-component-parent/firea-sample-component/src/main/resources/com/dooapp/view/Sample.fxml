@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+<?import javafx.paint.*?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.Button?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" fx:id="Sample" fx:controller="firea-component-parent/firea-sample-component/src/main/java/com/dooapp/controller/SampleController">
+	
+	<top>
+		
+		<Label style="-fx-font: NORMAL 20 Tahoma;" text="Enter values for Sample  Properties" />
+		
+	</top>
+	<center>
+		
+		<VBox>
+			
+			<children>
+				
+				<HBox fx:id="_content" />
+				
+				<StackPane fx:id="_stack" visible="false">
+					
+					<children>
+						
+						<GridPane>
+							
+							<children>
+								
+								<Label fx:id="phiIPercent_label" GridPane.rowIndex="0" GridPane.columnIndex="0" text="phiIPercent" />
+								
+								<TextField fx:id="phiIPercent_data" GridPane.rowIndex="0" GridPane.columnIndex="1" editable="true" />
+								
+								<Label fx:id="roE_label" GridPane.rowIndex="1" GridPane.columnIndex="0" text="roE" />
+								
+								<TextField fx:id="roE_data" GridPane.rowIndex="1" GridPane.columnIndex="1" editable="true" />
+								
+								<Label fx:id="tetaE_label" GridPane.rowIndex="2" GridPane.columnIndex="0" text="tetaE" />
+								<!--  -->
+								<TextField fx:id="tetaE_data" GridPane.rowIndex="2" GridPane.columnIndex="1" editable="true" />
+								
+								<Label fx:id="lowTarget_label" GridPane.rowIndex="3" GridPane.columnIndex="0" text="lowTarget" />
+								
+								<TextField fx:id="lowTarget_data" GridPane.rowIndex="3" GridPane.columnIndex="1" editable="true" />
+								
+								<Label fx:id="highUp_label" GridPane.rowIndex="4" GridPane.columnIndex="0" text="highUp" />
+								
+								<TextField fx:id="highUp_data" GridPane.rowIndex="4" GridPane.columnIndex="1" editable="true" />
+								
+								<Label fx:id="windMeasure_label" GridPane.rowIndex="5" GridPane.columnIndex="0" text="windMeasure" />
+								
+								<TextField fx:id="windMeasure_data" GridPane.rowIndex="5" GridPane.columnIndex="1" editable="true" />
+								
+								<Label fx:id="airPressure_label" GridPane.rowIndex="6" GridPane.columnIndex="0" text="airPressure" />
+								
+								<TextField fx:id="airPressure_data" GridPane.rowIndex="6" GridPane.columnIndex="1" editable="true" />
+								
+								<Label fx:id="name_label" GridPane.rowIndex="7" GridPane.columnIndex="0" text="name" />
+								
+								<TextField fx:id="name_data" GridPane.rowIndex="7" GridPane.columnIndex="1" editable="true" />
+								
+								<Label fx:id="roI_label" GridPane.rowIndex="0" GridPane.columnIndex="2" text="roI" />
+								
+								<TextField fx:id="roI_data" GridPane.rowIndex="0" GridPane.columnIndex="3" editable="true" />
+								
+								<Label fx:id="numberOfPoint_label" GridPane.rowIndex="1" GridPane.columnIndex="2" text="numberOfPoint" />
+								
+								<TextField fx:id="numberOfPoint_data" GridPane.rowIndex="1" GridPane.columnIndex="3" editable="true" />
+								
+								<Label fx:id="highTarget_label" GridPane.rowIndex="2" GridPane.columnIndex="2" text="highTarget" />
+								
+								<TextField fx:id="highTarget_data" GridPane.rowIndex="2" GridPane.columnIndex="3" editable="true" />
+								
+								<Label fx:id="date_label" GridPane.rowIndex="3" GridPane.columnIndex="2" text="date" />
+								
+								<TextField fx:id="date_data" GridPane.rowIndex="3" GridPane.columnIndex="3" editable="true" />
+								
+								<Label fx:id="tetaI_label" GridPane.rowIndex="4" GridPane.columnIndex="2" text="tetaI" />
+								
+								<TextField fx:id="tetaI_data" GridPane.rowIndex="4" GridPane.columnIndex="3" editable="true" />
+								
+								<Label fx:id="phiEPercent_label" GridPane.rowIndex="5" GridPane.columnIndex="2" text="phiEPercent" />
+								
+								<TextField fx:id="phiEPercent_data" GridPane.rowIndex="5" GridPane.columnIndex="3" editable="true" />
+								
+								<Label fx:id="elevation_label" GridPane.rowIndex="6" GridPane.columnIndex="2" text="elevation" />
+								
+								<TextField fx:id="elevation_data" GridPane.rowIndex="6" GridPane.columnIndex="3" editable="true" />
+								
+								<Label fx:id="id_label" GridPane.rowIndex="7" GridPane.columnIndex="2" text="id" />
+								
+								<TextField fx:id="id_data" GridPane.rowIndex="7" GridPane.columnIndex="3" editable="false" />
+								
+								<Label fx:id="creationDate_label" GridPane.rowIndex="0" GridPane.columnIndex="4" text="creationDate" />
+								
+								<TextField fx:id="creationDate_data" GridPane.rowIndex="0" GridPane.columnIndex="5" editable="true" />
+								
+								<Label fx:id="updateDate_label" GridPane.rowIndex="1" GridPane.columnIndex="4" text="updateDate" />
+								
+								<TextField fx:id="updateDate_data" GridPane.rowIndex="1" GridPane.columnIndex="5" editable="true" />
+								
+								<Label fx:id="version_label" GridPane.rowIndex="2" GridPane.columnIndex="4" text="version" />
+								
+								<TextField fx:id="version_data" GridPane.rowIndex="2" GridPane.columnIndex="5" editable="true" />
+								
+								<Label fx:id="airPressureCalculationMethod_label" GridPane.rowIndex="3" GridPane.columnIndex="4" text="airPressureCalculationMethod" />
+								
+								<ComboBox fx:id="airPressureCalculationMethod_data" GridPane.rowIndex="3" GridPane.columnIndex="5">
+									
+									<items>
+										
+										<FXCollections fx:factory="observableArrayList">
+											
+											<String fx:value="MEASURE" />
+											
+											<String fx:value="METEO_CENTER" />
+											
+											<String fx:value="HIGH_UP_CALCULATION" />
+											
+										</FXCollections>
+									</items>
+								</ComboBox>
+								<Label fx:id="pointDirection_label" GridPane.rowIndex="4" GridPane.columnIndex="4" text="pointDirection" />
+								
+								<ComboBox fx:id="pointDirection_data" GridPane.rowIndex="4" GridPane.columnIndex="5">
+									
+									<items>
+										
+										<FXCollections fx:factory="observableArrayList">
+											
+											<String fx:value="ASC" />
+											
+											<String fx:value="DESC" />
+											
+										</FXCollections>
+									</items>
+								</ComboBox>
+								<Label fx:id="beaufortScale_label" GridPane.rowIndex="5" GridPane.columnIndex="4" text="beaufortScale" />
+								
+								<ComboBox fx:id="beaufortScale_data" GridPane.rowIndex="5" GridPane.columnIndex="5">
+									
+									<items>
+										
+										<FXCollections fx:factory="observableArrayList">
+											
+											<String fx:value="FORCE0" />
+											
+											<String fx:value="FORCE1" />
+											
+											<String fx:value="FORCE2" />
+											
+											<String fx:value="FORCE3" />
+											
+											<String fx:value="FORCE4" />
+											
+											<String fx:value="FORCE5" />
+											
+											<String fx:value="FORCE6" />
+											
+											<String fx:value="FORCE7" />
+											
+											<String fx:value="FORCE8" />
+											
+											<String fx:value="FORCE9" />
+											
+										</FXCollections>
+									</items>
+								</ComboBox>
+								<Label fx:id="status_label" GridPane.rowIndex="6" GridPane.columnIndex="4" text="status" />
+								
+								<ComboBox fx:id="status_data" GridPane.rowIndex="6" GridPane.columnIndex="5">
+									
+									<items>
+										
+										<FXCollections fx:factory="observableArrayList">
+											
+											<String fx:value="NO_STARTED" />
+											
+											<String fx:value="STARTED" />
+											
+											<String fx:value="DONE" />
+											
+											<String fx:value="ERROR" />
+											
+										</FXCollections>
+									</items>
+								</ComboBox>
+								<Label fx:id="postStaticStep_label" GridPane.rowIndex="7" GridPane.columnIndex="4" text="postStaticStep" />
+								
+								<ComboBox fx:id="postStaticStep_data" GridPane.rowIndex="7" GridPane.columnIndex="5" onAction="#selectPostStaticStep" />
+								
+								<Label fx:id="depressureMainStep_label" GridPane.rowIndex="0" GridPane.columnIndex="6" text="depressureMainStep" />
+								
+								<ComboBox fx:id="depressureMainStep_data" GridPane.rowIndex="0" GridPane.columnIndex="7" onAction="#selectDepressureMainStep" />
+								
+								<Label fx:id="depressureEventStep_label" GridPane.rowIndex="1" GridPane.columnIndex="6" text="depressureEventStep" />
+								
+								<ComboBox fx:id="depressureEventStep_data" GridPane.rowIndex="1" GridPane.columnIndex="7" onAction="#selectDepressureEventStep" />
+								
+								<Label fx:id="calibrationStep_label" GridPane.rowIndex="2" GridPane.columnIndex="6" text="calibrationStep" />
+								
+								<ComboBox fx:id="calibrationStep_data" GridPane.rowIndex="2" GridPane.columnIndex="7" onAction="#selectCalibrationStep" />
+								
+								<Label fx:id="preStaticStep_label" GridPane.rowIndex="3" GridPane.columnIndex="6" text="preStaticStep" />
+								
+								<ComboBox fx:id="preStaticStep_data" GridPane.rowIndex="3" GridPane.columnIndex="7" onAction="#selectPreStaticStep" />
+								
+								<Label fx:id="project_label" GridPane.rowIndex="4" GridPane.columnIndex="6" text="project" />
+								
+								<ComboBox fx:id="project_data" GridPane.rowIndex="4" GridPane.columnIndex="7" onAction="#selectProject" />
+								
+								<Label fx:id="pressureMainStep_label" GridPane.rowIndex="5" GridPane.columnIndex="6" text="pressureMainStep" />
+								
+								<ComboBox fx:id="pressureMainStep_data" GridPane.rowIndex="5" GridPane.columnIndex="7" onAction="#selectPressureMainStep" />
+								
+								<Label fx:id="pressureEventStep_label" GridPane.rowIndex="6" GridPane.columnIndex="6" text="pressureEventStep" />
+								
+								<ComboBox fx:id="pressureEventStep_data" GridPane.rowIndex="6" GridPane.columnIndex="7" onAction="#selectPressureEventStep" />
+								
+							</children>
+						</GridPane>
+					</children>
+				</StackPane>
+				<StackPane fx:id="_trash" visible="false" />
+				
+			</children>
+		</VBox>
+	</center>
+	<bottom>
+		
+		<HBox>
+			
+			<children>
+				
+				<Button text="OK" onAction="#handleSubmitButtonAction" cancelButton="false" />
+				
+				<Button text="Cancel" onAction="#handleCancelButtonAction" cancelButton="false" />
+				
+			</children>
+		</HBox>
+	</bottom>
+</BorderPane>
