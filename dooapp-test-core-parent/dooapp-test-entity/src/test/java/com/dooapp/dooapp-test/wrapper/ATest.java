@@ -109,11 +109,12 @@ public class ATest
 	 * @generated
 	 */
 	@Test
-	public void setAndGetB() {
-		B tmp = new B();
-		this.wrapper.getB().add(tmp);
-		List<B> result = this.wrapper.getB();
-		Assert.assertTrue(result.contains(tmp));
+	public void setAndGetD() {
+		D tmp = new D();
+		this.wrapper.setD(tmp);
+		D result = this.wrapper.getD();
+		Assert.assertNotNull(result);
+		Assert.assertEquals(tmp, result);
 	}
 	
 	/**
@@ -122,12 +123,11 @@ public class ATest
 	 * @generated
 	 */
 	@Test
-	public void setAndGetD() {
-		D tmp = new D();
-		this.wrapper.setD(tmp);
-		D result = this.wrapper.getD();
-		Assert.assertNotNull(result);
-		Assert.assertEquals(tmp, result);
+	public void setAndGetB() {
+		B tmp = new B();
+		this.wrapper.getB().add(tmp);
+		List<B> result = this.wrapper.getB();
+		Assert.assertTrue(result.contains(tmp));
 	}
 	
 	

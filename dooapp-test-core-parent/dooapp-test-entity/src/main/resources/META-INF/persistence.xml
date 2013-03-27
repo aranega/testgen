@@ -5,11 +5,11 @@
 	version="2.0">
 
 	<persistence-unit name="dooapp" transaction-type="RESOURCE_LOCAL">
-		<class>com.dooapp.dooapp-test.entity.BBean</class>
+		<class>com.dooapp.dooapp-test.entity.CBean</class>
+		<class>com.dooapp.dooapp-test.entity.ABean</class>
 		<class>com.dooapp.dooapp-test.entity.DBean</class>
 		<class>com.dooapp.dooapp-test.entity.EBean</class>
-		<class>com.dooapp.dooapp-test.entity.ABean</class>
-		<class>com.dooapp.dooapp-test.entity.CBean</class>
+		<class>com.dooapp.dooapp-test.entity.BBean</class>
 	<!--
 		* Start of user code for entities
 	  -->

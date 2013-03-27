@@ -111,11 +111,12 @@ public class ABeanTest
 	 * @generated
 	 */
 	@Test
-	public void setAndGetB() {
-		BBean tmp = new BBean();
-		this.bean.addB(tmp);
-		List<BBean> result = this.bean.getB();
-		Assert.assertTrue(result.contains(tmp));
+	public void setAndGetD() {
+		DBean tmp = new DBean();
+		this.bean.setD(tmp);
+		DBean result = this.bean.getD();
+		Assert.assertNotNull(result);
+		Assert.assertEquals(tmp, result);
 	}
 	
 	/**
@@ -124,12 +125,11 @@ public class ABeanTest
 	 * @generated
 	 */
 	@Test
-	public void setAndGetD() {
-		DBean tmp = new DBean();
-		this.bean.setD(tmp);
-		DBean result = this.bean.getD();
-		Assert.assertNotNull(result);
-		Assert.assertEquals(tmp, result);
+	public void setAndGetB() {
+		BBean tmp = new BBean();
+		this.bean.addB(tmp);
+		List<BBean> result = this.bean.getB();
+		Assert.assertTrue(result.contains(tmp));
 	}
 	
 	

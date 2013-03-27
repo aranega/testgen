@@ -683,10 +683,10 @@ public class C
 			xmlElement.setAttribute(new Attribute("updateDate", getUpdateDate().toString()));
 		xmlElement.setAttribute(new Attribute("version", String.valueOf(getVersion())));
 		
-		if (getE() != null)
-			xmlElement.setAttribute("e", String.valueOf(getE().getId()));
 		if (getB() != null)
 			xmlElement.setAttribute("b", String.valueOf(getB().getId()));
+		if (getE() != null)
+			xmlElement.setAttribute("e", String.valueOf(getE().getId()));
 		
 		
 		// For custom purposes

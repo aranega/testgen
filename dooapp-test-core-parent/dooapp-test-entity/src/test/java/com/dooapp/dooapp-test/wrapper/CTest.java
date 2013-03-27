@@ -109,10 +109,10 @@ public class CTest
 	 * @generated
 	 */
 	@Test
-	public void setAndGetE() {
-		E tmp = new E();
-		this.wrapper.setE(tmp);
-		E result = this.wrapper.getE();
+	public void setAndGetB() {
+		B tmp = new B();
+		this.wrapper.setB(tmp);
+		B result = this.wrapper.getB();
 		Assert.assertNotNull(result);
 		Assert.assertEquals(tmp, result);
 	}
@@ -123,10 +123,10 @@ public class CTest
 	 * @generated
 	 */
 	@Test
-	public void setAndGetB() {
-		B tmp = new B();
-		this.wrapper.setB(tmp);
-		B result = this.wrapper.getB();
+	public void setAndGetE() {
+		E tmp = new E();
+		this.wrapper.setE(tmp);
+		E result = this.wrapper.getE();
 		Assert.assertNotNull(result);
 		Assert.assertEquals(tmp, result);
 	}

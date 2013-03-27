@@ -111,10 +111,10 @@ public class CBeanTest
 	 * @generated
 	 */
 	@Test
-	public void setAndGetE() {
-		EBean tmp = new EBean();
-		this.bean.setE(tmp);
-		EBean result = this.bean.getE();
+	public void setAndGetB() {
+		BBean tmp = new BBean();
+		this.bean.setB(tmp);
+		BBean result = this.bean.getB();
 		Assert.assertNotNull(result);
 		Assert.assertEquals(tmp, result);
 	}
@@ -125,10 +125,10 @@ public class CBeanTest
 	 * @generated
 	 */
 	@Test
-	public void setAndGetB() {
-		BBean tmp = new BBean();
-		this.bean.setB(tmp);
-		BBean result = this.bean.getB();
+	public void setAndGetE() {
+		EBean tmp = new EBean();
+		this.bean.setE(tmp);
+		EBean result = this.bean.getE();
 		Assert.assertNotNull(result);
 		Assert.assertEquals(tmp, result);
 	}

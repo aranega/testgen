@@ -150,41 +150,6 @@ public class ABuilderTest
 	 * @generated
 	 */
 	@Test
-	
-	public void refSetterBTest() throws Exception {
-	
-		com.dooapp.dooapp-test.wrapper.B elem1 = new com.dooapp.dooapp-test.wrapper.B(); 
-		A unsavedA =  aBuilder.b(elem1).build();
-		A savedA = manager.save(unsavedA);
-		A dbA = manager.get(A.class, savedA.getId());
-		Assert.assertNotNull(dbA);
-		Assert.assertFalse(dbA.getB().isEmpty());
-		Assert.assertEquals(1, dbA.getB().size());
-	}
-	
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 */
-	@Test
-	
-	public void refAutoSetterSerializeBTest() throws Exception {
-	
-		A unsavedA =  aBuilder.build();
-		A savedA = manager.save(unsavedA);
-		A dbA = manager.get(A.class, savedA.getId());
-		Assert.assertNotNull(dbA);
-		Assert.assertFalse(dbA.getB().isEmpty());
-		Assert.assertEquals(1, dbA.getB().size());
-	}
-	
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 */
-	@Test
 	public void refSetterDTest() throws Exception {	
 		
 		com.dooapp.dooapp-test.wrapper.D elem1 = new com.dooapp.dooapp-test.wrapper.D(); 
@@ -239,12 +204,6 @@ public class ABuilderTest
 		Assert.assertNotNull(dbA.getD());
 	}
 	
-	
-	
-	/*****************************
-	 * Basic Refs opposite tester
-	 *****************************/
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -252,17 +211,40 @@ public class ABuilderTest
 	 */
 	@Test
 	
-	public void oppositeBTest() throws Exception {
+	public void refSetterBTest() throws Exception {
 	
 		com.dooapp.dooapp-test.wrapper.B elem1 = new com.dooapp.dooapp-test.wrapper.B(); 
 		A unsavedA =  aBuilder.b(elem1).build();
 		A savedA = manager.save(unsavedA);
 		A dbA = manager.get(A.class, savedA.getId());
 		Assert.assertNotNull(dbA);
-		Assert.assertNotNull(dbA.getB().get(0).getA());
-		Assert.assertEquals(dbA, dbA.getB().get(0).getA());
+		Assert.assertFalse(dbA.getB().isEmpty());
+		Assert.assertEquals(1, dbA.getB().size());
 	}
 	
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	@Test
+	
+	public void refAutoSetterSerializeBTest() throws Exception {
+	
+		A unsavedA =  aBuilder.build();
+		A savedA = manager.save(unsavedA);
+		A dbA = manager.get(A.class, savedA.getId());
+		Assert.assertNotNull(dbA);
+		Assert.assertFalse(dbA.getB().isEmpty());
+		Assert.assertEquals(1, dbA.getB().size());
+	}
+	
+	
+	
+	/*****************************
+	 * Basic Refs opposite tester
+	 *****************************/
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -279,6 +261,24 @@ public class ABuilderTest
 		Assert.assertNotNull(dbA);
 		Assert.assertNotNull(dbA.getD().getA());
 		Assert.assertEquals(dbA, dbA.getD().getA());
+	}
+	
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	@Test
+	
+	public void oppositeBTest() throws Exception {
+	
+		com.dooapp.dooapp-test.wrapper.B elem1 = new com.dooapp.dooapp-test.wrapper.B(); 
+		A unsavedA =  aBuilder.b(elem1).build();
+		A savedA = manager.save(unsavedA);
+		A dbA = manager.get(A.class, savedA.getId());
+		Assert.assertNotNull(dbA);
+		Assert.assertNotNull(dbA.getB().get(0).getA());
+		Assert.assertEquals(dbA, dbA.getB().get(0).getA());
 	}
 	
 	

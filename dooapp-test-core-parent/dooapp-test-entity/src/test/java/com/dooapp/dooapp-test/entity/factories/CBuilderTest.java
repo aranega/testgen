@@ -165,37 +165,6 @@ public class CBuilderTest
 	 * @generated
 	 */
 	@Test
-	public void refSetterETest() throws Exception {	
-		
-		com.dooapp.dooapp-test.wrapper.E elem1 = new com.dooapp.dooapp-test.wrapper.E(); 
-		C unsavedC =  cBuilder.e(elem1).build();
-		Assert.assertNotNull(unsavedC);
-		Assert.assertNotNull(unsavedC.getE());
-	}
-	
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 */
-	@Test
-	
-	public void refSetterSerializeETest() throws Exception {
-	
-		com.dooapp.dooapp-test.wrapper.E elem1 = new com.dooapp.dooapp-test.wrapper.E(); 
-		C unsavedC =  cBuilder.e(elem1).build();
-		C savedC = manager.save(unsavedC);
-		C dbC = manager.get(C.class, savedC.getId());
-		Assert.assertNotNull(dbC);
-		Assert.assertNotNull(dbC.getE());
-	}
-	
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 */
-	@Test
 	public void refSetterBTest() throws Exception {	
 		com.dooapp.dooapp-test.wrapper.E eWrapper = new com.dooapp.dooapp-test.wrapper.E();
 		cBuilder.e(eWrapper);
@@ -227,12 +196,20 @@ public class CBuilderTest
 		Assert.assertNotNull(dbC.getB());
 	}
 	
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	@Test
+	public void refSetterETest() throws Exception {	
+		
+		com.dooapp.dooapp-test.wrapper.E elem1 = new com.dooapp.dooapp-test.wrapper.E(); 
+		C unsavedC =  cBuilder.e(elem1).build();
+		Assert.assertNotNull(unsavedC);
+		Assert.assertNotNull(unsavedC.getE());
+	}
 	
-	
-	/*****************************
-	 * Basic Refs opposite tester
-	 *****************************/
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -240,17 +217,22 @@ public class CBuilderTest
 	 */
 	@Test
 	
-	public void oppositeETest() throws Exception {
+	public void refSetterSerializeETest() throws Exception {
 	
 		com.dooapp.dooapp-test.wrapper.E elem1 = new com.dooapp.dooapp-test.wrapper.E(); 
 		C unsavedC =  cBuilder.e(elem1).build();
 		C savedC = manager.save(unsavedC);
 		C dbC = manager.get(C.class, savedC.getId());
 		Assert.assertNotNull(dbC);
-		Assert.assertNotNull(dbC.getE().getC());
-		Assert.assertEquals(dbC, dbC.getE().getC());
+		Assert.assertNotNull(dbC.getE());
 	}
 	
+	
+	
+	/*****************************
+	 * Basic Refs opposite tester
+	 *****************************/
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
@@ -270,6 +252,24 @@ public class CBuilderTest
 		Assert.assertNotNull(dbC);
 		Assert.assertNotNull(dbC.getB().getC());
 		Assert.assertEquals(dbC, dbC.getB().getC());
+	}
+	
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	@Test
+	
+	public void oppositeETest() throws Exception {
+	
+		com.dooapp.dooapp-test.wrapper.E elem1 = new com.dooapp.dooapp-test.wrapper.E(); 
+		C unsavedC =  cBuilder.e(elem1).build();
+		C savedC = manager.save(unsavedC);
+		C dbC = manager.get(C.class, savedC.getId());
+		Assert.assertNotNull(dbC);
+		Assert.assertNotNull(dbC.getE().getC());
+		Assert.assertEquals(dbC, dbC.getE().getC());
 	}
 	
 	

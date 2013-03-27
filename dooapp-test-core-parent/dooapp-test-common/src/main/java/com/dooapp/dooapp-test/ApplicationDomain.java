@@ -14,7 +14,13 @@ public abstract class ApplicationDomain extends Domain {
  	 * <!--  end-user-doc  -->
 	 * @generated
 	 */
-	public static final ApplicationDomain B = new ApplicationDomain("B"){}; 
+	public static final ApplicationDomain C = new ApplicationDomain("C"){}; 
+	/**
+	 * <!-- begin-user-doc -->
+ 	 * <!--  end-user-doc  -->
+	 * @generated
+	 */
+	public static final ApplicationDomain A = new ApplicationDomain("A"){}; 
 	/**
 	 * <!-- begin-user-doc -->
  	 * <!--  end-user-doc  -->
@@ -32,13 +38,7 @@ public abstract class ApplicationDomain extends Domain {
  	 * <!--  end-user-doc  -->
 	 * @generated
 	 */
-	public static final ApplicationDomain A = new ApplicationDomain("A"){}; 
-	/**
-	 * <!-- begin-user-doc -->
- 	 * <!--  end-user-doc  -->
-	 * @generated
-	 */
-	public static final ApplicationDomain C = new ApplicationDomain("C"){}; 
+	public static final ApplicationDomain B = new ApplicationDomain("B"){}; 
 	/**
 	 * @param name
 	 * <!-- begin-user-doc -->

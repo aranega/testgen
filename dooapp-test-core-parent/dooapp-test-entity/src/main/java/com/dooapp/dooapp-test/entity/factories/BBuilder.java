@@ -65,14 +65,14 @@ public class BBuilder<BUILDER extends BBuilder<?>>
 	 * @generated
  	 */
 	@javax.inject.Inject
-	private CBuilder<?> cBuilder;
+	private ABuilder<?> aBuilder;
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
 	 * @generated
  	 */
 	@javax.inject.Inject
-	private ABuilder<?> aBuilder;
+	private CBuilder<?> cBuilder;
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!--  end-user-doc  -->
