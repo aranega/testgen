@@ -650,17 +650,17 @@ public class A
 			xmlElement.setAttribute(new Attribute("updateDate", getUpdateDate().toString()));
 		xmlElement.setAttribute(new Attribute("version", String.valueOf(getVersion())));
 		
-		if (getD() != null) {
-			Element d = new Element("d");
-			d.addContent(getD().toXML());
-			xmlElement.addContent(d);
-		}if (!getB().isEmpty()) {
+		if (!getB().isEmpty()) {
 			Element b = new Element("b");
 			for (B tmp : getB())
 				b.addContent(tmp.toXML());
 			xmlElement.addContent(b);
 		}
-		
+		if (getD() != null) {
+			Element d = new Element("d");
+			d.addContent(getD().toXML());
+			xmlElement.addContent(d);
+		}
 		
 		// For custom purposes
 		xmlElement = this.customDomXML(xmlElement);

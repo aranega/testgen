@@ -4,13 +4,18 @@
     <details key="uuid" value="_aK4E0HkkEDCV8PACHSyoqA"/>
   </eAnnotations>
   <eSubpackages name="entity">
-    <eClassifiers xsi:type="emf4java:Entity" name="E">
+    <eClassifiers xsi:type="emf4java:Entity" name="B">
       <eAnnotations source="genmymodel">
-        <details key="uuid" value="_fEPAcHkkEDCV8PACHSyoqA"/>
+        <details key="uuid" value="_brBB4HkkEDCV8PACHSyoqA"/>
       </eAnnotations>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="c" eType="//entity/C" eOpposite="//entity/C/e">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="a" eType="//entity/A" eOpposite="//entity/A/b">
         <eAnnotations source="genmymodel">
-          <details key="uuid" value="_hKWYYXkkEDCV8PACHSyoqA"/>
+          <details key="uuid" value="_cVmP8nkkEDCV8PACHSyoqA"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="c" eType="//entity/C" containment="true" eOpposite="//entity/C/b">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_g26fAnkkEDCV8PACHSyoqA"/>
         </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
@@ -31,36 +36,31 @@
         <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
       </eStructuralFeatures>
     </eClassifiers>
-    <eClassifiers xsi:type="emf4java:Entity" name="B">
+    <eClassifiers xsi:type="emf4java:Entity" name="A">
       <eAnnotations source="genmymodel">
-        <details key="uuid" value="_brBB4HkkEDCV8PACHSyoqA"/>
+        <details key="uuid" value="_bPkcAHkkEDCV8PACHSyoqA"/>
       </eAnnotations>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="c" eType="//entity/C" containment="true" eOpposite="//entity/C/b">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="b" lowerBound="1" upperBound="-1" eType="//entity/B" containment="true" eOpposite="//entity/B/a">
         <eAnnotations source="genmymodel">
-          <details key="uuid" value="_g26fAnkkEDCV8PACHSyoqA"/>
+          <details key="uuid" value="_cVmP8XkkEDCV8PACHSyoqA"/>
         </eAnnotations>
       </eStructuralFeatures>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="a" eType="//entity/A" eOpposite="//entity/A/b">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="d" lowerBound="1" eType="//entity/D" containment="true" eOpposite="//entity/D/a">
         <eAnnotations source="genmymodel">
-          <details key="uuid" value="_cVmP8nkkEDCV8PACHSyoqA"/>
+          <details key="uuid" value="_gid5AnkkEDCV8PACHSyoqA"/>
         </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
         <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
       </eStructuralFeatures>
     </eClassifiers>
-    <eClassifiers xsi:type="emf4java:Entity" name="A">
+    <eClassifiers xsi:type="emf4java:Entity" name="E">
       <eAnnotations source="genmymodel">
-        <details key="uuid" value="_bPkcAHkkEDCV8PACHSyoqA"/>
+        <details key="uuid" value="_fEPAcHkkEDCV8PACHSyoqA"/>
       </eAnnotations>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="d" lowerBound="1" eType="//entity/D" containment="true" eOpposite="//entity/D/a">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="c" eType="//entity/C" eOpposite="//entity/C/e">
         <eAnnotations source="genmymodel">
-          <details key="uuid" value="_gid5AnkkEDCV8PACHSyoqA"/>
-        </eAnnotations>
-      </eStructuralFeatures>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="b" lowerBound="1" upperBound="-1" eType="//entity/B" containment="true" eOpposite="//entity/B/a">
-        <eAnnotations source="genmymodel">
-          <details key="uuid" value="_cVmP8XkkEDCV8PACHSyoqA"/>
+          <details key="uuid" value="_hKWYYXkkEDCV8PACHSyoqA"/>
         </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">

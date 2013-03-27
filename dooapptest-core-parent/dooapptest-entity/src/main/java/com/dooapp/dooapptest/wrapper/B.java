@@ -683,13 +683,13 @@ public class B
 			xmlElement.setAttribute(new Attribute("updateDate", getUpdateDate().toString()));
 		xmlElement.setAttribute(new Attribute("version", String.valueOf(getVersion())));
 		
+		if (getA() != null)
+			xmlElement.setAttribute("a", String.valueOf(getA().getId()));
 		if (getC() != null) {
 			Element c = new Element("c");
 			c.addContent(getC().toXML());
 			xmlElement.addContent(c);
-		}if (getA() != null)
-			xmlElement.setAttribute("a", String.valueOf(getA().getId()));
-		
+		}
 		
 		// For custom purposes
 		xmlElement = this.customDomXML(xmlElement);
