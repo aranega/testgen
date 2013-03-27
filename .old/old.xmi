@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:emf4java="http://com.axellience/dooapp/emf4java" name="dooapptest" nsURI="http://dooapptest" nsPrefix="com.dooapp">
+  <eAnnotations source="genmymodel">
+    <details key="uuid" value="_6V9CMHRjEDC1bJI_d0-ElQ"/>
+  </eAnnotations>
+  <eSubpackages name="entity">
+    <eClassifiers xsi:type="emf4java:Entity" name="E">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_BS4_IHRkEDC1bJI_d0-ElQ"/>
+      </eAnnotations>
+      <eAnnotations source="Ignored"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="d" lowerBound="1" eType="//entity/D" eOpposite="//entity/D/e">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_CYKlInRkEDC1bJI_d0-ElQ"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="huge" lowerBound="1">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_Q27UwHRkEDC1bJI_d0-ElQ"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Entity" name="A">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_7D000HRjEDC1bJI_d0-ElQ"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="c" lowerBound="1" eType="//entity/C" containment="true" eOpposite="//entity/C/a2">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_DQeGInRkEDC1bJI_d0-ElQ"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="b" lowerBound="1" upperBound="-1" eType="//entity/B" containment="true" eOpposite="//entity/B/a">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="__a9NInRjEDC1bJI_d0-ElQ"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_PqogwHRkEDC1bJI_d0-ElQ"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Entity" name="B">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_-xcWEHRjEDC1bJI_d0-ElQ"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="a" eType="//entity/A" eOpposite="//entity/A/b">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="__a9NIXRjEDC1bJI_d0-ElQ"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="myAtt" lowerBound="1">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_RPRjUHRkEDC1bJI_d0-ElQ"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="d" eType="//entity/D" containment="true" eOpposite="//entity/D/b">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_AqEroXRkEDC1bJI_d0-ElQ"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Entity" name="C">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_C2m0oHRkEDC1bJI_d0-ElQ"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="a2" eType="//entity/A" eOpposite="//entity/A/c">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_DQeGIXRkEDC1bJI_d0-ElQ"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_QsaG0HRkEDC1bJI_d0-ElQ"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="emf4java:Entity" name="D">
+      <eAnnotations source="genmymodel">
+        <details key="uuid" value="_ALerIHRkEDC1bJI_d0-ElQ"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="isOk" lowerBound="1">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_RdFV0HRkEDC1bJI_d0-ElQ"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="b" eType="//entity/B" eOpposite="//entity/B/d">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_AqEroHRkEDC1bJI_d0-ElQ"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="e" eType="//entity/E" eOpposite="//entity/E/d">
+        <eAnnotations source="genmymodel">
+          <details key="uuid" value="_CYKlIXRkEDC1bJI_d0-ElQ"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELongObject"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+  </eSubpackages>
+</ecore:EPackage>
