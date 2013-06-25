@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+<?import javafx.paint.*?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.Button?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	
+	<center>
+		
+		<GridPane fx:id="genMyModel">
+			
+			<children>
+				
+				<CheckBox fx:id="droppedCeilFull" GridPane.rowIndex="5" GridPane.columnIndex="1" editable="false" />
+				
+				<Label fx:id="droppedCeilFullLabel" GridPane.rowIndex="5" GridPane.columnIndex="0" text="%GazConfiguration.droppedCeilFull" />
+				
+				<CheckBox fx:id="droppedFloorFull" GridPane.rowIndex="7" GridPane.columnIndex="1" editable="false" />
+				
+				<Label fx:id="droppedFloorFullLabel" GridPane.rowIndex="7" GridPane.columnIndex="0" text="%GazConfiguration.droppedFloorFull" />
+				
+				<Label fx:id="leekRepartitionPercent" GridPane.rowIndex="8" GridPane.columnIndex="1" />
+				
+				<Label fx:id="leekRepartitionPercentLabel" GridPane.rowIndex="8" GridPane.columnIndex="0" text="%GazConfiguration.leekRepartitionPercent" />
+				
+				<Label fx:id="retentionGoal" GridPane.rowIndex="9" GridPane.columnIndex="1" />
+				
+				<Label fx:id="retentionGoalLabel" GridPane.rowIndex="9" GridPane.columnIndex="0" text="%GazConfiguration.retentionGoal" />
+				
+				<CheckBox fx:id="retentionInterface" GridPane.rowIndex="10" GridPane.columnIndex="1" editable="false" />
+				
+				<Label fx:id="retentionInterfaceLabel" GridPane.rowIndex="10" GridPane.columnIndex="0" text="%GazConfiguration.retentionInterface" />
+				
+				<CheckBox fx:id="slowUnloading" GridPane.rowIndex="11" GridPane.columnIndex="1" editable="false" />
+				
+				<Label fx:id="slowUnloadingLabel" GridPane.rowIndex="11" GridPane.columnIndex="0" text="%GazConfiguration.slowUnloading" />
+				
+				<Label fx:id="slowUnloadingValue" GridPane.rowIndex="12" GridPane.columnIndex="1" />
+				
+				<Label fx:id="slowUnloadingValueLabel" GridPane.rowIndex="12" GridPane.columnIndex="0" text="%GazConfiguration.slowUnloadingValue" />
+				
+			</children>
+		</GridPane>
+	</center>
+	<right>
+		
+		<Button text="Delete" onAction="#delete" />
+		
+	</right>
+</BorderPane>

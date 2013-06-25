@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+<?import javafx.paint.*?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.Button?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	
+	<center>
+		
+		<GridPane fx:id="genMyModel">
+			
+			<children>
+				
+				<TextField fx:id="afterHoleELA" GridPane.rowIndex="3" GridPane.columnIndex="1" editable="true" />
+				
+				<Label fx:id="afterHoleELALabel" GridPane.rowIndex="3" GridPane.columnIndex="0" text="%CalibrationStep.afterHoleELA" />
+				
+				<TextField fx:id="beforeHoleELA" GridPane.rowIndex="4" GridPane.columnIndex="1" editable="true" />
+				
+				<Label fx:id="beforeHoleELALabel" GridPane.rowIndex="4" GridPane.columnIndex="0" text="%CalibrationStep.beforeHoleELA" />
+				
+				<TextField fx:id="date" GridPane.rowIndex="5" GridPane.columnIndex="1" editable="true" />
+				
+				<Label fx:id="dateLabel" GridPane.rowIndex="5" GridPane.columnIndex="0" text="%CalibrationStep.date" />
+				
+				<TextField fx:id="errorPercent" GridPane.rowIndex="6" GridPane.columnIndex="1" editable="true" />
+				
+				<Label fx:id="errorPercentLabel" GridPane.rowIndex="6" GridPane.columnIndex="0" text="%CalibrationStep.errorPercent" />
+				
+				<ChoiceBox fx:id="status" GridPane.rowIndex="7" GridPane.columnIndex="1" />
+				
+				<Label fx:id="statusLabel" GridPane.rowIndex="7" GridPane.columnIndex="0" text="%CalibrationStep.status" />
+				
+			</children>
+		</GridPane>
+	</center>
+</BorderPane>

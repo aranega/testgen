@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+<?import javafx.paint.*?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.Button?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	
+	<center>
+		
+		<GridPane fx:id="genMyModel">
+			
+			<children>
+				
+				<Label fx:id="calculatedELA" GridPane.rowIndex="6" GridPane.columnIndex="1" />
+				
+				<Label fx:id="calculatedELALabel" GridPane.rowIndex="6" GridPane.columnIndex="0" text="%MainStep.calculatedELA" />
+				
+				<Label fx:id="cl" GridPane.rowIndex="7" GridPane.columnIndex="1" />
+				
+				<Label fx:id="clLabel" GridPane.rowIndex="7" GridPane.columnIndex="0" text="%MainStep.cl" />
+				
+				<Label fx:id="correlation" GridPane.rowIndex="8" GridPane.columnIndex="1" />
+				
+				<Label fx:id="correlationLabel" GridPane.rowIndex="8" GridPane.columnIndex="0" text="%MainStep.correlation" />
+				
+				<Label fx:id="date" GridPane.rowIndex="9" GridPane.columnIndex="1" />
+				
+				<Label fx:id="dateLabel" GridPane.rowIndex="9" GridPane.columnIndex="0" text="%MainStep.date" />
+				
+				<Label fx:id="direction" GridPane.rowIndex="10" GridPane.columnIndex="1" />
+				
+				<Label fx:id="directionLabel" GridPane.rowIndex="10" GridPane.columnIndex="0" text="%MainStep.direction" />
+				
+				<Label fx:id="n" GridPane.rowIndex="11" GridPane.columnIndex="1" />
+				
+				<Label fx:id="nLabel" GridPane.rowIndex="11" GridPane.columnIndex="0" text="%MainStep.n" />
+				
+				<Label fx:id="status" GridPane.rowIndex="12" GridPane.columnIndex="1" />
+				
+				<Label fx:id="statusLabel" GridPane.rowIndex="12" GridPane.columnIndex="0" text="%MainStep.status" />
+				
+			</children>
+		</GridPane>
+	</center>
+	<right>
+		
+		<Button text="Delete" onAction="#delete" />
+		
+	</right>
+</BorderPane>

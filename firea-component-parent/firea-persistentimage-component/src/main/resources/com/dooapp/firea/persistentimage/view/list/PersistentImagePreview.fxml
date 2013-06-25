@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+<?import javafx.paint.*?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.Button?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	
+	<center>
+		
+		<GridPane fx:id="genMyModel">
+			
+			<children>
+				
+				<Label fx:id="dataId" GridPane.rowIndex="4" GridPane.columnIndex="1" />
+				
+				<Label fx:id="dataIdLabel" GridPane.rowIndex="4" GridPane.columnIndex="0" text="%PersistentImage.dataId" />
+				
+				<CheckBox fx:id="error" GridPane.rowIndex="5" GridPane.columnIndex="1" editable="false" />
+				
+				<Label fx:id="errorLabel" GridPane.rowIndex="5" GridPane.columnIndex="0" text="%PersistentImage.error" />
+				
+				<Label fx:id="sourceFile" GridPane.rowIndex="6" GridPane.columnIndex="1" />
+				
+				<Label fx:id="sourceFileLabel" GridPane.rowIndex="6" GridPane.columnIndex="0" text="%PersistentImage.sourceFile" />
+				
+				<Label fx:id="title" GridPane.rowIndex="7" GridPane.columnIndex="1" />
+				
+				<Label fx:id="titleLabel" GridPane.rowIndex="7" GridPane.columnIndex="0" text="%PersistentImage.title" />
+				
+			</children>
+		</GridPane>
+	</center>
+	<right>
+		
+		<Button text="Delete" onAction="#delete" />
+		
+	</right>
+</BorderPane>

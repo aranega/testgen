@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+<?import javafx.paint.*?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.Button?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	
+	<center>
+		
+		<GridPane fx:id="genMyModel">
+			
+			<children>
+				
+				<ChoiceBox fx:id="discharge" GridPane.rowIndex="3" GridPane.columnIndex="1" />
+				
+				<Label fx:id="dischargeLabel" GridPane.rowIndex="3" GridPane.columnIndex="0" text="%BlowHole.Discharge" />
+				
+				<TextField fx:id="quantity" GridPane.rowIndex="4" GridPane.columnIndex="1" editable="true" />
+				
+				<Label fx:id="quantityLabel" GridPane.rowIndex="4" GridPane.columnIndex="0" text="%BlowHole.quantity" />
+				
+				<TextField fx:id="surface" GridPane.rowIndex="5" GridPane.columnIndex="1" editable="true" />
+				
+				<Label fx:id="surfaceLabel" GridPane.rowIndex="5" GridPane.columnIndex="0" text="%BlowHole.surface" />
+				
+			</children>
+		</GridPane>
+	</center>
+</BorderPane>

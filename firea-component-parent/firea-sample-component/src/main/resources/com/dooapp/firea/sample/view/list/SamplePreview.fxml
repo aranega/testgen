@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+<?import javafx.paint.*?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.Button?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	
+	<center>
+		
+		<GridPane fx:id="genMyModel">
+			
+			<children>
+				
+				<Label fx:id="airPressure" GridPane.rowIndex="1" GridPane.columnIndex="3" />
+				
+				<Label fx:id="airPressureCalculationMethod" GridPane.rowIndex="4" GridPane.columnIndex="3" />
+				
+				<Label fx:id="airPressureCalculationMethodLabel" GridPane.rowIndex="5" GridPane.columnIndex="2" text="%Sample.airPressureCalculationMethod" />
+				
+				<Label fx:id="airPressureLabel" GridPane.rowIndex="5" GridPane.columnIndex="2" text="%Sample.airPressure" />
+				
+				<Label fx:id="beaufortScale" GridPane.rowIndex="6" GridPane.columnIndex="3" />
+				
+				<Label fx:id="beaufortScaleLabel" GridPane.rowIndex="6" GridPane.columnIndex="2" text="%Sample.beaufortScale" />
+				
+				<Label fx:id="date" GridPane.rowIndex="7" GridPane.columnIndex="1" />
+				
+				<Label fx:id="dateLabel" GridPane.rowIndex="7" GridPane.columnIndex="0" text="%Sample.date" />
+				
+				<Label fx:id="highUp" GridPane.rowIndex="8" GridPane.columnIndex="1" />
+				
+				<Label fx:id="highUpLabel" GridPane.rowIndex="8" GridPane.columnIndex="0" text="%Sample.highUp" />
+				
+				<Label fx:id="name" GridPane.rowIndex="9" GridPane.columnIndex="1" />
+				
+				<Label fx:id="nameLabel" GridPane.rowIndex="9" GridPane.columnIndex="0" text="%Sample.name" />
+				
+				<Label fx:id="phiEPercent" GridPane.rowIndex="10" GridPane.columnIndex="1" />
+				
+				<Label fx:id="phiEPercentLabel" GridPane.rowIndex="10" GridPane.columnIndex="0" text="%Sample.phiEPercent" />
+				
+				<Label fx:id="phiIPercent" GridPane.rowIndex="11" GridPane.columnIndex="1" />
+				
+				<Label fx:id="phiIPercentLabel" GridPane.rowIndex="11" GridPane.columnIndex="0" text="%Sample.phiIPercent" />
+				
+				<Label fx:id="roE" GridPane.rowIndex="12" GridPane.columnIndex="1" />
+				
+				<Label fx:id="roELabel" GridPane.rowIndex="12" GridPane.columnIndex="0" text="%Sample.roE" />
+				
+				<Label fx:id="roI" GridPane.rowIndex="13" GridPane.columnIndex="1" />
+				
+				<Label fx:id="roILabel" GridPane.rowIndex="13" GridPane.columnIndex="0" text="%Sample.roI" />
+				
+				<Label fx:id="status" GridPane.rowIndex="14" GridPane.columnIndex="3" />
+				
+				<Label fx:id="statusLabel" GridPane.rowIndex="14" GridPane.columnIndex="2" text="%Sample.status" />
+				
+				<Label fx:id="tetaE" GridPane.rowIndex="15" GridPane.columnIndex="3" />
+				
+				<Label fx:id="tetaELabel" GridPane.rowIndex="15" GridPane.columnIndex="2" text="%Sample.tetaE" />
+				
+				<Label fx:id="tetaI" GridPane.rowIndex="16" GridPane.columnIndex="1" />
+				
+				<Label fx:id="tetaILabel" GridPane.rowIndex="16" GridPane.columnIndex="0" text="%Sample.tetaI" />
+				
+				<Label fx:id="windMeasure" GridPane.rowIndex="17" GridPane.columnIndex="3" />
+				
+				<Label fx:id="windMeasureLabel" GridPane.rowIndex="17" GridPane.columnIndex="2" text="%Sample.windMeasure" />
+				
+			</children>
+		</GridPane>
+	</center>
+	<right>
+		
+		<Button text="Delete" onAction="#delete" />
+		
+	</right>
+</BorderPane>
