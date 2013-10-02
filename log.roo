@@ -1,0 +1,19 @@
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-10-02 17:21:29
+// [failed] script --file setup.roo
+quit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-10-02 17:21:33
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-10-02 17:21:40
+enum type --class ~.domain.ExerciseType
+ enum constant --name CARDIO
+ enum constant --name MUSCU
+// [failed] script --file entities.roo
+quit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-10-02 17:21:45
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-10-02 17:21:52
+web mvc setup
+web mvc all --package ~.web
+web mvc finder all
+web mvc language --code en
+// script --file webmvc.roo
+quit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-10-02 17:21:58
