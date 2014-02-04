@@ -6,3 +6,21 @@ target/*
 target/**
 
 
+
+.tmp/
+
+.tmp/*
+
+.tmp/**
+
+bin/
+
+bin/*
+
+bin/**
+
+target/
+
+.tmp/model_*.xmi
+
+model_*.xmi
