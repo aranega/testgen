@@ -85,7 +85,7 @@
 							<entries>
 								<entry>
 									<input>src/main/java</input>
-									<output>target/classes</output>
+									<output>src/main/java</output>
 								</entry>
 							</entries>
 						</acceleoProject>
