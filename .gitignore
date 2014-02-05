@@ -1,3 +1,7 @@
 *.class
 
 # Package Files #
+
+dummy/chain.xmi
+
+dummy/pom.xml
