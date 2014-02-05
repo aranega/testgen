@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="ASCII"?>
-<com.axellience.chain:Chain xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.axellience.chain="http://com.axellience.chain" xmi:id="_dEL_EY5cEeOLkN1zxy1ATw" name="dummy" activeMetamodelsDir="false" activeTransformationsDir="false">
-  <components xsi:type="com.axellience.chain:M2T" xmi:id="_dEbPoI5cEeOLkN1zxy1ATw" name="uml2test.emtl" outputFolder="/"/>
+<com.axellience.chain:Chain xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.axellience.chain="http://com.axellience.chain" xmi:id="_LetgsY5dEeOtitptoF2S8A" name="dummy" activeMetamodelsDir="false" activeTransformationsDir="false">
+  <components xsi:type="com.axellience.chain:M2T" xmi:id="_Le8xQI5dEeOtitptoF2S8A" name="uml2test.emtl" outputFolder="/"/>
 </com.axellience.chain:Chain>
