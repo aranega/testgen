@@ -1,5 +1,5 @@
 <generator>
   <name>dummy</name>
   <setinput name="${CHAINFOLD}"/>
-  <m2t name="test.mtl" />
+<!--  <m2m name="test.qvto" /> -->
 </generator>
