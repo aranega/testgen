@@ -1,6 +1,6 @@
 modeltype uml uses uml('http://www.eclipse.org/uml2/4.0.0/UML');
 
-transformation addStuffs(inout model : Model)
+transformation addStuffs(inout model : uml)
 
 
 main()
