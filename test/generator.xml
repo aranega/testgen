@@ -1,5 +1,5 @@
 <generator>
   <name>dummy</name>
-  <setinput name="${CHAINFOLD}"/>
+  <setinput name="${CHAINFOLD}AroundMe.uml"/>
   <m2t name="test.mtl" />
 </generator>
