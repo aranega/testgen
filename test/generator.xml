@@ -3,7 +3,7 @@
   <m2m name="addStuffs.qvto">
     <m2m name="addStuffs.qvto">
       <m2m name="addStuffs.qvto" />
+      <m2t name="uml2test.mtl" />
     </m2m>
   </m2m>
-  <m2t name="uml2test.mtl" />
 </generator>
