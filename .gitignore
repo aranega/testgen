@@ -7,3 +7,5 @@
 chain.xmi
 
 test/pom.xml
+
+codegen/pom.xml
