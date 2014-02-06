@@ -1,5 +1,6 @@
 <generator>
   <name>dummy</name>
-  <m2m>addStuffs.qvto</m2m>
-  <m2t>uml2test.mtl</m2t>
+  <m2m name="addStuffs.qvto">
+    <m2t name="uml2test.mtl" />
+  </m2m>
 </generator>
