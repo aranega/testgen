@@ -1,4 +1,7 @@
 <generator>
   <name>dummy</name>
-  <m2t name="uml2test.mtl" />
+  <m2m name="addStuffs.qvto">
+    <m2m name="addStuffs.qvto" bypass="true" />
+    <m2t name="uml2test.mtl" />
+  </m2m>
 </generator>
