@@ -13,7 +13,7 @@
 [template public gen(e : Element) /]
 [template public gen(c : Class)]
 [file (c.name.concat('.test'), false, 'UTF-8')]
-  ## [c.name/] ##
+  ## [c.na/] ##
   ###[c.name.replaceAll('.','#')/]###
 [/file]
 [/template]
