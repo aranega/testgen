@@ -18,10 +18,6 @@
 [/file]
 [/template] 
 
-[template public myJavaService(aString : String)]
-[invoke('java.lang.System', 'out.println()')/]
-[/template]
-
 
 
  
