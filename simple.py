@@ -31,18 +31,7 @@ class A(object):
 
 	# End of user code
 
-class C(MyInterface):
-	def __init__(self):
-		self.b = None
-		
-	# Start of user code -> properties/constructors for C class(interface)
-
-	# End of user code
-	# Start of user code -> methods for C class(interface)
-
-	# End of user code
-
-class B(C, A):
+class B(A, C):
 	"""
 	 Doc
 	"""
@@ -54,6 +43,17 @@ class B(C, A):
 
 	# End of user code
 	# Start of user code -> methods for B class
+
+	# End of user code
+
+class C(MyInterface):
+	def __init__(self):
+		self.b = None
+		
+	# Start of user code -> properties/constructors for C class(interface)
+
+	# End of user code
+	# Start of user code -> methods for C class(interface)
 
 	# End of user code
 
