@@ -3,7 +3,6 @@ from datetime import datetime
 class enum1:
 	LITERAL, LITERAL2 = range(2)
 
-
 class A(object):
 	"""
 	 Doc
@@ -22,6 +21,7 @@ class A(object):
 
 	# End of user code
 
+
 class MyInterface(object):
 	pass
 	# Start of user code -> properties/constructors for MyInterface class(interface)
@@ -31,7 +31,7 @@ class MyInterface(object):
 
 	# End of user code
 
-class B(A, C):
+class B(C, A):
 	"""
 	 Doc
 	"""
