@@ -25,7 +25,7 @@ class A(object):
 	# End of user code
 	def getName(self):
 		# Start of user code protected zone for getName function body
-		return ""
+		return self.name
 		# End of user code	
 	# Start of user code -> methods for A class
 
