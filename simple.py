@@ -1,3 +1,7 @@
+"""
+ Just an example of documentation for the &#39;simple&#39; module.
+"""
+
 from datetime import datetime
 
 class enum1:
@@ -15,7 +19,7 @@ class MyInterface(object):
 
 class A(object):
 	"""
-	 Doc
+	 This is A element. Represents A style of objects.
 	"""
 	def __init__(self):
 		self.name = ""
@@ -31,20 +35,9 @@ class A(object):
 
 	# End of user code
 
-class C(MyInterface):
-	def __init__(self):
-		self.b = None
-		
-	# Start of user code -> properties/constructors for C class(interface)
-
-	# End of user code
-	# Start of user code -> methods for C class(interface)
-
-	# End of user code
-
-class B(C, A):
+class B(A, C):
 	"""
-	 Doc
+	 This is A element. Represents A style of&nbsp;<span style="font-size: 0.8em;">objects.</span>
 	"""
 	def __init__(self):
 		self.attribute = datetime()
@@ -54,6 +47,17 @@ class B(C, A):
 
 	# End of user code
 	# Start of user code -> methods for B class
+
+	# End of user code
+
+class C(MyInterface):
+	def __init__(self):
+		self.b = None
+		
+	# Start of user code -> properties/constructors for C class(interface)
+
+	# End of user code
+	# Start of user code -> methods for C class(interface)
 
 	# End of user code
 
