@@ -11,3 +11,23 @@ test/pom.xml
 codegen/pom.xml
 
 .tmp/
+
+.tmp/*
+
+.tmp/**
+
+bin/
+
+bin/*
+
+bin/**
+
+target/
+
+target/*
+
+target/**
+
+.tmp/model_*.xmi
+
+model_*.xmi

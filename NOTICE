@@ -1,0 +1,33 @@
+	Source code generated from GenMyModel (http://www.genmymodel.com)
+
+This is about:
+
+-How to preserve your changes when generating code several times
+-Compile using Maven
+
+CODE PRESERVATION
+
+	The modifications made on the generated code can be preserved
+	during each generation:
+	
+	* In the generated pom.xml, protected zones
+		are defined by a start and a end marker:
+		Start of user code XXX
+		End of user code XXX
+	 	Code written in these zones are preserved during generation. In order
+	 	to ensure that no code will be lost, start and end markers should not 
+	 	be removed!
+ 	* In Java source code, JMerge annotation (@generated) are present on top 
+	 	of blocks (Classes, Methods, Attributes). If modifications must be 
+	 	preserved, the annotation must be changed to @generated NOT. It will 
+	 	avoid the generator to override your modifications by leaving the block.
+	 	More information can be found at: 
+	 	http://udig.refractions.net/files/docs/latest/1.3.2-SNAPSHOT/developer/guide_to_emf.html
+	 	See: "Adding Comments to EMF Generated Methods" and "How to Modify a 
+	 	Generated Method".
+
+COMPILATION (using pom.xml, Maven required)
+
+	The generated pom.xml can be used to compile. Just run:
+	$ mvn compile
+	Files *.classes will be present in 'target/classes'.
