@@ -17,7 +17,7 @@ public class z
 	 * @ordered
 	 */
 	
-	public java.util.List id;
+	public long id;
 	
 	/**
 	 * <!-- begin-user-doc -->
