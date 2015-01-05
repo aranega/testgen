@@ -1,9 +1,10 @@
 public class Simple {
 
       /**
-      * @generated
+      * @generated NOT
       */
       public void toTest() {
-      	     
+      	     toString();
       }
+      
 }
