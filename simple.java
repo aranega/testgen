@@ -1,7 +1,7 @@
 public class Simple {
 
       /**
-      * @generated NOT
+      * @generated
       */
       public void toTest() {
             int i = 0;
