@@ -1,10 +1,10 @@
 public class Simple {
 
       /**
-      * @generated
+      * @generated NOT
       */
       public void toTest() {
-      	     
+            int i = 0;
       }
       
 }
