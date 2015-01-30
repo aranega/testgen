@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" font-family="Arial" font-size="13" width="132" height="132">
+	<desc>UML diagram model</desc>
+	<g id="_t_GtMWPxEDKVC9R4_2z8Xw">
+		<defs>
+			<linearGradient id="greyGradient" x1="0%" y1="0%" x2="0%" y2="100%" spreadMethod="pad">
+				<stop offset="0%" stop-color="#FFFFFF" stop-opacity="1" />
+				<stop offset="100%" stop-color="#E5E5E5" stop-opacity="1" />
+				
+			</linearGradient>
+			<linearGradient id="packageGradient" x1="0%" y1="0%" x2="0%" y2="100%" spreadMethod="pad">
+				<stop offset="0%" stop-color="#FFFFFF" stop-opacity="1" />
+				<stop offset="100%" stop-color="#EFE9DE" stop-opacity="1" />
+				
+			</linearGradient>
+			
+		</defs>
+		<g id="_La1L4InEEDKkoNXJBjKSrw">
+			<ellipse cx="66" cy="10" rx="6" ry="6" fill="#FFF" stroke="#CCCCCC" stroke-width="2.0" />
+			<line x1="66" y1="16" x2="66" y2="47" stroke-width="2.0" stroke="#CCCCCC" />
+			<line x1="52" y1="28" x2="80" y2="28" stroke-width="2.0" stroke="#CCCCCC" />
+			<line x1="66" y1="47" x2="55" y2="65" stroke-width="2.0" stroke="#CCCCCC" />
+			<line x1="66" y1="47" x2="76" y2="65" stroke-width="2.0" stroke="#CCCCCC" />
+			<text x="66" y="67" text-anchor="middle" font-style="normal" font-weight="normal" fill="black">
+				<tspan x="66" text-anchor="middle" dy="13">Actor</tspan>
+				
+			</text>
+			
+		</g>
+		
+	</g>
+	
+</svg>
