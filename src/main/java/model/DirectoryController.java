@@ -10,11 +10,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class DirectoryController {
 
     /**
-     * @generated
+     * @generated NOT
      */
     @RequestMapping("/directory")
     public String index() {
-        return "Greetings from DirectoryController!";
+        return "<HTML><BODY>My body</BODY></HTML>";
     }
 
 }
