@@ -12,9 +12,9 @@ public class MyClass2 {
     private Boolean attribute;
     
     /**
-    * @generated
+    * @generated NOT
     */
-    private String attribute2;
+    private int attribute2;
     
     
     
@@ -33,16 +33,16 @@ public class MyClass2 {
     }
     
     /**
-    * @generated
+    * @generated NOT
     */
-    public String getAttribute2() {
+    public int getAttribute2() {
         return this.attribute2;
     }
     
     /**
-    * @generated
+    * @generated NOT
     */
-    public String setAttribute2(String attribute2) {
+    public int setAttribute2(int attribute2) {
         this.attribute2 = attribute2;
     }
     
