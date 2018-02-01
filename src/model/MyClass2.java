@@ -9,7 +9,7 @@ public class MyClass2 {
     /**
     * @generated
     */
-    private Boolean attribute;
+    private boolean attribute;
     
     /**
     * @generated NOT
@@ -21,14 +21,14 @@ public class MyClass2 {
     /**
     * @generated
     */
-    public Boolean getAttribute() {
+    public boolean getAttribute() {
         return this.attribute;
     }
     
     /**
     * @generated
     */
-    public Boolean setAttribute(Boolean attribute) {
+    public boolean setAttribute(boolean attribute) {
         this.attribute = attribute;
     }
     
